@@ -8,6 +8,16 @@ media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about page"
+        file: "src/pages/about.yml"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
   - label: "Projects"
     name: "projects"
     folder: "src/pages/projects"
