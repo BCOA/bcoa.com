@@ -15,9 +15,19 @@ collections:
       - label: "About Page"
         name: "about page"
         file: "src/pages/about.yml"
+        create: true
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
+
+      - label: "Contact Page"
+        name: "contact page"
+        file: "src/pages/contact.yml"
+        create: true
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+
   - label: "Projects"
     name: "projects"
     folder: "src/pages/projects"
