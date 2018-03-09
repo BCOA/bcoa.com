@@ -12,6 +12,6 @@ collections:
     name: "projects"
     folder: "src/pages/projects"
     create: true
-      - { label: "Project Title", name: "title", widget: "string" }
-      - { label:  "Image", name: "placeholder", widget: "image" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "placeholder", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
