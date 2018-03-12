@@ -36,3 +36,4 @@ collections:
       - { label: "Project Title", name: "title", widget: "string" }
       - { label: "Image", name: "placeholder", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "markdown" }
