@@ -11,8 +11,6 @@ collections:
 
   - label: "Pages"
     name: "pages"
-    folder: "src/pages"
-    create: true
     files:
       - label: "About Page"
         name: "about page"
