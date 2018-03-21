@@ -5,10 +5,11 @@ import './index.scss';
 export default () => 
 
 	<div>
-		<h1>Hello world!</h1>
+		<h1>Links</h1>
 		<ul>
 			<li>
 				<Link to="/pages/projects">Projects</Link>
+				<Link to="/pages">Pages</Link>
 			</li>
 		</ul>
 	</div>
