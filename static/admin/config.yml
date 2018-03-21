@@ -11,10 +11,12 @@ collections:
 
   - label: "Pages"
     name: "pages"
+    folder: "src/pages"
+    create: true
     files:
       - label: "About Page"
         name: "about page"
-        file: "src/pages/about.md"
+        file: "src/pages/about.js"
         create: true
         fields:
           - { label: Title, name: title, widget: string }
