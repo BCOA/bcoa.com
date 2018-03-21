@@ -12,11 +12,21 @@ collections:
   - label: "Pages"
     name: "pages"
     folder: "src/pages"
+<<<<<<< HEAD
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Intro", name: "intro", widget: "markdown" }
 
+=======
+    files:
+      - file: "src/pages/about.js" 
+        label: "About Page"
+        name: "about page"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "markdown" }
+>>>>>>> d51305b5c2231f02babcf6be99b70174bbdda0b0
 
   - label: "Projects"
     name: "projects"
@@ -24,6 +34,10 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+<<<<<<< HEAD
+=======
+      - { label: "Sub Title", name: "subtitle", widget: "string" }
+>>>>>>> d51305b5c2231f02babcf6be99b70174bbdda0b0
       - { label: "Image", name: "placeholder", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Description", name: "description", widget: "markdown" }
