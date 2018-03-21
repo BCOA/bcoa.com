@@ -36,6 +36,7 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sub Title", name: "subtitle", widget: "string" }
       - { label: "Image", name: "placeholder", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Description", name: "description", widget: "markdown" }

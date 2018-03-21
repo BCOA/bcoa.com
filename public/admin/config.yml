@@ -11,14 +11,16 @@ collections:
 
   - label: "Pages"
     name: "pages"
+    folder: "src/pages"
+    create: true
     files:
       - label: "About Page"
         name: "about page"
         file: "src/pages/about.js"
         create: true
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "markdown" }
 
       - label: "Contact Page"
         name: "contact page"
@@ -33,7 +35,8 @@ collections:
     folder: "src/pages/projects"
     create: true
     fields:
-      - { label: "Project Title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sub Title", name: "subtitle", widget: "string" }
       - { label: "Image", name: "placeholder", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Description", name: "description", widget: "markdown" }
