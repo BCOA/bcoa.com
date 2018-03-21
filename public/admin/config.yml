@@ -11,29 +11,19 @@ collections:
 
   - label: "Pages"
     name: "pages"
-    files:
-      - label: "About Page"
-        name: "about page"
-        file: "src/pages/about.js"
-        create: true
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
+    folder: "src/pages"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Intro", name: "intro", widget: "markdown" }
 
-      - label: "Contact Page"
-        name: "contact page"
-        file: "src/pages/contact.yml"
-        create: true
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
 
   - label: "Projects"
     name: "projects"
     folder: "src/pages/projects"
     create: true
     fields:
-      - { label: "Project Title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "placeholder", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Description", name: "description", widget: "markdown" }
