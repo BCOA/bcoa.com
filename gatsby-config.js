@@ -6,6 +6,7 @@ module.exports = {
     `gatsby-plugin-netlify`,
     "gatsby-link",
     `gatsby-transformer-remark`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
