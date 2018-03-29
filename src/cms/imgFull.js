@@ -7,7 +7,7 @@ const ImgFull = props => {
     height: 40vh;
     margin-bottom: 16px;
   `;
-}
+};
 // This is the editing component
 export class ImgFull extends Component {
   render() {
@@ -24,5 +24,5 @@ export class ImgFull extends Component {
         />
       </div>
     ;
-  }
-}
+  };
+};
