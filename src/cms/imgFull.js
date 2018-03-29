@@ -10,15 +10,17 @@ const fullscreen_img = styled.div`
 export class ImgFull extends Component {
   render() {
     return
-      <ImgFull
-        style={{
-          position: 'absolute',
-          left: 0,
-          top: 0,
-          width: '100%',
-          height:'100%'
-        }}
-      />
+      <div>
+          <ImgFull
+          style={{
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            width: '100%',
+            height:'100%'
+          }}
+        />
+      </div>
     ;
   }
 }
