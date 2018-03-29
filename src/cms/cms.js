@@ -1,3 +1,3 @@
 import CMS from "netlify-cms";
-import { FullScreenImg } from "./imgFull";
+import { ImgFull } from "./imgFull";
 CMS.registerWidget("imgFull", ImgFull);
