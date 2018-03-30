@@ -1,1 +1,3 @@
-../../node_modules/netlify-cms/dist/cms.css
+node_modules/netlify-cms/dist/cms.css {
+	width: 100%;
+}
