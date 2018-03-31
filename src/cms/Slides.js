@@ -54,9 +54,10 @@ export class SlidesControl extends Component {
 
 export const SlidesPreview = props => (
   <div>
-    {props.value
+    this is the slidesPreview
+    {/* {props.value
       .split(props.field.get("separator", defaultSeparator))
-      .map((val, i) => <SlidePreview {...props} key={i} value={val} />)}
+      .map((val, i) => <SlidePreview {...props} key={i} value={val} />)} */}
   </div>
 );
 
