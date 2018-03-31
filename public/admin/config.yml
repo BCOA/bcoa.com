@@ -7,24 +7,24 @@ public_folder: "/images/uploads"
 
 collections:
 
-  - label: "Pages"
-    name: "pages"
+  - name: "pages"
+    label: "Pages"
     files:
-      - label: "About Page"
-        name: "about page"
+      - name: "about page"
+        label: "About Page"
         file: "src/pages/about.js"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Intro", name: "intro", widget: "markdown" }
 
-  - label: "Projects"
-    name: "projects"
+  - name: "projects"
+    label: "Projects"
     folder: "src/pages/projects"
     create: true
     fields:
       - { label: "Project Name", name: "projectName", widget: "string" }
-      - { label: "Image Full", name: "imgFull", widget: "imgFull" }
+      - { label: "Slides", name: "slides", widget: "slides"}
       - { label: "Image", name: "placeholder", widget: "image" }
       - { label: "Headline", name: "headline", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
