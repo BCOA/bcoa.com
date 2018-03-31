@@ -24,7 +24,10 @@ collections:
     create: true
     fields:
       - { label: "Project Name", name: "projectName", widget: "string" }
-      - { label: "Slides", name: "slides", widget: "slides", separator: "\n\n<!--s-->\n\n"}
-      - { label: "Image", name: "placeholder", widget: "image" }
-      - { label: "Headline", name: "headline", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: Body, 
+        name: body, 
+        widget: slides, 
+        separator: "\n\n<!--s-->\n\n"
+      # - { label: "Image", name: "placeholder", widget: "image" }
+      # - { label: "Headline", name: "headline", widget: "string" }
+      # - { label: "Body", name: "body", widget: "markdown" }
