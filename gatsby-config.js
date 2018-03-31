@@ -2,7 +2,6 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     `gatsby-plugin-sass`,
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`,
     "gatsby-link",
     `gatsby-transformer-remark`,
@@ -19,6 +18,12 @@ module.exports = {
       options: {
         name: `projects`,
         path: `${__dirname}/src/pages/projects/`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`
       }
     }
   ]
