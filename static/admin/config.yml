@@ -22,5 +22,6 @@ collections:
     folder: "src/pages/projects"
     create: true
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project" }
-      - {label: "Project Name", name: "projectName", widget: "string"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page" }
+      - {label: "Project Name", name: "title", widget: "string"}
+      - {label: "Description", name: "body", widget: "markdown"}

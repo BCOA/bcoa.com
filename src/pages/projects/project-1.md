@@ -1,3 +1,5 @@
 ---
-projectName: 'project-1'
+templateKey: 'project'
+path: /projects
+title: Project 1
 ---
