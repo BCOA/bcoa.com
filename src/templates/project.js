@@ -9,10 +9,12 @@ export default ({ data }) => {
       <h3>{fields.name}</h3>
       <h1>{fields.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <dl>
-        <dt>{fields.infoObject.title}</dt>
-        <dd>{fields.infoObject.description}</dd>
-      </dl>
+      {fields.infoObject && (
+        <dl>
+          <dt>{fields.infoObject.title}</dt>
+          <dd>{fields.infoObject.description}</dd>
+        </dl>
+      )}
       <img src={fields.placeholder} alt="" />
       <blockquote>{fields.pullQuote}</blockquote>
     </div>
