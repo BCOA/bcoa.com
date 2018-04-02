@@ -23,5 +23,15 @@ collections:
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page" }
-      - {label: "Project Name", name: "title", widget: "string"}
-      - {label: "Description", name: "body", widget: "markdown"}
+      - { label: "Project Name", name: "name", widget: "string" }
+      - { label: "Headline", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - label: Data
+        name: data
+        widget: object
+        fields: 
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+      - { label: "Hero Image", name: "heroImage", widget: "image" }
+      - { label: "Image", name: "placeholder", widget: "image" }
+      - { label: "Pull Quote", name: "pullQuote", widget: "string" 
