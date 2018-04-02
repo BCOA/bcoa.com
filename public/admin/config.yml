@@ -23,12 +23,10 @@ collections:
     folder: "src/pages/projects"
     create: true
     fields:
-      - label: Project Name, 
-        name: projectName, 
-        widget: string
-      - label: Slides, 
-        name: slides, 
-        widget: slides
-      - { label: "Image", name: "placeholder", widget: "image" }
+      - { label: "Project Name", name: "projectName", widget: "string" }
       - { label: "Headline", name: "headline", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Data", name: "data", widget: "object", fields: { label: "Title", name: "title", widget: "string" }, { label: "Description", name: "description", widget: "string" } }
+      - { label: "Hero Image", name: "heroImage", widget: "image" }
+      - { label: "Image", name: "placeholder", widget: "image" }
+      - { label: "Pull Quote", name: "pullQuote", widget: "string" }
