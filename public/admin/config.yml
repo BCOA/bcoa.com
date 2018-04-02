@@ -25,9 +25,9 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page" }
       - { label: "Project Name", name: "name", widget: "string" }
       - { label: "Headline", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "markdown" }
-      - label: Data
-        name: data
+      - { label: "Description", name: "body", widget: "markdown" }
+      - label: Info Object
+        name: infoObject
         widget: object
         fields: 
           - { label: "Title", name: "title", widget: "string" }
