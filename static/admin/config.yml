@@ -29,7 +29,7 @@ collections:
       - label: "data"
         name: "data"
         widget: "object"
-        fields: 
+        fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "string" }
       - { label: "Hero Image", name: "heroImage", widget: "image" }
