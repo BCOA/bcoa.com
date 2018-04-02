@@ -34,4 +34,4 @@ collections:
           - { label: "Description", name: "description", widget: "string" }
       - { label: "Hero Image", name: "heroImage", widget: "image" }
       - { label: "Image", name: "placeholder", widget: "image" }
-      - { label: "Pull Quote", name: "pullQuote", widget: "string" 
+      - { label: "Pull Quote", name: "pullQuote", widget: "string" }
