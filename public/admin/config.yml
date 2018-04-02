@@ -23,4 +23,5 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-    - {label: "Project Name", name: "projectName", widget: "string"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project"}
+      - {label: "Project Name", name: "projectName", widget: "string"}
