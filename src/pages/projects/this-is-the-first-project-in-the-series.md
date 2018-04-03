@@ -9,7 +9,7 @@ heroImage: /images/uploads/placeholder.jpg
 projectImage:
   altText: alt text for project image
   caption: caption text for project image
-  columnWidth: '3'
+  colWidth: '3'
   imageURL: /images/uploads/placeholder.jpg
   offsetWidth: '4'
 pullQuote: This is the pull quote!
