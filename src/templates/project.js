@@ -15,8 +15,12 @@ export default ({ data }) => {
           <dd>{fields.infoObject.description}</dd>
         </dl>
       )}
-      <img src={fields.projectImage.imageURL} alt={fields.projectImage.altText} />
-      {fields.projectImage.caption && <p>{fields.projectImage.caption}</p>}
+      {fields.projectImages && (fields.projectImages.map((image, i) => {
+        <div key={i}>
+          <img src={image.imageURL} alt={image.altText}/>
+          {fields.projectImage.caption && <p>{fields.projectImage.caption}</p>}
+        </div>
+      }))}
       <blockquote>{fields.pullQuote}</blockquote>
     </div>
   );
@@ -35,13 +39,6 @@ export const query = graphql`
           description
         }
         heroImage
-        projectImage {
-          imageURL
-          colWidth
-          offsetWidth
-          altText
-          caption
-        }
         pullQuote
       }
     }

@@ -33,9 +33,9 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "string" }
       - { label: "Hero Image", name: "heroImage", widget: "image" }
-      - label: Image
-        name: projectImage
-        widget: object
+      - label: Images
+        name: projectImages
+        widget: list
         fields:
           - { label: "Image", name: "imageURL", widget: "image" }
           - { label: "Column Width", name: "colWidth", widget: "select", options: ["1", "2", "3", "4", "5", "6"] }
