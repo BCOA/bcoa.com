@@ -33,17 +33,13 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "string" }
       - { label: "Hero Image", name: "heroImage", widget: "image" }
-      - label: Images
+      - label: Project Images
         name: projectImages
         widget: list
-        field:
-          - label: Image
-            name: projectImage
-            widget: object
-            fields: 
-              - { label: "ImageURL", name: "imageURL", widget: "image" }
-              - { label: "Column Width", name: "colWidth", widget: "select", options: ["1", "2", "3", "4", "5", "6"] }
-              - { label: "Offset width", name: "offsetWidth", widget: "select", options: ["1", "2", "3", "4", "5", "6"] }
-              - { label: "Alt Text", name: "altText", widget: "string" }
-              - { label: "Caption", name: "caption", widget: "string" }
+        fields: 
+          - { label: "Image URL", name: "imageURL", widget: "image" }
+          - { label: "Column Width", name: "colWidth", widget: "select", options: ["1", "2", "3", "4", "5", "6"] }
+          - { label: "Offset width", name: "offsetWidth", widget: "select", options: ["1", "2", "3", "4", "5", "6"] }
+          - { label: "Alt Text", name: "altText", widget: "string" }
+          - { label: "Caption", name: "caption", widget: "string" }
       - { label: "Pull Quote", name: "pullQuote", widget: "string" }
