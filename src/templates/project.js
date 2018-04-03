@@ -15,7 +15,7 @@ export default ({ data }) => {
           <dd>{fields.infoObject.description}</dd>
         </dl>
       )}
-      <img src={fields.projectImage} alt={fields.projectImage.altText} />
+      <img src={fields.projectImage.imageURL} alt={fields.projectImage.altText} />
       <blockquote>{fields.pullQuote}</blockquote>
     </div>
   );
@@ -35,6 +35,7 @@ export const query = graphql`
         }
         heroImage
         projectImage {
+          imageURL
           colWidth
           offsetWidth
           altText

@@ -37,6 +37,7 @@ collections:
         name: projectImage
         widget: object
         fields:
+          - { label: "Image", name: "imageURL", widget: "image" }
           - { label: "Column Width", name: "columnWidth", widget: "select", options: [1, 2, 3, 4, 5, 6] }
           - { label: "Offset width", name: "offsetWidth", widget: "select", options: [1, 2, 3, 4, 5, 6] }
           - { label: "Alt Text", name: "altText", widget: "string" }
