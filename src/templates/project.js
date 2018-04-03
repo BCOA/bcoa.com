@@ -16,6 +16,7 @@ export default ({ data }) => {
         </dl>
       )}
       <img src={fields.projectImage.imageURL} alt={fields.projectImage.altText} />
+      {fields.projectImage.caption && <p>{fields.projectImage.caption}</p>}
       <blockquote>{fields.pullQuote}</blockquote>
     </div>
   );
