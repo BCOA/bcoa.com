@@ -33,5 +33,12 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "string" }
       - { label: "Hero Image", name: "heroImage", widget: "image" }
-      - { label: "Image", name: "placeholder", widget: "image" }
+      - label: Image
+        name: projectImage
+        widget: object
+        fields:
+          - { label: "Column Width", name: "columnWidth", widget: "select", options: [1, 2, 3, 4, 5, 6] }
+          - { label: "Offset width", name: "offsetWidth", widget: "select", options: [1, 2, 3, 4, 5, 6] }
+          - { label: "Alt Text", name: "altText", widget: "string" }
+          - { label: "caption", name: "caption", widget: "string" }
       - { label: "Pull Quote", name: "pullQuote", widget: "string" }
