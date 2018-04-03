@@ -7,11 +7,11 @@ infoObject:
   title: Source Materials
 heroImage: /images/uploads/placeholder.jpg
 projectImage:
+  altText: alt text for project image
+  caption: caption text for project image
+  columnWidth: '3'
   imageURL: /images/uploads/placeholder.jpg
-  altText: "project image"
-  colWidth: "1"
-  offsetWidth: "1"
-  caption: "caption text"
+  offsetWidth: '4'
 pullQuote: This is the pull quote!
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem tortor, eleifend sed dictum sit amet, cursus ut ante. Vestibulum pellentesque rhoncus tortor, posuere pretium quam mattis ac. Nunc rhoncus sem quis nisl lacinia rhoncus ac pharetra orci. Duis bibendum tortor non gravida egestas. Ut facilisis, lectus elementum mollis blandit, ligula ligula sodales massa, ac laoreet nibh dolor vel ex. Fusce id lorem eu enim eleifend accumsan. Donec ac ipsum velit. Curabitur vitae enim erat. Mauris tincidunt nisl nec erat euismod lobortis. Mauris cursus vestibulum felis non venenatis. Curabitur fringilla risus ac tortor ultrices tempor.
