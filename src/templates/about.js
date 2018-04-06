@@ -13,10 +13,10 @@ export const query = graphql`
   query AboutPageQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      html
       frontmatter {
         title
         subtitle
-				intro
       }
     }
   }
