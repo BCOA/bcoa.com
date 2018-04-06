@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "../components/Image";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -17,7 +18,8 @@ export default ({ data }) => {
       )}
       {fields.projectImages && fields.projectImages.map((image, i) => (
         <div key={i}>
-          <img src={image.imageURL} alt={image.altText}/>
+          {/* <img src={image.imageURL} alt={image.altText}/> */}
+          <Image image={image}/>
           {image.caption && <p>{image.caption}</p>}
         </div>
       ))}
