@@ -11,8 +11,9 @@ collections:
     files:
       - name: "about page"
         label: "About Page"
-        file: "src/pages/about.js"
+        file: "src/pages/about.md"
         fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Intro", name: "intro", widget: "markdown" }

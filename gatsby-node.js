@@ -34,7 +34,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        if (node.frontmatter.templateKey === "project-page") {
+        if (node.frontmatter.templateKey === "about-page") {
+          createPage({
+            path: node.fields.slug,
+            component: path.resolve("./src/templates/about.js"),
+            context: {
+              // Data passed to context is available in page queries as GraphQL variables.
+              slug: node.fields.slug
+            }
+          });
+        } else if (node.frontmatter.templateKey === "project-page") {
           createPage({
             path: node.fields.slug,
             component: path.resolve("./src/templates/project.js"),
