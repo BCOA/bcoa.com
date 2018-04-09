@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: About Page
-subtitle: About Subtitle
+subtitle: About Subtitle!
 ---
 About Page Introduction
 
