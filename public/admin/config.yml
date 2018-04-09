@@ -24,7 +24,6 @@ collections:
               - { label: "Member Image", name: "memberImage", widget: "image" }
               - { label: "Member Name", name: "memberName", widget: "string" }
               - { label: "Job Title ", name: "jobTitle", widget: "string" }
-              - { label: "Member Name", name: "memberName", widget: "string" }
               - { label: "Member Description", name: "memberDescription", widget: "text" }
 
   - name: "projects"
