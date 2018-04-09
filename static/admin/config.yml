@@ -15,15 +15,24 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Intro", name: "body", widget: "markdown" }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: Studio Member
+            name: studioMember
+            widget: object
+            fields:
+              - { label: "Principal", name: "principal", widget: "boolean" }
+              - { label: "Member Image", name: "memberImage", widget: "image" }
+              - { label: "Member Name", name: "memberName", widget: "string" }
+              - { label: "Job Title ", name: "jobTitle", widget: "string" }
+              - { label: "Member Name", name: "memberName", widget: "string" }
+              - { label: "Member Description", name: "memberDescription", widget: "text" }
 
   - name: "projects"
     label: "Projects"
     folder: "src/pages/projects"
     create: true
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page" }
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page" }
       - { label: "Project Name", name: "name", widget: "string" }
       - { label: "Headline", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
