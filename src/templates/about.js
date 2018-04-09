@@ -5,7 +5,7 @@ export default ({ data }) => (
 	<div>
     <h2>{data.markdownRemark.frontmatter.title}</h2>
     <h2>{data.markdownRemark.frontmatter.subtitle}</h2>
-    <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.frontmatter.intro }} />
+    <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.frontmatter.body }} />
   </div>	
 );
 
