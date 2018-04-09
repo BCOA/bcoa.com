@@ -1,19 +1,22 @@
 ---
 templateKey: about-page
-title: About Page
-subtitle: About Subtitle!
+title: About
+description: >-
+  Pabst hell of tacos, mustache cred gastropub trust fund gochujang fanny pack.
+  Poutine church-key hell of sustainable, pop-up green juice mumblecore kinfolk
+  adaptogen gochujang. Hexagon tattooed brooklyn godard actually sartorial
+  try-hard PBR&B truffaut. Quinoa retro selfies, meh hot chicken microdosing
+  iPhone viral keffiyeh typewriter mlkshk.
+studioMembers:
+  - jobTitle: Registered Architect
+    memberDescription: >-
+      Pabst hell of tacos, mustache cred gastropub trust fund gochujang fanny
+      pack. Poutine church-key hell of sustainable, pop-up green juice
+      mumblecore kinfolk adaptogen gochujang. Hexagon tattooed brooklyn godard
+      actually sartorial try-hard PBR&B truffaut. Quinoa retro selfies, meh hot
+      chicken microdosing iPhone viral keffiyeh typewriter mlkshk.
+    memberImage: /images/uploads/placeholder.jpg
+    memberName: Bronwyn Breitner
+    principal: true
 ---
-# Headline h1
 
-## Headline h2
-
-this is a [link](http://google.com)
-
-About Page Introduction. 
-
-**Bold text**
-
-* item 1
-* item 2
-* item 3
-* item 4
