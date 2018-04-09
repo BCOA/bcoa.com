@@ -16,9 +16,9 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
-          - label: Studio Member
-            name: studioMember
-            widget: object
+          - label: Studio Members
+            name: studioMembers
+            widget: list
             fields:
               - { label: "Principal", name: "principal", widget: "boolean" }
               - { label: "Member Image", name: "memberImage", widget: "image" }
