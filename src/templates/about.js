@@ -2,6 +2,17 @@ import React from "react";
 import Link from "gatsby-link";
 import Image from "../components/Image";
 
+const Award = ({ award }) => (
+  <div>
+    <h4>{award.awardTitle}</h4>
+    <p>{award.orgName}</p>
+    <date>{award.date}</date>
+    <a href={award.url} target="_blank">
+      View Award
+    </a>
+  </div>
+);
+
 export default ({ data }) => {
   const post = data.markdownRemark;
   const fields = post.frontmatter;
@@ -15,7 +26,6 @@ export default ({ data }) => {
             .filter(member => member.principal)
             .map((member, i) => (
               <li key={i}>
-                <h1>TIS A PRINCIPAL</h1>
                 <img src={member.memberImage} />
                 <h3>{member.memberName}</h3>
                 <p>{member.jobTitle}</p>
@@ -40,7 +50,22 @@ export default ({ data }) => {
       )}
       {fields.publications && (
         <ul>
-          {fields.publications.map(publication => <h2>{publication.title}</h2>)}
+          <h2>Publications</h2>
+          {fields.publications.map((publication, i) => (
+            <li key={`publication-${i}`}>
+              <h4>{publication.title}</h4>
+            </li>
+          ))}
+        </ul>
+      )}
+      {fields.awards && (
+        <ul>
+          <h2>Awards</h2>
+          {fields.awards.map((award, i) => (
+            <li key={`award-${i}`}>
+              <Award award={award} />
+            </li>
+          ))}
         </ul>
       )}
     </div>

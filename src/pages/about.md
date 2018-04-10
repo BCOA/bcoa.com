@@ -25,7 +25,7 @@ publications:
   - date: '2018-03-25'
     title: First Publication 1
     url: 'http://www.google.com'
-  - date: ''
+  - date: '2018-04-10'
     title: Second Publication 2
     url: 'http://www.google.com'
 awards:
@@ -38,7 +38,7 @@ awards:
     orgName: The Best Organization Inc
     url: google.com
   - awardTitle: 3rd Award
-    date: '2018-04-10'
+    date: '2018-03-01'
     url: test.com
 ---
 
