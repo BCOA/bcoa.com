@@ -20,11 +20,26 @@ collections:
             name: studioMembers
             widget: list
             fields:
-              - { label: "Principal", name: "principal", widget: "boolean" }
-              - { label: "Member Image", name: "memberImage", widget: "image" }
               - { label: "Member Name", name: "memberName", widget: "string" }
+              - { label: "Member Image", name: "memberImage", widget: "image" }
               - { label: "Job Title", name: "jobTitle", widget: "string" }
               - { label: "Member Description", name: "memberDescription", widget: "text" }
+              - { label: "Principal", name: "principal", widget: "boolean" }
+          - label: Publications
+            name: publications
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "date" }
+              - { label: "URL", name: "url", widget: "string" }
+          - label: Awards
+            name: awards
+            widget: list
+            fields:
+              - { label: "Award Title", name: "awardTitle", widget: "string" }
+              - { label: "Organization Name", name: "orgName", widget: "string" }
+              - { label: "Date", name: "date", widget: "date" }
+              - { label: "URL", name: "url", widget: "string" }
 
   - name: "projects"
     label: "Projects"
