@@ -2,6 +2,15 @@ import React from "react";
 import Link from "gatsby-link";
 import Image from "../components/Image";
 
+const Member = ({ member }) => (
+  <div className={ member.principal ? "principal" : "" }>
+    <img src={member.memberImage} />
+    <h3>{member.memberName}</h3>
+    <p>{member.jobTitle}</p>
+    <p>{member.memberDescription}</p>
+  </div>
+);
+
 const Award = ({ award }) => (
   <div>
     <h4>{award.awardTitle}</h4>
@@ -25,11 +34,8 @@ export default ({ data }) => {
           {fields.studioMembers
             .filter(member => member.principal)
             .map((member, i) => (
-              <li key={i}>
-                <img src={member.memberImage} />
-                <h3>{member.memberName}</h3>
-                <p>{member.jobTitle}</p>
-                <p>{member.memberDescription}</p>
+              <li key={`principalMember-${i}`}>
+                <Member member={member} />
               </li>
             ))}
         </ul>
@@ -39,11 +45,8 @@ export default ({ data }) => {
           {fields.studioMembers
             .filter(member => !member.principal)
             .map((member, i) => (
-              <li key={i}>
-                <img src={member.memberImage} />
-                <h3>{member.memberName}</h3>
-                <p>{member.jobTitle}</p>
-                <p>{member.memberDescription}</p>
+              <li key={`member-${i}`}>
+                <Member member={member} />
               </li>
             ))}
         </ul>

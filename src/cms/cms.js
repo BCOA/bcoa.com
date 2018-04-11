@@ -1,13 +1,3 @@
 import CMS from "netlify-cms";
-// import { SlidesControl, SlidesPreview } from "./Slides";
-
-// CMS.registerWidget(
-//   "slides", 
-//   SlidesControl, 
-//   SlidesPreview
-// );
-
-/*
-import { ImgFull } from "./imgFull";
-CMS.registerWidget("imgFull", ImgFull);
-*/
+import { ImagesController, ImagesPreview } from "./images";
+CMS.registerWidget("images", ImagesController, ImagesPreview);

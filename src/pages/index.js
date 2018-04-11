@@ -43,3 +43,14 @@ export const query = graphql`
     }
   }
 `;
+
+
+/*
+steps for creating data should be...
+  set up the config.yml
+  push it up
+  add content to the cms
+  pull it down
+  set up the query
+  add the data to the html render
+*/
