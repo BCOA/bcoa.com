@@ -5,13 +5,13 @@ import styled from "styled-components";
 export class ImagesController extends Component {
 	render() {
 		const URL = CMS.getWidget("image").control;
-		const altText = CMS.getWidget("string").control;
-		const caption = CMS.getWidget("text").control;
+		const AltText = CMS.getWidget("string").control;
+		const Caption = CMS.getWidget("text").control;
 		return (
 			<div>
 				<URL {...this.props} />
-				<altText {...this.props} />
-				<caption {...this.props} />
+				<AltText {...this.props} />
+				<Caption {...this.props} />
 			</div>
 		);
 	}
@@ -19,13 +19,13 @@ export class ImagesController extends Component {
 //preview component
 export const ImagesPreview = props => {
 	const URLPreview = CMS.getWidget("image").preview;
-	const altText = CMS.getWidget("string").preview;
-	const caption = CMS.getWidget("text").preview;
+	const AltText = CMS.getWidget("string").preview;
+	const Caption = CMS.getWidget("text").preview;
 	return (
 		<div>
 			<URLPreview {...props} />
-			<altText {...props} />
-			<caption {...props} />
+			<AltText {...props} />
+			<Caption {...props} />
 		</div>
 	);
 }
