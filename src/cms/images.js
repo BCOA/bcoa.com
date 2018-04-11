@@ -5,12 +5,12 @@ import styled from "styled-components";
 export class ImagesController extends Component {
 	render() {
 		console.log(this.props);
-		const URL = CMS.getWidget("image").control;
+		const ImageURL = CMS.getWidget("image").control;
 		const AltText = CMS.getWidget("string").control;
 		const Caption = CMS.getWidget("text").control;
 		return (
 			<div>
-				<URL {...this.props} />
+				<ImageURL {...this.props} />
 				<AltText {...this.props} />
 				<Caption {...this.props} />
 			</div>
@@ -19,12 +19,12 @@ export class ImagesController extends Component {
 }
 //preview component
 export const ImagesPreview = props => {
-	const URLPreview = CMS.getWidget("image").preview;
+	const ImageURLPreview = CMS.getWidget("image").preview;
 	const AltText = CMS.getWidget("string").preview;
 	const Caption = CMS.getWidget("text").preview;
 	return (
 		<div>
-			<URLPreview {...props} />
+			<ImageURLPreview {...props} />
 			<AltText {...props} />
 			<Caption {...props} />
 		</div>
