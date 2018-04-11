@@ -4,6 +4,7 @@ import styled from "styled-components";
 //editing component
 export class ImagesController extends Component {
 	render() {
+		console.log(this.props);
 		const URL = CMS.getWidget("image").control;
 		const AltText = CMS.getWidget("string").control;
 		const Caption = CMS.getWidget("text").control;
