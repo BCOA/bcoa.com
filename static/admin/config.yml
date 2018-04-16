@@ -9,6 +9,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      
       - name: "about page"
         label: "About Page"
         file: "src/pages/about.md"
@@ -40,6 +41,27 @@ collections:
               - { label: "Organization Name", name: "orgName", widget: "string" }
               - { label: "Date", name: "date", widget: "date" }
               - { label: "URL", name: "url", widget: "string" }
+
+      - name: "contact page"
+        label: "Contact Page"
+        file: "src/pages/contact.md"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page" }
+          - { label: "Title", name: "title", widget: "string" }
+      
+      - name: "news page"
+        label: "News Page"
+        file: "src/pages/news.md"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news-page" }
+          - { label: "Title", name: "title", widget: "string" }
+
+      - name: "work page"
+        label: "Work Page"
+        file: "src/pages/work.md"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page" }
+          - { label: "Title", name: "title", widget: "string" }
 
   - name: "projects"
     label: "Projects"

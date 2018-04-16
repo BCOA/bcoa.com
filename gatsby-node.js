@@ -43,6 +43,33 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               slug: node.fields.slug
             }
           });
+        } else if (node.frontmatter.templateKey === "work-page") {
+          createPage({
+            path: node.fields.slug,
+            component: path.resolve("./src/templates/work.js"),
+            context: {
+              // Data passed to context is available in page queries as GraphQL variables.
+              slug: node.fields.slug
+            }
+          });
+        } else if (node.frontmatter.templateKey === "news-page") {
+          createPage({
+            path: node.fields.slug,
+            component: path.resolve("./src/templates/news.js"),
+            context: {
+              // Data passed to context is available in page queries as GraphQL variables.
+              slug: node.fields.slug
+            }
+          });
+        } else if (node.frontmatter.templateKey === "contact-page") {
+          createPage({
+            path: node.fields.slug,
+            component: path.resolve("./src/templates/contact.js"),
+            context: {
+              // Data passed to context is available in page queries as GraphQL variables.
+              slug: node.fields.slug
+            }
+          });
         } else if (node.frontmatter.templateKey === "project-page") {
           createPage({
             path: node.fields.slug,
