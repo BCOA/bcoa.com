@@ -71,6 +71,7 @@ collections:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page" }
       - { label: "Project Name", name: "name", widget: "string" }
       - { label: "Headline", name: "title", widget: "string" }
+      - { label: "Preview Image", name: "previewImage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
       - label: Info Object
         name: infoObject
