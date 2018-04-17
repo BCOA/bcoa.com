@@ -46,21 +46,21 @@ collections:
         label: "Contact Page"
         file: "src/pages/contact.md"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page" }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page" }
           - { label: "Title", name: "title", widget: "string" }
       
       - name: "news page"
         label: "News Page"
         file: "src/pages/news.md"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news-page" }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "news-page" }
           - { label: "Title", name: "title", widget: "string" }
 
       - name: "work page"
         label: "Work Page"
         file: "src/pages/work.md"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page" }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page" }
           - { label: "Title", name: "title", widget: "string" }
 
   - name: "projects"

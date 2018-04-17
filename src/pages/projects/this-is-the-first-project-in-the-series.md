@@ -6,6 +6,7 @@ infoObject:
   description: 'Wood, MDF'
   title: Source Materials
 heroImage: /images/uploads/placeholder.jpg
+previewImage: /images/uploads/placeholder.jpg
 projectImages:
   - altText: proj img alt
     caption: proj img caption
