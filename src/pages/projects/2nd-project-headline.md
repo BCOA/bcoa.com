@@ -2,6 +2,7 @@
 templateKey: project-page
 name: Second Example Project
 title: 2nd project headline
+previewImage: /images/uploads/placeholdermountains.png
 infoObject:
   description: Project 2 Description
   title: Project 2
