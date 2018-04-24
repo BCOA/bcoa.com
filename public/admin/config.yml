@@ -57,6 +57,10 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "news-page" }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "News Image", name: "newsImage", widget: "image" }
+          - { label: "Date", name: "date", widget: "date" }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Body", name: "Body", widget: "text" }
 
       - name: "work page"
         label: "Work Page"
