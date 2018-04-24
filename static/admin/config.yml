@@ -104,3 +104,28 @@ collections:
       - { label: "Headline", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
       - { label: "Body", name: "body", widget: "markdown" }
+    
+  - name: 'settings'
+    label: 'Settings'
+    delete: false
+    editor: 
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Settings"
+        file: 'src/_data/settings.json'
+        description: 'General Site Settings'
+        fields: 
+          - label: Address
+            name: address 
+            widget: object
+            fields:
+              - { label: "Street", name: "street", widget: "string" }
+              - { label: "Street2", name: "street2", widget: "string" }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "State", name: "state", widget: "string" }
+              - { label: "Zip", name: "zip", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
+          - { label: "Facebook", name: "instagram", widget: "string" }
