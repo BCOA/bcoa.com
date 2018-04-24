@@ -57,6 +57,13 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "news-page" }
           - { label: "Title", name: "title", widget: "string" }
+<<<<<<< HEAD
+=======
+          - { label: "News Image", name: "newsImage", widget: "image" }
+          - { label: "Date", name: "date", widget: "date" }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+>>>>>>> adds config collection
 
       - name: "work page"
         label: "Work Page"
@@ -64,6 +71,31 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page" }
           - { label: "Title", name: "title", widget: "string" }
+
+  - name: 'settings'
+    label: 'Settings'
+    delete: false
+    editor: 
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Settings"
+        file: '_data/settings.json'
+        description: 'General Site Settings'
+        fields: 
+          - label: Address
+            name: address 
+            widget: object
+            fields:
+              - { label: "Street", name: "street", widget: "string" }
+              - { label: "Street2", name: "street2", widget: "string" }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "State", name: "state", widget: "string" }
+              - { label: "Zip", name: "zip", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
+          - { label: "Facebook", name: "instagram", widget: "string" }
 
   - name: "projects"
     label: "Projects"
