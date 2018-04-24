@@ -59,6 +59,7 @@ collections:
       - name: "work page"
         label: "Work Page"
         file: "src/pages/work.md"
+        create: true
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page" }
           - { label: "Title", name: "title", widget: "string" }

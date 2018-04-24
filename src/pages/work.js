@@ -10,7 +10,7 @@ export default ({ data }) => {
       { projects && projects.map(({ node:project }, i) => (
         <li key={i}>
           <article>
-            <Link to={project.fields.slug} >
+            <Link to={ project.fields.slug } >
               <img src={ project.frontmatter.previewImage } />
               <h1>{ project.frontmatter.title }</h1>
             </Link>
