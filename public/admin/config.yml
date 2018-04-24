@@ -45,7 +45,6 @@ collections:
       - name: "contact page"
         label: "Contact Page"
         file: "src/pages/contact.md"
-        create: true
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page" }
           - { label: "Title", name: "title", widget: "string" }
