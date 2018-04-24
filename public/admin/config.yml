@@ -112,7 +112,7 @@ collections:
       preview: false
     files:
       - name: "general"
-        label: "Site Settings"
+        label: "General"
         file: 'src/_data/settings.json'
         description: 'General Site Settings'
         fields: 
