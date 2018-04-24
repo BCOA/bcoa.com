@@ -48,6 +48,8 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page" }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - { label: "Message", name: "message", widget: "text" }
       
       - name: "news page"
         label: "News Page"
@@ -59,11 +61,9 @@ collections:
       - name: "work page"
         label: "Work Page"
         file: "src/pages/work.md"
-        create: true
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Preview Image", name: "previewImage", widget: "image" }
 
   - name: "projects"
     label: "Projects"
