@@ -57,10 +57,6 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "news-page" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "News Image", name: "newsImage", widget: "image" }
-          - { label: "Date", name: "date", widget: "date" }
-          - { label: "Headline", name: "headline", widget: "string" }
-          - { label: "Body", name: "Body", widget: "text" }
 
       - name: "work page"
         label: "Work Page"
@@ -97,3 +93,14 @@ collections:
           - { label: "Alt Text", name: "altText", widget: "string", default: "project image alt" }
           - { label: "Caption", name: "caption", widget: "string", default: "project image caption" }
       - { label: "Pull Quote", name: "pullQuote", widget: "string" }
+
+  - name: "article"
+    label: "Articles"
+    folder: "src/pages/articles"
+    create: true
+    fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "article-page" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Headline", name: "headline", widget: "string" }
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "Body", name: "body", widget: "markdown" }
