@@ -121,6 +121,12 @@ collections:
           - { label: 'OG Image', name: 'ogImage', widget: 'image' }
           - { label: 'Twitter Image', name: 'twitterImage', widget: 'image' }
           - { label: 'Faivcon', name: 'favicon', widget: 'image' } 
+      
+      - name: "contact"
+        label: "Contact"
+        file: 'src/_data/contact.json'
+        description: 'General Site Settings'
+        fields: 
           - label: Address
             name: address 
             widget: object
