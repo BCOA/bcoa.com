@@ -6,7 +6,7 @@ export default ({ data }) => {
 	// const post = data.markdownRemark;
   // const fields = post.frontmatter;
   return (
-		<h1>new page</h1>
+		<h1>news page</h1>
 		// <div>
 		// 	<h1>{ fields.title }</h1>
 		// 	<div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
@@ -16,25 +16,25 @@ export default ({ data }) => {
   );
 };
 
-export const query = graphql`
-  query NewsPageQuery {
-    allMarkdownRemark {
-			edges {
-				node {
-					id
-					frontmatter {
-						templateKey
-						title
-						image
-						headline
-						date
-						body
-					}
-					fields {
-						slug
-					}
-				}
-			}
-    }
-  }
-`;
+// export const query = graphql`
+//   query NewsPageQuery {
+//     allMarkdownRemark {
+// 			edges {
+// 				node {
+// 					id
+// 					frontmatter {
+// 						templateKey
+// 						title
+// 						image
+// 						headline
+// 						date
+// 						body
+// 					}
+// 					fields {
+// 						slug
+// 					}
+// 				}
+// 			}
+//     }
+//   }
+// `;
