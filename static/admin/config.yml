@@ -101,6 +101,6 @@ collections:
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "article-page" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Headline", name: "headline", widget: "string" }
+      - { label: "Headline", name: "name", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
       - { label: "Body", name: "body", widget: "markdown" }
