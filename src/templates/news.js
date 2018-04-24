@@ -16,25 +16,25 @@ export default ({ data }) => {
   );
 };
 
-// export const query = graphql`
-//   query NewsPageQuery {
-//     allMarkdownRemark {
-// 			edges {
-// 				node {
-// 					id
-// 					frontmatter {
-// 						templateKey
-// 						title
-// 						image
-// 						headline
-// 						date
-// 						body
-// 					}
-// 					fields {
-// 						slug
-// 					}
-// 				}
-// 			}
-//     }
-//   }
-// `;
+export const query = graphql`
+  query NewsPageQuery {
+    allMarkdownRemark {
+			edges {
+				node {
+					id
+					frontmatter {
+						templateKey
+						title
+						image
+						headline
+						date
+						body
+					}
+					fields {
+						slug
+					}
+				}
+			}
+    }
+  }
+`;
