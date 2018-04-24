@@ -94,13 +94,13 @@ collections:
           - { label: "Caption", name: "caption", widget: "string", default: "project image caption" }
       - { label: "Pull Quote", name: "pullQuote", widget: "string" }
 
-  - name: "article"
+  - name: "articles"
     label: "Articles"
     folder: "src/pages/articles"
     create: true
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "article-page" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Headline", name: "headline", widget: "string" }
+      - { label: "Headline", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
       - { label: "Body", name: "body", widget: "markdown" }
