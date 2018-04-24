@@ -17,18 +17,24 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query NewsPageQuery($slug: String!) {
-    allMarkdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      html
-      frontmatter {
-				templateKey
-				title
-				image
-				headline
-				date
-				body
-      }
+  query NewsPageQuery {
+    allMarkdownRemark {
+			edges {
+				node {
+					id
+					frontmatter {
+						templateKey
+						title
+						image
+						headline
+						date
+						body
+					}
+					fields {
+						slug
+					}
+				}
+			}
     }
   }
 `;
