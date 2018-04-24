@@ -40,3 +40,5 @@ export const query = graphql`
     }
   }
 `;
+
+// TODO: query for title of work/index(this js file ^^) page from index.js

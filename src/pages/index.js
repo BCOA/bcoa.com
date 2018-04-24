@@ -5,7 +5,7 @@ import "./index.scss";
 export default ({ data }) => (
   <div>
     <h1>Links</h1>
-    <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+    {/* <h4>{data.allMarkdownRemark.totalCount} Posts</h4> */}
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
         <Link

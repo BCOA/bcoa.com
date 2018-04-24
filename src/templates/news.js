@@ -4,37 +4,50 @@ import Image from "../components/Image";
 
 export default ({ data }) => {
 	// const post = data.markdownRemark;
-  // const fields = post.frontmatter;
+	// const fields = post.frontmatter;
+	console.log(data);
   return (
-		<h1>news page</h1>
-		// <div>
-		// 	<h1>{ fields.title }</h1>
-		// 	<div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-		// 	<img src={fields.image} />
-		// 	<h4>{ fields.headline }</h4>
-		// </div>
+		<div>
+			<h1>{data.news.edges[0].node.frontmatter.title}</h1>
+			{ data.articles.edges.map(({ node }, i) => (
+				<h1 key={i}>{node.frontmatter.title}</h1>
+			))}
+		</div>
   );
 };
 
 export const query = graphql`
   query NewsPageQuery {
-    allMarkdownRemark {
+		articles: allMarkdownRemark(filter: { frontmatter: { templateKey: { regex: "/article-page/" } } } ) {
 			edges {
 				node {
 					id
+					html
 					frontmatter {
 						templateKey
 						title
 						image
-						headline
 						date
-						body
 					}
 					fields {
 						slug
 					}
 				}
 			}
-    }
+		}
+		
+		news: allMarkdownRemark(filter: { frontmatter: { templateKey: { regex: "/news-page/" } } } ) {
+			edges {
+				node {
+					id
+					frontmatter {
+						title
+					}
+				}
+			}
+		}
   }
 `;
+
+
+// we might not want to query all markdowns, but just look for the news page ^^
