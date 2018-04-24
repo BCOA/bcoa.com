@@ -128,4 +128,4 @@ collections:
           - { label: "Phone", name: "phone", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Instagram", name: "instagram", widget: "string" }
-          - { label: "Facebook", name: "instagram", widget: "string" }
+          - { label: "Facebook", name: "facebook", widget: "string" }
