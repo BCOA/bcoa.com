@@ -119,7 +119,7 @@ collections:
     files:
       - name: "general"
         label: "General"
-        file: 'src/_data/settings.json'
+        file: 'src/_data/settings/settings.json'
         description: 'General Site Settings'
         fields: 
           - { label: "Site Title", name: "siteTitle", widget: "string" }
@@ -130,7 +130,7 @@ collections:
       
       - name: "contact"
         label: "Contact"
-        file: 'src/_data/contact.json'
+        file: 'src/_data/contact/contact.json'
         description: 'Contact Information'
         fields: 
           - label: Address
