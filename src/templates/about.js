@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import Image from "../components/Image";
 
 const Member = ({ member }) => (
-  <div className={ member.principal ? "principal" : "" }>
+  <div className={member.principal ? "principal" : ""}>
     <img src={member.memberImage} />
     <h3>{member.memberName}</h3>
     <p>{member.jobTitle}</p>
@@ -25,51 +25,61 @@ const Award = ({ award }) => (
 export default ({ data }) => {
   const post = data.markdownRemark;
   const fields = post.frontmatter;
+  const principals = fields.studioMembers.filter(member => member.principal);
+  const studioMembers = fields.studioMembers.filter(
+    member => !member.principal
+  );
   return (
     <div>
-      <h1>{post.title}</h1>
+      <h1>{fields.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-      {fields.studioMembers && (
-        <ul>
-          {fields.studioMembers
-            .filter(member => member.principal)
-            .map((member, i) => (
+      {principals && (
+        <div>
+          <h2>Principals</h2>
+          <ul>
+            {principals.map((member, i) => (
               <li key={`principalMember-${i}`}>
                 <Member member={member} />
               </li>
             ))}
-        </ul>
+          </ul>
+        </div>
       )}
-      {fields.studioMembers && (
-        <ul>
-          {fields.studioMembers
-            .filter(member => !member.principal)
-            .map((member, i) => (
+      {studioMembers && (
+        <div>
+          <h2>Studio Members</h2>
+          <ul>
+            {studioMembers.map((member, i) => (
               <li key={`member-${i}`}>
                 <Member member={member} />
               </li>
             ))}
-        </ul>
+          </ul>
+        </div>
       )}
       {fields.publications && (
-        <ul>
+        <div>
           <h2>Publications</h2>
-          {fields.publications.map((publication, i) => (
-            <li key={`publication-${i}`}>
-              <h4>{publication.title}</h4>
-            </li>
-          ))}
-        </ul>
+          <ul>
+            {fields.publications.map((publication, i) => (
+              <li key={`publication-${i}`}>
+                <h4>{publication.title}</h4>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
       {fields.awards && (
-        <ul>
+        <div>
           <h2>Awards</h2>
-          {fields.awards.map((award, i) => (
-            <li key={`award-${i}`}>
-              <Award award={award} />
-            </li>
-          ))}
-        </ul>
+          <ul>
+            {fields.awards.map((award, i) => (
+              <li key={`award-${i}`}>
+                <Award award={award} />
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </div>
   );

@@ -3,24 +3,20 @@ import Link from "gatsby-link";
 import "./index.scss";
 
 export default ({ data }) => (
-  <div>
-    <h1>Links</h1>
-    {/* <h4>{data.allMarkdownRemark.totalCount} Posts</h4> */}
-    {data.allMarkdownRemark.edges.map(({ node }) => (
-      <div key={node.id}>
-        <Link
-          to={node.fields.slug}
-          css={{ textDecoration: `none`, color: `inherit` }}
-        >
-          <h3>
-            {node.frontmatter.title}{" "}
-            <span color="#BBB">— {node.frontmatter.date}</span>
-          </h3>
-        </Link>
-        <p>{node.excerpt}</p>
-      </div>
-    ))}
-  </div>
+  <ul>
+    <li>
+      <Link to="/work">Work</Link>
+    </li>
+    <li>
+      <Link to="/about">About</Link>
+    </li>
+    <li>
+      <Link to="/news">News</Link>
+    </li>
+    <li>
+      <Link to="/contact">Contact</Link>
+    </li>
+  </ul>
 );
 
 export const query = graphql`
@@ -43,7 +39,6 @@ export const query = graphql`
     }
   }
 `;
-
 
 /*
 steps for creating data should be...

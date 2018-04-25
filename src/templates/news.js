@@ -7,9 +7,15 @@ export default ({ data }) => {
   return (
     <div>
       <h1>{news.title}</h1>
-      {data.articles.edges.map(({ node }, i) => (
-        <h2 key={i}>{node.frontmatter.title}</h2>
-      ))}
+      <ul>
+        {data.articles.edges.map(({ node }, i) => (
+          <li key={i}>
+            <img src={node.frontmatter.image} alt="needs alt text" />
+            <h2>{node.frontmatter.title}</h2>
+            <div dangerouslySetInnerHTML={{ __html: node.html }} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
