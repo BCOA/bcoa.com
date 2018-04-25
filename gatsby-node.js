@@ -79,6 +79,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               slug: node.fields.slug
             }
           });
+        }  else if (node.frontmatter.templateKey === "featured-page") {
+          createPage({
+            path: node.fields.slug,
+            component: path.resolve("./src/templates/index.js"),
+            context: {
+              // Data passed to context is available in page queries as GraphQL variables.
+              slug: node.fields.slug
+            }
+          });
         } else {
           createPage({
             path: node.fields.slug,
