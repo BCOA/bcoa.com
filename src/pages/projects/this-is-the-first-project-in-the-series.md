@@ -2,13 +2,13 @@
 templateKey: project-page
 name: BC–OA First Project
 title: This is the first project in the series
+previewImage: /images/uploads/placeholder.jpg
 infoObject:
   - description: 'Wood, MDF'
     title: Source Materials
-heroImage: 
-  image: /images/uploads/placeholder.jpg
+heroImage:
   alt: this is the hero image alt text string
-previewImage: /images/uploads/placeholder.jpg
+  url: /images/uploads/placeholder.jpg
 projectImages:
   - altText: proj img alt
     caption: proj img caption
