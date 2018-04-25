@@ -55,7 +55,12 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - label: "Hero Image"
+            name: "heroImage" 
+            widget: "object"
+            fields:
+              - { label: "Image", name: "url", widget: "image" }
+              - { label: "Alt", name: "alt", widget: "string" }
           - { label: "Message", name: "message", widget: "text" }
       
       - name: "news page"

@@ -1,7 +1,6 @@
 ---
 templateKey: contact-page
 title: Contact
-heroImage: /images/uploads/placeholdermountains.png
 message: >-
   Raw denim subway tile skateboard, thundercats cliche before they sold out
   crucifix keffiyeh taxidermy aesthetic artisan mumblecore butcher offal
@@ -14,4 +13,3 @@ message: >-
   juice VHS authentic tote bag kale chips helvetica taxidermy artisan chartreuse
   tilde godard.
 ---
-

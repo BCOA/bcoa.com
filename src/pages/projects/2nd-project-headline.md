@@ -7,7 +7,6 @@ infoObject:
   - description: Project 2 Description
     title: Project 2
 heroImage: /images/uploads/placeholdermountains.png
-heroImageTwo: /images/uploads/placeholder.jpg
 projectImages:
   - altText: project 2 image 1 alt text
     caption: Project 2 Image 1 caption
