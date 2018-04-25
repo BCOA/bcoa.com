@@ -84,12 +84,11 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - label: Info Object
         name: infoObject
-        widget: object
+        widget: list
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "string" }
       - { label: "Hero Image", name: "heroImage", widget: "image" }
-      - { label: "Hero Image Two", name: "heroImageTwo", widget: "images" }
       - label: "Project Images"
         name: "projectImages"
         widget: "list"
