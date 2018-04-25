@@ -6,6 +6,7 @@ module.exports = {
     "gatsby-link",
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
+    "gatsby-transformer-json",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -18,6 +19,20 @@ module.exports = {
       options: {
         name: `projects`,
         path: `${__dirname}/src/pages/projects/`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `contact`,
+        path: `${__dirname}/src/_data/contact`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `settings`,
+        path: `${__dirname}/src/_data/settings`
       }
     },
     {

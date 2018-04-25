@@ -125,7 +125,7 @@ collections:
       - name: "contact"
         label: "Contact"
         file: 'src/_data/contact.json'
-        description: 'General Site Settings'
+        description: 'Contact Information'
         fields: 
           - label: Address
             name: address 
