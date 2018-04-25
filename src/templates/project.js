@@ -6,7 +6,7 @@ export default ({ data }) => {
   const fields = post.frontmatter;
   return (
     <div>
-      <img src={fields.heroImage} alt="" />
+      <img src={fields.heroImage.image} alt={fields.heroImage.alt} />
       <h3>{fields.name}</h3>
       <h1>{fields.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -16,13 +16,14 @@ export default ({ data }) => {
           <dd>{fields.infoObject.description}</dd>
         </dl>
       )}
-      {fields.projectImages && fields.projectImages.map((image, i) => (
-        <div key={i}>
-          {/* <img src={image.imageURL} alt={image.altText}/> */}
-          <Image image={image}/>
-          {image.caption && <p>{image.caption}</p>}
-        </div>
-      ))}
+      {fields.projectImages &&
+        fields.projectImages.map((image, i) => (
+          <div key={i}>
+            {/* <img src={image.imageURL} alt={image.altText}/> */}
+            <Image image={image} />
+            {image.caption && <p>{image.caption}</p>}
+          </div>
+        ))}
       <blockquote>{fields.pullQuote}</blockquote>
     </div>
   );
@@ -40,7 +41,10 @@ export const query = graphql`
           title
           description
         }
-        heroImage
+        heroImage {
+          image
+          alt
+        }
         projectImages {
           imageURL
           colWidth
