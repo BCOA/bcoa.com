@@ -6,7 +6,7 @@ export default ({ data }) => {
   const fields = post.frontmatter;
   return (
     <div>
-      <img src={fields.heroImage.image} alt={fields.heroImage.alt} />
+      <img src={fields.heroImage.url} alt={fields.heroImage.alt} />
       <h3>{fields.name}</h3>
       <h1>{fields.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -42,7 +42,7 @@ export const query = graphql`
           description
         }
         heroImage {
-          image
+          url
           alt
         }
         projectImages {

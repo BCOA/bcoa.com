@@ -8,7 +8,7 @@ export default ({ data }) => {
   const contact = data.contact;
   return (
     <div>
-      <img src={pageFields.heroImage.image} alt={pageFields.heroImage.alt} />
+      <img src={pageFields.heroImage.url} alt={pageFields.heroImage.alt} />
       <h1>{pageFields.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: page.html }} />
       <p>{pageFields.message}</p>
@@ -34,7 +34,7 @@ export const query = graphql`
         title
         message
         heroImage {
-          image
+          url
           alt
         }
       }

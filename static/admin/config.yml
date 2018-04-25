@@ -70,8 +70,8 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "news-page" }
           - { label: "Title", name: "title", widget: "string" }
 
-      - name: "work page"
-        label: "Work Page"
+      - name: "index page"
+        label: "Index Page"
         file: "src/pages/work.md"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page" }
@@ -79,7 +79,7 @@ collections:
 
   - name: "projects"
     label: "Projects"
-    folder: "src/pages/projects"
+    folder: "src/pages/index"
     create: true
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page" }
