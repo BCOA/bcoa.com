@@ -41,7 +41,7 @@ awards:
   - awardTitle: 3rd Award
     date: '2018-03-01'
     url: test.com
-collaborator:
+collaborators:
   - jobTitle: Web Developer
     name: Josh Dobson
     url: 'http://joshuarule.com'

@@ -26,7 +26,13 @@ const Collaborator = ({ collaborator }) => (
   <div>
     <h3>{collaborator.name}</h3>
     <p>{collaborator.jobTitle}</p>
-    <a href={collaborator.url}>{collaborator.url}</a>
+    <a href={collaborator.url}>
+      {
+        collaborator.url
+          .replace(/^(?:https?:\/\/)?(?:www\.)?/i, "")
+          .split("/")[0]
+      }
+    </a>
   </div>
 );
 
@@ -53,7 +59,7 @@ export default ({ data }) => {
           </ul>
         </div>
       )}
-      {studioMembers && (
+      {!!studioMembers.length && (
         <div>
           <h2>Studio Members</h2>
           <ul>
@@ -128,6 +134,11 @@ export const query = graphql`
           awardTitle
           orgName
           date
+          url
+        }
+        collaborators {
+          name
+          jobTitle
           url
         }
       }

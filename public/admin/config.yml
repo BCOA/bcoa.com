@@ -41,8 +41,8 @@ collections:
               - { label: "Organization Name", name: "orgName", widget: "string" }
               - { label: "Date", name: "date", widget: "date" }
               - { label: "URL", name: "url", widget: "string" }
-          - label: Collaborator
-            name: collaborator
+          - label: Collaborators
+            name: collaborators
             widget: list
             fields:
               - { label: "Name", name: "name", widget: "string" }
