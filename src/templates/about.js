@@ -22,6 +22,14 @@ const Award = ({ award }) => (
   </div>
 );
 
+const Collaborator = ({ collaborator }) => (
+  <div>
+    <h3>{collaborator.name}</h3>
+    <p>{collaborator.jobTitle}</p>
+    <a href={collaborator.url}>{collaborator.url}</a>
+  </div>
+);
+
 export default ({ data }) => {
   const post = data.markdownRemark;
   const fields = post.frontmatter;
@@ -76,6 +84,18 @@ export default ({ data }) => {
             {fields.awards.map((award, i) => (
               <li key={`award-${i}`}>
                 <Award award={award} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {fields.collaborators && (
+        <div>
+          <h2>Collaborators</h2>
+          <ul>
+            {fields.collaborators.map((collaborator, i) => (
+              <li key={`award-${i}`}>
+                <Collaborator collaborator={collaborator} />
               </li>
             ))}
           </ul>

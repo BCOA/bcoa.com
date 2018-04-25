@@ -4,8 +4,8 @@ name: Second Example Project
 title: 2nd project headline
 previewImage: /images/uploads/placeholdermountains.png
 infoObject:
-  description: Project 2 Description
-  title: Project 2
+  - description: Project 2 Description
+    title: Project 2
 heroImage: /images/uploads/placeholdermountains.png
 heroImageTwo: /images/uploads/placeholder.jpg
 projectImages:
@@ -19,4 +19,5 @@ projectImages:
     offsetWidth: '5'
 pullQuote: Project 2 pull quote
 ---
+
 Adding another project so that we can see/use the ability to pull multiple projects...
