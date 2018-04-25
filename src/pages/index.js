@@ -2,22 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import "./index.scss";
 
-export default ({ data }) => (
-  <ul>
-    <li>
-      <Link to="/work">Work</Link>
-    </li>
-    <li>
-      <Link to="/about">About</Link>
-    </li>
-    <li>
-      <Link to="/news">News</Link>
-    </li>
-    <li>
-      <Link to="/contact">Contact</Link>
-    </li>
-  </ul>
-);
+export default ({ data }) => <h1>Featured page</h1>;
 
 export const query = graphql`
   query IndexQuery {
