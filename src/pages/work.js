@@ -6,7 +6,6 @@ export default ({ data }) => {
   const projects = edges.filter(
     edge => edge.node.frontmatter.templateKey === "project-page"
   );
-  console.log(data, projects);
   return (
     <ul>
       {projects &&
