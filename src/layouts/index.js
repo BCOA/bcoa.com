@@ -26,7 +26,9 @@ const TemplateWrapper = ({ children, data }) => {
           </ul>
         </nav>
       </header>
-      <div>{children()}</div>
+      <div style={{ maxWidth: "1540px", padding: "1rem", margin: "0 auto" }}>
+        {children()}
+      </div>
       <footer style={{ background: "grey", padding: "1rem" }}>
         Footer
         <div>
