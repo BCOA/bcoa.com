@@ -98,7 +98,7 @@ collections:
           
   - name: "projects"
     label: "Projects"
-    folder: "src/pages/index"
+    folder: "src/pages/projects"
     create: true
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page" }
