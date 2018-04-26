@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Image from "../components/Image";
 
 export default ({ data }) => {
@@ -6,8 +6,8 @@ export default ({ data }) => {
   const fields = post.frontmatter;
   return (
     <div>
-      <img src={fields.heroImage.url} alt={fields.heroImage.alt} />
       <h3>{fields.name}</h3>
+      <img src={fields.heroImage.url} alt={fields.heroImage.alt} />
       <h1>{fields.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       {fields.infoObject && (
