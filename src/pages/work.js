@@ -3,20 +3,26 @@ import Link from "gatsby-link";
 
 export default ({ data }) => {
   const edges = data.allMarkdownRemark.edges;
-  const projects = edges.filter(edge => edge.node.frontmatter.templateKey === "project-page");
-	console.log(data, projects);
+  const projects = edges.filter(
+    edge => edge.node.frontmatter.templateKey === "project-page"
+  );
+  console.log(data, projects);
   return (
     <ul>
-      { projects && projects.map(({ node:project }, i) => (
-        <li key={i}>
-          <article>
-            <Link to={ project.fields.slug } >
-              <img src={ project.frontmatter.previewImage } />
-              <h1>{ project.frontmatter.title }</h1>
-            </Link>
-          </article>
-        </li>
-      ))}
+      {projects &&
+        projects.map(({ node: project }, i) => (
+          <li key={i}>
+            <article>
+              <Link to={project.fields.slug}>
+                <img
+                  src={project.frontmatter.previewImage.url}
+                  alt={project.frontmatter.previewImage.alt}
+                />
+                <h1>{project.frontmatter.title}</h1>
+              </Link>
+            </article>
+          </li>
+        ))}
     </ul>
   );
 };
@@ -28,9 +34,12 @@ export const query = graphql`
         node {
           id
           frontmatter {
-						templateKey
-						title
-						previewImage
+            templateKey
+            title
+            previewImage {
+              url
+              alt
+            }
           }
           fields {
             slug

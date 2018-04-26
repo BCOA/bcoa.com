@@ -1,7 +1,6 @@
 import React from "react";
 
-export default ({image}) => {
-	return(
-		<img src={image.imageURL} alt={image.altText} />
-	);
+export default ({ image }) => {
+  console.log(image);
+  return <img src={image.image} alt={image.altText} />;
 };

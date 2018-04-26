@@ -46,10 +46,10 @@ export const query = graphql`
           alt
         }
         projectImages {
-          imageURL
+          image
           colWidth
           offsetWidth
-          altText
+          alt
           caption
         }
         pullQuote

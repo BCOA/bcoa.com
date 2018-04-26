@@ -4,10 +4,10 @@ import Image from "../components/Image";
 
 const Member = ({ member }) => (
   <div className={member.principal ? "principal" : ""}>
-    <img src={member.memberImage} />
-    <h3>{member.memberName}</h3>
+    <img src={member.image.url} alt={member.image.alt} />
+    <h3>{member.name}</h3>
     <p>{member.jobTitle}</p>
-    <p>{member.memberDescription}</p>
+    <p>{member.description}</p>
   </div>
 );
 
@@ -119,10 +119,13 @@ export const query = graphql`
       frontmatter {
         title
         studioMembers {
-          memberName
-          memberImage
+          name
+          image {
+            url
+            alt
+          }
           jobTitle
-          memberDescription
+          description
           principal
         }
         publications {
@@ -131,7 +134,7 @@ export const query = graphql`
           url
         }
         awards {
-          awardTitle
+          title
           orgName
           date
           url

@@ -10,7 +10,10 @@ export default ({ data }) => {
       <ul>
         {data.articles.edges.map(({ node }, i) => (
           <li key={i}>
-            <img src={node.frontmatter.image} alt="needs alt text" />
+            <img
+              src={node.frontmatter.image.url}
+              alt={node.frontmatter.image.alt}
+            />
             <h2>{node.frontmatter.title}</h2>
             <div dangerouslySetInnerHTML={{ __html: node.html }} />
           </li>
@@ -32,7 +35,10 @@ export const query = graphql`
           frontmatter {
             templateKey
             title
-            image
+            image {
+              url
+              alt
+            }
             date
           }
           fields {

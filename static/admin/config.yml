@@ -21,11 +21,16 @@ collections:
             name: studioMembers
             widget: list
             fields:
-              - { label: "Member Name", name: "memberName", widget: "string" }
-              - { label: "Member Image", name: "memberImage", widget: "image" }
-              - { label: "Job Title", name: "jobTitle", widget: "string" }
-              - { label: "Member Description", name: "memberDescription", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
               - { label: "Principal", name: "principal", widget: "boolean" }
+              - label: Image
+                name: image
+                widget: object
+                fields:
+                  - { label: "Image", name: "url", widget: "image" }
+                  - { label: "Alt", name: "alt", widget: "string" }
+              - { label: "Job Title", name: "jobTitle", widget: "string" }
+              - { label: "Member Description", name: "description", widget: "text" }
           - label: Publications
             name: publications
             widget: list
@@ -37,7 +42,7 @@ collections:
             name: awards
             widget: list
             fields:
-              - { label: "Award Title", name: "awardTitle", widget: "string" }
+              - { label: "Award Title", name: "title", widget: "string" }
               - { label: "Organization Name", name: "orgName", widget: "string" }
               - { label: "Date", name: "date", widget: "date" }
               - { label: "URL", name: "url", widget: "string" }
@@ -87,8 +92,8 @@ collections:
             name: "carouselImages"
             widget: "list"
             fields:
-              - { label: "Image URL", name: "imageURL", widget: "image", default: "/images/uploads/placeholder.jpg" }
-              - { label: "Alt Text", name: "altText", widget: "string", default: "project image alt" }
+              - { label: "Image", name: "url", widget: "image", default: "/images/uploads/placeholder.jpg" }
+              - { label: "Alt Text", name: "alt", widget: "string", default: "project image alt" }
               - { label: "Caption", name: "caption", widget: "string", default: "project image caption" }
           
   - name: "projects"
@@ -99,7 +104,13 @@ collections:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page" }
       - { label: "Project Name", name: "name", widget: "string" }
       - { label: "Headline", name: "title", widget: "string" }
-      - { label: "Preview Image", name: "previewImage", widget: "image" }
+      - { label: "Featured", name: "featured", widget: "boolean" }
+      - label: Preview Image
+        name: previewImage
+        widget: object
+        fields:
+          - { label: "Image", name: "url", widget: "image" }
+          - { label: "Alt", name: "alt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - label: Info Object
         name: infoObject
@@ -118,13 +129,12 @@ collections:
         name: "projectImages"
         widget: "list"
         fields:
-          - { label: "Image URL", name: "imageURL", widget: "image", default: "/images/uploads/placeholder.jpg" }
+          - { label: "Image", name: "image", widget: "image", default: "/images/uploads/placeholder.jpg" }
           - { label: "Column Width", name: "colWidth", widget: "select", options: ["1", "2", "3", "4", "5", "6"], default: "3" }
           - { label: "Offset width", name: "offsetWidth", widget: "select", options: ["0", "1", "2", "3", "4", "5", "6"], default: "0" }
-          - { label: "Alt Text", name: "altText", widget: "string", default: "project image alt" }
+          - { label: "Alt Text", name: "alt", widget: "string", default: "project image alt" }
           - { label: "Caption", name: "caption", widget: "string", default: "project image caption" }
       - { label: "Pull Quote", name: "pullQuote", widget: "string" }
-      - { label: "Featured", name: "featured", widget: "boolean" }
 
   - name: "articles"
     label: "Articles"
@@ -132,8 +142,13 @@ collections:
     create: true
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "article-page" }
-      - { label: "Image", name: "image", widget: "image" }
       - { label: "Headline", name: "title", widget: "string" }
+      - label: Image
+        name: image
+        widget: object
+        fields:
+          - { label: "Image", name: "url", widget: "image" }
+          - { label: "Alt", name: "alt", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
       - { label: "Body", name: "body", widget: "markdown" }
     
