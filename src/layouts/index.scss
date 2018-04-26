@@ -78,6 +78,15 @@
   unicode-range: U+000D-FB04;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 html,
 body {
   height: 100%;
