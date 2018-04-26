@@ -2,14 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
+import "./index.scss";
 
 const TemplateWrapper = ({ children, data }) => {
   return (
     <div>
       <Helmet title="Home | BC–OA" />
-      <header style={{ background: "lightgrey", display: "flex" }}>
-        <p style={{ flex: "1" }}>Breitner Ciaccia–Office of Architecture</p>
-        <nav style={{ paddingRight: "2rem" }}>
+      <header>
+        <p style={{ flex: "1" }}>
+          <a href="/">Breitner Ciaccia–Office of Architecture</a>
+        </p>
+        <nav>
           <ul>
             <li>
               <Link to="/work">Work</Link>
@@ -26,11 +29,8 @@ const TemplateWrapper = ({ children, data }) => {
           </ul>
         </nav>
       </header>
-      <div style={{ maxWidth: "1540px", padding: "1rem", margin: "0 auto" }}>
-        {children()}
-      </div>
-      <footer style={{ background: "grey", padding: "1rem" }}>
-        Footer
+      <main>{children()}</main>
+      <footer>
         <div>
           <a href={`mailto:${data.contactJson.email}`}>
             {data.contactJson.email}

@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "gatsby-link";
-import "./index.scss";
 
 export default ({ data }) => <h1>Featured page</h1>;
 

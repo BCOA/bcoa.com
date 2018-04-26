@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Image from "../components/Image";
 
 export default ({ data }) => {
@@ -11,15 +11,21 @@ export default ({ data }) => {
       <h1>{fields.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       {fields.infoObject && (
-        <dl>
-          <dt>{fields.infoObject.title}</dt>
-          <dd>{fields.infoObject.description}</dd>
-        </dl>
+        <div>
+          <h2>Project Info</h2>
+          <dl>
+            {fields.infoObject.map((item, i) => (
+              <div key={`infoObject-${i}`}>
+                <dt>{item.title}</dt>
+                <dd>{item.description}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
       )}
       {fields.projectImages &&
         fields.projectImages.map((image, i) => (
           <div key={i}>
-            {/* <img src={image.imageURL} alt={image.altText}/> */}
             <Image image={image} />
             {image.caption && <p>{image.caption}</p>}
           </div>

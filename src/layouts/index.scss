@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "MessinaSansCondensedWeb";
+  src: url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.woff")
+      format("woff"); /* Pretty Modern Browsers */
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB04;
+}
+
+@font-face {
+  font-family: "MessinaSansCondensedWeb";
+  src: url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.woff")
+      format("woff"); /* Pretty Modern Browsers */
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB04;
+}
+
+@font-face {
+  font-family: "MessinaSansBoldWeb";
+  src: url("../../static/assets/fonts/MessinaSansWeb-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../../static/assets/fonts/MessinaSansWeb-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../static/assets/fonts/MessinaSansWeb-Bold.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../static/assets/fonts/MessinaSansWeb-Bold.woff") format("woff"); /* Pretty Modern Browsers */
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB04;
+}
+
+@font-face {
+  font-family: "MessinaSansSemiBoldWeb";
+  src: url("../../static/assets/fonts/MessinaSansWeb-SemiBold.eot"); /* IE9 Compat Modes */
+  src: url("../../static/assets/fonts/MessinaSansWeb-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../static/assets/fonts/MessinaSansWeb-SemiBold.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../static/assets/fonts/MessinaSansWeb-SemiBold.woff")
+      format("woff"); /* Pretty Modern Browsers */
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB04;
+}
+
+@font-face {
+  font-family: "MessinaSansBookWeb";
+  src: url("../../static/assets/fonts/MessinaSansWeb-Book.eot"); /* IE9 Compat Modes */
+  src: url("../../static/assets/fonts/MessinaSansWeb-Book.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../static/assets/fonts/MessinaSansWeb-Book.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../static/assets/fonts/MessinaSansWeb-Book.woff") format("woff"); /* Pretty Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-FB04;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "MessinaSansBookWeb";
+  line-height: 1.1;
+  -moz-osx-font-smoothing: grayscale; /* optimize font rendering */
+  -webkit-font-smoothing: antialiased; /* apply font anti-aliasing */
+  text-rendering: optimizeLegibility; /* emphasizes in legibility over rendering speed */
+  -moz-font-feature-settings: "kern" 1; /* turn on kerning, highly recomened */
+  -ms-font-feature-settings: "kern" 1; /* turn on kerning, highly recomened */
+  -o-font-feature-settings: "kern" 1; /* turn on kerning, highly recomened */
+  -webkit-font-feature-settings: "kern" 1; /* turn on kerning, highly recomened */
+  font-feature-settings: "kern" 1; /* turn on kerning, highly recomened */
+  font-kerning: normal; /* turn on kerning, highly recomened */
+
+  font-feature-settings: "liga" on; /* ligatures: on or off */
+  font-feature-settings: "dlig" off; /* discretionary-ligatures: on or off */
+  font-feature-settings: "onum" off; /* old-style-figures: on or off */
+  font-feature-settings: "lnum" off; /* lining-figures: on or off */
+  font-feature-settings: "ss01" off; /* alternate glyphs: on or off */
+}
+
+#___gatsby {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+main {
+  max-width: 1540px;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  flex: 1;
+}
+
+header {
+  flex-shrink: 0;
+  background: lightgrey;
+  display: flex;
+  padding: 0 1rem;
+}
+
+footer {
+  background: lightgrey;
+  padding: 1rem;
+}
+
+// base
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: black;
+
+  &:visited {
+    color: initial;
+  }
+}
+
+blockquote {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0;
+
+  &:before {
+    content: '"';
+  }
+  &:after {
+    content: '"';
+  }
+}

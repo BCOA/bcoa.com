@@ -13,7 +13,7 @@ const Member = ({ member }) => (
 
 const Award = ({ award }) => (
   <div>
-    <h4>{award.awardTitle}</h4>
+    <h3>{award.title}</h3>
     <p>{award.orgName}</p>
     <date>{award.date}</date>
     <a href={award.url} target="_blank">
