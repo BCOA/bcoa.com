@@ -2,6 +2,7 @@
 templateKey: project-page
 name: BC–OA First Project
 title: This is the first project in the series
+featured: true
 previewImage:
   alt: this is the hero image alt text string
   url: /images/uploads/placeholdermountains.png
