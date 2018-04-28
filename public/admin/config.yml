@@ -95,6 +95,13 @@ collections:
               - { label: "Image", name: "url", widget: "image", default: "/images/uploads/placeholder.jpg" }
               - { label: "Alt Text", name: "alt", widget: "string", default: "project image alt" }
               - { label: "Caption", name: "caption", widget: "string", default: "project image caption" }
+
+      - name: "work"
+        label: "Work"
+        file: "src/pages/work.md"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page" }
+          - { label: "Title", name: "title", widget: "string" }
           
   - name: "projects"
     label: "Projects"
