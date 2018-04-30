@@ -2,10 +2,6 @@
 	width: 100%;
 } */
 
-img {
+.nc-imageWidget-image {
   max-width: 100%;
-}
-
-body {
-  background: green;
 }
