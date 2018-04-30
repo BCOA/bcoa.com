@@ -7,8 +7,11 @@
   <title>Content Manager</title>
 
   <!-- Include the styles for the Netlify CMS UI, after your own styles -->
+  <!-- <link rel="stylesheet" href="./cms.css" /> -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <link rel="stylesheet" href="./cms.css" />
+  <script>
+    CMS.registerPreviewStyle("/cms.css");
+  </script>
 
 </head>
 
