@@ -1,7 +1,5 @@
-/* node_modules/netlify-cms/dist/cms.css {
-	width: 100%;
-} */
-
-.nc-imageWidget-image {
-  max-width: 100%;
+node_modules/netlify-cms/dist/cms.css {
+  .nc-imageWidget-image {
+    max-width: 100%;
+  }
 }
