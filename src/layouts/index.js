@@ -41,7 +41,7 @@ const TemplateWrapper = ({ children, data }) => {
         </div>
         <div style={{ flex: 1, padding: "0 1rem" }}>
           <b>Contact</b>
-          <address>
+          {/* <address>
             {data.contactJson.address.street}
             <br />
             {data.contactJson.address.street2}
@@ -49,30 +49,30 @@ const TemplateWrapper = ({ children, data }) => {
             {data.contactJson.address.city}, {data.contactJson.address.state}{" "}
             {data.contactJson.address.zip}
             <br />
-          </address>
+          </address> */}
           –
           <div>
-            <a href={`mailto:${data.contactJson.email}`}>
+            {/* <a href={`mailto:${data.contactJson.email}`}>
               {data.contactJson.email}
-            </a>
+            </a> */}
           </div>
           <div>
-            <a href={`tel:${data.contactJson.phone}`}>
+            {/* <a href={`tel:${data.contactJson.phone}`}>
               {data.contactJson.phone}
-            </a>
+            </a> */}
           </div>
         </div>
         <div style={{ flex: 1, padding: "0 1rem" }}>
           <b>Social</b>
           <div>
-            <a href={`http://instagram.com/${data.contactJson.instagram}`}>
+            {/* <a href={`http://instagram.com/${data.contactJson.instagram}`}>
               Instagram
-            </a>
+            </a> */}
           </div>
           <div>
-            <a href={`http://facebook.com/${data.contactJson.facebook}`}>
+            {/* <a href={`http://facebook.com/${data.contactJson.facebook}`}>
               Facebook
-            </a>
+            </a> */}
           </div>
           <p>@ BC–OA {new Date().getFullYear()}</p>
         </div>
