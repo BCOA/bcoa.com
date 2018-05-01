@@ -6,3 +6,7 @@ img {
   outline: 1px solid red;
   max-width: 100% !important;
 }
+
+body {
+  background-color: pink;
+}
