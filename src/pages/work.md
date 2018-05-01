@@ -1,4 +1,5 @@
 ---
 templateKey: work-page
-title: Work
+title: Index
 ---
+
