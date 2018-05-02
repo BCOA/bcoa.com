@@ -1,10 +1,10 @@
 ---
 templateKey: article-page
-image: 
-  url: /images/uploads/placeholdermountains.png
-  alt: 'image alt text'
 title: New Branding / New Site!
-date: '2018-04-24'
+image:
+  alt: image alt text
+  url: /images/uploads/placeholdermountains.png
+date: '2018-05-02'
 ---
 
 Body of the article goes here.
