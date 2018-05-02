@@ -1,0 +1,16 @@
+// all resuable grid classes
+
+$gutter: 4.21%;
+
+@for $i from 2 through 12 {
+  .grid-#{$i}col {
+    display: grid;
+    grid-template-columns: repeat(#{$i}, 1fr);
+    grid-column-gap: $gutter;
+    grid-auto-columns: minmax(20px, 50px);
+
+    > * {
+      min-width: 0;
+    }
+  }
+}

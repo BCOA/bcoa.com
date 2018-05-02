@@ -2,40 +2,41 @@ import React from "react";
 import Link from "gatsby-link";
 
 export default ({ data }) => {
-  console.log(data);
   const edges = data.projects.edges;
   const projects = edges.filter(
     edge =>
       edge.node.frontmatter.templateKey === "project-page" &&
       edge.node.frontmatter.featured
   );
-  // console.log(projects);
+
   return (
     <div>
       <ul>
         {data.page.frontmatter.carouselImages.map((slide, i) => (
-          <li>
+          <li key={`slide-${i}`}>
             <img src={slide.url} alt={slide.alt} />
           </li>
         ))}
       </ul>
-      <h2>{data.page.frontmatter.title}</h2>
-      <ul>
-        {projects &&
-          projects.map(({ node: project }, i) => (
-            <li key={i}>
-              <article>
-                <Link to={project.fields.slug}>
-                  <img
-                    src={project.frontmatter.previewImage.url}
-                    alt={project.frontmatter.previewImage.alt}
-                  />
-                  <h1>{project.frontmatter.title}</h1>
-                </Link>
-              </article>
-            </li>
-          ))}
-      </ul>
+      <div className="container">
+        <h2>{data.page.frontmatter.title}</h2>
+        <ul>
+          {projects &&
+            projects.map(({ node: project }, i) => (
+              <li key={i}>
+                <article>
+                  <Link to={project.fields.slug}>
+                    <img
+                      src={project.frontmatter.previewImage.url}
+                      alt={project.frontmatter.previewImage.alt}
+                    />
+                    <h1>{project.frontmatter.title}</h1>
+                  </Link>
+                </article>
+              </li>
+            ))}
+        </ul>
+      </div>
     </div>
   );
 };

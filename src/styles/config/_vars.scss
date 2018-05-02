@@ -1,0 +1,27 @@
+//
+// Colors
+//
+
+:root {
+  // enter colors
+  --red: red;
+}
+
+//
+// Units
+//
+
+$unit: 4px;
+
+:root {
+  --unit: $unit;
+  @for $i from 1 through 50 {
+    --unit-#{$i}: $i * $unit;
+  }
+}
+
+//
+// breakpoints
+//
+
+// etc

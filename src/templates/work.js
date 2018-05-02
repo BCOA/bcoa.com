@@ -5,9 +5,9 @@ export default ({ data }) => {
   const page = data.page.frontmatter;
   const projects = data.projects.edges;
   return (
-    <div>
+    <div className="container">
       <h1>{page.title}</h1>
-      <ul>
+      <ul className="grid-4col">
         {projects &&
           projects.map(({ node: project }, i) => (
             <li key={i}>
@@ -48,9 +48,7 @@ export const query = graphql`
         }
       }
     }
-    page: markdownRemark(
-      fields: { slug: { eq: $slug } } 
-    ) {
+    page: markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       frontmatter {
         title
