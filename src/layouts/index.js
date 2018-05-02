@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 import "../styles/app.scss";
 
 const TemplateWrapper = ({ children, data }) => {
+  console.log(data);
   return (
     <div>
       <Helmet title="Home | BC–OA" />

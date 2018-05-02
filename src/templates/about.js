@@ -24,15 +24,19 @@ const Award = ({ award }) => (
 
 const Collaborator = ({ collaborator }) => (
   <div>
-    <h3>{collaborator.name}</h3>
-    <p>{collaborator.jobTitle}</p>
-    <a href={collaborator.url}>
-      {
-        collaborator.url
-          .replace(/^(?:https?:\/\/)?(?:www\.)?/i, "")
-          .split("/")[0]
-      }
-    </a>
+    {collaborator.url ? (
+      <a href={collaborator.url}>
+        <h3>{collaborator.name}</h3>
+        <p>{collaborator.jobTitle}</p>
+        {collaborator.description && <p>{collaborator.description}</p>}
+      </a>
+    ) : (
+      <div>
+        <h3>{collaborator.name}</h3>
+        <p>{collaborator.jobTitle}</p>
+        {collaborator.description && <p>{collaborator.description}</p>}
+      </div>
+    )}
   </div>
 );
 
@@ -142,6 +146,7 @@ export const query = graphql`
         collaborators {
           name
           jobTitle
+          description
           url
         }
       }
