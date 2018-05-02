@@ -55,9 +55,12 @@ awards:
     title: 3rd Award
     url: test.com
 collaborators:
-  - jobTitle: Web Developer
+  - description: 'He worked with us on the website :)'
+    jobTitle: Web Developer
     name: Josh Dobson
     url: 'http://joshuarule.com'
+  - jobTitle: Masonry
+    name: Another Company
 ---
 
 Pabst hell of tacos, mustache cred gastropub trust fund gochujang fanny pack. Poutine church-key hell of sustainable, pop-up green juice mumblecore kinfolk adaptogen gochujang. Hexagon tattooed brooklyn godard actually sartorial try-hard PBR&B truffaut. Quinoa retro selfies, meh hot chicken microdosing iPhone viral keffiyeh typewriter mlkshk.
