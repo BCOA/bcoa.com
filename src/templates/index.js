@@ -67,7 +67,7 @@ export const query = graphql`
               alt
             }
             title
-            date(formatString: "DD MMMM, YYYY")
+            date
             featured
           }
           fields {

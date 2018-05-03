@@ -82,6 +82,7 @@ export default ({ data }) => {
             {fields.publications.map((publication, i) => (
               <li key={`publication-${i}`}>
                 <h4>{publication.title}</h4>
+                <p>{publication.date}</p>
               </li>
             ))}
           </ul>
