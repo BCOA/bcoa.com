@@ -15,6 +15,7 @@ export default ({ data }) => {
               alt={node.frontmatter.image.alt}
             />
             <h2>{node.frontmatter.title}</h2>
+            <time>{ node.frontmatter.date }</time>
             <div dangerouslySetInnerHTML={{ __html: node.html }} />
           </li>
         ))}
