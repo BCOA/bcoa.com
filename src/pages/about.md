@@ -36,22 +36,23 @@ studioMembers:
     jobTitle: Peon
     name: Scott Mikawa
 publications:
-  - date: '2018-03-25'
+  - date: 5.1.2018
     title: First Publication 1
     url: 'http://www.google.com'
-  - date: '2018-04-10'
+  - date: 5.2.2018
     title: Second Publication 2
     url: 'http://www.google.com'
 awards:
-  - date: '2018-03-12'
+  - date: 04.30.2018
     orgName: Awesome Organization
     title: Award Title 1
     url: 'http://www.ikea.com'
-  - date: '2018-04-10'
+  - date: 05.01.2018
     orgName: The Best Organization Inc
     title: 'Award #2'
     url: google.com
-  - date: '2018-03-01'
+  - date: 05.02.2018
+    orgName: The Mediocre Organization
     title: 3rd Award
     url: test.com
 collaborators:
