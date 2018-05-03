@@ -24,4 +24,19 @@ $unit: 4px;
 // breakpoints
 //
 
+$bp-1-width: 768px;
+$bp-2-width: 1024px;
+
+@mixin bp-1 {
+  @media (min-width: #{$bp-1-width}) {
+    @content;
+  }
+}
+
+@mixin bp-2 {
+  @media (min-width: #{$bp-2-width}) {
+    @content;
+  }
+}
+
 // etc

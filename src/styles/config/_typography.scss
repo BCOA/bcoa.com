@@ -16,23 +16,6 @@
 }
 
 @font-face {
-  font-family: "MessinaSansCondensedWeb";
-  src: url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.eot"); /* IE9 Compat Modes */
-  src: url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */
-      url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("../../static/assets/fonts/MessinaSansCondensedWeb-Bold.woff")
-      format("woff"); /* Pretty Modern Browsers */
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+000D-FB04;
-}
-
-@font-face {
   font-family: "MessinaSansBoldWeb";
   src: url("../../static/assets/fonts/MessinaSansWeb-Bold.eot"); /* IE9 Compat Modes */
   src: url("../../static/assets/fonts/MessinaSansWeb-Bold.eot?#iefix")
@@ -76,4 +59,35 @@
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+000D-FB04;
+}
+
+$messina-bold: "MessinaSansBoldWeb", "helvetica neue", "sans-serif";
+$messina-semiBold: "MessinaSansSemiBoldWeb", "helvetica neue", "sans-serif";
+$messina-condensedBold: "MessinaSansCondensedWeb", "helvetica neue",
+  "sans-serif";
+$messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
+
+.f-navigation {
+  font-family: $messina-condensedBold;
+  font-size: 51px;
+  line-height: 56px;
+
+  @include bp-1 {
+    font-size: 94px;
+    line-height: 100px;
+  }
+
+  @include bp-2 {
+    font-size: 102px;
+    line-height: 112px;
+  }
+}
+
+.f-headline-a {
+}
+
+.f-headline-b {
+}
+
+.f-headline-c {
 }
