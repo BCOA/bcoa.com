@@ -11,12 +11,10 @@
 // Units
 //
 
-$unit: 4px;
-
 :root {
-  --unit: $unit;
-  @for $i from 1 through 50 {
-    --unit-#{$i}: $i * $unit;
+  --unit: 4px;
+  @for $i from 0 through 50 {
+    --unit-#{$i}: calc(var(--unit) * #{$i});
   }
 }
 

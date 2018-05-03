@@ -9,7 +9,7 @@ const TemplateWrapper = ({ children, data }) => {
   return (
     <div>
       <Helmet title="Home | BC–OA" />
-      <header>
+      <header className="header">
         <p style={{ flex: "1" }}>
           <a href="/">Breitner Ciaccia–Office of Architecture</a>
         </p>
