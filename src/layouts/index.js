@@ -13,7 +13,7 @@ const TemplateWrapper = ({ children, data }) => {
         <p style={{ flex: "1" }}>
           <a href="/">Breitner Ciaccia–Office of Architecture</a>
         </p>
-        <nav>
+        <nav> {/* className="f-navigation" */}
           <ul>
             <li>
               <Link to="/">Featured</Link>
@@ -35,35 +35,35 @@ const TemplateWrapper = ({ children, data }) => {
       </header>
       <main>{children()}</main>
       <footer>
-        <div style={{ flex: 4 }}>
+        <div className="f-footer-a" style={{ flex: 4 }}>
           <h2>
             Breitner<br />Ciaccia–<br />Office of<br />Architecture
           </h2>
         </div>
-        <div style={{ flex: 1, padding: "0 1rem" }}>
+        <div className="f-footer-b" style={{ flex: 1, padding: "0 1rem" }}>
           <b>Contact</b>
-          <address>
-            {data.contactJson.address.street}
+          <address className="f-footer-b">
+            { data.contactJson.address.street }
             <br />
-            {data.contactJson.address.street2}
+            { data.contactJson.address.street2 }
             <br />
-            {data.contactJson.address.city}, {data.contactJson.address.state}{" "}
-            {data.contactJson.address.zip}
+            { data.contactJson.address.city }, { data.contactJson.address.state }{" "}
+            { data.contactJson.address.zip }
             <br />
           </address>
           –
           <div>
-            <a href={`mailto:${data.contactJson.email}`}>
-              {data.contactJson.email}
+            <a href={`mailto:${ data.contactJson.email }`}>
+              { data.contactJson.email }
             </a>
           </div>
           <div>
-            <a href={`tel:${data.contactJson.phone}`}>
-              {data.contactJson.phone}
+            <a href={`tel:${ data.contactJson.phone }`}>
+              { data.contactJson.phone }
             </a>
           </div>
         </div>
-        <div style={{ flex: 1, padding: "0 1rem" }}>
+        <div className="f-footer-b" style={{ flex: 1, padding: "0 1rem" }}>
           <b>Social</b>
           <div>
             <a href={`http://instagram.com/${data.contactJson.instagram}`}>
@@ -105,3 +105,6 @@ TemplateWrapper.propTypes = {
 };
 
 export default TemplateWrapper;
+
+//finish font styles
+//bring content to project page

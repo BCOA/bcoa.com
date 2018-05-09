@@ -89,6 +89,7 @@ dd {
 
 a {
   color: black;
+  text-decoration: none;
 
   &:visited {
     color: initial;
@@ -106,4 +107,8 @@ blockquote {
   &:after {
     content: '"';
   }
+}
+
+address {
+  font-style: normal;
 }
