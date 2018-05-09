@@ -1,36 +1,48 @@
-import React from "react";
+import React, { Fragment } from "react";
+
 import Image from "../components/Image";
+import Hero from "../components/Hero";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   const fields = post.frontmatter;
   return (
     <div>
-      <h3>{fields.name}</h3>
-      <img src={fields.heroImage.url} alt={fields.heroImage.alt} />
-      <h1>{fields.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      {fields.infoObject && (
-        <div>
-          <h2>Project Info</h2>
-          <dl>
-            {fields.infoObject.map((item, i) => (
-              <div key={`infoObject-${i}`}>
-                <dt>{item.title}</dt>
-                <dd>{item.description}</dd>
-              </div>
-            ))}
-          </dl>
+      <div className="container">
+        <div className="project-name">
+          <h2 className='f-page-title'>{fields.name}</h2>
         </div>
-      )}
-      {fields.projectImages &&
-        fields.projectImages.map((image, i) => (
-          <div key={i}>
-            <Image image={image} />
-            {image.caption && <p>{image.caption}</p>}
+      </div>
+      <Hero image={fields.heroImage.url} alt={fields.heroImage.alt} />
+      <div className="container">
+        <h1 className='f-headline-b'>{fields.title}–</h1>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        {fields.infoObject && (
+          <div>
+            <dl className='marginBottom-10'>
+              {fields.infoObject.map((item, i) => (
+                <div key={`infoObject-${i}`} className='marginBottom-4'>
+                  <dt className="f-credit">{item.title}</dt>
+                  <dd className="f-caption">{item.description}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
-        ))}
-      <blockquote>{fields.pullQuote}</blockquote>
+        )}
+        {fields.projectImages &&
+          fields.projectImages.map((image, i) => (
+            <figure key={i} className="marginBottom-6">
+              <Image image={image} />
+              {image.caption &&
+                <Fragment>
+                  –
+                  <figcaption className='f-caption'>{image.caption}</figcaption>
+                </Fragment>
+              }
+            </figure>
+          ))}
+        <blockquote className="t-center f-headline-b marginVertical-13">{fields.pullQuote}</blockquote>
+      </div>
     </div>
   );
 };

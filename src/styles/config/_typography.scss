@@ -105,6 +105,7 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
   font-family: $messina-condensedBold;
   font-size:   32px;
   line-height: 28px;
+  text-transform: uppercase;
 
   @include bp-1 {
     font-size:   30px;
@@ -153,6 +154,7 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
   font-family: $messina-bold;
   font-size:   16px;
   line-height: 16px;
+  text-decoration: underline;
 
   @include bp-1 {
     font-size:   20px;
@@ -197,7 +199,7 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
   }
 }
 
-.f-copy-book {
+@mixin f-copy-book {
   font-family: $messina-book;
   font-size:   16px;
   line-height: 20px;
@@ -211,6 +213,10 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
     font-size:   20px;
     line-height: 24px;
   }
+}
+
+.f-copy-book {
+  @include f-copy-book;
 }
 
 .f-copy-bold {

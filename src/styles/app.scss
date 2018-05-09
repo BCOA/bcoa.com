@@ -3,8 +3,15 @@
 
 @import "./config/reset";
 @import "./config/vars";
-@import "./config/base";
 @import "./config/typography";
+@import "./config/base";
 @import "./config/grid";
 @import "./config/layout";
+@import "./config/helpers";
+
+// components
 @import "./components/header";
+@import "./components/hero";
+
+// pages
+@import "./pages/project";

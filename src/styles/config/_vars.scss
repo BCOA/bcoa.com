@@ -5,6 +5,7 @@
 :root {
   // enter colors
   --red: red;
+  --black: black;
 }
 
 //
@@ -16,6 +17,13 @@
   @for $i from 0 through 50 {
     --unit-#{$i}: calc(var(--unit) * #{$i});
   }
+}
+
+// Component values
+
+:root {
+  --header-height: var(--unit-10);
+  --project-title-height: var(--unit-24);
 }
 
 //
@@ -58,6 +66,10 @@ $propsAdj: "", "Vertical", "Horizontal", "Left", "Bottom", "Right", "Top";
         .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
           #{nth($props, $i)}: 0 var(--unit-#{$k});
         }
+      } @else if nth($propsAdj, $j) == '' {
+        .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
+          #{nth($props, $i)}: var(--unit-#{$k});
+        }
       } @else {
         .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
           #{nth($props, $i)}-#{uncapitalize(nth($propsAdj, $j))}: var(--unit-#{$k});
@@ -66,3 +78,5 @@ $propsAdj: "", "Vertical", "Horizontal", "Left", "Bottom", "Right", "Top";
     }
   }
 }
+
+

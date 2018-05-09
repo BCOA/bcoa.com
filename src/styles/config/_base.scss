@@ -16,8 +16,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: "MessinaSansBookWeb";
-  line-height: 1.1;
   -moz-osx-font-smoothing: grayscale; /* optimize font rendering */
   -webkit-font-smoothing: antialiased; /* apply font anti-aliasing */
   text-rendering: optimizeLegibility; /* emphasizes in legibility over rendering speed */
@@ -33,6 +31,8 @@ body {
   font-feature-settings: "onum" off; /* old-style-figures: on or off */
   font-feature-settings: "lnum" off; /* lining-figures: on or off */
   font-feature-settings: "ss01" off; /* alternate glyphs: on or off */
+
+  @include f-copy-book;
 }
 
 #___gatsby {
@@ -53,13 +53,6 @@ main {
   flex: 1;
 }
 
-header {
-  flex-shrink: 0;
-  background: lightgrey;
-  display: flex;
-  padding: 0 1rem;
-}
-
 footer {
   background: lightgrey;
   padding: 1rem;
@@ -69,8 +62,13 @@ footer {
 
 // base
 
+figure {
+  margin: 0;
+}
+
 img {
-  // width: 100%;
+  display: block;
+  width: 100%;
   max-width: 100%;
 }
 
