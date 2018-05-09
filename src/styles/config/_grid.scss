@@ -5,11 +5,8 @@ $gutter: 4.21%;
 @for $i from 2 through 12 {
   .grid-#{$i}col {
     display: grid;
-    grid-template-columns: repeat(#{$i}, 1fr);
+    grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
     grid-column-gap: $gutter;
 
-    > * {
-      min-width: 0;
-    }
   }
 }
