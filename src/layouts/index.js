@@ -10,8 +10,10 @@ const TemplateWrapper = ({ children, data }) => {
     <div>
       <Helmet title="Home | BC–OA" />
       <header className="header">
-        <a href="/">Breitner Ciaccia–Office of Architecture</a>
-        <nav className="hide"> {/* className="f-navigation" */}
+        <p style={{ flex: "1" }}>
+          <a href="/">Breitner Ciaccia–Office of Architecture</a>
+        </p>
+        <nav> {/* className="f-navigation" */}
           <ul>
             <li>
               <Link to="/">Featured</Link>
@@ -41,23 +43,23 @@ const TemplateWrapper = ({ children, data }) => {
         <div className="f-footer-b" style={{ flex: 1, padding: "0 1rem" }}>
           <b>Contact</b>
           <address className="f-footer-b">
-            {data.contactJson.address.street}
+            { data.contactJson.address.street }
             <br />
-            {data.contactJson.address.street2}
+            { data.contactJson.address.street2 }
             <br />
-            {data.contactJson.address.city}, {data.contactJson.address.state}{" "}
-            {data.contactJson.address.zip}
+            { data.contactJson.address.city }, { data.contactJson.address.state }{" "}
+            { data.contactJson.address.zip }
             <br />
           </address>
           –
           <div>
-            <a href={`mailto:${data.contactJson.email}`}>
-              {data.contactJson.email}
+            <a href={`mailto:${ data.contactJson.email }`}>
+              { data.contactJson.email }
             </a>
           </div>
           <div>
-            <a href={`tel:${data.contactJson.phone}`}>
-              {data.contactJson.phone}
+            <a href={`tel:${ data.contactJson.phone }`}>
+              { data.contactJson.phone }
             </a>
           </div>
         </div>
@@ -105,4 +107,3 @@ TemplateWrapper.propTypes = {
 export default TemplateWrapper;
 
 //finish font styles
-//bring content to project page

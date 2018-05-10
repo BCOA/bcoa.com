@@ -54,7 +54,7 @@ main {
 }
 
 footer {
-  background: lightgrey;
+  background: var(--lightgrey);
   padding: 1rem;
   display: flex;
   flex-shrink: 0;
