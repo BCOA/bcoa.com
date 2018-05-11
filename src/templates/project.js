@@ -34,10 +34,10 @@ export default ({ data }) => {
             <figure key={i} className="marginBottom-6">
               <Image image={image} />
               {image.caption &&
-                <Fragment>
+                <div>
                   –
                   <figcaption className='f-caption'>{image.caption}</figcaption>
-                </Fragment>
+                </div>
               }
             </figure>
           ))}
