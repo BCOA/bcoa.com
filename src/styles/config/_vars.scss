@@ -12,7 +12,13 @@
   --white:       #FFFFFF;
   --lightYellow: #FFF0C8;
   --lightGray:   #E6E7E8;
+}
 
+.bg-lightRed {
+  background-color: var(--lightRed);
+}
+.c-red {
+  color: var(--red);
 }
 
 //
@@ -67,19 +73,19 @@ $propsAdj: "", "Vertical", "Horizontal", "Left", "Bottom", "Right", "Top";
     @for $k from 0 through 50 {
       @if nth($propsAdj, $j) == 'Vertical' {
         .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-          #{nth($props, $i)}: var(--unit-#{$k}) 0;
+          #{nth($props, $i)}: var(--unit-#{$k}) 0 !important;
         }
       } @else if nth($propsAdj, $j) == 'Horizontal' {
         .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-          #{nth($props, $i)}: 0 var(--unit-#{$k});
+          #{nth($props, $i)}: 0 var(--unit-#{$k}) !important;
         }
       } @else if nth($propsAdj, $j) == '' {
         .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-          #{nth($props, $i)}: var(--unit-#{$k});
+          #{nth($props, $i)}: var(--unit-#{$k}) !important;
         }
       } @else {
         .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-          #{nth($props, $i)}-#{uncapitalize(nth($propsAdj, $j))}: var(--unit-#{$k});
+          #{nth($props, $i)}-#{uncapitalize(nth($propsAdj, $j))}: var(--unit-#{$k}) !important;
         }
       }
     }
