@@ -88,10 +88,21 @@ dd {
 a {
   color: black;
   text-decoration: none;
+  margin: 0;
 
   &:visited {
     color: initial;
   }
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  margin: 0;
+}
+
+hr {
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid currentColor;
 }
 
 blockquote {

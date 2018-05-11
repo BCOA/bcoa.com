@@ -3,7 +3,7 @@ import "../styles/app.scss";
 
 export default () => {
   return (
-    <div>
+    <div className="container">
       <ul>
         <li className="f-navigation">Navigation</li>
         <li className="f-headline-a">headline A</li>

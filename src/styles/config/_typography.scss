@@ -199,6 +199,32 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
   }
 }
 
+@mixin f-copy {
+  font-family: $messina-book;
+  font-size:   16px;
+  line-height: 20px;
+
+  @include bp-1 {
+    font-size:   16px;
+    line-height: 20px;
+  }
+
+  @include bp-2 {
+    font-size:   22px;
+    line-height: 28px;
+  }
+}
+
+.f-copy {
+  @include f-copy;
+}
+
+.f-copy-bold {
+  @include f-copy;
+  font-family: $messina-bold;
+}
+
+
 @mixin f-copy-book {
   font-family: $messina-book;
   font-size:   16px;
@@ -217,22 +243,6 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
 
 .f-copy-book {
   @include f-copy-book;
-}
-
-.f-copy-bold {
-  font-family: $messina-bold;
-  font-size:   16px;
-  line-height: 20px;
-
-  @include bp-1 {
-    font-size:   16px;
-    line-height: 20px;
-  }
-
-  @include bp-2 {
-    font-size:   20px;
-    line-height: 24px;
-  }
 }
 
 .f-credit {

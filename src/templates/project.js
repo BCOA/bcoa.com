@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-
 import Image from "../components/Image";
 import Hero from "../components/Hero";
 
