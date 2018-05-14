@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import "../styles/app.scss";
 
-import Header from "../components/Header";
+// import Header from "../components/Header";
 
 export default class TemplateWrapper extends Component {
 
@@ -26,7 +26,7 @@ export default class TemplateWrapper extends Component {
     return (
       <div>
         <Helmet title="Home | BC–OA" />
-        <Header visible={this.state.menuOpen} toggleMenu={this.toggleMenu} />
+        {/* <Header visible={this.state.menuOpen} toggleMenu={this.toggleMenu} /> */}
         <main>{children()}</main>
         <footer>
           <div className="container">
