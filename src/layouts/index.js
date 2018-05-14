@@ -5,7 +5,7 @@ import "../styles/app.scss";
 
 import Header from "../components/Header";
 
-class TemplateWrapper extends Component {
+export default class TemplateWrapper extends Component {
 
   constructor(props) {
     super(props);
@@ -100,7 +100,3 @@ export const query = graphql`
 TemplateWrapper.propTypes = {
   children: PropTypes.func
 };
-
-export default TemplateWrapper;
-
-//finish font styles
