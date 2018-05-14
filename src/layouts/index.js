@@ -28,7 +28,7 @@ export default class TemplateWrapper extends Component {
     return (
       <div>
         <Helmet title="Home | BC–OA" />
-        {/* <HeaderNav visible={this.state.menuOpen} toggleMenu={this.toggleMenu} /> */}
+        <HeaderNav visible={this.state.menuOpen} toggleMenu={this.toggleMenu} />
         <main>{children()}</main>
         <footer>
           <div className="container">
