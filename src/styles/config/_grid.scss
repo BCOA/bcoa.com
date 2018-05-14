@@ -10,3 +10,18 @@ $gutter: 4.21%;
 
   }
 }
+
+@for $i from 1 through 6 {
+  .colSpan-#{$i}{
+    grid-column: span $i;
+  }
+}
+
+@for $i from 1 through 6 {
+  .colOffset-#{$i}{
+    grid-column: span $i;
+  }
+}
+
+
+

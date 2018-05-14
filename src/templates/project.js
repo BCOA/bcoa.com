@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
-import Image from "../components/Image";
+
+import ProjectImage from "../components/ProjectImage";
 import Hero from "../components/Hero";
 
 export default ({ data }) => {
@@ -29,18 +30,13 @@ export default ({ data }) => {
           </div>
         )}
         {fields.projectImages &&
-          fields.projectImages.map((image, i) => (
-            <figure key={i} className="marginBottom-6">
-              <Image image={image} />
-              {image.caption &&
-                <div>
-                  –
-                  <figcaption className='f-caption'>{image.caption}</figcaption>
-                </div>
-              }
-            </figure>
-          ))}
-        <blockquote className="t-center f-headline-b marginVertical-13">{fields.pullQuote}</blockquote>
+          <div className="project-images grid-6col">
+            {fields.projectImages.map((image, i) => (
+              <ProjectImage key={i} image={image} />
+            ))}
+            <blockquote className="col-6 t-center f-headline-b marginVertical-13">{fields.pullQuote}</blockquote>
+          </div>
+        }
       </div>
     </div>
   );
@@ -48,29 +44,29 @@ export default ({ data }) => {
 
 export const query = graphql`
   query ProjectPageQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
+        markdownRemark(fields: {slug: {eq: $slug } }) {
+        id
       html
       frontmatter {
         title
         name
-        infoObject {
-          title
+      infoObject {
+        title
           description
-        }
-        heroImage {
-          url
-          alt
-        }
-        projectImages {
-          image
-          colWidth
-          offsetWidth
-          alt
-          caption
-        }
-        pullQuote
       }
+        heroImage {
+        url
+          alt
+      }
+        projectImages {
+        image
+          colWidth
+      offsetWidth
+      alt
+      caption
     }
+    pullQuote
   }
+}
+}
 `;

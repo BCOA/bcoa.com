@@ -8,6 +8,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "gatsby": "^1.9.259",
     "gatsby-cli": "^1.1.51",
     "gatsby-link": "^1.6.44",
