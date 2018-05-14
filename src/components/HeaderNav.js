@@ -3,9 +3,8 @@ import Link from "gatsby-link";
 
 export default ({ visible, toggleMenu }) => {
   return (
-    <header>
-      test
-      {/* <div className="container">
+    <div>
+      <div className="container">
         <p style={{ flex: "1" }}>
           <a href="/">Breitner Ciaccia–Office of Architecture</a>
         </p>
@@ -31,7 +30,7 @@ export default ({ visible, toggleMenu }) => {
             </ul>
           </nav>
         }
-      </div> */}
-    </header>
+      </div>
+    </div>
   )
 }

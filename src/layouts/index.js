@@ -9,7 +9,9 @@ export default class TemplateWrapper extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      menuOpen: false
+    };
   }
 
   toggleMenu = () => {
