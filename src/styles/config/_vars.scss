@@ -71,74 +71,74 @@ $breakpoints: '', bp-1, bp-2;
 $props: 'margin' 'padding';
 $propsAdj: "", "Vertical", "Horizontal", "Left", "Bottom", "Right", "Top";
 
-@for $h from 1 through length($breakpoints) {
-  @for $i from 1 through length($props) {
-    @for $j from 1 through length($propsAdj) {
-      @for $k from 0 through 50 {
-        @if nth($propsAdj, $j) == 'Vertical' {
-          @if nth($breakpoints, $h) == 'bp-1' {
-            .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-              @include bp-1 {
-                #{nth($props, $i)}: var(--unit-#{$k}) 0 !important;
-              }
-            }
-          } @else if nth($breakpoints, $h) == 'bp-2' {
-            .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-              @include bp-2 {
-                #{nth($props, $i)}: var(--unit-#{$k}) 0 !important;
-              }
-            }
-          }
-          @else {
-            .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-              #{nth($props, $i)}: var(--unit-#{$k}) 0 !important;
-            }
-          }
-        } 
-        @else if nth($propsAdj, $j) == 'Horizontal' {
-          @if nth($breakpoints, $h) == 'bp-1' {
-            .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-              @include bp-1 {
-                #{nth($props, $i)}: 0 var(--unit-#{$k}) !important;
-              }
-            }
-          } @else if nth($breakpoints, $h) == 'bp-2' {
-            .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-              @include bp-2 {
-                #{nth($props, $i)}: 0 var(--unit-#{$k}) !important;
-              }
-            }
-          } @else {
-            .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-              #{nth($props, $i)}: 0 var(--unit-#{$k}) !important;
-            }
-          }
-        } @else if nth($propsAdj, $j) == '' {
-          .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-            #{nth($props, $i)}: var(--unit-#{$k}) !important;
-          }
-        } @else {
-          @if nth($breakpoints, $h) == 'bp-1' {
-            .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-              @include bp-1 {
-                #{nth($props, $i)}-#{uncapitalize(nth($propsAdj, $j))}: var(--unit-#{$k}) !important;
-              }
-            }
-          } @else if nth($breakpoints, $h) == 'bp-2' {
-            .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-              @include bp-2 {
-                #{nth($props, $i)}-#{uncapitalize(nth($propsAdj, $j))}: var(--unit-#{$k}) !important;
-              }
-            }
-          } @else {
-            .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
-              #{nth($props, $i)}-#{uncapitalize(nth($propsAdj, $j))}: var(--unit-#{$k}) !important;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// @for $h from 1 through length($breakpoints) {
+//   @for $i from 1 through length($props) {
+//     @for $j from 1 through length($propsAdj) {
+//       @for $k from 0 through 50 {
+//         @if nth($propsAdj, $j) == 'Vertical' {
+//           @if nth($breakpoints, $h) == 'bp-1' {
+//             .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
+//               @include bp-1 {
+//                 #{nth($props, $i)}: var(--unit-#{$k}) 0 !important;
+//               }
+//             }
+//           } @else if nth($breakpoints, $h) == 'bp-2' {
+//             .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
+//               @include bp-2 {
+//                 #{nth($props, $i)}: var(--unit-#{$k}) 0 !important;
+//               }
+//             }
+//           }
+//           @else {
+//             .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
+//               #{nth($props, $i)}: var(--unit-#{$k}) 0 !important;
+//             }
+//           }
+//         } 
+//         @else if nth($propsAdj, $j) == 'Horizontal' {
+//           @if nth($breakpoints, $h) == 'bp-1' {
+//             .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
+//               @include bp-1 {
+//                 #{nth($props, $i)}: 0 var(--unit-#{$k}) !important;
+//               }
+//             }
+//           } @else if nth($breakpoints, $h) == 'bp-2' {
+//             .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
+//               @include bp-2 {
+//                 #{nth($props, $i)}: 0 var(--unit-#{$k}) !important;
+//               }
+//             }
+//           } @else {
+//             .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
+//               #{nth($props, $i)}: 0 var(--unit-#{$k}) !important;
+//             }
+//           }
+//         } @else if nth($propsAdj, $j) == '' {
+//           .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
+//             #{nth($props, $i)}: var(--unit-#{$k}) !important;
+//           }
+//         } @else {
+//           @if nth($breakpoints, $h) == 'bp-1' {
+//             .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
+//               @include bp-1 {
+//                 #{nth($props, $i)}-#{uncapitalize(nth($propsAdj, $j))}: var(--unit-#{$k}) !important;
+//               }
+//             }
+//           } @else if nth($breakpoints, $h) == 'bp-2' {
+//             .#{nth($breakpoints, $h)}_#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
+//               @include bp-2 {
+//                 #{nth($props, $i)}-#{uncapitalize(nth($propsAdj, $j))}: var(--unit-#{$k}) !important;
+//               }
+//             }
+//           } @else {
+//             .#{nth($props, $i)}#{nth($propsAdj, $j)}-#{$k} {
+//               #{nth($props, $i)}-#{uncapitalize(nth($propsAdj, $j))}: var(--unit-#{$k}) !important;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 
