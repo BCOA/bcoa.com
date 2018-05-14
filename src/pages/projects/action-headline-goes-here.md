@@ -21,14 +21,18 @@ heroImage:
 projectImages:
   - alt: micro cabin image 1
     caption: 'Caption Text, Lorem Ipsum Dolor Sit Amet'
+    colWidth: '3'
     image: /images/uploads/copyright_barkowphoto_5606b_72.jpg
   - alt: micro cabin image 2
+    colWidth: '6'
     image: /images/uploads/copyright_barkowphoto_5667a_300.jpg
   - alt: micro cabin image 3
     caption: >-
       Caption Text, phase hendrerit eros a hendrerit venenatis lorem ipsum dolor
       sit amet.
+    colWidth: '4'
     image: /images/uploads/copyright_barkowphoto_3587_300.jpg
+    offsetWidth: '2'
   - alt: micro cabin image 4
     image: /images/uploads/copyright_barkowphoto_5826_300.jpg
   - alt: micro cabin image 5
