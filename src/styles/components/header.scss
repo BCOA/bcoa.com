@@ -1,8 +1,25 @@
-.header {
+header {
+  border-bottom: 1px solid var(--black);
+}
+
+header > .container {
   flex-shrink: 0;
-  padding: 0 var(--unit-6);
   height: var(--unit-12);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--black);
+}
+
+header nav {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  outline: 1px solid red;
+}
+
+.header-menuButton {
+  position: relative;
+  z-index: 1;
 }
