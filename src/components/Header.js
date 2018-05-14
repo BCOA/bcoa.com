@@ -10,7 +10,7 @@ export default ({ visible, toggleMenu }) => {
         </p>
         <button className="header-menuButton" onClick={toggleMenu}>menu</button>
         {visible &&
-          <nav> {/* className="f-navigation" */}
+          <nav className="f-navigation">
             <ul>
               <li>
                 <Link to="/">Featured</Link>
