@@ -13,7 +13,7 @@ export default class TemplateWrapper extends Component {
   }
 
   toggleMenu = () => {
-    this.state.menuOpen ? this.setState({ menuOpen: false }) : this.setState({ menuOpen: true })
+    this.state.menuOpen ? this.setState({ menuOpen: false }) : this.setState({ menuOpen: true });
   }
 
   render() {
@@ -21,7 +21,7 @@ export default class TemplateWrapper extends Component {
     const {
       children,
       data
-    } = this.props
+    } = this.props;
 
     return (
       <div>

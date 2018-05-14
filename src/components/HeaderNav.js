@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from "gatsby-link"
+import React from 'react';
+import Link from "gatsby-link";
 
 export default ({ visible, toggleMenu }) => {
   return (
@@ -13,19 +13,19 @@ export default ({ visible, toggleMenu }) => {
           <nav className="f-navigation">
             <ul>
               <li>
-                <Link to="/">Featured</Link>
+                <Link to="/" onClick={toggleMenu}>Featured</Link>
               </li>
               <li>
-                <Link to="/work">Index</Link>
+                <Link to="/work" onClick={toggleMenu}>Index</Link>
               </li>
               <li>
-                <Link to="/news">News</Link>
+                <Link to="/news" onClick={toggleMenu}>News</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" onClick={toggleMenu}>About</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" onClick={toggleMenu}>Contact</Link>
               </li>
             </ul>
           </nav>
