@@ -34,19 +34,26 @@ projectImages:
     image: /images/uploads/copyright_barkowphoto_3587_300.jpg
     offsetWidth: '2'
   - alt: micro cabin image 4
+    colWidth: '4'
     image: /images/uploads/copyright_barkowphoto_5826_300.jpg
   - alt: micro cabin image 5
+    colWidth: '2'
     image: /images/uploads/copyright_barkowphoto_3499_300.jpg
   - alt: micro cabin image 6
+    colWidth: '6'
     image: /images/uploads/03-13a.jpg
   - alt: micro cabin image 7
     caption: >-
       Caption Text, phase hendrerit eros a hendrerit venenatis lorem ipsum dolor
       sit amet.
+    colWidth: '2'
     image: /images/uploads/copyright_barkowphoto_5683b_300.jpg
   - alt: micro cabin image 8
+    colWidth: '5'
     image: /images/uploads/copyright_barkowphoto_5766b_300.jpg
+    offsetWidth: '1'
   - alt: micro cabin image 9
+    colWidth: '4'
     image: /images/uploads/copyright_barkowphoto_02.jpg
 pullQuote: 'INTEGER PRETIUM BIBENDUM POSUERE. IN AC ENIM ALIQUAM, PORTA EST QUIS, MAXIMUS.'
 ---
