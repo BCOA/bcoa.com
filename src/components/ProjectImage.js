@@ -13,6 +13,12 @@ export default (props) => {
     'colSpan-4': (props.image.colWidth === '4'),
     'colSpan-5': (props.image.colWidth === '5'),
     'colSpan-6': (props.image.colWidth === '6'),
+    'colSpan-7': (props.image.colWidth === '7'),
+    'colSpan-8': (props.image.colWidth === '8'),
+    'colSpan-9': (props.image.colWidth === '9'),
+    'colSpan-10': (props.image.colWidth === '10'),
+    'colSpan-11': (props.image.colWidth === '11'),
+    'colSpan-12': (props.image.colWidth === '12'),
     'marginBottom-6 project-image-wrapper': true,
     // 'project-image-wrapper': true
   })

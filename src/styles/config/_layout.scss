@@ -3,5 +3,5 @@
 .container {
   margin: 0 auto;
   padding: 0 var(--unit-6);
-  max-width: 1540px;
+  max-width: calc(1540px + var(--unit-12));
 }

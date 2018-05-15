@@ -21,10 +21,10 @@ heroImage:
 projectImages:
   - alt: micro cabin image 1
     caption: 'Caption Text, Lorem Ipsum Dolor Sit Amet'
-    colWidth: '3'
+    colWidth: '4'
     image: /images/uploads/copyright_barkowphoto_5606b_72.jpg
   - alt: micro cabin image 2
-    colWidth: '6'
+    colWidth: '4'
     image: /images/uploads/copyright_barkowphoto_5667a_300.jpg
   - alt: micro cabin image 3
     caption: >-
@@ -34,10 +34,10 @@ projectImages:
     image: /images/uploads/copyright_barkowphoto_3587_300.jpg
     offsetWidth: '2'
   - alt: micro cabin image 4
-    colWidth: '4'
+    colWidth: '8'
     image: /images/uploads/copyright_barkowphoto_5826_300.jpg
   - alt: micro cabin image 5
-    colWidth: '2'
+    colWidth: '4'
     image: /images/uploads/copyright_barkowphoto_3499_300.jpg
   - alt: micro cabin image 6
     colWidth: '6'
@@ -46,14 +46,14 @@ projectImages:
     caption: >-
       Caption Text, phase hendrerit eros a hendrerit venenatis lorem ipsum dolor
       sit amet.
-    colWidth: '2'
+    colWidth: '6'
     image: /images/uploads/copyright_barkowphoto_5683b_300.jpg
   - alt: micro cabin image 8
-    colWidth: '5'
+    colWidth: '8'
     image: /images/uploads/copyright_barkowphoto_5766b_300.jpg
-    offsetWidth: '1'
+    offsetWidth: '2'
   - alt: micro cabin image 9
-    colWidth: '4'
+    colWidth: '6'
     image: /images/uploads/copyright_barkowphoto_02.jpg
 pullQuote: 'INTEGER PRETIUM BIBENDUM POSUERE. IN AC ENIM ALIQUAM, PORTA EST QUIS, MAXIMUS.'
 ---

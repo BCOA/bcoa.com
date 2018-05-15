@@ -40,11 +40,11 @@ export default ({ data }) => {
         )}
 
         {fields.projectImages &&
-          <div className="project-images grid-6col">
+          <div className="project-images grid-12col">
             {fields.projectImages.map((image, i) => (
               <ProjectImage key={i} image={image} />
             ))}
-            <blockquote className="colSpan-6 t-center f-headline-b 
+            <blockquote className="colSpan-12 t-center f-headline-b 
                                    marginBottom-11 bp-1_marginBottom-13 bp-2_marginBottom-28
                                    marginTop-5 bp-1_marginTop-4 bp-2_marginTop-23">
               {fields.pullQuote}
