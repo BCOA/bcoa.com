@@ -13,8 +13,8 @@ export default (props) => {
     'colSpan-4': (props.image.colWidth === '4'),
     'colSpan-5': (props.image.colWidth === '5'),
     'colSpan-6': (props.image.colWidth === '6'),
-    'marginBottom-6': true,
-    'project-image-wrapper': true
+    'marginBottom-6 project-image-wrapper': true,
+    // 'project-image-wrapper': true
   })
 
   console.log(props);
@@ -23,7 +23,7 @@ export default (props) => {
     <figure key={props.i} className={classes}>
       <Image image={props.image} />
       {props.image.caption &&
-        <div className="marginTop-1 bp-1_margintTop-1 bp-2_marginTop-1">
+        <div className="marginTop-1">
           –
           <figcaption className='f-caption'>{props.image.caption}</figcaption>
         </div>

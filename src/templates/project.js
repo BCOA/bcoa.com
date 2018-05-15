@@ -8,16 +8,24 @@ export default ({ data }) => {
   const fields = post.frontmatter;
   return (
     <div>
-      <div className="container bp-1_paddingTop-2 bp-1_marginBottom-3 bp-2_paddingTop-5 bp-2_marginBottom-6">
+      <div className="container
+                      bp-1_paddingTop-2 bp-2_paddingTop-5
+                      bp-1_marginBottom-3 bp-2_marginBottom-6">
         <div className="project-name">
           <h2 className='f-page-title'>{fields.name}</h2>
         </div>
       </div>
+
       <Hero image={fields.heroImage.url} alt={fields.heroImage.alt} />
       <div className="container marginTop-5 bp-1_marginTop-9 bp-2_marginTop-31">
       {/* Always will be 2 lines of text, even on large resolution as the first image of the proj img array will float over on the right side */}
-        <h1 className='f-headline-b marginBottom-4 bp-1_marginBottom-13 bp-2_marginBottom-28'>{fields.title}-</h1>
-        <div className="marginBottom-5 bp-1_marginBottom-5 bp-2_marginBottom-10" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <h1 className='f-headline-b marginBottom-4 bp-1_marginBottom-13 bp-2_marginBottom-28'>
+          {fields.title}-
+        </h1>
+        <div className="marginBottom-5 bp-1_marginBottom-5 bp-2_marginBottom-10"
+             dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+
         {fields.infoObject && (
           <div>
             <dl className='marginBottom-12 bp-1_marginBottom-16 bp-2_marginBottom-30'>
@@ -30,15 +38,20 @@ export default ({ data }) => {
             </dl>
           </div>
         )}
+
         {fields.projectImages &&
           <div className="project-images grid-6col">
             {fields.projectImages.map((image, i) => (
               <ProjectImage key={i} image={image} />
             ))}
-            {/* blockquote margin is messed up...It separates from the 2nd last photo with the photo to its left sitting beside it... */}
-            <blockquote className="col-6 t-center f-headline-b bp-1_marginTop-8">{fields.pullQuote}</blockquote>
+            <blockquote className="colSpan-6 t-center f-headline-b 
+                                   marginBottom-11 bp-1_marginBottom-13 bp-2_marginBottom-28
+                                   marginTop-5 bp-1_marginTop-4 bp-2_marginTop-23">
+              {fields.pullQuote}
+            </blockquote>
           </div>
         }
+        
       </div>
     </div>
   );
