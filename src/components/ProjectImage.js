@@ -23,7 +23,7 @@ export default (props) => {
     <figure key={props.i} className={classes}>
       <Image image={props.image} />
       {props.image.caption &&
-        <div>
+        <div className="marginTop-1 bp-1_margintTop-1 bp-2_marginTop-1">
           –
           <figcaption className='f-caption'>{props.image.caption}</figcaption>
         </div>
