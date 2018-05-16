@@ -12,6 +12,10 @@ infoObject:
 heroImage:
   alt: this is the hero image alt text string
   url: /images/uploads/placeholder.jpg
+primaryImage:
+  alt: micro cabin hero
+  image: http://placehold.it/728x1148
+  caption: 'Caption Text, Lorem Ipsum Dolor Sit Amet'
 projectImages:
   - alt: proj img alt
     caption: proj img caption

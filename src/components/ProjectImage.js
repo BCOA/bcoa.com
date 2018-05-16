@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import classnames from "classnames";
 
 
@@ -19,22 +19,35 @@ export default (props) => {
     'colSpan-10': (props.image.colWidth === '10'),
     'colSpan-11': (props.image.colWidth === '11'),
     'colSpan-12': (props.image.colWidth === '12'),
-    'marginBottom-6 project-image-wrapper': true,
-    // 'project-image-wrapper': true
+    'colOffset-1': (props.image.offsetWidth === '1'),
+    'colOffset-2': (props.image.offsetWidth === '2'),
+    'colOffset-3': (props.image.offsetWidth === '3'),
+    'colOffset-4': (props.image.offsetWidth === '5'),
+    'colOffset-6': (props.image.offsetWidth === '6'),
+    'colOffset-7': (props.image.offsetWidth === '7'),
+    'colOffset-8': (props.image.offsetWidth === '8'),
+    'colOffset-9': (props.image.offsetWidth === '9'),
+    'colOffset-10': (props.image.offsetWidth === '10'),
+    'colOffset-11': (props.image.offsetWidth === '11'),
+    'marginBottom-6 bp-1_marginBottom-7 bp-2_marginBottom-16 project-image-wrapper': true,
+  // 'project-image-wrapper': true
   })
 
   console.log(props);
 
   return (
-    <figure key={props.i} className={classes}>
-      <Image image={props.image} />
-      {props.image.caption &&
-        <div className="marginTop-1">
-          –
-          <figcaption className='f-caption'>{props.image.caption}</figcaption>
-        </div>
-      }
-    </figure>
+    <Fragment>
+      {props.image.offsetWidth && <span className={`colSpan-${props.image.offsetWidth}`}></span>}
+      <figure key={props.i} className={classes}>
+        <Image image={props.image} />
+        {props.image.caption &&
+          <div className="marginTop-1">
+            –
+            <figcaption className='f-caption'>{props.image.caption}</figcaption>
+          </div>
+        }
+      </figure>
+    </Fragment>
   )
 }
 

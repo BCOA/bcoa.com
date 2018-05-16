@@ -17,11 +17,11 @@ $gutter: 4.21%;
   }
 }
 
-@for $i from 1 through 12 {
-  .colOffset-#{$i}{
-    grid-column: span $i;
-  }
-}
+// @for $i from 1 through 12 {
+//   .colOffset-#{$i}{
+//     grid-column: span $i;
+//   }
+// }
 
 
 

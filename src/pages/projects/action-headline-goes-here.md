@@ -18,7 +18,14 @@ infoObject:
 heroImage:
   alt: micro cabin hero
   url: /images/uploads/copyright_barkowphoto_3549_300.jpg
+primaryImage:
+  alt: micro cabin hero
+  image: http://placehold.it/1820x2870
+  caption: 'Caption Text, Lorem Ipsum Dolor Sit Amet'
 projectImages:
+  - alt: test image 1
+    colWidth: '6'
+    image: http://placehold.it/1820x1990
   - alt: micro cabin image 1
     caption: 'Caption Text, Lorem Ipsum Dolor Sit Amet'
     colWidth: '4'
@@ -32,7 +39,6 @@ projectImages:
       sit amet.
     colWidth: '4'
     image: /images/uploads/copyright_barkowphoto_3587_300.jpg
-    offsetWidth: '2'
   - alt: micro cabin image 4
     colWidth: '8'
     image: /images/uploads/copyright_barkowphoto_5826_300.jpg
@@ -51,7 +57,7 @@ projectImages:
   - alt: micro cabin image 8
     colWidth: '8'
     image: /images/uploads/copyright_barkowphoto_5766b_300.jpg
-    offsetWidth: '2'
+    offsetWidth: '4'
   - alt: micro cabin image 9
     colWidth: '6'
     image: /images/uploads/copyright_barkowphoto_02.jpg

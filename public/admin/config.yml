@@ -126,6 +126,14 @@ collections:
           - { label: "Image", name: "url", widget: "image" }
           - { label: "Alt", name: "alt", widget: "string" }
 
+      - label: Primary Image
+        name: primaryImage
+        widget: object
+        fields:
+          - { label: "Image", name: "image", widget: "image", default: "/images/uploads/placeholder.jpg" }
+          - { label: "Alt Text", name: "alt", widget: "string", default: "project image alt" }
+          - { label: "Caption", name: "caption", widget: "string", default: "project image caption" }
+
       - label: "Project Images"
         name: "projectImages"
         widget: "list"
