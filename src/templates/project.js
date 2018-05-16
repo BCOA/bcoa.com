@@ -12,7 +12,7 @@ export default ({ data }) => {
                       bp-1_paddingTop-2 bp-2_paddingTop-5
                       bp-1_marginBottom-3 bp-2_marginBottom-6">
         <div className="project-name">
-          <h2 className='f-page-title'>{fields.name}</h2>
+          <h2 className='f-page-title'>{fields.title}</h2>
         </div>
       </div>
 
@@ -22,7 +22,7 @@ export default ({ data }) => {
         <div className="grid-12col">
           <div className="colSpan-5">
             <h1 className='f-headline-b marginBottom-4 bp-1_marginBottom-13 bp-2_marginBottom-11'>
-              {fields.title}-
+              {fields.headline}-
             </h1>
             <div className="marginBottom-5 bp-1_marginBottom-5 bp-2_marginBottom-10"
               dangerouslySetInnerHTML={{ __html: post.html }}
@@ -43,7 +43,6 @@ export default ({ data }) => {
           </div>
           <div className="colSpan-1"></div>
           <div className="project-primaryImage colSpan-6">
-            {/* <img src="http://placehold.it/728x1148" alt=""/> */}
             <ProjectImage key='primary-image' image={fields.primaryImage} />
           </div>
         </div>
@@ -51,10 +50,10 @@ export default ({ data }) => {
         {fields.projectImages &&
           <div>
             <div className="grid-12col">
-              <ProjectImage key={'image-1'} image={fields.projectImages[0]} />
+              <ProjectImage className="colSpan-6" key='secondary-image' image={fields.secondaryImage} />
             </div>
             <div className="project-images grid-12col">
-              {fields.projectImages.slice(1).map((image, i) => (
+              {fields.projectImages.map((image, i) => (
                 <ProjectImage key={i} image={image} />
               ))}
               <blockquote className="colSpan-12 t-center f-headline-b 
@@ -78,29 +77,34 @@ export const query = graphql`
       html
       frontmatter {
         title
-        name
-      infoObject {
-        title
-        description
+        headline
+        infoObject {
+          title
+          description
+        }
+        heroImage {
+          url
+          alt
+        }
+        primaryImage {
+          image
+          alt
+          caption
+        }
+        secondaryImage {
+          image
+          alt
+          caption
+        }
+        projectImages {
+          image
+          colWidth
+          offsetWidth
+          alt
+          caption
+        }
+        pullQuote
       }
-      heroImage {
-        url
-        alt
-      }
-      primaryImage {
-        image
-        alt
-        caption
-      }
-      projectImages {
-        image
-        colWidth
-        offsetWidth
-        alt
-        caption
-      }
-      pullQuote
     }
   }
-}
 `;

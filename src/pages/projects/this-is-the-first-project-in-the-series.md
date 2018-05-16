@@ -1,7 +1,7 @@
 ---
 templateKey: project-page
-name: BC–OA First Project
-title: This is the first project in the series
+title: BC–OA First Project
+headline: This is the first project in the series
 featured: true
 previewImage:
   alt: this is the hero image alt text string
@@ -14,7 +14,11 @@ heroImage:
   url: /images/uploads/placeholder.jpg
 primaryImage:
   alt: micro cabin hero
-  image: http://placehold.it/728x1148
+  image: http://placehold.it/1820x2870
+  caption: 'Caption Text, Lorem Ipsum Dolor Sit Amet'
+secondaryImage:
+  alt: micro cabin hero
+  image: http://placehold.it/1820x1990
   caption: 'Caption Text, Lorem Ipsum Dolor Sit Amet'
 projectImages:
   - alt: proj img alt

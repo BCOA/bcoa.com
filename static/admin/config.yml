@@ -103,8 +103,8 @@ collections:
     create: true
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page" }
-      - { label: "Project Name", name: "name", widget: "string" }
-      - { label: "Headline", name: "title", widget: "string" }
+      - { label: "Project Name", name: "title", widget: "string" }
+      - { label: "Headline", name: "headline", widget: "string" }
       - { label: "Featured", name: "featured", widget: "boolean" }
       - label: Preview Image
         name: previewImage
@@ -128,6 +128,14 @@ collections:
 
       - label: Primary Image
         name: primaryImage
+        widget: object
+        fields:
+          - { label: "Image", name: "image", widget: "image", default: "/images/uploads/placeholder.jpg" }
+          - { label: "Alt Text", name: "alt", widget: "string", default: "project image alt" }
+          - { label: "Caption", name: "caption", widget: "string", default: "project image caption" }
+          
+      - label: Secondary Image
+        name: secondaryImage
         widget: object
         fields:
           - { label: "Image", name: "image", widget: "image", default: "/images/uploads/placeholder.jpg" }
