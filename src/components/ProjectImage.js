@@ -1,9 +1,19 @@
 import React, { Fragment } from 'react'
 import classnames from "classnames";
 
-
-
 import Image from "./Image";
+
+const ProjectImage = (props) => (
+  <figure key={props.i} className={props.classes}>
+    <Image image={props.image} />
+    {props.image.caption &&
+      <div className="marginTop-1">
+        –
+        <figcaption className='f-caption'>{props.image.caption}</figcaption>
+      </div>
+    }
+  </figure>
+)
 
 export default (props) => {
   const classes = classnames(props.className, {
@@ -36,18 +46,13 @@ export default (props) => {
   console.log(props);
 
   return (
-    <Fragment>
-      {props.image.offsetWidth && <span className={`colSpan-${props.image.offsetWidth}`}></span>}
-      <figure key={props.i} className={classes}>
-        <Image image={props.image} />
-        {props.image.caption &&
-          <div className="marginTop-1">
-            –
-            <figcaption className='f-caption'>{props.image.caption}</figcaption>
-          </div>
-        }
-      </figure>
-    </Fragment>
+    props.image.offsetWidth ?
+      <div className={`colSpan-12 grid-12col`}>
+        <div className={`colSpan-${props.image.offsetWidth}`}></div>
+        <ProjectImage {...props} classes={classes} />
+      </div>
+      :
+      <ProjectImage {...props} classes={classes} />
   )
 }
 
