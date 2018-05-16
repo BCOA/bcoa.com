@@ -1,6 +1,6 @@
 ---
 templateKey: project-page
-title: Micro Cabin
+title: Micro Cabin Test
 headline: ACTION HEADLINE GOES HERE
 featured: true
 previewImage:
@@ -20,12 +20,12 @@ heroImage:
   url: /images/uploads/copyright_barkowphoto_3549_300.jpg
 primaryImage:
   alt: micro cabin hero
-  image: http://placehold.it/1820x2870
   caption: 'Caption Text, Lorem Ipsum Dolor Sit Amet'
+  image: 'http://placehold.it/1820x2870'
 secondaryImage:
   alt: micro cabin hero
-  image: http://placehold.it/1820x1990
   caption: 'Caption Text, Lorem Ipsum Dolor Sit Amet'
+  image: 'http://placehold.it/1820x1990'
 projectImages:
   - alt: micro cabin image 1
     caption: 'Caption Text, Lorem Ipsum Dolor Sit Amet'
