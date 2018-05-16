@@ -32,7 +32,9 @@ body {
   font-feature-settings: "lnum" off; /* lining-figures: on or off */
   font-feature-settings: "ss01" off; /* alternate glyphs: on or off */
 
+  
   @include f-copy;
+  font-display: swap;
 }
 
 #___gatsby {

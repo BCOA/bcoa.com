@@ -24,6 +24,7 @@
       format("woff2"),
     /* Super Modern Browsers */
       url("../../static/assets/fonts/MessinaSansWeb-Bold.woff") format("woff"); /* Pretty Modern Browsers */
+  font-display: swap;
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
@@ -40,6 +41,7 @@
     /* Super Modern Browsers */
       url("../../static/assets/fonts/MessinaSansWeb-SemiBold.woff")
       format("woff"); /* Pretty Modern Browsers */
+  font-display: swap;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -55,7 +57,8 @@
       format("woff2"),
     /* Super Modern Browsers */
       url("../../static/assets/fonts/MessinaSansWeb-Book.woff") format("woff"); /* Pretty Modern Browsers */
-  font-weight: 400;
+  font-display: swap;
+    font-weight: 400;
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+000D-FB04;
@@ -151,7 +154,7 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
 }
 
 .f-page-title {
-  font-family: $messina-bold;
+  font-family: $messina-bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:   16px;
   line-height: 16px;
   text-decoration: underline;
@@ -168,7 +171,7 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
 }
 
 .f-subhead {
-  font-family: $messina-bold;
+  font-family: $messina-bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:   15px;
   line-height: 16px; //@JOSH: or 20px ???
 
@@ -184,7 +187,7 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
 }
 
 .f-display-copy {
-  font-family: $messina-semiBold;
+  font-family: $messina-semiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:   21px;
   line-height: 24px;
 
@@ -201,7 +204,7 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
 
 // display copy
 @mixin f-copy {
-  font-family: $messina-book;
+  font-family: $messina-book, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:   16px;
   line-height: 20px;
 
@@ -222,12 +225,12 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
 
 .f-copy-bold {
   @include f-copy;
-  font-family: $messina-bold;
+  font-family: $messina-bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
 @mixin f-copy-book {
-  font-family: $messina-book;
+  font-family: $messina-book, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:   16px;
   line-height: 20px;
 
