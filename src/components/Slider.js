@@ -19,8 +19,8 @@ export default ({ slides }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <PrevArrow />,
-    prevArrow: <NextArrow />
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
   };
 
   return (
