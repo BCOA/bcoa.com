@@ -9,11 +9,16 @@
 @import "./config/layout";
 @import "./config/helpers";
 
+// modules
+@import "~slick-carousel/slick/slick.css";
+
 // components
 @import "./components/header";
 @import "./components/footer";
 @import "./components/hero";
 @import "./components/infoObjects";
+@import "./components/slider";
 
 // pages
 @import "./pages/project";
+

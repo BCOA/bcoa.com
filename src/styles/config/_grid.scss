@@ -2,12 +2,39 @@
 
 $gutter: 4.21%;
 
-@for $i from 2 through 12 {
-  .grid-#{$i}col {
-    display: grid;
-    grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
-    grid-column-gap: $gutter;
+@for $h from 1 through length($breakpoints) {
+  @if nth($breakpoints, $h) == 'bp-1' {
+    @for $i from 2 through 12 {
+      @include bp-1 {
+        .grid-#{$i}col {
+          display: grid;
+          grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+          grid-column-gap: $gutter;
+        }
+      }
+    }
+  }
 
+  @else if nth($breakpoints, $h) == 'bp-2' {
+    @for $i from 2 through 12 {
+      @include bp-2 {
+        .grid-#{$i}col {
+          display: grid;
+          grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+          grid-column-gap: $gutter;
+        }
+      }
+    }
+  }
+
+  @else {
+    @for $i from 2 through 12 {
+      .grid-#{$i}col {
+        display: grid;
+        grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+        grid-column-gap: $gutter;
+      }
+    }
   }
 }
 

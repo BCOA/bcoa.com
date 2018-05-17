@@ -43,6 +43,7 @@
 // breakpoints
 //
 
+$breakpoints: '', bp-1, bp-2;
 $bp-1-width: 768px;
 $bp-2-width: 1024px;
 
@@ -66,8 +67,6 @@ $bp-2-width: 1024px;
 
 // Spacing Helpers
 
-
-$breakpoints: '', bp-1, bp-2;
 $props: 'margin' 'padding';
 $propsAdj: "", "Vertical", "Horizontal", "Left", "Bottom", "Right", "Top";
 

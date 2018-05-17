@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
 
+import Slider from '../components/Slider';
+
 export default ({ data }) => {
   const edges = data.projects.edges;
   const projects = edges.filter(
@@ -11,13 +13,14 @@ export default ({ data }) => {
 
   return (
     <div>
-      <ul>
+      <Slider slides={data.page.frontmatter.carouselImages} />
+      {/* <ul>
         {data.page.frontmatter.carouselImages.map((slide, i) => (
           <li key={`slide-${i}`}>
             <img src={slide.url} alt={slide.alt} />
           </li>
         ))}
-      </ul>
+      </ul> */}
       <div className="container">
         <h2>{data.page.frontmatter.title}</h2>
         <ul>
