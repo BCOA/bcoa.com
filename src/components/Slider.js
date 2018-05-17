@@ -8,7 +8,7 @@ export default (props) => {
     slidesToShow: 1,
     slidesToScroll: 1
   };
-  console.log(props);
+
   return (
     <Slider className="hero" {...settings}>
       {props.slides.map((slide, i) => (

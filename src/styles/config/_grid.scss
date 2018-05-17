@@ -6,7 +6,7 @@ $gutter: 4.21%;
   @if nth($breakpoints, $h) == 'bp-1' {
     @for $i from 2 through 12 {
       @include bp-1 {
-        .grid-#{$i}col {
+        .#{nth($breakpoints, $h)}_grid-#{$i}col {
           display: grid;
           grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
           grid-column-gap: $gutter;
@@ -18,7 +18,7 @@ $gutter: 4.21%;
   @else if nth($breakpoints, $h) == 'bp-2' {
     @for $i from 2 through 12 {
       @include bp-2 {
-        .grid-#{$i}col {
+        .#{nth($breakpoints, $h)}_grid-#{$i}col {
           display: grid;
           grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
           grid-column-gap: $gutter;
