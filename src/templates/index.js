@@ -14,13 +14,6 @@ export default ({ data }) => {
   return (
     <div>
       <Slider slides={data.page.frontmatter.carouselImages} />
-      {/* <ul>
-        {data.page.frontmatter.carouselImages.map((slide, i) => (
-          <li key={`slide-${i}`}>
-            <img src={slide.url} alt={slide.alt} />
-          </li>
-        ))}
-      </ul> */}
       <div className="container">
         <h2>{data.page.frontmatter.title}</h2>
         <ul>
