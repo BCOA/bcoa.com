@@ -42,6 +42,10 @@ projectGallery:
     colWidth: '4'
     image: /images/uploads/micro-cabin_3.jpg
     type: image
+  - pullQuote: >-
+      integer pretium bibendum posuere. in ac enim aliquam, porta est quis,
+      maximus
+    type: quote
   - alt: Micro Cabin - architectural rendering
     colWidth: '6'
     image: /images/uploads/micro-cabin_4.jpg
@@ -50,10 +54,6 @@ projectGallery:
     colWidth: '6'
     image: /images/uploads/micro-cabin_5.jpg
     type: image
-  - pullQuote: >-
-      integer pretium bibendum posuere. in ac enim aliquam, porta est quis,
-      maximus
-    type: quote
   - alt: Micro Cabin - residential tiny home kitchen
     caption: >-
       Caption Text, pjase hendrerit eros a hendrerit venenatis ipsum dolor sit
