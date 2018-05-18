@@ -42,9 +42,7 @@ projectGallery:
     colWidth: '4'
     image: /images/uploads/micro-cabin_3.jpg
     type: image
-  - pullQuote: >-
-      integer pretium bibendum posuere. in ac enim aliquam, porta est quis,
-      maximus
+  - pullQuote: 'A jewel box, packed with functionality'
     type: quote
   - alt: Micro Cabin - architectural rendering
     colWidth: '6'
