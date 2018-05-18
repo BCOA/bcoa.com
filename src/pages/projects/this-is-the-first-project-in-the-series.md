@@ -20,18 +20,19 @@ secondaryImage:
   alt: micro cabin hero
   image: http://placehold.it/1820x1990
   caption: 'Caption Text, Lorem Ipsum Dolor Sit Amet'
-projectImages:
-  - alt: proj img alt
+projectGallery:
+  - type: image
+    alt: proj img alt
     caption: proj img caption
-    colWidth: '3'
+    colWidth: '8'
     image: /images/uploads/placeholder.jpg
-    offsetWidth: '1'
-  - alt: proj img alt 2
+  - type: quote
+    pullQuote: This is the pull quote!
+  - type: image
+    alt: proj img alt 2
     caption: proj img caption 2
-    colWidth: '5'
+    colWidth: '12'
     image: /images/uploads/placeholder.jpg
-    offsetWidth: '5'
-pullQuote: This is the pull quote!
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem tortor, eleifend sed dictum sit amet, cursus ut ante. Vestibulum pellentesque rhoncus tortor, posuere pretium quam mattis ac. Nunc rhoncus sem quis nisl lacinia rhoncus ac pharetra orci. Duis bibendum tortor non gravida egestas. Ut facilisis, lectus elementum mollis blandit, ligula ligula sodales massa, ac laoreet nibh dolor vel ex. Fusce id lorem eu enim eleifend accumsan. Donec ac ipsum velit. Curabitur vitae enim erat. Mauris tincidunt nisl nec erat euismod lobortis. Mauris cursus vestibulum felis non venenatis. Curabitur fringilla risus ac tortor ultrices tempor.

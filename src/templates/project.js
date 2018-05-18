@@ -47,23 +47,27 @@ export default ({ data }) => {
           </div>
         </div>
 
-        {fields.projectImages &&
           <div>
             <div className="grid-12col">
               <ProjectImage className="colSpan-6" key='secondary-image' image={fields.secondaryImage} />
             </div>
-            <div className="project-images grid-12col">
-              {fields.projectImages.map((image, i) => (
-                <ProjectImage key={i} image={image} />
-              ))}
-              <blockquote className="colSpan-12 t-center f-headline-b 
-                                    marginBottom-11 bp-1_marginBottom-13 bp-2_marginBottom-28
-                                    marginTop-5 bp-1_marginTop-8 bp-2_marginTop-14">
-                {fields.pullQuote}
-              </blockquote>
-            </div>
+            {fields.projectGallery &&
+              <div className="project-images grid-12col">
+                {fields.projectGallery.map((item, i) => {
+                  return (
+                    item.type === 'image' ? 
+                      <ProjectImage key={i} image={item} />
+                    :
+                      <blockquote key={i} className="colSpan-12 t-center f-headline-b 
+                                            marginBottom-11 bp-1_marginBottom-13 bp-2_marginBottom-28
+                                            marginTop-5 bp-1_marginTop-8 bp-2_marginTop-14">
+                        {item.pullQuote}
+                      </blockquote>
+                  )
+                })}
+              </div>
+            }
           </div>
-        }
         
       </div>
     </div>
@@ -96,14 +100,15 @@ export const query = graphql`
           alt
           caption
         }
-        projectImages {
+        projectGallery {
+          type
           image
           colWidth
           offsetWidth
           alt
           caption
+          pullQuote
         }
-        pullQuote
       }
     }
   }

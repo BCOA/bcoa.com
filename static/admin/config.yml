@@ -142,14 +142,13 @@ collections:
           - { label: "Alt Text", name: "alt", widget: "string", default: "project image alt" }
           - { label: "Caption", name: "caption", widget: "string", default: "project image caption" }
 
-      - label: "Project Images"
-        name: "projectImages"
+      - label: "Project Gallery Items"
+        name: "projectGallery"
         widget: "list"
         fields:
-          - label: Type,
+          - label: Type
             name: type
             widget: select
-            default: image
             options:
               - label: Image
                 value: image
