@@ -146,12 +146,57 @@ collections:
         name: "projectImages"
         widget: "list"
         fields:
-          - { label: "Image", name: "image", widget: "image", default: "/images/uploads/placeholder.jpg" }
-          - { label: "Column Width", name: "colWidth", widget: "select", options: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"], default: "12" }
-          - { label: "Offset width", name: "offsetWidth", widget: "select", options: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"], default: "0" }
-          - { label: "Alt Text", name: "alt", widget: "string", default: "project image alt" }
-          - { label: "Caption", name: "caption", widget: "string", default: "project image caption" }
-      - { label: "Pull Quote", name: "pullQuote", widget: "string" }
+          - label: Type,
+            name: type
+            widget: select 
+            options:
+              - label: Image
+                value: image
+              - label: Quote
+                value: quote
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            default: "/images/uploads/placeholder.jpg"
+            condition: 
+              field: type
+              value: image
+          - label: "Column Width"
+            name: "colWidth"
+            widget: "select"
+            options: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+            default: "12"
+            condition: 
+              field: type
+              value: image
+          - label: "Offset width"
+            name: "offsetWidth"
+            widget: "select"
+            options: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
+            default: "0"
+            condition: 
+              field: type
+              value: image
+          - label: "Alt Text"
+            name: "alt"
+            widget: "string"
+            default: "project image alt"
+            condition: 
+              field: type
+              value: image
+          - label: "Caption"
+            name: "caption"
+            widget: "string"
+            default: "project image caption"
+            condition: 
+              field: type
+              value: image
+          - label: "Pull Quote"
+            name: "pullQuote"
+            widget: "string"
+            condition: 
+              field: type
+              value: quote
 
   - name: "articles"
     label: "Articles"
