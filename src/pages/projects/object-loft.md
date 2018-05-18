@@ -24,7 +24,7 @@ projectGallery:
   - caption: Object kitchen
     colWidth: '8'
     image: /images/uploads/copyright_barkow_photo_6283.jpg
-    offsetWidth: '0'
+    offsetWidth: '4'
     type: image
   - caption: View from back
     colWidth: '4'
