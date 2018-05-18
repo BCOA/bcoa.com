@@ -43,8 +43,8 @@
   resolved "https://registry.yarnpkg.com/@types/mkdirp/-/mkdirp-0.3.29.tgz#7f2ad7ec55f914482fc9b1ec4bb1ae6028d46066"
 
 "@types/node@*":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.1.0.tgz#2783ee1b6c47cbd4044f4a233976c1ac5fa9e942"
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.1.1.tgz#ca39d8607fa1fcb146b0530420b93f1dd4802f6c"
 
 "@types/node@^7.0.11":
   version "7.0.64"
@@ -1696,12 +1696,12 @@ caniuse-api@^1.5.2, caniuse-api@^1.5.3:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000840"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000840.tgz#68d5a0f0694c92180b0d82e720d70f8e61366604"
+  version "1.0.30000843"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000843.tgz#4f7e8501f557dc9bcd37dd33ac85905c765efec2"
 
 caniuse-lite@^1.0.30000835:
-  version "1.0.30000840"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000840.tgz#344513f8f843536cf99694964c09811277eee395"
+  version "1.0.30000843"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000843.tgz#4fdec258dc641c385744cdd49d23c5459c3d4411"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -2456,8 +2456,8 @@ csso@~2.3.1:
     source-map "^0.5.3"
 
 csstype@^2.2.0:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.1.tgz#654231d1ddddfc3eb93da281a1144e7c14fc0bdc"
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.2.tgz#4534308476ceede8fbe148b9b99f9baf1c80fa06"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -2650,9 +2650,16 @@ detect-port-alt@1.1.3:
     address "^1.0.1"
     debug "^2.6.0"
 
-detect-port@1.2.2, detect-port@^1.2.1:
+detect-port@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/detect-port/-/detect-port-1.2.2.tgz#57a44533632d8bc74ad255676866ca43f96c7469"
+  dependencies:
+    address "^1.0.1"
+    debug "^2.6.0"
+
+detect-port@^1.2.1:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/detect-port/-/detect-port-1.2.3.tgz#15bf49820d02deb84bfee0a74876b32d791bf610"
   dependencies:
     address "^1.0.1"
     debug "^2.6.0"
@@ -2829,8 +2836,8 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.45:
-  version "1.3.46"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.46.tgz#00e85e22275415a887505e4ab49737194f18b9b0"
+  version "1.3.47"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.47.tgz#764e887ca9104d01a0ac8eabee7dfc0e2ce14104"
 
 elliptic@^6.0.0:
   version "6.4.0"
@@ -3246,7 +3253,7 @@ fast-json-stable-stringify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0.tgz#d5142c0caee6b1189f87d3a76111064f86c8bbf2"
 
-fast-levenshtein@~2.0.4:
+fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
@@ -5251,8 +5258,8 @@ joi@9.0.0-0:
     topo "2.x.x"
 
 js-base64@^2.1.8, js-base64@^2.1.9:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.3.tgz#2e545ec2b0f2957f41356510205214e98fad6582"
+  version "2.4.5"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.5.tgz#e293cd3c7c82f070d700fc7a1ca0a2e69f101f92"
 
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
@@ -6314,9 +6321,9 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-netlify-cms@^1.0.1, netlify-cms@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-1.7.0.tgz#7fdb2b50f14b9c08092f59e27a660aeb4aaabe11"
+netlify-cms@^1.0.1:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-1.8.0.tgz#968c11e166e5ee482d268099baf50d50af701b0c"
   dependencies:
     classnames "^2.2.5"
     create-react-class "^15.6.0"
@@ -6344,7 +6351,83 @@ netlify-cms@^1.0.1, netlify-cms@^1.7.0:
     react-dnd-html5-backend "^2.5.4"
     react-dom "^16.0.0"
     react-frame-component "^2.0.0"
+    react-hot-loader "^4.0.0"
     react-immutable-proptypes "^2.1.0"
+    react-is "16.3.1"
+    react-modal "^3.1.5"
+    react-redux "^4.4.0"
+    react-router-dom "^4.2.2"
+    react-router-redux "^5.0.0-alpha.8"
+    react-scroll-sync "^0.4.0"
+    react-sortable-hoc "^0.6.8"
+    react-split-pane "^0.1.66"
+    react-textarea-autosize "^5.2.0"
+    react-toggled "^1.1.2"
+    react-topbar-progress-indicator "^2.0.0"
+    react-transition-group "^2.2.1"
+    react-waypoint "^7.1.0"
+    redux "^3.3.1"
+    redux-notifications "^4.0.1"
+    redux-optimist "^0.0.2"
+    redux-thunk "^1.0.3"
+    rehype-parse "^3.1.0"
+    rehype-remark "^2.0.0"
+    rehype-stringify "^3.0.0"
+    remark-parse "^3.0.1"
+    remark-rehype "^2.0.0"
+    remark-stringify "^3.0.1"
+    sanitize-filename "^1.6.1"
+    semaphore "^1.0.5"
+    slate "^0.30.0"
+    slate-edit-list "^0.10.1"
+    slate-edit-table "^0.12.0"
+    slate-plain-serializer "^0.4.0"
+    slate-react "0.10.11"
+    slate-soft-break "^0.6.0"
+    toml-j0.4 "^1.1.1"
+    tomlify-j0.4 "^3.0.0-alpha.0"
+    unified "^6.1.4"
+    unist-builder "^1.0.2"
+    unist-util-visit-parents "^1.1.1"
+    url "^0.11.0"
+    uuid "^3.1.0"
+    what-input "^5.0.3"
+  optionalDependencies:
+    fsevents "^1.0.14"
+
+"netlify-cms@github:joshuarule/netlify-cms":
+  version "1.8.0"
+  resolved "https://codeload.github.com/joshuarule/netlify-cms/tar.gz/60321627bc69ce7988a5fff1908c48cbed542881"
+  dependencies:
+    classnames "^2.2.5"
+    create-react-class "^15.6.0"
+    diacritics "^1.3.0"
+    fuzzy "^0.1.1"
+    gotrue-js "^0.9.15"
+    gray-matter "^3.0.6"
+    history "^4.7.2"
+    immutable "^3.7.6"
+    is-hotkey "^0.1.1"
+    js-base64 "^2.1.9"
+    js-yaml "^3.10.0"
+    jwt-decode "^2.1.0"
+    localforage "^1.4.2"
+    lodash "^4.13.1"
+    mdast-util-definitions "^1.2.2"
+    mdast-util-to-string "^1.0.4"
+    moment "^2.11.2"
+    prop-types "^15.5.10"
+    react "^16.0.0"
+    react-aria-menubutton "^5.1.0"
+    react-autosuggest "^9.3.2"
+    react-datetime "^2.11.0"
+    react-dnd "^2.5.4"
+    react-dnd-html5-backend "^2.5.4"
+    react-dom "^16.0.0"
+    react-frame-component "^2.0.0"
+    react-hot-loader "^4.0.0"
+    react-immutable-proptypes "^2.1.0"
+    react-is "16.3.1"
     react-modal "^3.1.5"
     react-redux "^4.4.0"
     react-router-dom "^4.2.2"
@@ -6603,8 +6686,8 @@ normalize-url@^1.4.0:
     sort-keys "^1.0.0"
 
 npm-audit-report@^1.0.9:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/npm-audit-report/-/npm-audit-report-1.1.0.tgz#c4c74bb08b3be25cafaff89fd68ed81fecf6846d"
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/npm-audit-report/-/npm-audit-report-1.2.1.tgz#14813e9551f0f33088e7acc442e83ea6d627ef13"
   dependencies:
     cli-table2 "^0.2.0"
     console-control-strings "^1.1.0"
@@ -6624,8 +6707,8 @@ npm-install-checks@~3.0.0:
     semver "^2.3.0 || 3.x || 4 || 5"
 
 npm-lifecycle@^2.0.0, npm-lifecycle@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/npm-lifecycle/-/npm-lifecycle-2.0.1.tgz#897313f05ed24db8e28d99fa8b42c31b625e6237"
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/npm-lifecycle/-/npm-lifecycle-2.0.3.tgz#696bedf1143371163e9cc16fe872357e25d8d90e"
   dependencies:
     byline "^5.0.0"
     graceful-fs "^4.1.11"
@@ -8019,8 +8102,8 @@ pump@^3.0.0:
     once "^1.3.1"
 
 pumpify@^1.3.3:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/pumpify/-/pumpify-1.5.0.tgz#30c905a26c88fa0074927af07256672b474b1c15"
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/pumpify/-/pumpify-1.5.1.tgz#36513be246ab27570b1a374a5ce278bfd74370ce"
   dependencies:
     duplexify "^3.6.0"
     inherits "^2.0.3"
@@ -8266,15 +8349,30 @@ react-hot-loader@^3.0.0-beta.6:
     redbox-react "^1.3.6"
     source-map "^0.6.1"
 
+react-hot-loader@^4.0.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.2.0.tgz#4a2ec79114f872e28ea786e04889d643ad3dfb7c"
+  dependencies:
+    fast-levenshtein "^2.0.6"
+    global "^4.3.0"
+    hoist-non-react-statics "^2.5.0"
+    prop-types "^15.6.1"
+    react-lifecycles-compat "^3.0.4"
+    shallowequal "^1.0.2"
+
 react-immutable-proptypes@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-immutable-proptypes/-/react-immutable-proptypes-2.1.0.tgz#023d6f39bb15c97c071e9e60d00d136eac5fa0b4"
+
+react-is@16.3.1:
+  version "16.3.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.1.tgz#ee66e6d8283224a83b3030e110056798488359ba"
 
 react-is@^16.3.1:
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.2.tgz#f4d3d0e2f5fbb6ac46450641eb2e25bf05d36b22"
 
-react-lifecycles-compat@^3.0.0:
+react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
@@ -9461,7 +9559,7 @@ shallow-equal@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.0.0.tgz#508d1838b3de590ab8757b011b25e430900945f7"
 
-shallowequal@^1.0.1:
+shallowequal@^1.0.1, shallowequal@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.0.2.tgz#1561dbdefb8c01408100319085764da3fcf83f8f"
 
@@ -9633,9 +9731,9 @@ socket.io-adapter@~1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/socket.io-adapter/-/socket.io-adapter-1.1.1.tgz#2a805e8a14d6372124dd9159ad4502f8cb07f06b"
 
-socket.io-client@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-2.1.0.tgz#0d0b21d460dc4ed36e57085136f2be0137ff20ff"
+socket.io-client@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-2.1.1.tgz#dcb38103436ab4578ddb026638ae2f21b623671f"
   dependencies:
     backo2 "1.0.2"
     base64-arraybuffer "0.1.5"
@@ -9661,14 +9759,14 @@ socket.io-parser@~3.2.0:
     isarray "2.0.1"
 
 socket.io@^2.0.3:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/socket.io/-/socket.io-2.1.0.tgz#de77161795b6303e7aefc982ea04acb0cec17395"
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/socket.io/-/socket.io-2.1.1.tgz#a069c5feabee3e6b214a75b40ce0652e1cfb9980"
   dependencies:
     debug "~3.1.0"
     engine.io "~3.2.0"
     has-binary2 "~1.0.2"
     socket.io-adapter "~1.1.0"
-    socket.io-client "2.1.0"
+    socket.io-client "2.1.1"
     socket.io-parser "~3.2.0"
 
 socketcluster-client@^5.3.1:
@@ -10018,8 +10116,8 @@ stringify-entities@^1.0.1:
     is-hexadecimal "^1.0.0"
 
 stringstream@~0.0.4:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.5.tgz#4e484cd4de5a0bbbee18e46307710a8a81621878"
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.6.tgz#7880225b0d4ad10e30927d167a1d6f2fd3b33a72"
 
 strip-ansi@3.0.1, strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   version "3.0.1"
