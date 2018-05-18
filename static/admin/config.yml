@@ -148,7 +148,8 @@ collections:
         fields:
           - label: Type,
             name: type
-            widget: select 
+            widget: select
+            default: image
             options:
               - label: Image
                 value: image
