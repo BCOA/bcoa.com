@@ -5,8 +5,8 @@ export default (props) => {
   const entry = props.entry;
   const title = entry.getIn(['data', 'title']);
   const heroImg = props.getAsset(props.widgetsFor('heroImage').getIn(['data', 'url']));
-  const primaryImg = props.getAsset(props.widgetsFor('primaryImage').getIn(['data', 'url']));
-  const secondaryImg = props.getAsset(props.widgetsFor('secondaryImage').getIn(['data', 'url']));
+  const primaryImg = props.getAsset(props.widgetsFor('primaryImage').getIn(['data', 'image']));
+  const secondaryImg = props.getAsset(props.widgetsFor('secondaryImage').getIn(['data', 'image']));
   const infoObjects = props.widgetsFor('infoObject');
   return (
     <div>
