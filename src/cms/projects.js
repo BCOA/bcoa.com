@@ -5,6 +5,7 @@ export default (props) => {
   const entry = props.entry;
   const title = entry.getIn(['data', 'title']);
   const heroImg = props.getAsset(props.widgetsFor('heroImage').getIn(['data', 'url']));
+  const infoObjects = props.widgetsFor('infoObject');
   return (
     <div>
       <div>{title}</div>
@@ -13,6 +14,14 @@ export default (props) => {
       <div className="marginBottom-5 bp-1_marginBottom-5 bp-2_marginBottom-10"
         dangerouslySetInnerHTML={{ __html: entry.getIn(['data', 'body']) }}
       />
+      {infoObjects.map((infoObject, i) => {
+        return (
+          <div key={i}>
+            <p>{infoBoject.getIn(['data', 'title'])}</p>
+            <p>{infoBoject.getIn(['data', 'description'])}</p>
+          </div>
+        )
+      })}
     </div>
   )
 };
