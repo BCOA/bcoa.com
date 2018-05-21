@@ -28,7 +28,8 @@ export default ({ slides }) => {
       {slides.map((slide, i) => (
         <div className="slide" key={`slide-${i}`}>
           <div className="slide-info">
-            <p>{slide.description}</p>
+            {/* <p>{slide.description}</p> */}
+            <div className="md" dangerouslySetInnerHTML={{ __html: slide.description }} />
             <span>{i + 1}/{slides.length}</span>
           </div>
           <img src={slide.url} alt={slide.alt} />
