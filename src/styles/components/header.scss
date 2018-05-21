@@ -12,5 +12,7 @@ header > .container {
 }
 
 .header-menuButton {
-  
+  outline: 1px solid green;
+  height: var(--unit-9);
+  width: var(--unit-9);
 }

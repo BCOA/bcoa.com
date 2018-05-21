@@ -121,3 +121,12 @@ blockquote {
 address {
   font-style: normal;
 }
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  &:active{ color: currentColor }
+}
