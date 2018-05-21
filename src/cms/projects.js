@@ -1,10 +1,13 @@
 import React from 'react'
 
 export default (props) => {
-  console.log(props);
   const entry = props.entry;
   const title = entry.getIn(['data', 'title']);
+  const hero = props.getAssest(entry.getIn(['data', 'heroImage']));
   return (
-    <div>Project Title: {title}</div>
+    <div>
+      <div>Project Title: {title}</div>
+      <img src={hero.toString()} alt="hero image" />
+    </div>
   )
 };
