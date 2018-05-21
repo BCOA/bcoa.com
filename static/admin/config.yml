@@ -102,8 +102,8 @@ collections:
                 name: "project"
                 widget: "relation"
                 collection: "projects"
-                searchFields: ["name"]
-                valueField: "name"
+                searchFields: ["title"]
+                valueField: "title"
           
   - name: "projects"
     label: "Projects"
