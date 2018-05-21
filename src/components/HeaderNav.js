@@ -11,12 +11,8 @@ export default ({ visible, toggleMenu }) => {
             <a href="/">Breitner Ciaccia–Office of Architecture</a>
           </p>
           <button className="header-menuButton" onClick={toggleMenu}>
-<<<<<<< Updated upstream
             <span className="hide">{ visible ? "Close Menu" : "Open Menu" }</span>
             { visible ? icons["x-mark"] : icons.hamburger }
-=======
-            <span>{ visible ? "Close Menu" : "Open Menu" }</span>
->>>>>>> Stashed changes
           </button>
         </div>
       </header>
