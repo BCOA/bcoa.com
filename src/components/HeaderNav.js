@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Link from "gatsby-link";
+import { icons } from "./Icons";
 
 export default ({ visible, toggleMenu }) => {
   return (
@@ -9,7 +10,10 @@ export default ({ visible, toggleMenu }) => {
           <p style={{ flex: "1" }}>
             <a href="/">Breitner Ciaccia–Office of Architecture</a>
           </p>
-          <button className="header-menuButton" onClick={toggleMenu}>menu</button>
+          <button className="header-menuButton" onClick={toggleMenu}>
+            <span className="hide">{ visible ? "Close Menu" : "Open Menu" }</span>
+            { visible ? icons["x-mark"] : icons.hamburger }
+          </button>
         </div>
       </header>
       {visible &&
