@@ -1,6 +1,6 @@
 ---
 templateKey: project-page
-title: BC–OA First Project
+title: BC–OA First Projects
 heroImage:
   alt: this is the hero image alt text string
   url: /images/uploads/placeholder.jpg
