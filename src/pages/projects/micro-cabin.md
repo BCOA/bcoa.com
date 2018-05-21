@@ -4,7 +4,7 @@ title: Micro Cabin
 heroImage:
   alt: Micro Cabin - residential forest reclaimed materials
   url: /images/uploads/hero.jpg
-headline: Action Headline Goes Here
+headline: 'A jewel box, packed with functionality'
 featured: true
 previewImage:
   alt: Micro Cabin - residential living room with cast iron stove
@@ -42,9 +42,7 @@ projectGallery:
     colWidth: '4'
     image: /images/uploads/micro-cabin_3.jpg
     type: image
-  - pullQuote: >-
-      integer pretium bibendum posuere. in ac enim aliquam, porta est quis,
-      maximus
+  - pullQuote: '323sf, packed with all the fixin''s'
     type: quote
   - alt: Micro Cabin - architectural rendering
     colWidth: '6'

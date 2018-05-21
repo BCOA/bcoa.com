@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 
 export default ({ visible, toggleMenu }) => {
   return (
-    <Fragment>
+    <div>
       <header>
         <div className="container">
           <p style={{ flex: "1" }}>
@@ -33,6 +33,6 @@ export default ({ visible, toggleMenu }) => {
           </ul>
         </nav>
       }
-    </Fragment>
+    </div>
   )
 }
