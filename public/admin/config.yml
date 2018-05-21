@@ -5,6 +5,8 @@ backend:
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
+publish_mode: editorial_workflow
+
 collections:
   - name: "pages"
     label: "Pages"
@@ -95,7 +97,13 @@ collections:
             fields:
               - { label: "Image", name: "url", widget: "image", default: "/images/uploads/placeholder.jpg" }
               - { label: "Alt Text", name: "alt", widget: "string", default: "project image alt" }
-              - { label: "Caption", name: "caption", widget: "string", default: "project image caption" }
+              - { label: "Description", name: "description", widget: "text", default: "project image caption" }
+              - label: "Related Project"
+                name: "project"
+                widget: "relation"
+                collection: "projects"
+                searchFields: ["name"]
+                valueField: "name"
           
   - name: "projects"
     label: "Projects"

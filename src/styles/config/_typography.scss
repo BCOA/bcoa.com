@@ -344,3 +344,9 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
     line-height: 16px;
   }
 }
+
+.md {
+  p {
+    margin-bottom: var(--unit-7);
+  }
+}

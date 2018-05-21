@@ -28,8 +28,7 @@ export default ({ slides }) => {
       {slides.map((slide, i) => (
         <div className="slide" key={`slide-${i}`}>
           <div className="slide-info">
-            <p>Ward Road, Location</p>
-            <p>Lorem Ipsum Dolor Sit</p>
+            <p>{slide.description}</p>
             <span>{i + 1}/{slides.length}</span>
           </div>
           <img src={slide.url} alt={slide.alt} />

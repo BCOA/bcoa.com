@@ -46,6 +46,7 @@ export const query = graphql`
         carouselImages {
           url
           alt
+          description
         }
       }
     }

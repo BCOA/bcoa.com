@@ -46,7 +46,7 @@ export default (props) => {
   console.log(props);
 
   return (
-    props.image.offsetWidth ?
+    props.image.offsetWidth > 0 ?
       <div className={`colSpan-12 grid-12col`}>
         <div className={`colSpan-${props.image.offsetWidth}`}></div>
         <ProjectImage {...props} classes={classes} />

@@ -24,7 +24,7 @@ export default ({ data }) => {
             <h1 className='f-headline-b marginBottom-4 bp-1_marginBottom-13 bp-2_marginBottom-11'>
               {fields.headline}-
             </h1>
-            <div className="marginBottom-5 bp-1_marginBottom-5 bp-2_marginBottom-10"
+            <div className="md marginBottom-5 bp-1_marginBottom-5 bp-2_marginBottom-10"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
 
