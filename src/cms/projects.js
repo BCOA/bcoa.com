@@ -19,8 +19,8 @@ export default (props) => {
       {infoObjects.map((infoObject, i) => {
         return (
           <div key={i}>
-            <p>{infoBoject.getIn(['data', 'title'])}</p>
-            <p>{infoBoject.getIn(['data', 'description'])}</p>
+            <p>{infoObject.getIn(['data', 'title'])}</p>
+            <p>{infoObject.getIn(['data', 'description'])}</p>
           </div>
         )
       })}
