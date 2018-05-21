@@ -3,7 +3,7 @@ import React from 'react'
 export default (props) => {
   const entry = props.entry;
   const title = entry.getIn(['data', 'title']);
-  const hero = props.getAssest(entry.getIn(['data', 'heroImage']));
+  const hero = props.getAsset(entry.getIn(['data', 'heroImage']));
   return (
     <div>
       <div>Project Title: {title}</div>
