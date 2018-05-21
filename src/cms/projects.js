@@ -6,7 +6,7 @@ export default (props) => {
   const title = entry.getIn(['data', 'title']);
 
   const hero = entry.getIn(['data', 'heroImage']);
-  const heroImg = props.widgetsFor(hero).getIn(['data', 'url'])
+  const heroImg = props.getAsset(props.widgetsFor(hero).getIn(['data', 'url']));
   return (
     <div>
       <div>Project Title: {title}</div>
