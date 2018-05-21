@@ -2,7 +2,9 @@ import React from 'react'
 
 export default (props) => {
   console.log(props);
+  const entry = props.entry;
+  const title = entry.getIn(['data', 'title']);
   return (
-    <div>This is the projects preview</div>
+    <div>Project Title: {title}</div>
   )
 };
