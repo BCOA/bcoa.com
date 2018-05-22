@@ -35,6 +35,12 @@ studioMembers:
       url: /images/uploads/placeholder.jpg
     jobTitle: Peon
     name: Scott Mikawa
+  - description: Job description here
+    image:
+      alt: alt
+      url: /images/uploads/placeholder.jpg
+    jobTitle: Worker bee
+    name: John Smith
 publications:
   - date: 4.30.2018
     title: First Publication 1
