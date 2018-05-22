@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import "../styles/app.scss";
 import HeaderNav from "../components/HeaderNav";
 import FixedLogo from "../components/FixedLogo";
+import classnames from "classnames";
 
 export default class TemplateWrapper extends Component {
 
@@ -19,6 +20,11 @@ export default class TemplateWrapper extends Component {
   }
 
   render() {
+    const homeClasses = classnames(this.props.className, {
+      'bg-lightRed': (this.props.location.pathname === '/about')
+    })
+
+    console.log(this.props);
 
     const {
       children,
@@ -26,7 +32,7 @@ export default class TemplateWrapper extends Component {
     } = this.props;
 
     return (
-      <div>
+      <div className={homeClasses}>
         <Helmet title="Home | BC–OA" />
         <HeaderNav visible={this.state.menuOpen} toggleMenu={this.toggleMenu} />
         <FixedLogo />

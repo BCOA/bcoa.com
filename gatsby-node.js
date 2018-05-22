@@ -33,73 +33,64 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       }
     `).then(result => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        if (node.frontmatter.templateKey === "about-page") {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve("./src/templates/about.js"),
-            context: {
-              // Data passed to context is available in page queries as GraphQL variables.
-              slug: node.fields.slug
-            }
-          });
-        } else if (node.frontmatter.templateKey === "work-page") {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve("./src/templates/work.js"),
-            context: {
-              // Data passed to context is available in page queries as GraphQL variables.
-              slug: node.fields.slug
-            }
-          });
-        } else if (node.frontmatter.templateKey === "news-page") {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve("./src/templates/news.js"),
-            context: {
-              // Data passed to context is available in page queries as GraphQL variables.
-              slug: node.fields.slug
-            }
-          });
-        } else if (node.frontmatter.templateKey === "contact-page") {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve("./src/templates/contact.js"),
-            context: {
-              // Data passed to context is available in page queries as GraphQL variables.
-              slug: node.fields.slug
-            }
-          });
-        } else if (node.frontmatter.templateKey === "project-page") {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve("./src/templates/project.js"),
-            context: {
-              // Data passed to context is available in page queries as GraphQL variables.
-              slug: node.fields.slug
-            }
-          });
-        }  else if (node.frontmatter.templateKey === "featured-page") {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve("./src/templates/index.js"),
-            context: {
-              // Data passed to context is available in page queries as GraphQL variables.
-              slug: node.fields.slug
-            }
-          });
-        } else {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve("./src/templates/article.js"),
-            context: {
-              // Data passed to context is available in page queries as GraphQL variables.
-              slug: node.fields.slug
-            }
-          });
-        }
+        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+          if (node.frontmatter.templateKey === "about-page") {
+            createPage({
+              path: node.fields.slug,
+              component: path.resolve("./src/templates/about.js"),
+              context: {
+                // Data passed to context is available in page queries as GraphQL variables.
+                slug: node.fields.slug
+              }
+            });
+          } else if (node.frontmatter.templateKey === "work-page") {
+            createPage({
+              path: node.fields.slug,
+              component: path.resolve("./src/templates/work.js"),
+              context: {
+                // Data passed to context is available in page queries as GraphQL variables.
+                slug: node.fields.slug
+              }
+            });
+          } else if (node.frontmatter.templateKey === "news-page") {
+            createPage({
+              path: node.fields.slug,
+              component: path.resolve("./src/templates/news.js"),
+              context: {
+                // Data passed to context is available in page queries as GraphQL variables.
+                slug: node.fields.slug
+              }
+            });
+          } else if (node.frontmatter.templateKey === "contact-page") {
+            createPage({
+              path: node.fields.slug,
+              component: path.resolve("./src/templates/contact.js"),
+              context: {
+                // Data passed to context is available in page queries as GraphQL variables.
+                slug: node.fields.slug
+              }
+            });
+          } else if (node.frontmatter.templateKey === "project-page") {
+            createPage({
+              path: node.fields.slug,
+              component: path.resolve("./src/templates/project.js"),
+              context: {
+                // Data passed to context is available in page queries as GraphQL variables.
+                slug: node.fields.slug
+              }
+            });
+          } else if (node.frontmatter.templateKey === "featured-page") {
+            createPage({
+              path: node.fields.slug,
+              component: path.resolve("./src/templates/index.js"),
+              context: {
+                // Data passed to context is available in page queries as GraphQL variables.
+                slug: node.fields.slug
+              }
+            });
+          }
+        });
+        resolve();
       });
-      resolve();
-    });
   });
 };

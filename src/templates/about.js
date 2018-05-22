@@ -64,8 +64,7 @@ export default ({ data }) => {
     member => !member.principal
   );
   return (
-    <div className="bg-lightRed container">
-      {/* marginTop gives a white space, but padding does not...BUT with padding the spacing seems off by 2... */}
+    <div className="container">
       <h1 className="f-page-title
                       marginTop-7 marginBottom-6
                       bp-1_marginTop-10 bp-1_marginBottom-9">
