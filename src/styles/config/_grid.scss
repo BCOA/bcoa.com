@@ -44,6 +44,12 @@ $gutter: 4.21%;
   }
 }
 
+.nestedGrid-8-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-column-gap: $gutter * 1.532;
+}
+
 // @for $i from 1 through 12 {
 //   .colOffset-#{$i}{
 //     grid-column: span $i;

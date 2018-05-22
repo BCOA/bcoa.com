@@ -3,16 +3,15 @@ import Link from "gatsby-link";
 import Image from "../components/Image";
 
 const Member = ({ member }) => (
-<div className={ member.principal ? "principal" : "" }>
-{/* ^ this should be a grid??? ^ */}
-    <img
+  <div className={ member.principal ? "principal" : "" }>
+    { !member.principal && <hr className="c-red marginBottom-2" /> }
+    { member.principal && <img
       className="bp-1_marginBottom-2 marginBottom-3"
       src={ member.image.url}
-      alt={member.image.alt } />
+      alt={ member.image.alt } /> }
     <h3 className="f-copy-bold">{ member.name }</h3>
-    <p className="f-copy-bold bp-1_marginBottom-5 marginBottom-2">{ member.jobTitle }</p>
-    {/* adjust styling for med & lrg because principals is 2-col */}
-    <p className="marginBottom-15">{ member.description }</p>
+    <p className={ `${ member.principal ? "f-copy-bold" : "" } bp-1_marginBottom-5 marginBottom-2` }>{ member.jobTitle }</p>
+    { member.principal && <p className="marginBottom-15">{ member.description }</p> }
   </div>
 );
 
@@ -70,44 +69,53 @@ export default ({ data }) => {
                       bp-1_marginTop-10 bp-1_marginBottom-9">
         { fields.title }
       </h1>
-      <div
-        className="f-display-copy
-                    marginBottom-16
-                    bp-1_marginBottom-15"
-        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-      />
-      <hr className="c-red
-                      marginBottom-2
-                      bp-1_marginBottom-3" />
-      { principals && (
-        <div className="marginBottom-2">
-          <h2 className="f-headline-c
-                          bp-1_marginBottom-15              
-                          marginBottom-7">
-            Principals
-          </h2>
-          <ul>
-            { principals.map((member, i) => (
-              <li className="f-copy" key={`principalMember-${i}`}>
-                <Member member={ member } />
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <div className="grid-12col">
+        <div
+          className="f-display-copy colSpan-9
+          marginBottom-16
+          bp-1_marginBottom-15"
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        />
+      </div>
+      <div className="grid-12col">
+        { principals && (
+          <div className="colSpan-8
+                          marginBottom-2">
+            <hr className="c-red
+                            marginBottom-2
+                            bp-1_marginBottom-3" />
+            <h2 className="f-headline-c
+                            marginBottom-7
+                            bp-1_marginBottom-15              
+                            bp-2_marginBottom-16">
+              Principals
+            </h2>
+            <ul className="nestedGrid-8-2">
+              { principals.map((member, i) => (
+                <li className="f-copy" key={`principalMember-${i}`}>
+                  <Member member={ member } />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
-      { !!studioMembers.length && (
-        <div>
-          <h2 className="f-headline- marginBottom-7">Studio Members</h2>
-          <ul>
-            { studioMembers.map((member, i) => (
-              <li key={`member-${i}`}>
-                <Member member={ member } />
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+        { !!studioMembers.length && (
+          <div className="colSpan-4">
+            <hr className="c-red
+                            marginBottom-2
+                            bp-1_marginBottom-3" />
+            <h2 className="f-headline-c marginBottom-7 bp-2_marginBottom-16">Studio Members</h2>
+            <ul>
+              { studioMembers.map((member, i) => (
+                <li key={`member-${i}`}>
+                  <Member member={ member } />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
       
       <hr className="c-red marginBottom-2" />
       { fields.publications && (
