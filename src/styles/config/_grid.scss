@@ -38,9 +38,31 @@ $gutter: 4.21%;
   }
 }
 
-@for $i from 1 through 12 {
-  .colSpan-#{$i}{
-    grid-column: span $i;
+@for $h from 1 through length($breakpoints) {
+  @if nth($breakpoints, $h) == 'bp-1' {
+    @for $i from 1 through 12 {
+      @include bp-1 {
+        .#{nth($breakpoints, $h)}_colSpan-#{$i} {
+          grid-column: span $i;
+        }
+      }
+    }
+  } 
+  @else if nth($breakpoints, $h) == 'bp-2' {
+    @for $i from 1 through 12 {
+      @include bp-2 {
+        .#{nth($breakpoints, $h)}_colSpan-#{$i} {
+          grid-column: span $i;
+        }
+      }
+    }
+  }
+  @else {
+    @for $i from 1 through 12 {
+      .colSpan-#{$i} {
+        grid-column: span $i;
+      }
+    }
   }
 }
 
