@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import "../styles/app.scss";
-
 import HeaderNav from "../components/HeaderNav";
+import FixedLogo from "../components/FixedLogo";
 
 export default class TemplateWrapper extends Component {
 
@@ -29,6 +29,7 @@ export default class TemplateWrapper extends Component {
       <div>
         <Helmet title="Home | BC–OA" />
         <HeaderNav visible={this.state.menuOpen} toggleMenu={this.toggleMenu} />
+        <FixedLogo />
         <main>{children()}</main>
         <footer>
           <div className="container">

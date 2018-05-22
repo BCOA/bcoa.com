@@ -21,6 +21,10 @@
   color: var(--red);
 }
 
+.c-gray {
+  color: var(--gray);
+}
+
 //
 // Units
 //
@@ -37,6 +41,7 @@
 :root {
   --header-height: var(--unit-10);
   --project-title-height: var(--unit-24);
+  --heroHeight: calc(100vh - var(--header-height) - var(--project-title-height) - var(--unit-45));
 }
 
 //

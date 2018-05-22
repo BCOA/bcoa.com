@@ -3,14 +3,16 @@ import Link from "gatsby-link";
 import Image from "../components/Image";
 
 const Member = ({ member }) => (
-  <div className={ member.principal ? "principal" : "" }>
+<div className={ member.principal ? "principal" : "" }>
+{/* ^ this should be a grid??? ^ */}
     <img
-      className="marginBottom-3"
+      className="bp-1_marginBottom-2 marginBottom-3"
       src={ member.image.url}
       alt={member.image.alt } />
     <h3 className="f-copy-bold">{ member.name }</h3>
-    <p className="f-copy-bold marginBottom-2">{ member.jobTitle }</p>
-    <p className="marginBottom-17">{ member.description }</p>
+    <p className="f-copy-bold bp-1_marginBottom-5 marginBottom-2">{ member.jobTitle }</p>
+    {/* adjust styling for med & lrg because principals is 2-col */}
+    <p className="marginBottom-15">{ member.description }</p>
   </div>
 );
 
@@ -62,82 +64,93 @@ export default ({ data }) => {
     member => !member.principal
   );
   return (
-    <div className="paddingTop-2 bg-lightRed">
-      <div className="container paddingTop-3">
-        <h1 className="marginBottom-3 f-page-title">
-          { fields.title }
-        </h1>
-        <div
-          className="f-display-copy marginBottom-15"
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        />
-        <hr className="c-red marginBottom-2" />
-          { principals && (
-            <div>
-              <h2 className="f-headline-c marginBottom-7">Principals</h2>
-              <ul>
-                { principals.map((member, i) => (
-                  <li className="f-copy" key={`principalMember-${i}`}>
-                    <Member member={ member } />
-                  </li>
-                ))}
-              </ul>
-          </div>
-        )}
-        { !!studioMembers.length && (
-          <div>
-            <h2 className="f-headline- marginBottom-7">Studio Members</h2>
-            <ul>
-              { studioMembers.map((member, i) => (
-                <li key={`member-${i}`}>
-                  <Member member={ member } />
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        <hr className="c-red marginBottom-2" />
-        { fields.publications && (
-          <div>
-          <h2 className="f-headline-c marginBottom-7">Publications</h2>
-            <hr className="c-red marginBottom-2" />
-            <ul>
-              { fields.publications.map((publication, i) => (
-                <li key={`publication-${i}`}>
-                <Publication publication={ publication } />
+    <div className="bg-lightRed container">
+      {/* marginTop gives a white space, but padding does not...BUT with padding the spacing seems off by 2... */}
+      <h1 className="f-page-title
+                      marginTop-7 marginBottom-6
+                      bp-1_marginTop-10 bp-1_marginBottom-9">
+        { fields.title }
+      </h1>
+      <div
+        className="f-display-copy
+                    marginBottom-16
+                    bp-1_marginBottom-15"
+        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+      />
+      <hr className="c-red
+                      marginBottom-2
+                      bp-1_marginBottom-3" />
+      { principals && (
+        <div className="marginBottom-2">
+          <h2 className="f-headline-c
+                          bp-1_marginBottom-15              
+                          marginBottom-7">
+            Principals
+          </h2>
+          <ul>
+            { principals.map((member, i) => (
+              <li className="f-copy" key={`principalMember-${i}`}>
+                <Member member={ member } />
               </li>
             ))}
-            </ul>
-          </div>
-        )}
-        { fields.awards && (
-          <div>
-          <h2 className="f-headline-c marginBottom-7">Awards</h2>
-          <hr className="c-red marginBottom-2" />
-            <ul>
-              { fields.awards.map((award, i) => (
-                <li key={`award-${i}`}>
-                  <Award award={ award } />
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        { fields.collaborators && (
-          <div>
-            <h2 className="f-headline-c marginBottom-7">Collaborators</h2>
-            <hr className="c-red marginBottom-2" />
-            <ul>
-              { fields.collaborators.map((collaborator, i) => (
-                <li key={`award-${i}`}>
-                  <Collaborator collaborator={ collaborator } />
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+          </ul>
+        </div>
+      )}
+
+      { !!studioMembers.length && (
+        <div>
+          <h2 className="f-headline- marginBottom-7">Studio Members</h2>
+          <ul>
+            { studioMembers.map((member, i) => (
+              <li key={`member-${i}`}>
+                <Member member={ member } />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      
       <hr className="c-red marginBottom-2" />
-      </div>
+      { fields.publications && (
+        <div>
+        <h2 className="f-headline-c marginBottom-7">Publications</h2>
+          <hr className="c-red marginBottom-2" />
+          <ul>
+            { fields.publications.map((publication, i) => (
+              <li key={`publication-${i}`}>
+              <Publication publication={ publication } />
+            </li>
+          ))}
+          </ul>
+        </div>
+      )}
+      { fields.awards && (
+        <div>
+        <h2 className="f-headline-c marginBottom-7">Awards</h2>
+        <hr className="c-red marginBottom-2" />
+          <ul>
+            { fields.awards.map((award, i) => (
+              <li key={`award-${i}`}>
+                <Award award={ award } />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      { fields.collaborators && (
+        <div>
+          <h2 className="f-headline-c marginBottom-7">Collaborators</h2>
+          <hr className="c-red marginBottom-2" />
+          <ul>
+            { fields.collaborators.map((collaborator, i) => (
+              <li key={`award-${i}`}>
+                <Collaborator collaborator={ collaborator } />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <hr className="c-red marginBottom-2" />
     </div>
   );
 };

@@ -173,11 +173,11 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
 .f-subhead {
   font-family: $messina-bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:   15px;
-  line-height: 16px; //@JOSH: or 20px ???
+  line-height: 16px;
 
   @include bp-1 {
     font-size:   16px;
-    line-height: 16px; //@JOSH: or 20px ???
+    line-height: 16px;
   }
 
   @include bp-2 {
@@ -202,7 +202,6 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
   }
 }
 
-// display copy
 @mixin f-copy {
   font-family: $messina-book, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:   16px;

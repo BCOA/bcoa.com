@@ -5,8 +5,9 @@ export default ({ data }) => {
   const news = data.news.frontmatter;
 
   return (
-    <div>
-      <h1 className="marginTop-11 marginBottom-8">{ news.title }</h1>
+    <div className="container">
+      <h1 className="f-page-title
+                     marginTop-11 marginBottom-8">{ news.title }</h1>
       <ul>
         { data.articles.edges.map(({ node }, i) => (
           <li key={i}>
@@ -15,12 +16,16 @@ export default ({ data }) => {
               alt={ node.frontmatter.image.alt }
               className="marginBottom-11"
             />
-            <h2>{ node.frontmatter.title }</h2>
-            <time className="marginBottom-8">
+            {/* News numbers counter in bottomRight of img space => ex: (1/2) */}
+            <h2 className="f-headline-a">{ node.frontmatter.title }</h2>
+            <time className="c-gray
+                             f-headline-a
+                             marginBottom-8">
               { node.frontmatter.date }
             </time>
             <div
-              className="marginBottom-13"
+              className="f-copy-book
+                         marginBottom-13"
               dangerouslySetInnerHTML={{ __html: node.html }}
             />
           </li>

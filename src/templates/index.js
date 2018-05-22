@@ -15,7 +15,7 @@ export default ({ data }) => {
     <div>
       <Slider slides={data.page.frontmatter.carouselImages} />
       <div className="container">
-        <h2>{data.page.frontmatter.title}</h2>
+        <h2 className="f-page-title">{data.page.frontmatter.title}</h2>
         <ul>
           {projects &&
             projects.map(({ node: project }, i) => (
@@ -26,7 +26,8 @@ export default ({ data }) => {
                       src={project.frontmatter.previewImage.url}
                       alt={project.frontmatter.previewImage.alt}
                     />
-                    <h1>{project.frontmatter.title}</h1>
+                    <h1 className="f-headline-d">{project.frontmatter.title}</h1>
+                    {/* we need descriptor text below and "Read More" filler */}
                   </Link>
                 </article>
               </li>

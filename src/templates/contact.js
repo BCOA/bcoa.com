@@ -6,26 +6,31 @@ export default ({ data }) => {
   const pageFields = page.frontmatter;
   const contact    = data.contact;
   return (
-    <div>
-      <h1 className="marginTop-11 marginBottom-8">
-        { pageFields.title }
-      </h1>
-      <img
-        src={ pageFields.heroImage.url }
-        alt={ pageFields.heroImage.alt }
-        className="marginBottom-11"
-      />
-      <div className="marginBottom-17" dangerouslySetInnerHTML={{ __html: page.html }} />
-        <p>{ pageFields.message }</p>
-        <p>{ contact.address.street }</p>
-        <p>{ contact.address.street2 }</p>
-        <p>
-          { contact.address.city },{ contact.address.state } { contact.address.zip }
-        </p>
-        <p>
-          <a href={`mailto:${ contact.email }`}>email</a>
-        </p>
-        <a href={`tel:${ contact.phone }`}>phone</a>
+    <div className="container bg-lightRed c-red">
+        <h1 className="f-page-title
+                      paddingTop-7 marginBottom-8">
+          { pageFields.title }
+        </h1>
+        <img
+          src={ pageFields.heroImage.url }
+          alt={ pageFields.heroImage.alt }
+        />
+        <div className="marginBottom-7"
+            dangerouslySetInnerHTML={{ __html: page.html }} />
+          <p className="f-display-copy
+                        marginBottom-6">{ pageFields.message }</p>
+          <p className="f-display-copy">{ contact.address.street }</p>
+          <p className="f-display-copy">{ contact.address.street2 }</p>
+          <p className="f-display-copy">
+            { contact.address.city },{ contact.address.state } { contact.address.zip }
+          </p>
+          <p className="f-display-copy">--</p>
+          <p>
+            <a className="f-display-copy c-red" href={`mailto:${ contact.email }`}>email</a>
+          </p>
+          <a className="f-display-copy c-red" href={`tel:${ contact.phone }`}>phone</a>
+          <p className="f-display-copy">--</p>
+          <p className="f-display-copy paddingBottom-16">Instagram</p>
     </div>
   );
 };

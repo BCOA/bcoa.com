@@ -6,7 +6,7 @@ export default ({ data }) => {
   const projects = data.projects.edges;
   return (
     <div className="container">
-      <h1>{page.title}</h1>
+      <h1 className="f-page-title">{page.title}</h1>
       <ul className="grid-4col">
         {projects &&
           projects.map(({ node: project }, i) => (
@@ -17,7 +17,8 @@ export default ({ data }) => {
                     src={project.frontmatter.previewImage.url}
                     alt={project.frontmatter.previewImage.alt}
                   />
-                  <h1>{project.frontmatter.title}</h1>
+                  {/* project location name should go here with same style as "title" below */}
+                  <h1 className="f-subhead">{project.frontmatter.title}</h1>
                 </Link>
               </article>
             </li>
