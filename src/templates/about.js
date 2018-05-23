@@ -3,34 +3,42 @@ import Link from "gatsby-link";
 import Image from "../components/Image";
 
 const Member = ({ member }) => (
-  <div className={ member.principal ? "principal" : "" }>
+  <div className={ `${ member.principal ? "principal" : "" } bp-2_marginBottom-33` }>
     { !member.principal && <hr className="c-red marginBottom-2" /> }
     { member.principal && <img
       className="bp-1_marginBottom-2 marginBottom-3"
       src={ member.image.url}
       alt={ member.image.alt } /> }
-    <h3 className="f-copy-bold">{ member.name }</h3>
-    <p className={ `${ member.principal ? "f-copy-bold" : "" } bp-1_marginBottom-5 marginBottom-2` }>{ member.jobTitle }</p>
-    { member.principal && <p className="marginBottom-15">{ member.description }</p> }
+    <h3 className="c-red f-copy-bold">{ member.name }</h3>
+    <p className={ `${ member.principal ? "f-copy-bold" : "" } c-red marginBottom-2 bp-1_marginBottom-5` }>{ member.jobTitle }</p>
+    {/* @JOSH: ^ need bp-2_marginBottom-6 for Studio Members only above...job title spacing b/w Principal/Studio is different! ^ */}
+    { member.principal && <p className="c-red marginBottom-15 bp-1_marginBottom-22">{ member.description }</p> }
   </div>
 );
 
 const Publication = ({ publication }) => (
-  <div className="">
-    <h4 className="f-copy-bold">{ publication.title }</h4>
-    <p className="marginBottom-7">{ publication.date }</p>
+  <div>
     <hr className="c-red marginBottom-2" />
+    <h4 className="f-copy-bold c-red">{ publication.title }</h4>
+    <p className="f-copy c-red
+                  marginBottom-7
+                  bp-2_marginBottom-7">
+      { publication.date }
+    </p>
   </div>
 );
 
 const Award = ({ award }) => (
   <div>
+    <hr className="c-red marginBottom-2" />
     <h3 className="f-copy-bold">{ award.title } - { award.orgName }</h3>
-    <date className="marginBottom-7">{ award.date }</date>
-    <a href={ award.url } target="_blank">
-      View Award
-    </a>
-    <hr className="c-red marginBottom-2 marginTop-7" />
+    <p className="marginBottom-7
+                    bp-2_marginBottom-7">
+      { award.date }
+    </p>
+    {/* <a href={ award.url } target="_blank">
+      -->View Award
+    </a> */}
   </div>
 );
 
@@ -38,15 +46,15 @@ const Collaborator = ({ collaborator }) => (
   <div>
     {collaborator.url ? (
       <a href={ collaborator.url }>
-        <h3 className="f-copy-bold">
+        <h3 className="f-copy-bold c-red">
           { collaborator.name } - { collaborator.jobTitle }
         </h3>
-        { collaborator.description && <p className="marginBottom-7">{ collaborator.description }</p> }
+        { collaborator.description && <p className="c-red marginBottom-7">{ collaborator.description }</p> }
       </a>
     ) : (
       <div>
       <hr className="c-red marginBottom-2" />
-        <h3 className="f-copy-bold">
+        <h3 className="c-red f-copy-bold">
         { collaborator.name } - { collaborator.jobTitle }
       </h3>
         { collaborator.description && <p>{ collaborator.description }</p> }
@@ -64,30 +72,33 @@ export default ({ data }) => {
   );
   return (
     <div className="container">
-      <h1 className="f-page-title
-                      marginTop-7 marginBottom-6
-                      bp-1_marginTop-10 bp-1_marginBottom-9">
+      <h1 className="f-page-title c-red
+                    marginTop-7 marginBottom-6
+                    bp-1_marginTop-10 bp-1_marginBottom-9
+                    bp-2_marginTop-17 bp-2_marginBottom-21">
         { fields.title }
       </h1>
       <div className="grid-12col">
         <div
-          className="f-display-copy colSpan-9
-          marginBottom-16
-          bp-1_marginBottom-15"
+          className="f-display-copy colSpan-9 c-red
+                    marginBottom-16
+                    bp-1_marginBottom-15
+                    bp-2_marginBottom-26"
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         />
       </div>
+
       <div className="grid-12col">
         { principals && (
           <div className="colSpan-8
                           marginBottom-2">
             <hr className="c-red
-                            marginBottom-2
-                            bp-1_marginBottom-3" />
-            <h2 className="f-headline-c
-                            marginBottom-7
-                            bp-1_marginBottom-15              
-                            bp-2_marginBottom-16">
+                          marginBottom-2
+                          bp-1_marginBottom-3" />
+            <h2 className="f-headline-c c-red
+                          marginBottom-7
+                          bp-1_marginBottom-15              
+                          bp-2_marginBottom-15">
               Principals
             </h2>
             <ul className="nestedGrid-8-2">
@@ -103,9 +114,13 @@ export default ({ data }) => {
         { !!studioMembers.length && (
           <div className="colSpan-4">
             <hr className="c-red
-                            marginBottom-2
-                            bp-1_marginBottom-3" />
-            <h2 className="f-headline-c marginBottom-7 bp-2_marginBottom-16">Studio Members</h2>
+                          marginBottom-2
+                          bp-1_marginBottom-3" />
+            <h2 className="f-headline-c c-red
+                          marginBottom-7
+                          bp-2_marginBottom-16">
+              Studio Members
+            </h2>
             <ul>
               { studioMembers.map((member, i) => (
                 <li key={`member-${i}`}>
@@ -117,37 +132,57 @@ export default ({ data }) => {
         )}
       </div>
       
-      <hr className="c-red marginBottom-2" />
-      { fields.publications && (
-        <div>
-        <h2 className="f-headline-c marginBottom-7">Publications</h2>
-          <hr className="c-red marginBottom-2" />
-          <ul>
-            { fields.publications.map((publication, i) => (
-              <li key={`publication-${i}`}>
-              <Publication publication={ publication } />
-            </li>
-          ))}
-          </ul>
-        </div>
-      )}
-      { fields.awards && (
-        <div>
-        <h2 className="f-headline-c marginBottom-7">Awards</h2>
-        <hr className="c-red marginBottom-2" />
-          <ul>
-            { fields.awards.map((award, i) => (
-              <li key={`award-${i}`}>
-                <Award award={ award } />
+      <div className="grid-12col">
+        { fields.publications && (
+          <div className="c-red
+                          colSpan-6
+                          bp-2_marginBottom-20">
+            <hr className="c-red marginBottom-2" />
+            <h2 className="f-headline-c c-red
+                          marginBottom-7
+                          bp-1_marginBottom-14
+                          bp-2_marginBottom-15">
+              Publications
+            </h2>
+            <ul>
+              { fields.publications.map((publication, i) => (
+                <li key={`publication-${i}`}>
+                <Publication publication={ publication } />
               </li>
             ))}
-          </ul>
-        </div>
-      )}
+            </ul>
+          </div>
+        )}
+        { fields.awards && (
+          <div className="c-red
+                          colSpan-6
+                          bp-2_marginBottom-20">
+          <hr className="c-red marginBottom-2" />
+          <h2 className="f-headline-c
+                        marginBottom-7
+                        bp-1_marginBottom-14
+                        bp-2_marginBottom-15">
+            Awards
+          </h2>
+            <ul>
+              { fields.awards.map((award, i) => (
+                <li key={`award-${i}`}>
+                  <Award award={ award } />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
       { fields.collaborators && (
         <div>
-          <h2 className="f-headline-c marginBottom-7">Collaborators</h2>
           <hr className="c-red marginBottom-2" />
+          <h2 className="f-headline-c
+                        c-red
+                        marginBottom-7
+                        bp-2_marginBottom-15">
+            Collaborators
+          </h2>
           <ul>
             { fields.collaborators.map((collaborator, i) => (
               <li key={`award-${i}`}>

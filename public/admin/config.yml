@@ -26,13 +26,14 @@ collections:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Principal", name: "principal", widget: "boolean" }
               - label: Image
+                required: false
                 name: image
                 widget: object
                 fields:
                   - { label: "Image", name: "url", widget: "image" }
                   - { label: "Alt", name: "alt", widget: "string" }
               - { label: "Job Title", name: "jobTitle", widget: "string" }
-              - { label: "Member Description", name: "description", widget: "text" }
+              - { label: "Member Description", name: "description", widget: "text", required: "false" }
           - label: Publications
             name: publications
             widget: list
