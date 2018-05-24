@@ -19,7 +19,12 @@ primaryImage:
 secondaryImage:
   image: /images/uploads/740-broadway_lobby_-3-_2480.jpg
 projectGallery:
-  - image: /images/uploads/740-broadway_lobby_-1-_3800.jpg
+  - colWidth: '12'
+    image: /images/uploads/740-broadway_lobby_-1-_3800.jpg
+    type: image
+  - colWidth: '10'
+    image: /images/uploads/740-broadway_lobby_-7-_3140.jpg
+    offsetWidth: '2'
     type: image
 ---
 A very progressive, future-focused client asked 590BC to design a complete modernization to this century old lobby utilizing the glass panel and display material palette utilized at the Reflect Showroom. The contrast between the historic facade and contemporary, technologically sophisticated interior reflects the adaptability of historic architecture in New
