@@ -19,8 +19,10 @@ infoObject:
   - description: Tony Miller
     title: Photos
 primaryImage:
+  caption: Test this change.
   image: /images/uploads/ward-road_-16-.jpg
 secondaryImage:
+  caption: Test this change
   image: /images/uploads/ward-road_-15-_.jpg
 projectGallery:
   - colWidth: '10'
