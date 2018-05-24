@@ -1,6 +1,6 @@
 ---
 templateKey: project-page
-title: Ward Road!
+title: Ward Road
 heroImage:
   url: /images/uploads/ward-road_ph.jpg
 headline: Designing in Duals
