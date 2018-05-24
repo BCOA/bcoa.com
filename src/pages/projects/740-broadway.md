@@ -15,7 +15,7 @@ infoObject:
   - description: Completed
     title: Status
 primaryImage:
-  image: /images/uploads/740-broadway_lobby_-6-_1820.jpg
+  image: /images/uploads/740-broadway_lobby_-6.1-_1820.jpg
 secondaryImage:
   image: /images/uploads/740-broadway_lobby_-3-_2480.jpg
 projectGallery:
