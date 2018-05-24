@@ -41,7 +41,7 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Publisher", name: "publisher", widget: "string" }
-              - { label: "Date", name: "date", widget: "date", format: "MMMMM D, YYYY" }
+              - { label: "Date", name: "date", widget: "date", format: "MMMM D, YYYY" }
               - { label: "URL", name: "url", widget: "string" }
           - label: Awards
             name: awards
@@ -49,7 +49,7 @@ collections:
             fields:
               - { label: "Award Title", name: "title", widget: "string" }
               - { label: "Organization Name", name: "orgName", widget: "string" }
-              - { label: "Date", name: "date", widget: "date", format: "MMMMM D, YYYY" }
+              - { label: "Date", name: "date", widget: "date", format: "MMMM D, YYYY" }
               - { label: "URL", name: "url", widget: "string" }
           - label: Collaborators
             name: collaborators
