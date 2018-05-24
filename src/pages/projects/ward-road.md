@@ -36,12 +36,6 @@ projectGallery:
   - colWidth: '4'
     image: /images/uploads/ward-road_-16-_1160.jpg
     type: image
-  - colWidth: '6'
-    image: /images/uploads/ward-road_-18-_.jpg
-    type: image
-  - colWidth: '6'
-    image: /images/uploads/ward-road_-17-_.jpg
-    type: image
   - pullQuote: >-
       integer pretium bibendum posuere. In ac enim aliquam, porta est quis,
       maximus.
