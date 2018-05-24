@@ -36,6 +36,17 @@ projectGallery:
   - colWidth: '4'
     image: /images/uploads/ward-road_-16-_1160.jpg
     type: image
+  - colWidth: '6'
+    image: /images/uploads/ward-road_-18-_.jpg
+    type: image
+  - colWidth: '6'
+    image: /images/uploads/ward-road_-17-_.jpg
+    type: image
+  - colWidth: '6'
+    image: /images/uploads/ward-road_-19-_.jpg
+    type: image
+  - image: /images/uploads/ward-road_-20-_.jpg
+    type: image
   - pullQuote: >-
       integer pretium bibendum posuere. In ac enim aliquam, porta est quis,
       maximus.
@@ -48,6 +59,7 @@ projectGallery:
     type: image
   - colWidth: '10'
     image: /images/uploads/ward-road_-3-_3140.jpg
+    offsetWidth: '2'
     type: image
 ---
 Australian sisters purchased a small lot in nostalgic Pt. Londsdale and required a shared holiday house which allowed for two master zones and shared public areas with sweeping bay views. The project was designed in duals, with two master bedrooms and bathrooms at extreme opposites, two different kinds of living / study zones and two exterior decks all packed within a very small footprint. Different materials and exterior cladding were used to create distinction between the different zones. The house is built using local materials and a rainwater collection system, and isolated mechanical zones minimize energy usage. This project was as design assist with local Melbourne architect Chris Manton.
