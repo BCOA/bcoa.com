@@ -4,7 +4,7 @@ title: Ward Road
 heroImage:
   url: /images/uploads/ward-road_ph.jpg
 headline: Designing in Duals
-featured: false
+featured: true
 previewImage:
   url: /images/uploads/ward-road_index.jpg
 infoObject:
