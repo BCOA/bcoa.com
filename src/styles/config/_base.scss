@@ -86,12 +86,12 @@ dd {
 }
 
 a {
-  color: black;
+  color: inherit;
   text-decoration: none;
   margin: 0;
 
   &:visited {
-    color: initial;
+    color: inherit;
   }
 }
 

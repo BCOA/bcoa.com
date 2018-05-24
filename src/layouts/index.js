@@ -21,7 +21,7 @@ export default class TemplateWrapper extends Component {
 
   render() {
     const homeClasses = classnames(this.props.className, {
-      'bg-lightRed': (this.props.location.pathname === '/about')
+      'bg-lightRed c-red': (this.props.location.pathname === '/about')
     })
 
     console.log(this.props);

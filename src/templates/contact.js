@@ -18,7 +18,7 @@ export default ({ data }) => {
         <div className="marginBottom-7"
             dangerouslySetInnerHTML={{ __html: page.html }} />
           <p className="f-display-copy
-                        marginBottom-6">{ pageFields.message }</p>
+                        marginBottom-7">{ pageFields.message }</p>
           <p className="f-display-copy">{ contact.address.street }</p>
           <p className="f-display-copy">{ contact.address.street2 }</p>
           <p className="f-display-copy">
