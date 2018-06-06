@@ -30,6 +30,7 @@ projectGallery:
     type: image
   - colWidth: '6'
     image: /images/uploads/20 GREENE ST_PROMO PLAN_1820.jpg
+    offsetWidth: '2'
     type: image
   - colWidth: '6'
     image: /images/uploads/20 GREENE ST_ (18)_1820.jpg
