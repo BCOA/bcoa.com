@@ -28,11 +28,11 @@ projectGallery:
   - colWidth: '4'
     image: /images/uploads/20 GREENE ST_ (4)_1820.jpg
     type: image
-  - colWidth: '6'
+  - colWidth: '8'
     image: /images/uploads/20 GREENE ST_PROMO PLAN_1820.jpg
     offsetWidth: '2'
     type: image
-  - colWidth: '6'
+  - colWidth: '10'
     image: /images/uploads/20 GREENE ST_ (18)_1820.jpg
     type: image
 ---
