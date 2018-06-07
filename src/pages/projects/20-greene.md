@@ -16,7 +16,7 @@ primaryImage:
   image: /images/uploads/20 GREENE ST_ (15)_1820.jpg
 projectGallery:
   - colWidth: '8'
-    image: /images/uploads/20 GREENE ST_ (22)_1820.jpg
+    image: /images/uploads/03-12.jpg
     type: image
   - colWidth: '8'
     image: /images/uploads/20 GREENE ST_ (8)_1820.jpg
