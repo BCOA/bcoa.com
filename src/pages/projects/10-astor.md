@@ -3,7 +3,7 @@ templateKey: project-page
 title: 10 Astor
 type: residential
 heroImage:
-  url: /images/uploads/10-astor_ph_2.jpg
+  url: /images/uploads/10 Astor_ (5)_1820.jpg
 headline: lobby
 featured:
   featuredDescription: this is the text of the featured description
