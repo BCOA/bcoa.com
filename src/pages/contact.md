@@ -1,23 +1,17 @@
 ---
-templateKey: contact-page
-title: Contact
-seo: 
-  title: Test title
+seo:
   description: Test description
   image: /images/uploads/placeholder.jpg
+  title: Test title
+templateKey: contact-page
+title: Contact
 heroImage:
   alt: this is the contact hero image
   image: /images/uploads/Landscape_3X4.png
 message: >-
-  Raw denim subway tile skateboard, thundercats cliche before they sold out
-  crucifix keffiyeh taxidermy aesthetic artisan mumblecore butcher offal
-  distillery. Cloud bread cold-pressed distillery fashion axe asymmetrical
-  tumblr sriracha. Tacos twee succulents, gochujang 8-bit kinfolk vinyl.
-  Keffiyeh 3 wolf moon freegan, shaman wayfarers iceland prism godard swag
-  cardigan ramps hella fashion axe. Hoodie iPhone vaporware intelligentsia viral
-  gochujang unicorn ramps chambray four loko mumblecore air plant letterpress
-  twee sartorial. Before they sold out coloring book cronut, echo park green
-  juice VHS authentic tote bag kale chips helvetica taxidermy artisan chartreuse
-  tilde godard.
+  Find us in Williamsburg where we search for the best eats, watch the world go
+  by on the BQE, drink wine on the roof, ride our bikes to site visits, ride the
+  L train while it lasts, drink coffee, fight about door details, resolve, do
+  and build.
 ---
 
