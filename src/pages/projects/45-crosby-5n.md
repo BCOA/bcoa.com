@@ -34,7 +34,10 @@ projectGallery:
     colWidth: '6'
     image: /images/uploads/45 CROSBY_5N_ (23)_1820.jpg
     type: image
-  - colWidth: '8'
+  - caption: >-
+      Original tin, brick and timber contrasted with superwhite walls and
+      ceilings and wide plank oak floaring
+    colWidth: '8'
     image: /images/uploads/45 CROSBY_5N_ (20)_1820.jpg
     offsetWidth: '4'
     type: image
