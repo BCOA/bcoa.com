@@ -2,7 +2,7 @@
 seo:
   description: Testing DESC
   image: /images/uploads/placeholder.jpg
-  title: Testing
+  title: Testing -- DRAFT
 templateKey: project-page
 title: testing
 workDescription: testing work desc
