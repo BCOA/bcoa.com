@@ -1,3 +1,6 @@
 Website created by Joshua Dobson and Jacob Dobson for the architecture company BC-OA.
 
-![](https://media.giphy.com/media/5xUe7DJRhEimQ2xgWa/giphy.gif)
+
+Homepage plus hamburger menu navigation:
+
+![homepage](https://media.giphy.com/media/5C0bacCYHBu9YWhQzU/giphy.gif)
