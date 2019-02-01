@@ -1,10 +1,3 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+Website created by Joshua Dobson and Jacob Dobson for the architecture company BC-OA.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
-
-## Running in development
-`gatsby develop`
+![](https://cl.ly/e5009ff196d2/Screen%252520Recording%2525202019-02-01%252520at%25252010.47%252520AM.gif)
