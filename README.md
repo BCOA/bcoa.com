@@ -1,5 +1,6 @@
-## Website created by Joshua Dobson and Jacob Dobson for the architecture company BC-OA.
+## Website created by Joshua Dobson and Jacob Dobson for the architecture company BC-OA located in Brooklyn, NY.
 
+[bc-oa.com](https://bc-oa.com)
 
 **Homepage plus hamburger menu navigation to index:**
 
@@ -20,3 +21,9 @@
 **Contact:**
 
 ![contact page](https://media.giphy.com/media/7XuXtjieowhVmZScTm/giphy.gif)
+
+**Responsive layout:**
+
+![index responsive](https://media.giphy.com/media/KY2X9C43fy4f2x6sGo/giphy.gif)
+
+![property responsive](https://media.giphy.com/media/KY2X9C43fy4f2x6sGo/giphy.gif)
