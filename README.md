@@ -26,4 +26,4 @@
 
 ![index responsive](https://media.giphy.com/media/KY2X9C43fy4f2x6sGo/giphy.gif)
 
-![property responsive](https://media.giphy.com/media/KY2X9C43fy4f2x6sGo/giphy.gif)
+![property responsive](https://media.giphy.com/media/9Pkfvj6iyySMpXjlg3/giphy.gif)
