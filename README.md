@@ -1,22 +1,22 @@
-Website created by Joshua Dobson and Jacob Dobson for the architecture company BC-OA.
+## Website created by Joshua Dobson and Jacob Dobson for the architecture company BC-OA.
 
 
-Homepage plus hamburger menu navigation to index page:
+**Homepage plus hamburger menu navigation to index:**
 
 ![homepage](https://media.giphy.com/media/5C0bacCYHBu9YWhQzU/giphy.gif)
 
-Index page:
+**Index:**
 
 ![index page](https://media.giphy.com/media/Y0G0kYRIeXiZrjs2TQ/giphy.gif)
 
-News page:
+**News:**
 
 ![news page](https://media.giphy.com/media/mYA2g6RnFyf3aleIE4/giphy.gif)
 
-About page:
+**About:**
 
 ![about page](https://media.giphy.com/media/2sfIc541rE0SsiFcQH/giphy.gif)
 
-Contact page:
+**Contact:**
 
 ![contact page](https://media.giphy.com/media/7XuXtjieowhVmZScTm/giphy.gif)
