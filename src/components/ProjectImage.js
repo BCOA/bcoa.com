@@ -4,7 +4,8 @@ import classnames from "classnames";
 
 const ProjectImage = (props) => {
   if(!props.imageData.image) {
-    console.log(props.imageData);
+    return null
+    // console.log(props.imageData);
   }
   return (
     <figure key={props.i} className={props.classes}>
