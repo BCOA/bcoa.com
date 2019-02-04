@@ -56,6 +56,11 @@ studioMembers:
     jobTitle: Designer
     name: Scott Mikawa
 publications:
+  - date: 'February 1, 2019'
+    publisher: Dwell
+    title: Top 5 Small Spaces of the Week With Serious Star Power
+    url: 'https://www.dwell.com/article/small-space-design-ideas-98eb4748'
+    visibleDate: February 2019
   - date: 'March 10, 2017'
     publisher: The NYTimes
     title: Pre-War is So Last Year
@@ -77,11 +82,6 @@ publications:
     url: >-
       https://archpaper.com/2011/09/on-view-designyc-presents-recharging-communities/
     visibleDate: September 2011
-  - date: 'February 1, 2019'
-    publisher: Dwell
-    title: Top 5 Small Spaces of the Week With Serious Star Power
-    url: 'https://www.dwell.com/article/small-space-design-ideas-98eb4748'
-    visibleDate: February 2019
 awards:
   - date: 'June 27, 2018'
     orgName: AIA BQDA
