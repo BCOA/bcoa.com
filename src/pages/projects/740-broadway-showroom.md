@@ -16,7 +16,7 @@ featured:
   isFeatured: true
 previewImage:
   alt: showroom modern clean
-  image: /images/uploads/740-broadway_showroom_index_3.jpg
+  image: /images/uploads/740-BROADWAY_SHOWROOM_index_3.jpg
 infoObject:
   - description: 'Elevecture, Corning and View Glass'
     title: CLIENT

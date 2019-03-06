@@ -17,7 +17,7 @@ featured:
     image: /images/uploads/17-thompson_index.jpg
   isFeatured: false
 previewImage:
-  image: /images/uploads/17-thompson_index.jpg
+  image: /images/uploads/17-THOMPSON_index.jpg
 infoObject:
   - description: 1350sf Loft Renovation
     title: Scope
