@@ -1,6 +1,6 @@
 ---
 templateKey: article-page
-title: BC—OAs WORK ON CORNING'S WEBSITE
+title: BC—OA'S WORK ON CORNING'S WEBSITE
 image:
   image: /images/uploads/luigi-s-article_1820x1024.jpg
 date: '2019-08-21'
