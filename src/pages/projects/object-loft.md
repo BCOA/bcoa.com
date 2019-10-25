@@ -1,5 +1,5 @@
 ---
-isPublished: false
+isPublished: true
 templateKey: project-page
 title: S-M-L Loft
 workDescription: Work description text
@@ -53,7 +53,7 @@ projectGallery:
     offsetWidth: '0'
     type: image
 ---
-The gut renovation of a 2500sf this cast iron SoHo Loft responds to the industrial history of the building. The plan of the existing loft provided a clean, rectangular geometry punctuated by a common entryway and egress stair. The design response embraces this geometry by wrapping these two volumes and a third created by the kitchen in a bespoke, operable metal cladding system, creating three standing objects - Small, Medium and Large. These volumes float within the otherwise pure geometry of the floor plan, straddling the original line of cast-iron columns and exposed timber beam, and generating a visual contrast of new against old from front to back of the residence.
+The gut renovation of this 2500sf cast iron SoHo Loft responds to the industrial history of the building. The plan of the existing loft provided a clean, rectangular geometry punctuated by a common entryway and egress stair. The design response embraces this geometry by wrapping these two volumes and a third created by the kitchen in a bespoke, operable metal cladding system, creating three standing objects - Small, Medium and Large. These volumes float within the otherwise pure geometry of the floor plan, straddling the original line of cast-iron columns and exposed timber beam, and generating a visual contrast of new against old from front to back of the residence.
 
 The volumetric objects — S-M-L — are strategically placed within the public space, providing a staggered canvas of intricately detailed yet utilitarian masses which conceal the ordinary functions of domestic life - kitchen, storage, entry. The S object conceals a coat closet and security system serving the reclaimed steel entry door. The M object conceals the storage and refrigerators which serve the pure white kitchen insert. L wraps and inflates the volume of the building’s egress stair, providing bookshelves, a built-in desk, A/V closet and powder room within the interstitial spaces of the mass.
 
