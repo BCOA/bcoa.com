@@ -7,7 +7,7 @@ type: residential
 heroImage:
   alt: ALT TEXT NEEDS INPUT
   image: /images/uploads/objectloftheroimage_cropped_3800.jpg
-headline: 'Small, Medium, Large objects, functional by design'
+headline: Exhibit the ordinary
 featured:
   isFeatured: false
 previewImage:
