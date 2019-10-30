@@ -1,5 +1,5 @@
 ---
-isPublished: false
+isPublished: true
 templateKey: project-page
 title: Lift Next Level Floats
 workDescription: 'Boutique Sensory Deprivation Spa '
