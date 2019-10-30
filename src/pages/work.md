@@ -22,6 +22,7 @@ projects:
   - project: Crosby Loft I
   - project: City of Dreams
   - project: Brooklyn Heights Townhouse
+  - project: Lift Next Level Floats
   - project: UWS Co-op
   - project: Boatbox
   - project: Newline Cinema
