@@ -6,9 +6,10 @@ seo:
 templateKey: work-page
 title: Index
 projects:
-  - project: Crosby Loft II
+  - project: S-M-L Loft
   - project: 740 Broadway Lobby
   - project: The Lawrence
+  - project: Crosby Loft II
   - project: Riverside Kiosk for Harlem Public
   - project: Elevecture Showroom II
   - project: Thompson Loft
@@ -22,7 +23,6 @@ projects:
   - project: Crosby Loft I
   - project: City of Dreams
   - project: Brooklyn Heights Townhouse
-  - project: S-M-L Loft
   - project: Lift Next Level Floats
   - project: UWS Co-op
   - project: Boatbox
