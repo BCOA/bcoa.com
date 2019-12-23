@@ -56,6 +56,7 @@ featuredProjects:
   - project: 740 Broadway Lobby
   - project: Stair-Well Housing
   - project: Micro Cabin
+  - project: S-M-L Loft
   - project: The Lawrence
   - project: Ward Road House
 ---
