@@ -9,7 +9,13 @@ heroImage:
   image: /images/uploads/objectloftheroimage_cropped_3800.jpg
 headline: Exhibit the ordinary
 featured:
-  isFeatured: false
+  featuredDescription: >-
+    Three standing objects - Small, Medium and Large - conceal the ordinary
+    functions of domestic living
+  featuredImage:
+    image: /images/uploads/20-greene-st_-13-_1160x1740.jpg
+    isPortrait: true
+  isFeatured: true
 previewImage:
   image: /images/uploads/index_copyright_barkow_photo_6363.jpg
 infoObject:
