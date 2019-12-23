@@ -40,21 +40,10 @@ studioMembers:
     principalInfo: ''
   - jobTitle: Designer
     name: Elizabeth Austin
-  - description: Job description here
-    image:
-      alt: alt
-      image: /images/uploads/placeholder.jpg
-    jobTitle: Designer
-    name: Stefano Grisoglio
-  - description: >-
-      Scott is a great worker with a big heart. He went to school at blah blah
-      university where he studied blah blah. He frequently travels to world to
-      study architecture but mostly to eat all the foods.
-    image:
-      alt: Image of Scott Mikawa
-      image: /images/uploads/placeholder.jpg
-    jobTitle: Designer
-    name: Scott Mikawa
+  - jobTitle: Designer
+    name: Yuliya Rubanska
+  - jobTitle: Designer
+    name: Davide Curiotto
 publications:
   - date: 'February 1, 2019'
     publisher: Dwell
@@ -83,6 +72,16 @@ publications:
       https://archpaper.com/2011/09/on-view-designyc-presents-recharging-communities/
     visibleDate: September 2011
 awards:
+  - date: 'December 23, 2019'
+    orgName: Residential Architect Design Awards
+    title: Citation Award for S-M-L Loft
+    visibleDate: December 2019
+  - date: 'December 13, 2019'
+    orgName: AIANY
+    title: Award of Merit for S-M-L Loft
+    url: >-
+      https://issuu.com/aianys/docs/2019_aianys_design___honor_awards_program_12-6-19
+    visibleDate: '2019'
   - date: 'June 27, 2018'
     orgName: AIA BQDA
     title: Design Excellence Award for Stair-Well Housing
