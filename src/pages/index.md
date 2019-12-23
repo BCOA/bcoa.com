@@ -44,6 +44,11 @@ carouselImages:
     project: Lift Brooklyn
     subtitle: Brooklyn
     title: Lift
+  - alt: Carousel Image
+    image: /images/uploads/20greene_c.jpg
+    portraitImage: /images/uploads/20greene_c_1500x2000.jpg
+    subtitle: S-M-L Loft
+    title: S-M-L Loft
 featuredProjects:
   - project: Riverside Kiosk for Harlem Public
   - project: Elevecture Showroom II
