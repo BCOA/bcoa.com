@@ -80,7 +80,7 @@ awards:
     orgName: AIANY
     title: Award of Merit for S-M-L Loft
     url: >-
-      https://issuu.com/aianys/docs/2019_aianys_design___honor_awards_program_12-6-19
+      http://www.aianys.org/programs-events/design-awards-guidelines/2019-design-award-recipients/
     visibleDate: '2019'
   - date: 'June 27, 2018'
     orgName: AIA BQDA
