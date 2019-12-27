@@ -54,9 +54,9 @@ featuredProjects:
   - project: Riverside Kiosk for Harlem Public
   - project: Elevecture Showroom II
   - project: Crosby Loft II
-  - project: 740 Broadway Lobby
-  - project: Stair-Well Housing
   - project: Micro Cabin
+  - project: Stair-Well Housing
+  - project: 740 Broadway Lobby
   - project: The Lawrence
   - project: Ward Road House
 ---
