@@ -52,11 +52,11 @@ carouselImages:
 featuredProjects:
   - project: S-M-L Loft
   - project: Riverside Kiosk for Harlem Public
+  - project: Micro Cabin
   - project: Elevecture Showroom II
   - project: Crosby Loft II
-  - project: 740 Broadway Lobby
   - project: Stair-Well Housing
-  - project: Micro Cabin
+  - project: 740 Broadway Lobby
   - project: The Lawrence
   - project: Ward Road House
 ---
