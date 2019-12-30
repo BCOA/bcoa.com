@@ -9,9 +9,7 @@ heroImage:
   image: /images/uploads/objectloftheroimage_cropped_3800.jpg
 headline: Exhibit the ordinary
 featured:
-  featuredDescription: >-
-    Three standing objects - Small, Medium and Large - conceal the ordinary
-    functions of domestic living
+  featuredDescription: Three standing objects - Small, Medium and Large - conceal the ordinary functions of domestic living
   featuredImage:
     image: /images/uploads/20-greene-st_-13-_1160x1740.jpg
     isPortrait: true

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Img from 'gatsby-image';
 import ProjectImage from "../components/ProjectImage";
 import MediaQuery from 'react-responsive';

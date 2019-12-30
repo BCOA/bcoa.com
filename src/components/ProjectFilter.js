@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 import classnames from "classnames";
 
 export default class ProjectFilter extends Component {
@@ -29,7 +29,7 @@ export default class ProjectFilter extends Component {
           </div>
         }
         {(this.state.filterOpen || this.props.isWindowLarge) &&
-          <Fragment>
+          <div>
             <div className="radio marginBottom-4 bp-1_marginBottom-0">
               <input name="filter" type="radio" id="all" defaultChecked="true" onChange={(el) => this.props.onChange(el.target.id)} />
               <label className="marginRight-4" htmlFor="all">
@@ -48,7 +48,7 @@ export default class ProjectFilter extends Component {
                 Commercial
               </label>
             </div>
-          </Fragment>
+          </div>
         }
       </div>
     )

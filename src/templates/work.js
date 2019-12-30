@@ -20,7 +20,7 @@ export default class Work extends Component {
 
   renderFilterTransition = (filterValue) => {
     this.setState({inTransition: true});
-    setTimeout(() => this.setState({filterValue: filterValue}), 250);
+    setTimeout(() => this.setState({ filterValue: filterValue }), 250);
     setTimeout(() => this.setState({ inTransition: false }), 500);
   }
 
@@ -28,7 +28,7 @@ export default class Work extends Component {
     const page = this.props.data.page.frontmatter;
     const projects = this.props.data.projects.edges;
     const projectOrder = page.projects;
-    // creates user defined order of projects from page frontmatter
+    //creates user defined order of projects from page frontmatter
     const orderedProjects = projectOrder.map((title) => {
       return projects.find(({node: project}) => {
         return project.frontmatter.title === title.project
