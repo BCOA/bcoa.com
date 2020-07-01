@@ -1,6 +1,6 @@
 ---
 templateKey: article-page
-title: S-M-L Loft receives Architect Magazine Residential Architect Design Award
+title: S-M-L Loft receives Architect Magazine Design Award
 image:
   image: /images/uploads/ra-awards_1820x1024.jpg
 date: '2019-12-20'
