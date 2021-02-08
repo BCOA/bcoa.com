@@ -76,7 +76,7 @@ class Work extends Component {
               .map((project, i) => {
                 return (
                   <li key={i}>
-                    <article className="workProject">
+                    <article className="workProject marginBottom-9 bp-2_marginBottom-21">
                       <Link to={`/projects${project.fields.slug}`}>
                         {project.frontmatter.previewImage.image && (
                           <Img
@@ -91,11 +91,6 @@ class Work extends Component {
                         <h1 className="f-subhead">
                           {project.frontmatter.title}
                         </h1>
-                        {/* <h2
-                          className="f-subhead
-                                        marginBottom-9
-                                        bp-2_marginBottom-21"
-                        ></h2> */}
                       </Link>
                     </article>
                   </li>

@@ -7,7 +7,6 @@ templateKey: work
 title: Index
 workDescription: ""
 projects:
-  - project: Josh's Test project
   - project: NECD @ BNY
   - project: S-M-L Loft
   - project: 740 Broadway Lobby

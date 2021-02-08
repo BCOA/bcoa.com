@@ -59,6 +59,7 @@ export default ({
   handleMenuButtonClick,
 }) => {
   const headerLogo = !isWindowLarge ? icons.menuLogoSmall : icons.menuLogoLarge;
+  console.log(headerLogo);
   return (
     <div>
       <header className={visible ? "c-white bg-transparent" : ""}>
