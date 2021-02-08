@@ -6,11 +6,6 @@ import { useHasMounted } from "../hooks/useHasMounted";
 
 const Menu = ({ visible, toggleMenu, navHeight }) => {
   const { menuBackground } = useSiteMetadata();
-  const hasMounted = useHasMounted();
-
-  if (!hasMounted) {
-    return null;
-  }
 
   return (
     <nav
@@ -65,7 +60,12 @@ export default ({
   handleMenuButtonClick,
 }) => {
   const headerLogo = !isWindowLarge ? icons.menuLogoSmall : icons.menuLogoLarge;
-  console.log(headerLogo);
+  const hasMounted = useHasMounted();
+
+  if (!hasMounted) {
+    return null;
+  }
+
   return (
     <div>
       <header className={visible ? "c-white bg-transparent" : ""}>
