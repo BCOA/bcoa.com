@@ -7,4 +7,4 @@ image:
   alt: Soho loft architecture architect in Archello
 date: 2020-12-10T21:40:40.356Z
 ---
-Crosby Loft II featured on the Archello home page
+[Crosby Loft II](https://bc-oa.com/projects/crosby-loft-2/) featured on the Archello home page
