@@ -7,5 +7,4 @@ image:
   isPortrait: true
 date: 2020-05-08
 ---
-
-S-M-L Loft is a finalist in Interior Design Magazine's NYC x Design Awards 2020.
+[S-M-L Loft](https://bc-oa.com/projects/sml-loft/) is a finalist in Interior Design Magazine's NYC x Design Awards 2020.
