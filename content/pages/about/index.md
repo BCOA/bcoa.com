@@ -43,7 +43,7 @@ studioMembers:
     principalInfo: " "
     description: " "
     image:
-      image: ""
+      image: bb-headshot-black-tint.jpg
       alt: " "
 publications:
   - date: February 1, 2019
