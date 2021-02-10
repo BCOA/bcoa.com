@@ -39,14 +39,29 @@ collections:
             widget: list
             fields:
               - { label: "Name", name: "name", widget: "string" }
-              - { label: "Principal", name: "principal", widget: "boolean" }
+              - {
+                  label: "Principal",
+                  name: "principal",
+                  widget: "boolean",
+                  required: false,
+                }
               - label: Image
                 required: false
                 name: image
                 widget: object
                 fields:
-                  - { label: "Image", name: "image", widget: "image" }
-                  - { label: "Alt", name: "alt", widget: "string" }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      required: false,
+                    }
+                  - {
+                      label: "Alt",
+                      name: "alt",
+                      widget: "string",
+                      required: false,
+                    }
               - { label: "Job Title", name: "jobTitle", widget: "string" }
               - {
                   label: "Principal Info",
@@ -72,8 +87,13 @@ collections:
                   widget: "date",
                   format: "MMMM D, YYYY",
                 }
-              - { label: "Visible Date", name: "visibleDate", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
+              - {
+                  label: "Visible Date",
+                  name: "visibleDate",
+                  widget: "string",
+                  required: false,
+                }
+              - { label: "URL", name: "url", widget: "string", required: false }
           - label: Awards
             name: awards
             widget: list
@@ -90,8 +110,13 @@ collections:
                   widget: "date",
                   format: "MMMM D, YYYY",
                 }
-              - { label: "Visible Date", name: "visibleDate", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
+              - {
+                  label: "Visible Date",
+                  name: "visibleDate",
+                  widget: "string",
+                  required: false,
+                }
+              - { label: "URL", name: "url", widget: "string", required: false }
           - label: Collaborators
             name: collaborators
             widget: list
