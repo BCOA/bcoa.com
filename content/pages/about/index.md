@@ -51,6 +51,8 @@ studioMembers:
     jobTitle: Designer
   - name: Scott Mikawa
     jobTitle: Designer
+  - name: Yuliya Rubanska
+    jobTitle: Designer
 publications:
   - date: February 1, 2019
     publisher: Dwell
