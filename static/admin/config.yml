@@ -49,6 +49,7 @@ collections:
                 required: false
                 name: image
                 widget: object
+                required: false,
                 fields:
                   - {
                       label: "Image",
