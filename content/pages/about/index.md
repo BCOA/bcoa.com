@@ -39,11 +39,11 @@ studioMembers:
     principalInfo: ""
   - jobTitle: Designer
     name: Elizabeth Austin
-    principal: true
+    principal: false
     principalInfo: " "
     description: " "
     image:
-      image: lc-headshot-black-tint.jpg
+      image: ""
       alt: " "
 publications:
   - date: February 1, 2019
