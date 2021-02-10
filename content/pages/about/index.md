@@ -45,6 +45,12 @@ studioMembers:
     image:
       image: ""
       alt: " "
+  - name: Chad Richardson
+    jobTitle: Designer
+  - name: Davide Curiotto
+    jobTitle: Designer
+  - name: Scott Mikawa
+    jobTitle: Designer
 publications:
   - date: February 1, 2019
     publisher: Dwell
@@ -77,6 +83,11 @@ publications:
     url: https://archpaper.com/2011/09/on-view-designyc-presents-recharging-communities/
     visibleDate: September 2011
 awards:
+  - date: December 23, 2020
+    title: Design Excellence Award for S-M-L Loft
+    orgName: SARA NY
+    visibleDate: December 2020
+    url: https://www.sarany.org/2020-design-awards
   - date: December 23, 2019
     orgName: Residential Architect Design Awards
     title: Citation Award for S-M-L Loft
@@ -132,11 +143,6 @@ awards:
     visibleDate: "1997"
     orgName: " "
     url: " "
-  - date: December 23, 2020
-    title: Design Excellence Award for S-M-L Loft
-    orgName: SARA NY
-    visibleDate: December 2020
-    url: https://www.sarany.org/2020-design-awards
 collaborators:
   - description: Elevating Architecture through Smart Surfaces
     jobTitle: Product Designers
