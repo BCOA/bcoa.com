@@ -1,7 +1,11 @@
 ---
 isPublished: true
 seo:
-  image: ""
+  image: 45crosby5s_seo_1200x630.jpg
+  title: Crosby Loft I
+  description: Architects BC—OA  renovated this 2300sf loft located on Soho’s
+    quintessential Crosby Street, using a floating kitchen to buffer between
+    public and private spaces.
 templateKey: project
 title: Crosby Loft I
 heroImage:
