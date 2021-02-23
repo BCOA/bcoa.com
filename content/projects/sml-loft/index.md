@@ -1,21 +1,21 @@
 ---
 isPublished: true
 seo:
-  title: NYC Architects gut renovate a Soho Loft selecting industrial material
-    features
-  description: "The gut renovation of this cast-iron Soho Loft by NYC and Brooklyn
-    based contemporary architects features industrial materials - steel and
-    concrete - at the kitchen, bathrooms "
-  image: index_copyright_barkow_photo_6363.jpg
+  title: NYC Architects BC—OA gut renovate a Soho Loft designing industrial
+    material features
+  description: The gut renovation of this cast-iron Soho Loft by NYC and Brooklyn
+    based contemporary architects BC—OA features industrial steel objects
+    floating within an open floor plan.
+  image: 20-greene-st_-1200x630.jpg
 templateKey: project
 title: S-M-L Loft
-workDescription: Work description text
-type: residential
 heroImage:
   alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
     Oak "
   image: objectloftheroimage_cropped_3800.jpg
   portraitImage: 20greene_ph_1500x2000.jpg
+workDescription: Work description text
+type: residential
 headline: Exhibit the ordinary
 featured:
   featuredDescription: Three standing objects - Small, Medium and Large - conceal
