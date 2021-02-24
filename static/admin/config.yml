@@ -365,8 +365,13 @@ collections:
                 name: isPortrait
                 widget: boolean
                 required: false
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Alt", name: "alt", widget: "string" }
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
+              - { label: "Alt", name: "alt", widget: "string", required: false }
           - label: Featured Description
             name: featuredDescription
             widget: text
