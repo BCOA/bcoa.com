@@ -79,6 +79,6 @@ projectGallery:
     type: image
     offsetWidth: "0"
 ---
-This 2300sf loft located on Soho’s quintessential Crosby Street offers ample square footage in a long and narrow floor plan. A partial wall dividing the public and private spaces of this residence breaks the floor plan in half, providing a friendlier proportion for the open kitchen, dining and living space, while still permitting views straight through the apartment to windows at the two extremes. The original loft materials - brick and heavy timber columns - are exposed throughout the living and dining area, with contemporary insertions to provide a comfortable kitchen and sitting area. Furniture selection by Tamara Eaton Design!
+This 2300sf loft located on Soho’s quintessential Crosby Street offers ample square footage in a long and narrow floor plan. A partial wall dividing the public and private spaces of this residence breaks the floor plan in half, providing a friendlier proportion for the open kitchen, dining and living space, while still permitting views straight through the apartment to windows at the two extremes. The original loft materials - brick and heavy timber columns - are exposed throughout the living and dining area, with contemporary insertions to provide a comfortable kitchen and sitting area. Furniture selection by Tamara Eaton Design.
 
 See feature in [Dwell](https://www.dwell.com/collection/a-renovated-loft-in-soho-628c9992)
