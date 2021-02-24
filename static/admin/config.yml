@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-# local_backend: true
+local_backend: true
 
 media_folder: content/assets
 public_folder: /assets
@@ -457,7 +457,6 @@ collections:
                 widget: "select"
                 options:
                   ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
-                default: "0"
                 required: false
               - label: "Alt Text"
                 name: "alt"
