@@ -2,6 +2,9 @@
 isPublished: true
 seo:
   image: 45crosby5n_seo_1200x630.jpg
+  title: Crosby Loft II
+  description: Architects BC—OA design a distressed bronze feature cabinet at this
+    NYC Soho loft renovation.
 templateKey: project
 title: Crosby Loft II
 type: residential
