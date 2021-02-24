@@ -1,23 +1,20 @@
-import React from 'react';
-import Helmet from 'react-helmet';
+import React from "react";
+import Helmet from "react-helmet";
 // import * as settings from '../../content/_data/settings/settings.json';
 // import * as contact from '../../content/_data/contact/contact.json';
 // favicons
-import useSiteMetadata from './SiteMetadata';
-import faviconApple from '../favicon/apple-touch-icon.png';
-import favicon32 from '../favicon/favicon-32x32.png';
-import favicon16 from '../favicon/favicon-16x16.png';
-import safariPinned from '../favicon/safari-pinned-tab.svg';
-import faviconICO from '../favicon/favicon.ico';
+import useSiteMetadata from "./SiteMetadata";
+import faviconApple from "../favicon/apple-touch-icon.png";
+import favicon32 from "../favicon/favicon-32x32.png";
+import favicon16 from "../favicon/favicon-16x16.png";
+import safariPinned from "../favicon/safari-pinned-tab.svg";
+import faviconICO from "../favicon/favicon.ico";
 
-const getSchemaOrgJSONLD = ({
-  url,
-  title
-}) => {
+const getSchemaOrgJSONLD = ({ url, title }) => {
   const schemaOrgJSONLD = [
     {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
+      "@context": "http://schema.org",
+      "@type": "WebSite",
       url,
       name: title,
       alternateName: title,
@@ -34,14 +31,15 @@ const SEO = ({ postData, postImage }) => {
   const title = (postMeta.seo && postMeta.seo.title) || settings.siteTitle;
   const description =
     (postMeta.seo && postMeta.seo.description) || settings.siteDescription;
-  const image = (postImage && `${settings.url}${postImage}`) || settings.siteImage.childImageSharp.fixed.src;
-  const url = postMeta.slug
-    ? `${settings.url}${postMeta.slug}`
-    : settings.url;
+  const image =
+    (postImage && `${settings.url}${postImage}`) ||
+    settings.siteImage.childImageSharp.fixed.src;
+  console.log(image);
+  const url = postMeta.slug ? `${settings.url}${postMeta.slug}` : settings.url;
 
   const schemaOrgJSONLD = getSchemaOrgJSONLD({
     url,
-    title
+    title,
   });
 
   return (
@@ -60,12 +58,11 @@ const SEO = ({ postData, postImage }) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
-      <meta property="og:type" content="company" />
+      <meta property="og:type" content="website" />
       <meta property="og:image:type" content="image/jpeg" />
-      <meta property="og:image:width" content="830" />
+      <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="830" />
       <meta property="fb:app_id" content={305434379998344} />
-
 
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
