@@ -76,7 +76,7 @@ projectGallery:
   - colWidth: "4"
     image: object-loft_-3-_1160_cropped.jpg
     type: image
-    offsetWidth: "10"
+    offsetWidth: "0"
     alt: Soho Loft NYC Architect Architecture Gut Renovation Renovate Steel Detail
       Custom Metalwork Ladder
     caption: The custom library ladder can access the uppers at each of the objects
