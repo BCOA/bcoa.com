@@ -1,23 +1,23 @@
 ---
 isPublished: true
 seo:
-  description: >-
-    Stair-Well Housing represents a concept for modular housing design intended
-    to address NYCs dire need to bring low cost, efficient affordable housing to
-    the five boroughs.
-  title: EMBRACE THE CORE
+  description: Stair-Well Housing represents a concept for modular housing design
+    intended to address NYCs dire need to bring low cost, efficient affordable
+    housing to the five boroughs.
+  title: "Stair-well Housing "
+  image: stairwell_seo_1200x630.jpg
 templateKey: project
 title: Stair-Well Housing
-workDescription: A modular stack for joyful and smart affordable housing in NYC
-type: commercial
 heroImage:
   image: stairwell_ph_3800x1900_aia.jpg
   portraitImage: STAIRWELL_PH_1500x2000_AIA.jpg
+workDescription: A modular stack for joyful and smart affordable housing in NYC
+type: commercial
 headline: EMBRACE THE CORE
 featured:
-  featuredDescription: >-
-    Stair-well housing proposes modular affordable housing units which
-    incorporate a stair. As the units stack, the stair core is created.
+  featuredDescription: Stair-well housing proposes modular affordable housing
+    units which incorporate a stair. As the units stack, the stair core is
+    created.
   featuredImage:
     alt: this is the alt text
     image: stair-well_-8-_1160x1740.jpg
@@ -28,57 +28,62 @@ previewImage:
 infoObject:
   - description: Competition entry
     title: CLIENT
-  - description: 'Modular, ground-up affordable housing'
+  - description: Modular, ground-up affordable housing
     title: SCOPE
   - description: AIA Design Excellence Award BQDA 2018
     title: Awards
 primaryImage:
-  caption: >-
-    Rotating, mirroring and stacking modular units brings both exterior space
-    and facade to the streetscape
+  caption: Rotating, mirroring and stacking modular units brings both exterior
+    space and facade to the streetscape
   image: stair-well_-9-cropped_1820.jpg
 projectGallery:
   - caption: Stacking in a prescribed sequence at both single or double-wide lots
-    colWidth: '6'
+    colWidth: "6"
     image: stair-well-unit-stack_1820.jpg
     type: image
+    offsetWidth: "0"
   - caption: The micro-unit interior with kitchen and fold-down table
-    colWidth: '9'
+    colWidth: "9"
     image: STAIR-WELL_-(10)_1820.jpg
-    offsetWidth: '3'
+    offsetWidth: "3"
     type: image
-  - colWidth: '12'
+  - colWidth: "12"
     image: stair-well_-1-_1820.jpg
     type: image
-  - pullQuote: 'Private, Public, Dignity, ownership whether it''s affordable or not'
+    offsetWidth: "0"
+  - pullQuote: Private, Public, Dignity, ownership whether it's affordable or not
     type: quote
   - caption: Services Routing via stair core
-    colWidth: '4'
+    colWidth: "4"
     image: stair-well_-15-cropped_1160.jpg
     type: image
-  - alt: ''
+    offsetWidth: "0"
+  - alt: ""
     caption: Stairs as an extension of the communal spaces
-    colWidth: '4'
+    colWidth: "4"
     image: stair-well_-14-cropped_1160.jpg
     type: image
+    offsetWidth: "0"
   - caption: Exterior spaces - private vs communal
-    colWidth: '4'
+    colWidth: "4"
     image: stair-well_-13-cropped_1160.jpg
     type: image
-  - colWidth: '6'
+    offsetWidth: "0"
+  - colWidth: "6"
     image: STAIR-WELL_-(15)_1820.jpg
     type: image
-  - caption: >-
-      Section perspective shows the alternating private interior vs public
+    offsetWidth: "0"
+  - caption: Section perspective shows the alternating private interior vs public
       exterior
-    colWidth: '10'
+    colWidth: "10"
     image: STAIR-WELL_-(3)_1820.jpg
-    offsetWidth: '2'
+    offsetWidth: "2"
     type: image
-  - caption: ''
-    colWidth: '10'
+  - caption: ""
+    colWidth: "10"
     image: STAIR-WELL_-(6)_1820.jpg
     type: image
+    offsetWidth: "0"
 ---
 Stair-Well Housing represents a concept for modular housing
  design intended to address NYCs dire need to bring low
