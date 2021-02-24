@@ -34,7 +34,7 @@ const SEO = ({ postData, postImage }) => {
   const image =
     (postImage && `${settings.url}${postImage}`) ||
     settings.siteImage.childImageSharp.fixed.src;
-  console.log(image);
+
   const url = postMeta.slug ? `${settings.url}${postMeta.slug}` : settings.url;
 
   const schemaOrgJSONLD = getSchemaOrgJSONLD({

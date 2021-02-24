@@ -22,7 +22,7 @@ const ProjectTemplate = ({ data, intersectionRef }) => {
             : null
         }
         postData={{
-          slug: post.fields.slug,
+          slug: `/projects${post.fields.slug}`,
           seo: {
             title:
               fields.seo && fields.seo.title ? fields.seo.title : fields.title,
