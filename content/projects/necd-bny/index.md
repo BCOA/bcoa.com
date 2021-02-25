@@ -1,24 +1,29 @@
 ---
 isPublished: true
 seo:
-  title: ''
+  title: ""
+  image: necdbny_seo_1200x630.jpg
 templateKey: project
 title: NECD @ BNY
 type: commercial
 heroImage:
-  alt: 'NECD - manufacturing brooklyn navy yard renovation industrial '
+  alt: "NECD - manufacturing brooklyn navy yard renovation industrial "
   image: necdbny_ph_3800x1900.jpg
   portraitImage: necdbny_ph_1500x20000.jpg
 headline: UPGRADE A STALWART OF NYC
 featured:
   isFeatured: false
+  featuredImage:
+    image: necdbny_seo_1200x630.jpg
+    alt: rtest
 previewImage:
-  alt: 'office renovation modular desk industrial manufacturing architecture linear '
+  alt: "office renovation modular desk industrial manufacturing architecture
+    linear "
   image: necd_navyyard_index_3.jpg
 infoObject:
   - description: National Elevator Cab and Door Corp.
     title: Client
-  - description: '47,000sf Offices and Manufacturing Facility'
+  - description: 47,000sf Offices and Manufacturing Facility
     title: Scope
   - description: Spring 2020
     title: Completed
@@ -27,26 +32,27 @@ infoObject:
 primaryImage:
   image: necd_navy-yard_-8-_1820.jpg
 projectGallery:
-  - caption: >-
-      View from inside the manufacturing plant where elevator interiors for
+  - caption: View from inside the manufacturing plant where elevator interiors for
       NYC's Class A elevator cabs are built
-    colWidth: '6'
+    colWidth: "6"
     image: necd_navy-yard_-10-_1820.jpg
-    offsetWidth: '0'
+    offsetWidth: "0"
     type: image
   - caption: White oak furniture contrasts the industrial architecture
-    colWidth: '8'
+    colWidth: "8"
     image: necd_navy-yard_-7-_1820.jpg
-    offsetWidth: '3'
+    offsetWidth: "3"
     type: image
-  - caption: ''
-    colWidth: '12'
+  - caption: ""
+    colWidth: "12"
     image: necd_navy-yard_promo-plan_1820.jpg
     type: image
+    offsetWidth: "0"
   - caption: The factory floor
-    colWidth: '5'
+    colWidth: "5"
     image: necd_navy-yard_-11-_1820.jpg
     type: image
+    offsetWidth: "0"
 ---
 After contemplating a move to NJ to beat their rising real estate costs, National Elevator Cab and Door (NECD), one of NYC’s leading manufacturers of elevator interiors, found a facility to relocate its 50,000sf manufacturing and office space among the bustling manufacturing community at the Brooklyn Navy Yard (BNY). Having spent over 50 years under the same roof in Woodside, Queens and developed deep roots in the city with both its urban presence and its diverse work force, this 90-year-old multi-generational family-owned business looked to do all they can within budget to allow them to stay local in the five boroughs.
 
