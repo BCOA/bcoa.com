@@ -2,7 +2,7 @@
 title: FRANKLIN STREET LOFT - NEARS COMPLETION
 templateKey: article
 image:
-  image: 152_franklin_horizontal_tint.jpg
+  image: 152_franklin_-v3-tint.jpg
   isPortrait: false
   alt: NYC Tribeca Loft Architect Renovation
 date: 2019-12-15
