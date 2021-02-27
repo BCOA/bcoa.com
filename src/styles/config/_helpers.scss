@@ -1,12 +1,22 @@
-.hide { display: none !important; }
+.hide {
+  display: none !important;
+}
 
-.block { display: block; }
+.block {
+  display: block;
+}
 
-.t-center { text-align: center; }
+.t-center {
+  text-align: center;
+}
 
-.absolute { position: absolute; }
+.absolute {
+  position: absolute;
+}
 
-.relative { position: relative !important; }
+.relative {
+  position: relative !important;
+}
 
 .overflow--hidden {
   overflow: hidden;
@@ -14,19 +24,42 @@
 
 //////////    FLEX    \\\\\\\\\\
 
-.flex { display: flex; }
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
 
-.flex-1 { flex: 1 }
+.flex-1 {
+  flex: 1;
+}
 
-.alignItems-flexEnd { align-items: flex-end; }
+.justify-center {
+  justify-content: center;
+}
 
-.justifySpaceBetween { justify-content: space-between; }
+.items-center {
+  align-items: center;
+}
+
+.alignItems-flexEnd {
+  align-items: flex-end;
+}
+
+.justifySpaceBetween {
+  justify-content: space-between;
+}
 
 ////////    HOVER STATES    \\\\\\\\\\
 
-.textDecorationNone { text-decoration: none; }
+.textDecorationNone {
+  text-decoration: none;
+}
 
-.underline { text-decoration: underline; }
+.underline {
+  text-decoration: underline;
+}
 
 @mixin underlineHover {
   &:hover {
