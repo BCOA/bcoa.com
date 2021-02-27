@@ -88,10 +88,13 @@ collections:
                   format: "MMMM D, YYYY",
                 }
               - {
-                  label: "Visible Date",
-                  name: "visibleDate",
-                  widget: "string",
-                  required: false,
+                  label: "Date Published",
+                  name: "datePublished",
+                  widget: "datetime",
+                  default: "",
+                  date_format: "MM/DD/YYYY",
+                  time_format: false,
+                  picker_utc: false,
                 }
               - { label: "URL", name: "url", widget: "string", required: false }
           - label: Awards
@@ -105,16 +108,13 @@ collections:
                   widget: "string",
                 }
               - {
-                  label: "Date",
-                  name: "date",
-                  widget: "date",
-                  format: "MMMM D, YYYY",
-                }
-              - {
-                  label: "Visible Date",
-                  name: "visibleDate",
-                  widget: "string",
-                  required: false,
+                  label: "Date Awarded",
+                  name: "dateAwarded",
+                  widget: "datetime",
+                  default: "",
+                  date_format: "MM/DD/YYYY",
+                  time_format: false,
+                  picker_utc: false,
                 }
               - { label: "URL", name: "url", widget: "string", required: false }
           - label: Collaborators
