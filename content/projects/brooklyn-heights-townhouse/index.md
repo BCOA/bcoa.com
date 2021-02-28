@@ -8,11 +8,13 @@ seo:
     on the upper floors.
 templateKey: project
 title: Brooklyn Heights Townhouse
+slug: Brooklyn-Heights-Townhouse
 heroImage:
   image: 44monroe_ph_3800x1900.jpg
   portraitImage: 44Monroe_PH_1500x2000.jpg
 workDescription: Monroe descritpion
-type: residential
+categories:
+  - Residential
 headline: maximize a gem
 featured:
   featuredImage:
@@ -69,4 +71,5 @@ projectGallery:
     type: image
     offsetWidth: "0"
 ---
+
 The renovation to this 19th Century historic townhouse included the gut renovation of an owner's triplex apartment as well as two rental units on the upper floors. This structure is wide, deep and tall with a large addition off the back. The job required a reconsideration of the layouts of two upper rental units to maximize potential incomes, together with a face-lift for the owner occupied duplex and associated garden.

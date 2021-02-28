@@ -1,5 +1,5 @@
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
 
 // exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
 //   createTypes(`
@@ -7,12 +7,20 @@ const { createFilePath } = require('gatsby-source-filesystem')
 //   `);
 // };
 
-async function turnProjectsIntoPages({graphql, actions}) {
-  const template = path.resolve(`src/templates/project.js`);
+async function turnIntoPages({ graphql, actions }) {
+  const projectTemplate = path.resolve(`src/templates/project.js`);
+  const articleTemplate = path.resolve(`src/templates/article.js`);
 
-  const {data} =  await graphql(`
+  const { data } = await graphql(`
     query {
-      projects: allMdx(filter: {frontmatter: {templateKey: {eq: "project"}, isPublished: {eq: true}}}) {
+      projects: allMdx(
+        filter: {
+          frontmatter: {
+            templateKey: { eq: "project" }
+            isPublished: { eq: true }
+          }
+        }
+      ) {
         nodes {
           id
           fields {
@@ -20,39 +28,66 @@ async function turnProjectsIntoPages({graphql, actions}) {
           }
           frontmatter {
             templateKey
+            slug
+          }
+        }
+      }
+      articles: allMdx(
+        filter: { frontmatter: { templateKey: { eq: "article" } } }
+      ) {
+        nodes {
+          id
+          frontmatter {
+            templateKey
+            slug
+          }
+          fields {
+            slug
           }
         }
       }
     }
-  `)
-
+  `);
   const projects = data.projects.nodes;
-  
-  projects.forEach(project => {
+  const articles = data.articles.nodes;
+
+  articles.forEach((article) => {
     actions.createPage({
-      path: `/projects${project.fields.slug}`,
-      component: template,
+      path: `/news/${article.frontmatter.slug}`,
+      component: articleTemplate,
+      context: {
+        id: article.id,
+        slug: article.frontmatter.slug,
+      },
+    });
+  });
+
+  projects.forEach((project) => {
+    const slug = project.frontmatter.slug;
+    actions.createPage({
+      path: `/projects/${slug}`,
+      component: projectTemplate,
       context: {
         id: project.id,
-        slug: project.fields.slug,
+        slug,
       },
-    })
-  })
+    });
+  });
 }
 
 exports.createPages = async (params) => {
-  await turnProjectsIntoPages(params);
-}
+  await turnIntoPages(params);
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-  
+  const { createNodeField } = actions;
+
   if (node.internal.type === `Mdx`) {
-    const value = createFilePath({ node, getNode })
+    const value = createFilePath({ node, getNode });
     createNodeField({
       name: `slug`,
       node,
       value,
-    })
-  } 
-}
+    });
+  }
+};

@@ -2,7 +2,9 @@
 isPublished: false
 templateKey: project
 title: NYC Loft Projects
-type: residential
+slug: NYC-Loft-Projects
+categories:
+  - Residential
 heroImage:
   portraitImage: 20greene_ph_1500x2000.jpg
   image: 20greene_ph_3800x1900.jpg
@@ -16,7 +18,8 @@ previewImage:
   image: bc-oa_lofts.jpg
 primaryImage:
   alt: project image alt
-  caption: Live edge dining, custom banquette and whitewashed exposed brick at the
+  caption:
+    Live edge dining, custom banquette and whitewashed exposed brick at the
     Crosby Loft II
   image: 45-crosby_5n_-11-.jpg
 projectGallery:

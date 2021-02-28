@@ -8,7 +8,6 @@ import MediaQuery from "react-responsive";
 import SEO from "../components/SEO";
 
 const ProjectTemplate = ({ data, intersectionRef }) => {
-  // console.log(intersectionRef);
   const post = data.mdx;
   const fields = post.frontmatter;
   return (
@@ -22,7 +21,7 @@ const ProjectTemplate = ({ data, intersectionRef }) => {
             : null
         }
         postData={{
-          slug: `/projects${post.fields.slug}`,
+          slug: `/projects${post.frontmatter.slug}`,
           seo: {
             title:
               fields.seo && fields.seo.title ? fields.seo.title : fields.title,
@@ -154,14 +153,12 @@ export default ProjectPage;
 
 export const query = graphql`
   query ProjectPageQuery($slug: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
-      fields {
-        slug
-      }
+    mdx(frontmatter: { slug: { eq: $slug } }) {
       id
       body
       frontmatter {
         title
+        slug
         headline
         infoObject {
           title

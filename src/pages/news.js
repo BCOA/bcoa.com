@@ -3,11 +3,19 @@ import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import Img from "gatsby-image";
 import Masonry from "react-masonry-component";
-import moment from "moment";
 import slugify from "slugify";
 import Layout from "../components/Layout";
 
 import SEO from "../components/SEO";
+
+const Image = ({ alt, image, className }) => {
+  console.log(image);
+  return image.extension === "gif" ? (
+    <img className={className} src={image.publicURL} alt={alt} />
+  ) : (
+    <Img fluid={image.childImageSharp.fluid} alt={alt} className={className} />
+  );
+};
 
 class Article extends Component {
   constructor(props) {
@@ -37,46 +45,25 @@ class Article extends Component {
         article.frontmatter.image.isPortrait ? (
           <div className="nestedGrid-6-2">
             <div className="colSpan-1"></div>
-            {article.frontmatter.image.image &&
-            article.frontmatter.image.image.childImageSharp ? (
-              <Img
-                fluid={article.frontmatter.image.image.childImageSharp.fluid}
-                alt={article.frontmatter.image.alt}
-                className="colSpan-4 testing marginBottom-5
-                            bp-2_marginBottom-6"
-              />
-            ) : (
-              <img
+            {article.frontmatter.image.image && (
+              <Image
+                {...article.frontmatter.image}
                 className="colSpan-4 marginBottom-5 bp-2_marginBottom-6"
-                url={article.frontmatter.image.image.src}
-                alt={article.frontmatter.image.alt}
               />
             )}
           </div>
         ) : (
           article.frontmatter.image &&
-          article.frontmatter.image.image &&
-          (article.frontmatter.image.image &&
-          article.frontmatter.image.image.childImageSharp ? (
-            <Img
-              fluid={article.frontmatter.image.image.childImageSharp.fluid}
-              alt={article.frontmatter.image.alt}
-              className="colSpan-4 marginBottom-5
-                          bp-2_marginBottom-6"
-            />
-          ) : (
-            <img
+          article.frontmatter.image.image && (
+            <Image
+              {...article.frontmatter.image}
               className="colSpan-4 marginBottom-5 bp-2_marginBottom-6"
-              url={article.frontmatter.image.image.src}
-              alt={article.frontmatter.image.alt}
             />
-          ))
+          )
         )}
 
         <h2 className="f-headline-a">{article.frontmatter.title}</h2>
-        <time className="c-gray f-headline-a">
-          {moment(article.frontmatter.date).format("M.D.YYYY")}
-        </time>
+        <time className="c-gray f-headline-a">{article.frontmatter.date}</time>
         <div
           className="f-copy-book
                         marginTop-3
@@ -185,9 +172,13 @@ export const query = graphql`
         frontmatter {
           templateKey
           title
-          date
+          date(formatString: "M.D.YYYY")
+
           image {
+            alt
             image {
+              extension
+              publicURL
               childImageSharp {
                 fluid(maxWidth: 1200) {
                   ...GatsbyImageSharpFluid_withWebp

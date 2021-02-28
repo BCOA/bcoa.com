@@ -7,12 +7,14 @@ seo:
   title: Thompson St Loft Renovation in Soho
 templateKey: project
 title: Thompson Loft
+slug: Thompson-Loft
 heroImage:
   alt: Modern loft kitchen rendering
   image: 17thompson_ph_3800x1900.jpg
   portraitImage: 17THOMPSON_PH_1500x2000.jpg
 workDescription: ""
-type: residential
+categories:
+  - Residential
 headline: "blur the boundaries "
 featured:
   featuredImage:
@@ -31,7 +33,8 @@ primaryImage:
   image: 17-thompson-cropped.jpg
 projectGallery:
   - alt: modern loft apartment rendering
-    caption: Exposed brick selectively painted or exposed to define zones within the
+    caption:
+      Exposed brick selectively painted or exposed to define zones within the
       large common area
     colWidth: "10"
     image: 17-thompson-2-cropped.jpg
@@ -65,4 +68,5 @@ projectGallery:
     type: image
     offsetWidth: "0"
 ---
+
 This corner loft situated at the outer Soho limits is small in footprint but has the advantage of corner, wrap-around windows to expand the city views and flood the unit with natural light. Exposed brick throughout the unit and original tin ceiling keep the loft attitude of the building. A refined walnut island with an infinity-edge concrete countertop introduces a modern showpiece into the raw space. New surfaces trace the edges of the private zone, reading as overlapping planes within the industrial box.

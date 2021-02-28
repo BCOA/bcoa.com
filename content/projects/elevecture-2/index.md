@@ -4,11 +4,13 @@ seo:
   image: 740broadwaylobby_seo_1200x630.jpg
 templateKey: project
 title: 740 Broadway Lobby
+slug: 740-Broadway-Lobby
 heroImage:
   image: 740broadwaylobby_ph_3800x1900.jpg
   portraitImage: 740BROADWAYLOBBY_PH_1500x2000.jpg
 workDescription: Broadway description
-type: commercial
+categories:
+  - Commercial
 headline: Surround with light
 featured:
   featuredDescription: Distinguishing a Broadway lobby with columns of light
@@ -57,4 +59,5 @@ projectGallery:
     type: image
     offsetWidth: "0"
 ---
+
 A progressive, future-focused client asked BC—OA to design a complete modernization to this century old lobby utilizing the Elevecture glass panel and display material palette utilized at the Elevecture Showroom. The contrast between the historic facade and contemporary, technologically sophisticated interior reflects the adaptability of historic architecture in New York’s fast paced developing market. The challenge of the design comes from implementing the modular panel system in a wholly different way, which we addressed by incorporating vertical strips of digital displays alternating with columns of white static panels and lighting. The result is a space defined largely by these folding layers wrapping the space, creating an opportunity for the occupant to physically inhabit the graphic content on the walls as they experience a moment of pause in their daily commutes.

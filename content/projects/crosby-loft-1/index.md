@@ -12,7 +12,9 @@ seo:
     quintessential Crosby Street, using a floating kitchen to buffer between
     public and private spaces.
 title: Crosby Loft I
-type: residential
+slug: Crosby-Loft-I
+categories:
+  - Residential
 headline: Reveal then refine the Soho loft
 featured:
   featuredDescription: BC—OAs first of many Soho loft projects
@@ -36,7 +38,8 @@ primaryImage:
   caption: Cabinetry hugs the original timber column of this form lightbulb factory
   image: 45-CROSBY_5S_-(12)_1820.jpg
 projectGallery:
-  - caption: Exposed brick and steel elements next to clean new surfaces concealing
+  - caption:
+      Exposed brick and steel elements next to clean new surfaces concealing
       the infrastructure - sprinklers, lighting and ductwork
     colWidth: "10"
     image: 45-CROSBY_5S_-(3)_1820.jpg
@@ -46,7 +49,8 @@ projectGallery:
     image: 45-CROSBY_5S_-(7)_1820.jpg
     offsetWidth: "4"
     type: image
-  - caption: Approaching the design as clean insertions nested within the industrial
+  - caption:
+      Approaching the design as clean insertions nested within the industrial
       loft elements
     colWidth: "8"
     image: 45-crosby_5s_-18.jpg
@@ -79,6 +83,7 @@ projectGallery:
     type: image
     offsetWidth: "0"
 ---
+
 This 2300sf loft located on Soho’s quintessential Crosby Street offers ample square footage in a long and narrow floor plan. A partial wall dividing the public and private spaces of this residence breaks the floor plan in half, providing a friendlier proportion for the open kitchen, dining and living space, while still permitting views straight through the apartment to windows at the two extremes. The original loft materials - brick and heavy timber columns - are exposed throughout the living and dining area, with contemporary insertions to provide a comfortable kitchen and sitting area. Furniture selection by Tamara Eaton Design.
 
 See feature in [Dwell](https://www.dwell.com/collection/a-renovated-loft-in-soho-628c9992)

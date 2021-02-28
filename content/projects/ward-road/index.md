@@ -2,8 +2,10 @@
 isPublished: true
 templateKey: project
 title: Ward Road House
-workDescription: ''
-type: residential
+slug: Ward-Road-House
+workDescription: ""
+categories:
+  - Residential
 heroImage:
   image: ward-road_ph_3800x1900.jpg
   portraitImage: WARD-ROAD_PH_1500x2000.jpg
@@ -37,50 +39,51 @@ projectGallery:
   - caption: >-
       Local spotted gum timber shutters act to open or close one of the two
       master suites
-    colWidth: '6'
+    colWidth: "6"
     image: ward-road_-15.jpg
     type: image
-  - colWidth: '10'
+  - colWidth: "10"
     image: ward-road_-9-_3140.jpg
-    offsetWidth: '2'
+    offsetWidth: "2"
     type: image
-  - colWidth: '4'
+  - colWidth: "4"
     image: ward-road_-15-_1160.jpg
     type: image
-  - colWidth: '4'
+  - colWidth: "4"
     image: ward-road_-17-_1160.jpg
     type: image
-  - colWidth: '4'
+  - colWidth: "4"
     image: ward-road_-16-_1160.jpg
     type: image
-  - colWidth: '6'
+  - colWidth: "6"
     image: ward-road_-18.jpg
     type: image
-  - colWidth: '6'
+  - colWidth: "6"
     image: ward-road_-17.jpg
     type: image
-  - colWidth: '6'
+  - colWidth: "6"
     image: ward-road_-19.jpg
     type: image
-  - colWidth: '6'
+  - colWidth: "6"
     image: ward-road_-20.jpg
     type: image
   - pullQuote: >-
       Conceived as a game of stacking and overlapping programmatic building
-      blocks 
+      blocks
     type: quote
-  - colWidth: '12'
+  - colWidth: "12"
     image: ward-road_-8-_3800.jpg
     type: image
   - caption: >-
       The large common space accommodates all the families at once, flooded with
       northern light and views to  Swan Bay
-    colWidth: '8'
+    colWidth: "8"
     image: ward-road_-7-_2480.jpg
     type: image
-  - colWidth: '10'
+  - colWidth: "10"
     image: ward-road_-3-_3140.jpg
-    offsetWidth: '2'
+    offsetWidth: "2"
     type: image
 ---
+
 Australian sisters purchased a small lot in nostalgic Pt. Londsdale and required a shared holiday house which allowed for two master zones and shared public areas with sweeping bay views. The project was designed in duals, with two master bedrooms and bathrooms at extreme opposites, two different kinds of living / study zones and two exterior decks all packed within a very small footprint. Different materials and exterior cladding were used to create distinction between the different zones. The house is built using local materials and a rainwater collection system, and isolated mechanical zones minimize energy usage. This project was as design assist by Bronwyn Breitner together with local Melbourne architect Chris Manton.

@@ -3,17 +3,21 @@ isPublished: true
 seo:
   image: 45crosby5n_seo_1200x630.jpg
   title: Crosby Loft II
-  description: Architects BC—OA design a distressed bronze feature cabinet at this
+  description:
+    Architects BC—OA design a distressed bronze feature cabinet at this
     NYC Soho loft renovation.
 templateKey: project
 title: Crosby Loft II
-type: residential
+slug: Crosby-Loft-II
+categories:
+  - Residential
 heroImage:
   image: 45crosby5n_ph_3800x1900.jpg
   portraitImage: 45CROSBY5N_PH_1500x2000.jpg
 headline: Expose the old, Insert the new, distress, repeat
 featured:
-  featuredDescription: Contemporary materials contrast the original highlights of
+  featuredDescription:
+    Contemporary materials contrast the original highlights of
     this SoHo converted loft
   featuredImage:
     alt: this is the alt text
@@ -31,7 +35,8 @@ infoObject:
   - description: "Christian Harder Photography "
     title: Photography
 primaryImage:
-  caption: A soft, tufted built-in bench contrasts the exposed brick and original
+  caption:
+    A soft, tufted built-in bench contrasts the exposed brick and original
     tin ceilings
   image: 45-CROSBY_5N_-(11)_1820.jpg
 projectGallery:
@@ -77,6 +82,7 @@ projectGallery:
     type: image
     offsetWidth: "0"
 ---
-The owners of this 2300sf converted loft in Soho had a clearly defined vision for their what their renovation wasn’t. Their close friends and neighbors across the elevator had recently renovated their identical loft with BC—OA - a project we titled “The Selective Loft” for its clean, minimalist detailing contrasted against the selective exposing of the structure’s original brick and timbers. The clients for this new project admired their project but were looking to embrace the loft aesthetic to a greater extent. In contrast to the sleek white ceiling of their neighbors, this design accepts the imperfections of the original tin ceilings, providing substantial reveals where it meets new materials to accommodate the irregular surface, and highlights the exposed piping and sprinklers. 
+
+The owners of this 2300sf converted loft in Soho had a clearly defined vision for their what their renovation wasn’t. Their close friends and neighbors across the elevator had recently renovated their identical loft with BC—OA - a project we titled “The Selective Loft” for its clean, minimalist detailing contrasted against the selective exposing of the structure’s original brick and timbers. The clients for this new project admired their project but were looking to embrace the loft aesthetic to a greater extent. In contrast to the sleek white ceiling of their neighbors, this design accepts the imperfections of the original tin ceilings, providing substantial reveals where it meets new materials to accommodate the irregular surface, and highlights the exposed piping and sprinklers.
 
 To accommodate the clients colorful aesthetic and collection of tchockes, the selection of new materials remained simple and fairly desaturated, including superwhite walls, wide-plank oil finished white oak flooring and white lacquered cabinetry. The featured material of the space is the distressed bronze upper cabinet, which floats in space, buffering the proximity of old materials and new, and of public and private spaces.

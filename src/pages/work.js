@@ -15,12 +15,8 @@ class Work extends Component {
     };
   }
 
-  filterProjects(project) {
-    if (this.state.filterValue === "all") {
-      return true;
-    }
-    return project.frontmatter.type === this.state.filterValue;
-  }
+  // get projects sorted by categories
+  // create a document with a list you can add <to></to>
 
   renderFilterTransition = (filterValue) => {
     this.setState({ inTransition: true });
@@ -30,16 +26,36 @@ class Work extends Component {
 
   render() {
     const page = this.props.data.page.frontmatter;
-    const projects = this.props.data.projects.nodes;
-    const projectOrder = page.projects;
+    const userOrderedProjects = page.projects;
+    const projectsByCategory = this.props.data.projects.group;
+    const allProjects = this.props.data.projects.all;
+    const projectCategories = this.props.data.projects.group.map(
+      (node) => node.fieldValue
+    );
+    // const projectOrder = page.projects;
+
+    // how do I get all projects / make fragment and grab all
+    // grab the active filter
+    // order the projects / or ahead of time
+    // convert to rfc?
+
     //creates user defined order of projects from page frontmatter
-    const orderedProjects = projectOrder
-      .map((title) => {
-        return projects.find((project) => {
-          return project.frontmatter.title === title.project;
-        });
-      })
-      .filter((project) => project.frontmatter.isPublished);
+    const getProjectsByUserOrder = (filter, order = userOrderedProjects) => {
+      const projects =
+        filter === "all"
+          ? allProjects
+          : projectsByCategory.filter((node) => {
+              return node.fieldValue === filter;
+            })[0].nodes;
+      const orderedProjects = order.filter((item) => {
+        return projects.find(
+          (project) => project.frontmatter.title === item.project
+        );
+      });
+      return orderedProjects.map((item) =>
+        projects.find((project) => project.frontmatter.title === item.project)
+      );
+    };
 
     return (
       <div
@@ -63,6 +79,7 @@ class Work extends Component {
           <ProjectFilter
             isWindowLarge={this.props.breakpoint === "large"}
             onChange={(val) => this.renderFilterTransition(val)}
+            items={projectCategories}
           />
         </div>
         <ul
@@ -70,32 +87,30 @@ class Work extends Component {
             this.state.inTransition ? "inTransition" : ""
           } bp-1_grid-3col bp-2_grid-4col`}
         >
-          {projects &&
-            orderedProjects
-              .filter((project) => this.filterProjects(project))
-              .map((project, i) => {
-                return (
-                  <li key={i}>
-                    <article className="workProject marginBottom-9 bp-2_marginBottom-21">
-                      <Link to={`/projects${project.fields.slug}`}>
-                        {project.frontmatter.previewImage.image && (
-                          <Img
-                            fluid={
-                              project.frontmatter.previewImage.image
-                                .childImageSharp.fluid
-                            }
-                            className="marginBottom-3"
-                            alt={project.frontmatter.previewImage.alt}
-                          />
-                        )}
-                        <h1 className="f-subhead">
-                          {project.frontmatter.title}
-                        </h1>
-                      </Link>
-                    </article>
-                  </li>
-                );
-              })}
+          {getProjectsByUserOrder(this.state.filterValue).map((project, i) => {
+            const slug = project.frontmatter.slug
+              ? `/${project.frontmatter.slug}`
+              : project.fields.slug;
+            return (
+              <li key={i}>
+                <article className="workProject marginBottom-9 bp-2_marginBottom-21">
+                  <Link to={`/projects${slug}`}>
+                    {project.frontmatter.previewImage.image && (
+                      <Img
+                        fluid={
+                          project.frontmatter.previewImage.image.childImageSharp
+                            .fluid
+                        }
+                        className="marginBottom-3"
+                        alt={project.frontmatter.previewImage.alt}
+                      />
+                    )}
+                    <h1 className="f-subhead">{project.frontmatter.title}</h1>
+                  </Link>
+                </article>
+              </li>
+            );
+          })}
         </ul>
       </div>
     );
@@ -125,37 +140,14 @@ export const query = graphql`
         }
       }
     ) {
-      nodes {
-        id
-        frontmatter {
-          title
-          isPublished
-          seo {
-            title
-            description
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1200) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
-            }
-          }
-          type
-          previewImage {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 768, quality: 80) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
-            }
-            alt
-          }
+      group(field: frontmatter___categories) {
+        fieldValue
+        nodes {
+          ...projectFields
         }
-        fields {
-          slug
-        }
+      }
+      all: nodes {
+        ...projectFields
       }
     }
     page: mdx(fields: { slug: { eq: "/work/" } }) {
@@ -176,6 +168,38 @@ export const query = graphql`
         projects {
           project
         }
+      }
+    }
+  }
+`;
+
+export const PROJECT_FIELDS = graphql`
+  fragment projectFields on Mdx {
+    id
+    frontmatter {
+      slug
+      title
+      isPublished
+      seo {
+        title
+        description
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+      previewImage {
+        image {
+          childImageSharp {
+            fluid(maxWidth: 768, quality: 80) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        alt
       }
     }
   }

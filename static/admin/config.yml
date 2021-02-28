@@ -37,6 +37,7 @@ collections:
           - label: Studio Members
             name: studioMembers
             widget: list
+            add_to_top: true
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - {
@@ -78,6 +79,7 @@ collections:
           - label: Publications
             name: publications
             widget: list
+            add_to_top: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Publisher", name: "publisher", widget: "string" }
@@ -100,6 +102,7 @@ collections:
           - label: Awards
             name: awards
             widget: list
+            add_to_top: true
             fields:
               - { label: "Award Title", name: "title", widget: "string" }
               - {
@@ -120,6 +123,7 @@ collections:
           - label: Collaborators
             name: collaborators
             widget: list
+            add_to_top: true
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Job title", name: "jobTitle", widget: "string" }
@@ -206,9 +210,22 @@ collections:
               default: "work",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - label: "Project Categories"
+            name: "projectCategories"
+            label_singular: "Project Category"
+            widget: "list"
+            allow_add: true
+            collapsed: true
+            add_to_top: true
+            summary: "{{category}}"
+            fields:
+              - label: "Category"
+                name: "category"
+                widget: "string"
           - label: "Projects"
             name: "projects"
             widget: "list"
+            add_to_top: true
             fields:
               - label: "Project"
                 name: "project"
@@ -242,6 +259,7 @@ collections:
           - label: "Carousel Images"
             name: "carouselImages"
             widget: "list"
+            add_to_top: true
             fields:
               - { label: "Landscape Image", name: "image", widget: "image" }
               - {
@@ -271,6 +289,7 @@ collections:
           - label: "Featured Projects"
             name: "featuredProjects"
             widget: "list"
+            add_to_top: true
             fields:
               - label: "Featured Project"
                 name: "project"
@@ -312,15 +331,17 @@ collections:
           default: "project",
         }
       - { label: "Project Name", name: "title", widget: "string" }
-      - label: Type
-        name: type
-        widget: select
-        default: residential
-        options:
-          - label: Residential
-            value: residential
-          - label: Commercial
-            value: commercial
+      - { label: "Slug", name: "slug", widget: "string" }
+      - label: "Categories"
+        name: "categories"
+        widget: "relation"
+        collection: "pages"
+        file: "indexPage"
+        search_fields: ["projectCategories.*.category"]
+        value_field: "projectCategories.*.category"
+        display_fields: ["projectCategories.*.category"]
+        multiple: true
+        required: false
       - label: Hero Image
         name: heroImage
         widget: object
@@ -391,6 +412,7 @@ collections:
       - label: Info Object
         name: infoObject
         widget: list
+        add_to_top: true
         required: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
@@ -422,6 +444,7 @@ collections:
         label_singular: "Gallery"
         name: "projectGallery"
         widget: "list"
+        add_to_top: true
         required: false
         types:
           - label: Image
@@ -493,6 +516,7 @@ collections:
           widget: "hidden",
           default: "article",
         }
+      - { label: "Slug", name: "slug", widget: "string" }
       - label: Image
         name: image
         widget: object
@@ -509,8 +533,9 @@ collections:
           name: "date",
           widget: "datetime",
           time_format: false,
-          date_format: "YYYY-MM-DD",
+          date_format: "MM/DD/YYYY",
         }
+      - { label: "Excerpt", name: "excerpt", widget: "markdown" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "settings"

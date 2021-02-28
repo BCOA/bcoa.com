@@ -6,6 +6,10 @@ seo:
 templateKey: work
 title: Index
 workDescription: ""
+projectCategories:
+  - category: Third Option
+  - category: Commercial
+  - category: Residential
 projects:
   - project: NECD @ BNY
   - project: S-M-L Loft

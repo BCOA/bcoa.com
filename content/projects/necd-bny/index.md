@@ -5,7 +5,9 @@ seo:
   image: necdbny_seo_1200x630.jpg
 templateKey: project
 title: NECD @ BNY
-type: commercial
+slug: NECD-at-BNY
+categories:
+  - Commercial
 heroImage:
   alt: "NECD - manufacturing brooklyn navy yard renovation industrial "
   image: necdbny_ph_3800x1900.jpg
@@ -32,7 +34,8 @@ infoObject:
 primaryImage:
   image: necd_navy-yard_-8-_1820.jpg
 projectGallery:
-  - caption: View from inside the manufacturing plant where elevator interiors for
+  - caption:
+      View from inside the manufacturing plant where elevator interiors for
       NYC's Class A elevator cabs are built
     colWidth: "6"
     image: necd_navy-yard_-10-_1820.jpg
@@ -54,6 +57,7 @@ projectGallery:
     type: image
     offsetWidth: "0"
 ---
+
 After contemplating a move to NJ to beat their rising real estate costs, National Elevator Cab and Door (NECD), one of NYC’s leading manufacturers of elevator interiors, found a facility to relocate its 50,000sf manufacturing and office space among the bustling manufacturing community at the Brooklyn Navy Yard (BNY). Having spent over 50 years under the same roof in Woodside, Queens and developed deep roots in the city with both its urban presence and its diverse work force, this 90-year-old multi-generational family-owned business looked to do all they can within budget to allow them to stay local in the five boroughs.
 
 The 47,000sf facility spans two separate buildings at BNY, allowing for 14,000sf of office space coupled with a 33,000sf manufacturing facility used to build some of the highest-end elevator interiors in the city, including the Empire State Building, Hudson Yards and the Freedom Tower. Through close collaboration with the client and consulting engineers, a design solution was proposed that allowed the two buildings to communicate efficiently with each other and promote a streamlined flow of production, circulation, and communication.
