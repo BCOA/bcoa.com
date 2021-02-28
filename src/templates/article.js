@@ -45,8 +45,8 @@ const ArticleTemplate = ({ data, intersectionRef }) => {
                         bp-1_paddingTop-2 bp-2_paddingTop-5
                         bp-1_marginBottom-3 bp-2_marginBottom-6"
       >
-        <div className="grid-12col">
-          <div className="colSpan-5">
+        <div className="bp-1_grid-12col">
+          <div className="bp-1_colSpan-8 bp-2_colSpan-6">
             {fields.image && fields.image.image && fields.image.isPortrait ? (
               <div className="nestedGrid-6-2">
                 <div className="colSpan-1"></div>
