@@ -7,6 +7,6 @@ image:
   image: test.gif
   alt: this is the image
 date: 2021-02-28T17:09:29.790Z
-excerpt: This is the article excerpt
+excerpt: This is the article excerpt which uses **markdown**.
 ---
 this is the article body

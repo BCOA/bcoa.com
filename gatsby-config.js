@@ -72,6 +72,9 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-mdx-frontmatter",
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-40614083-1",

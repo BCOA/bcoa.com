@@ -509,6 +509,32 @@ collections:
     public_folder: ""
     create: true
     fields:
+      - label: SEO
+        name: seo
+        widget: object
+        collapsed: true
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              hint: "Defaults to article title",
+              required: false,
+            }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              hint: "Defaults to article excerpt",
+              required: false,
+            }
+          - {
+              label: "Image",
+              name: "image",
+              widget: "image",
+              hint: "Defaults to primary image unless primary image is a gif",
+              required: false,
+            }
       - { label: "Headline", name: "title", widget: "string" }
       - {
           label: "Template Key",
@@ -517,7 +543,7 @@ collections:
           default: "article",
         }
       - { label: "Slug", name: "slug", widget: "string" }
-      - label: Image
+      - label: Primary Image
         name: image
         widget: object
         fields:

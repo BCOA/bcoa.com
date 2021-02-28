@@ -1,11 +1,16 @@
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 
-// exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
-//   createTypes(`
-//     type Mdx implements Node
-//   `);
-// };
+exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
+  createTypes(`
+    type Mdx implements Node {
+      frontmatter: MdxFrontmatter
+    }
+    type MdxFrontmatter {
+      excerpt: String @mdx
+    }
+  `);
+};
 
 async function turnIntoPages({ graphql, actions }) {
   const projectTemplate = path.resolve(`src/templates/project.js`);

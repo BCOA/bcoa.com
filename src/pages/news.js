@@ -1,21 +1,12 @@
 import React, { Component } from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import Img from "gatsby-image";
 import Masonry from "react-masonry-component";
 import slugify from "slugify";
 import Layout from "../components/Layout";
+import Image from "../components/Image";
 
 import SEO from "../components/SEO";
-
-const Image = ({ alt, image, className }) => {
-  console.log(image);
-  return image.extension === "gif" ? (
-    <img className={className} src={image.publicURL} alt={alt} />
-  ) : (
-    <Img fluid={image.childImageSharp.fluid} alt={alt} className={className} />
-  );
-};
 
 class Article extends Component {
   constructor(props) {
@@ -71,21 +62,9 @@ class Article extends Component {
                         bp-2_marginTop-5
                         marginBottom-5"
         >
-          <MDXRenderer>{article.body}</MDXRenderer>
+          <MDXRenderer>{article.frontmatter.excerpt}</MDXRenderer>
         </div>
-        <button className="f-copy-book copyButton" onClick={this.copyLink}>
-          {this.state.copying ? "Link Copied!" : "Share This"}
-        </button>
-        <textarea
-          className="copyInput"
-          ref={(el) => (this.articleLink = el)}
-          name="articleLink"
-          id="articleLink"
-          defaultValue={`http://bc-oa.com/news#${slugify(
-            article.frontmatter.title,
-            { lower: true }
-          )}`}
-        ></textarea>
+        <Link to={`${article.frontmatter.slug}`}>Read more</Link>
       </article>
     );
   }
@@ -171,7 +150,9 @@ export const query = graphql`
         body
         frontmatter {
           templateKey
+          excerpt
           title
+          slug
           date(formatString: "M.D.YYYY")
 
           image {
@@ -187,9 +168,6 @@ export const query = graphql`
             }
             isPortrait
           }
-        }
-        fields {
-          slug
         }
       }
     }
