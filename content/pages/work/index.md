@@ -7,7 +7,7 @@ templateKey: work
 title: Index
 workDescription: ""
 projectCategories:
-  - category: Third Option
+  - category: Lofts
   - category: Commercial
   - category: Residential
 projects:
