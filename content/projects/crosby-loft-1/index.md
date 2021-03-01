@@ -1,20 +1,21 @@
 ---
 isPublished: true
-templateKey: project
-heroImage:
-  image: 45crosby5s_ph_3800x1900.jpg
-  portraitImage: 45CROSBY5S_PH_1500x2000.jpg
-workDescription: ""
 seo:
   image: 45crosby5s_seo_1200x630.jpg
   title: Crosby Loft I
   description: Architects BC—OA  renovated this 2300sf loft located on Soho’s
     quintessential Crosby Street, using a floating kitchen to buffer between
     public and private spaces.
-title: Crosby Loft I
-slug: Crosby-Loft-I
+templateKey: project
+slug: Soho-Loft-1
 categories:
   - Residential
+  - Third Option
+heroImage:
+  image: 45crosby5s_ph_3800x1900.jpg
+  portraitImage: 45CROSBY5S_PH_1500x2000.jpg
+workDescription: ""
+title: Crosby Loft I
 headline: Reveal then refine the Soho loft
 featured:
   featuredDescription: BC—OAs first of many Soho loft projects
@@ -38,8 +39,7 @@ primaryImage:
   caption: Cabinetry hugs the original timber column of this form lightbulb factory
   image: 45-CROSBY_5S_-(12)_1820.jpg
 projectGallery:
-  - caption:
-      Exposed brick and steel elements next to clean new surfaces concealing
+  - caption: Exposed brick and steel elements next to clean new surfaces concealing
       the infrastructure - sprinklers, lighting and ductwork
     colWidth: "10"
     image: 45-CROSBY_5S_-(3)_1820.jpg
@@ -49,8 +49,7 @@ projectGallery:
     image: 45-CROSBY_5S_-(7)_1820.jpg
     offsetWidth: "4"
     type: image
-  - caption:
-      Approaching the design as clean insertions nested within the industrial
+  - caption: Approaching the design as clean insertions nested within the industrial
       loft elements
     colWidth: "8"
     image: 45-crosby_5s_-18.jpg
