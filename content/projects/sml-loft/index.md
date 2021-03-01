@@ -1,8 +1,8 @@
 ---
 isPublished: true
 seo:
-  title: NYC Architects BC—OA gut renovate a Soho Loft designing industrial
-    material features
+  title: NYC Architects | Soho Loft Renovations | BC-OA Architect | Luxury Loft
+    Renovation
   description: The gut renovation of this cast-iron Soho Loft by NYC and Brooklyn
     based contemporary architects BC—OA features industrial steel objects
     floating within an open floor plan.
