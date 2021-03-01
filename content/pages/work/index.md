@@ -6,8 +6,7 @@ seo:
 templateKey: work
 title: Index
 workDescription: ""
-projectCategories:
-  - category: test
+projectCategories: []
 projects:
   - project: NECD @ BNY
   - project: S-M-L Loft
