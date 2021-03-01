@@ -88,7 +88,10 @@ const NewsPageTemplate = ({ data, breakpoint }) => {
   return (
     <div className="container bp-2_marginBottom-8">
       <SEO
-        postImage={news.seo.image.childImageSharp.fluid.src}
+        postImage={
+          news.seo.image.childImageSharp &&
+          news.seo.image.childImageSharp.fluid.src
+        }
         postData={news}
       />
       <h1 className="f-page-title marginTop-8 marginBottom-7 bp-1_marginTop-10 bp-2_marginTop-17 bp-2_marginBottom-12">
