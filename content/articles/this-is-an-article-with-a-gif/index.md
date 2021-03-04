@@ -1,12 +1,12 @@
 ---
-title: This is an article with a gif
+title: Crosby Loft Progress
 templateKey: article
-slug: gif-article
+slug: soho-loft-progress
 image:
   isPortrait: false
-  image: test.gif
-  alt: this is the image
+  image: gif-test.gif
+  alt: Soho Loft NYC Construction Progress Image
 date: 2021-02-28T17:09:29.790Z
-excerpt: This is the article excerpt which uses **markdown**.
+excerpt: Renderings becoming reality at the Crosby Loft
 ---
-this is the article body
+Renderings becoming reality at the Crosby Loft
