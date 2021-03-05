@@ -3,21 +3,20 @@ isPublished: true
 seo:
   image: 45crosby5n_seo_1200x630.jpg
   title: Crosby Loft II
-  description:
-    Architects BC—OA design a distressed bronze feature cabinet at this
+  description: Architects BC—OA design a distressed bronze feature cabinet at this
     NYC Soho loft renovation.
 templateKey: project
 title: Crosby Loft II
 slug: Crosby-Loft-II
 categories:
   - Residential
+  - Lofts
 heroImage:
   image: 45crosby5n_ph_3800x1900.jpg
   portraitImage: 45CROSBY5N_PH_1500x2000.jpg
 headline: Expose the old, Insert the new, distress, repeat
 featured:
-  featuredDescription:
-    Contemporary materials contrast the original highlights of
+  featuredDescription: Contemporary materials contrast the original highlights of
     this SoHo converted loft
   featuredImage:
     alt: this is the alt text
@@ -35,8 +34,7 @@ infoObject:
   - description: "Christian Harder Photography "
     title: Photography
 primaryImage:
-  caption:
-    A soft, tufted built-in bench contrasts the exposed brick and original
+  caption: A soft, tufted built-in bench contrasts the exposed brick and original
     tin ceilings
   image: 45-CROSBY_5N_-(11)_1820.jpg
 projectGallery:
