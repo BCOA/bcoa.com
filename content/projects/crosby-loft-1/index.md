@@ -10,7 +10,7 @@ templateKey: project
 slug: Soho-Loft-1
 categories:
   - Residential
-  - Third Option
+  - Lofts
 heroImage:
   image: 45crosby5s_ph_3800x1900.jpg
   portraitImage: 45CROSBY5S_PH_1500x2000.jpg
