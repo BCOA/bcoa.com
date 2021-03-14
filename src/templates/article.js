@@ -1,12 +1,8 @@
 import React, { useRef, useState } from "react";
 import { graphql } from "gatsby";
-import moment from "moment";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import Img from "gatsby-image";
 import Layout from "../components/Layout";
 import Image from "../components/Image";
-// import ProjectImage from "../components/ProjectImage";
-// import MediaQuery from "react-responsive";
 import SEO from "../components/SEO";
 
 const ArticleTemplate = ({ data, intersectionRef }) => {

@@ -166,6 +166,8 @@ export const pageQuery = graphql`
             featuredImage {
               isPortrait
               image {
+                extension
+                publicURL
                 childImageSharp {
                   fluid(maxWidth: 1820, quality: 75) {
                     ...GatsbyImageSharpFluid_withWebp

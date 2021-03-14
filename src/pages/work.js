@@ -5,6 +5,7 @@ import Img from "gatsby-image";
 import ProjectFilter from "../components/ProjectFilter";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
+import Image from "../components/Image";
 
 class Work extends Component {
   constructor(props) {
@@ -29,6 +30,9 @@ class Work extends Component {
     const userOrderedProjects = page.projects;
     const projectsByCategory = this.props.data.projects.group;
     const allProjects = this.props.data.projects.all;
+
+    // this should exist in both project categories list and projects.group
+    // how do we sort these?
     const projectCategories = this.props.data.projects.group.map(
       (node) => node.fieldValue
     );
@@ -96,13 +100,9 @@ class Work extends Component {
                 <article className="workProject marginBottom-9 bp-2_marginBottom-21">
                   <Link to={`/projects${slug}`}>
                     {project.frontmatter.previewImage.image && (
-                      <Img
-                        fluid={
-                          project.frontmatter.previewImage.image.childImageSharp
-                            .fluid
-                        }
+                      <Image
+                        {...project.frontmatter.previewImage}
                         className="marginBottom-3"
-                        alt={project.frontmatter.previewImage.alt}
                       />
                     )}
                     <h1 className="f-subhead">{project.frontmatter.title}</h1>
@@ -193,6 +193,8 @@ export const PROJECT_FIELDS = graphql`
       }
       previewImage {
         image {
+          extension
+          publicURL
           childImageSharp {
             fluid(maxWidth: 768, quality: 80) {
               ...GatsbyImageSharpFluid_withWebp

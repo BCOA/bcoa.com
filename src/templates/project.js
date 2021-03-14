@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import Img from "gatsby-image";
+import Image from "../components/Image";
 import Layout from "../components/Layout";
 import ProjectImage from "../components/ProjectImage";
 import MediaQuery from "react-responsive";
@@ -10,15 +10,18 @@ import SEO from "../components/SEO";
 const ProjectTemplate = ({ data, intersectionRef }) => {
   const post = data.mdx;
   const fields = post.frontmatter;
+
   return (
     <div className="bp-2_marginBottom-15">
       <SEO
         postImage={
-          fields.seo && fields.seo.image
-            ? fields.seo.image.childImageSharp.fluid.src
-            : fields.previewImage.image
-            ? fields.previewImage.image.childImageSharp.fluid.src
-            : null
+          fields.seo?.image
+            ? fields.seo.image.extension === "gif"
+              ? fields.seo.image.publicURL
+              : fields.seo.image.childImageSharp.fluid.src
+            : fields.previewImage.image.extension === "gif"
+            ? fields.previewImage.image.publicURL
+            : fields.previewImage.image.childImageSharp.fluid.src
         }
         postData={{
           slug: `/projects${post.frontmatter.slug}`,
@@ -46,20 +49,14 @@ const ProjectTemplate = ({ data, intersectionRef }) => {
           {(matches) => {
             if (matches && fields.heroImage && fields.heroImage.portraitImage) {
               return (
-                <Img
+                <Image
                   className="projectHero"
-                  fluid={fields.heroImage.portraitImage.childImageSharp.fluid}
+                  image={fields.heroImage.portraitImage}
                   alt={fields.heroImage.alt}
                 />
               );
             } else if (fields.heroImage && fields.heroImage.image) {
-              return (
-                <Img
-                  className="projectHero"
-                  fluid={fields.heroImage.image.childImageSharp.fluid}
-                  alt={fields.heroImage.alt}
-                />
-              );
+              return <Image className="projectHero" {...fields.heroImage} />;
             } else {
               return null;
             }
@@ -164,8 +161,24 @@ export const query = graphql`
           title
           description
         }
-        previewImage {
+        seo {
+          title
+          description
           image {
+            publicURL
+            extension
+            childImageSharp {
+              fluid(maxWidth: 1200) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
+        previewImage {
+          alt
+          image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1200, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -174,7 +187,10 @@ export const query = graphql`
           }
         }
         heroImage {
+          alt
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 3848, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -182,6 +198,8 @@ export const query = graphql`
             }
           }
           portraitImage {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1500, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -191,6 +209,8 @@ export const query = graphql`
         }
         primaryImage {
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1820, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -203,6 +223,8 @@ export const query = graphql`
         projectGallery {
           type
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 3800, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp

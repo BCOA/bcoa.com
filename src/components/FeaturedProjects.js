@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "gatsby-link";
-import Img from "gatsby-image";
+import Image from "../components/Image";
 
-const FeaturedProjectImage = ({ image, className }) => {
-  return <Img fluid={image} className={className} />;
+const FeaturedProjectImage = (props) => {
+  return <Image {...props} />;
 };
 
 export default function FeaturedProjects({ projects }) {
@@ -18,11 +18,7 @@ export default function FeaturedProjects({ projects }) {
                 {project.frontmatter.featured.featuredImage.image && (
                   <FeaturedProjectImage
                     className="colSpan-4 marginBottom-5 bp-2_marginBottom-6"
-                    image={
-                      project.frontmatter.featured.featuredImage.image
-                        .childImageSharp.fluid
-                    }
-                    alt={project.frontmatter.featured.featuredImage.alt}
+                    {...project.frontmatter.featured.featuredImage}
                   />
                 )}
               </div>
@@ -30,11 +26,7 @@ export default function FeaturedProjects({ projects }) {
               project.frontmatter.featured.featuredImage.image && (
                 <FeaturedProjectImage
                   className="marginBottom-5 bp-2_marginBottom-6"
-                  image={
-                    project.frontmatter.featured.featuredImage.image
-                      .childImageSharp.fluid
-                  }
-                  alt={project.frontmatter.featured.featuredImage.alt}
+                  {...project.frontmatter.featured.featuredImage}
                 />
               )
             )}

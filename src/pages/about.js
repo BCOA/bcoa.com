@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import Img from "gatsby-image";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+import Image from "../components/Image";
 // import Content, { HTMLContent } from '../components/Content'
 
 const AboutPageTemplate = ({ data }) => {
@@ -201,6 +201,8 @@ export const aboutPageQuery = graphql`
           title
           description
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1200) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -212,6 +214,8 @@ export const aboutPageQuery = graphql`
           name
           image {
             image {
+              extension
+              publicURL
               childImageSharp {
                 fluid(maxWidth: 768, quality: 75) {
                   ...GatsbyImageSharpFluid_withWebp
@@ -259,11 +263,7 @@ const Member = ({ member }) => (
   >
     {!member.principal && <hr className=" marginBottom-2" />}
     {member.principal && member.image && member.image.image && (
-      <Img
-        className="marginBottom-3 bp-1_marginBottom-2"
-        fluid={member.image.image.childImageSharp.fluid}
-        alt={member.image.alt}
-      />
+      <Image className="marginBottom-3 bp-1_marginBottom-2" {...member.image} />
     )}
     <h3 className=" f-copy-bold">{member.name}</h3>
     <p className={`${member.principal ? "f-copy-bold" : ""}`}>
