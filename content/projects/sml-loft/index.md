@@ -25,7 +25,7 @@ headline: Exhibit the ordinary
 infoObjects:
   titleInfoObject:
     title: DESCRIPTION
-    description: Soho NYC Loft Renovation
+    description: NYC Soho Loft Renovation
   infoObject:
     - description: "2,500sf "
       title: SIZE
