@@ -1,4 +1,8 @@
 ---
+seo:
+  title: Crosby Loft Progress
+  description: Renderings becoming reality at the Crosby Loft
+  image: gif-test.gif
 title: Crosby Loft Progress
 templateKey: article
 slug: soho-loft-progress

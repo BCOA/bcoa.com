@@ -22,20 +22,24 @@ const ArticleTemplate = ({ data, intersectionRef }) => {
   const fields = post.frontmatter;
   return (
     <div className="bp-2_marginBottom-15">
-      {/* <SEO
-        postImage={fields.image.image.childImageSharp.fluid.src}
+      <SEO
+        postImage={
+          fields.seo?.image
+            ? fields.seo.image.extension === "gif"
+              ? fields.seo.image.publicURL
+              : fields.seo.image.childImageSharp.fluid.src
+            : fields.image.image.childImageSharp.fluid.src
+        }
         postData={{
           slug: `/news${fields.slug}`,
           seo: {
-            title:
-              fields.seo && fields.seo.title ? fields.seo.title : fields.title,
-            description:
-              fields.seo && fields.seo.description
-                ? fields.seo.description
-                : fields.headline,
+            title: fields.seo?.title ? fields.seo.title : fields.title,
+            description: fields.seo?.description
+              ? fields.seo.description
+              : fields.title,
           },
         }}
-      /> */}
+      />
       <div
         className="container
                         bp-1_paddingTop-2 bp-2_paddingTop-5
@@ -111,6 +115,19 @@ export const query = graphql`
     mdx(frontmatter: { slug: { eq: $slug } }) {
       body
       frontmatter {
+        seo {
+          title
+          description
+          image {
+            publicURL
+            extension
+            childImageSharp {
+              fluid(maxWidth: 1200) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
         title
         slug
         date(formatString: "M.D.YYYY")

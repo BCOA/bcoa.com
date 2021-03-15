@@ -332,6 +332,18 @@ collections:
         }
       - { label: "Project Name", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
+      - label: Redirects
+        name: redirects
+        widget: list
+        summary: "{{fields.from}}"
+        fields:
+          - label: From Path
+            name: from
+            widget: string
+          - label: Permanent
+            name: permanent
+            widget: boolean
+            default: true
       - label: "Categories"
         name: "categories"
         widget: "relation"
@@ -418,7 +430,7 @@ collections:
             widget: object
             name: titleInfoObject
             collapsed: true
-            required: false,
+            required: false
             fields:
               - {
                   label: "Title",
@@ -566,6 +578,18 @@ collections:
           default: "article",
         }
       - { label: "Slug", name: "slug", widget: "string" }
+      - label: Redirects
+        name: redirects
+        widget: list
+        summary: "{{fields.from}}"
+        fields:
+          - label: From Path
+            name: from
+            widget: string
+          - label: Permanent
+            name: permanent
+            widget: boolean
+            default: true
       - label: Primary Image
         name: image
         widget: object

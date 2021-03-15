@@ -6,8 +6,10 @@ export default ({ alt, image, className }) => {
     return null;
   }
   return image.extension === "gif" ? (
-    <img className={className} src={image.publicURL} alt={alt} />
-  ) : (
+    <img className={className} src={image.publicURL || image} alt={alt} />
+  ) : image.childImageSharp ? (
     <Img fluid={image.childImageSharp.fluid} alt={alt} className={className} />
+  ) : (
+    <img src={image} alt={alt} />
   );
 };

@@ -34,6 +34,10 @@ async function turnIntoPages({ graphql, actions }) {
           frontmatter {
             templateKey
             slug
+            redirects {
+              from
+              permanent
+            }
           }
         }
       }
@@ -45,6 +49,10 @@ async function turnIntoPages({ graphql, actions }) {
           frontmatter {
             templateKey
             slug
+            redirects {
+              from
+              permanent
+            }
           }
           fields {
             slug
@@ -57,26 +65,51 @@ async function turnIntoPages({ graphql, actions }) {
   const articles = data.articles.nodes;
 
   articles.forEach((article) => {
+    const path = `/news/${article.frontmatter.slug}`;
     actions.createPage({
-      path: `/news/${article.frontmatter.slug}`,
+      path,
       component: articleTemplate,
       context: {
         id: article.id,
         slug: article.frontmatter.slug,
       },
     });
+    const redirects = article.frontmatter.redirects;
+
+    if (redirects && redirects.length) {
+      redirects.forEach((redirect) => {
+        actions.createRedirect({
+          fromPath: `/news/${redirect.from}`,
+          toPath: path,
+          statusCode: redirect.permanent ? "301" : "302",
+        });
+      });
+    }
   });
 
   projects.forEach((project) => {
     const slug = project.frontmatter.slug;
+    const path = `/projects/${slug}`;
     actions.createPage({
-      path: `/projects/${slug}`,
+      path,
       component: projectTemplate,
       context: {
         id: project.id,
         slug,
       },
     });
+
+    const redirects = project.frontmatter.redirects;
+
+    if (redirects && redirects.length) {
+      redirects.forEach((redirect) => {
+        actions.createRedirect({
+          fromPath: `/projects/${redirect.from}`,
+          toPath: path,
+          statusCode: redirect.permanent ? "301" : "302",
+        });
+      });
+    }
   });
 }
 

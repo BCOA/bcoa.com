@@ -1,19 +1,18 @@
 ---
 isPublished: true
 templateKey: project
-heroImage:
-  image: 10-astor_ph_3800x1900.jpg
-  portraitImage: 10-Astor_PH_1500x2000.jpg
-workDescription: work description 10 Astor
 title: Astor Lobby
-slug: Astor-Lobby
+slug: astor-lobby
+redirects:
+  - permanent: true
+    from: Astor-Lobby
 categories:
   - Commercial
   - Third Option
   - Residential
-headline: Rebrand a building from inside out
-previewImage:
-  image: 10-astor_-index.jpg
+heroImage:
+  image: 10-astor_ph_3800x1900.jpg
+  portraitImage: 10-Astor_PH_1500x2000.jpg
 infoObjects:
   infoObject:
     - description: Newmark Holdings
@@ -24,12 +23,15 @@ infoObjects:
       title: Status
     - description: Raquel Perez-Puig
       title: Photographs
+workDescription: work description 10 Astor
+headline: Rebrand a building from inside out
+previewImage:
+  image: 10-astor_-index.jpg
 primaryImage:
   caption: Glass and display walls, linear directional lighting
   image: 10-Astor_(2)_1820.jpg
 projectGallery:
-  - caption:
-      "The glass panel system designed by Elevecture in collaboration with
+  - caption: "The glass panel system designed by Elevecture in collaboration with
       BC—OA "
     colWidth: "6"
     image: 10-Astor_(9)_1820.jpg
