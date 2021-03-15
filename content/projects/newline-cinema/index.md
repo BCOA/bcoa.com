@@ -2,28 +2,34 @@
 isPublished: true
 templateKey: project
 title: Newline Cinema
-slug: Newline-Cinema
-workDescription: "With SMH - "
+slug: LA Office Renovation
+redirects:
+  - permanent: true
+    from: Newline-Cinema
 categories:
   - Commercial
 heroImage:
   image: newline-cinema_ph_3800x1900.jpg
   portraitImage: NEWLINE-CINEMA_PH_1500x2000.jpg
-headline: RETHINK THE “STANDARD” STANDARDS
-previewImage:
-  image: NEW-LINE-CINEMA_index_1.jpg
 infoObjects:
   infoObject:
     - description: New Line Cinema
       title: CLIENT
-    - description: "10,000sf commercial office space"
-      title: SCOPE
+    - description: 10,000sf
+      title: SIZE
     - description: Completed 2009
       title: STATUS
     - description: SMH w. Bronwyn Breitner
       title: ARCHITECT
+  titleInfoObject:
+    title: DESCRIPTION
+    description: LA Office Renovation
+workDescription: "With SMH - "
+headline: RETHINK THE “STANDARD” STANDARDS
+previewImage:
+  image: NEW-LINE-CINEMA_index_1.jpg
 primaryImage:
-  caption: "Asymmetrical geometries relieve the monotony of a deep, narrow floor plate"
+  caption: Asymmetrical geometries relieve the monotony of a deep, narrow floor plate
   image: NEW-LINE-CINEMA_-(1)_1820.jpg
 projectGallery:
   - caption: '"Broken" clerestories atop offset partitions'
@@ -41,22 +47,20 @@ projectGallery:
   - colWidth: "4"
     image: new-line-cinema_-2-cropped_1820.jpg
     type: image
+  - pullQuote: Materials formerly rendered normative are re-presented in a seemingly
+      chaotic manner
+    type: quote
   - colWidth: "6"
     image: new-line-cinema_-8-cropped_1820.jpg
     type: image
   - colWidth: "6"
     image: new-line-cinema_-9-cropped_1820.jpg
     type: image
-  - caption: >-
-      "Skylight" voids in the acoustical ceiling tile expose the original
-      concrete structure
+  - caption: '"Skylight" voids in the acoustical ceiling tile expose the original
+      concrete structure'
     colWidth: "12"
     image: new-line-cinema_-1-cropped_1820.jpg
     type: image
-  - pullQuote: >-
-      Materials formerly rendered normative are re-presented in a seemingly
-      chaotic manner
-    type: quote
 ---
 
 The building at 116 North Robertson Boulevard, designed in the 1950’s in Los Angeles, predated Caesar Pelli’s “Blue Whale” as a Design Center for Architects and Decorators. Its thick, buff brick and stone exterior and narrow slit windows permit only a minimum of daylight in the interest of material preservation and protection. SMH was challenged to introduce daylight throughout a space both unsuitable for film production and undesirable for occupation.
