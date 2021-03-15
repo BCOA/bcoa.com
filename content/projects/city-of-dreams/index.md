@@ -3,8 +3,11 @@ isPublished: true
 seo:
   image: cityofdreams_seo_1200x630.jpg
 templateKey: project
-title: City of Dreams
+title: Kiosk-Stage
 slug: City-of-Dreams
+redirects:
+  - permanent: true
+    from: City-of-Dreams
 categories:
   - Commercial
 heroImage:
@@ -25,6 +28,9 @@ infoObjects:
       title: SCOPE
     - description: Competition Submittal
       title: STATUS
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Kiosk Stage Design
 primaryImage:
   caption: ""
   image: cityofdreams_1820_cropped.jpg
