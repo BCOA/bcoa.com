@@ -7,7 +7,10 @@ seo:
     converted to a residential loft units in Soho NYC.
 templateKey: project
 title: Crosby Lobby
-slug: Crosby-Lobby
+slug: soho-lobby-1
+redirects:
+  - permanent: true
+    from: Crosby-Lobby
 categories:
   - Commercial
 heroImage:
@@ -24,12 +27,13 @@ infoObjects:
   infoObject:
     - description: Co-op Board
       title: CLIENT
-    - description: Renovation
-      title: SCOPE
     - description: Completed Fall 2014
       title: STATUS
     - description: Raquel Perez-Puig
       title: PHOTOGRAPHY
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Soho Lobby Renovation
 primaryImage:
   caption: Painted perforated metal panel guardrails
   image: 45-CROSBY_LOBBY_-(13)_1820.jpg
