@@ -2,7 +2,10 @@
 isPublished: true
 templateKey: project
 title: Boatbox
-slug: Boatbox
+slug: boatbox
+redirects:
+  - permanent: true
+    from: Boatbox
 categories:
   - Commercial
 heroImage:
@@ -15,21 +18,19 @@ infoObjects:
   infoObject:
     - description: PortSide New York via DesigNYC
       title: CLIENT
-    - description: A Waterfront Kayak Storage Box and Display
-      title: SCOPE
     - description: Schematic Design Complete
       title: STATUS
     - description: "2D Design: Studio L'Image desigNYC Advisor: Paul S. Alter"
       title: CREDITS
+  titleInfoObject:
+    title: DESCRIPTION
+    description: A Waterfront Kayak Storage Box and Display
 primaryImage:
-  caption: >-
-    Site plan for the relocated shipping container, shade structure and framed
-    park area
+  caption: Site plan for the relocated shipping container, shade structure and
+    framed park area
   image: boatbox_-6-_1820_cropped.jpg
 projectGallery:
-  - caption: >-
-      The existing container located on the sidewalk outside of the park
-      boundary
+  - caption: The existing container located on the sidewalk outside of the park boundary
     colWidth: "10"
     image: boatbox_-8-_1820.jpg
     offsetWidth: "0"
@@ -37,7 +38,7 @@ projectGallery:
   - colWidth: "12"
     image: BOATBOX_-(1)_1820.jpg
     type: image
-  - pullQuote: "Educate, activate and kayak(ate)"
+  - pullQuote: Educate, activate and kayak(ate)
     type: quote
   - colWidth: "12"
     image: BOATBOX_-(4)_1820.jpg
