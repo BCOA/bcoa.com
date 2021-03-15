@@ -22,7 +22,7 @@ headline: Exhibit the ordinary
 infoObjects:
   titleInfoObject:
     title: DESCRIPTION
-    description: NYC Style Loft
+    description: Soho NYC Loft Renovation
   infoObject:
     - description: Private Client
       title: client
