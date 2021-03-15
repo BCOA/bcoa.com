@@ -2,7 +2,10 @@
 isPublished: true
 templateKey: project
 title: East River Kiosk
-slug: East-River-Kiosk
+slug: NYC-Kiosk-Design
+redirects:
+  - permanent: true
+    from: East-River-Kiosk
 categories:
   - Commercial
 heroImage:
@@ -14,7 +17,7 @@ infoObjects:
   infoObject:
     - description: Private developer
       title: CLIENT
-    - description: "29th Street, New York City"
+    - description: 29th Street, New York City
       title: LOCATION
     - description: Curtain Wall design and Event Space
       title: SCOPE
@@ -22,6 +25,9 @@ infoObjects:
       title: STATUS
     - description: RMJM Hillier with Luigi Ciaccia
       title: ARCHITECT
+  titleInfoObject:
+    title: DESCRIPTION
+    description: NYC Cafe
 primaryImage:
   caption: The first of three towers to be built adjoins the cafe cube
   image: wintergarden.jpg
