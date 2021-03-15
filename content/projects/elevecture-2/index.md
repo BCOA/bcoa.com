@@ -4,14 +4,26 @@ seo:
   image: 740broadwaylobby_seo_1200x630.jpg
 templateKey: project
 title: 740 Broadway Lobby
-slug: 740-Broadway-Lobby
+slug: NYC-Commercial-Lobby-2
+redirects:
+  - permanent: true
+    from: 740-Broadway-Lobby
+categories:
+  - Commercial
 heroImage:
   image: 740broadwaylobby_ph_3800x1900.jpg
   portraitImage: 740BROADWAYLOBBY_PH_1500x2000.jpg
-workDescription: Broadway description
-categories:
-  - Commercial
 headline: Surround with light
+infoObjects:
+  infoObject:
+    - description: Newmark Holdings
+      title: Client
+    - description: Completed 2017
+      title: Status
+  titleInfoObject:
+    title: DESCRIPTION
+    description: SOHO NYC Commercial Lobby Renovation
+workDescription: Broadway description
 featured:
   featuredDescription: Distinguishing a Broadway lobby with columns of light
     merging technology and art
@@ -22,14 +34,6 @@ featured:
   isFeatured: true
 previewImage:
   image: 740broadwaylobby_editbb_index830x830.jpg
-infoObjects:
-  infoObject:
-    - description: Newmark Holdings
-      title: Client
-    - description: Commercial Lobby Renovation
-      title: Scope
-    - description: Completed 2017
-      title: Status
 primaryImage:
   caption: White glass columns fold to become suspended LED panels overhead
   image: 740broadwaylobby_editbb_1820.jpg
