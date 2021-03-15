@@ -4,7 +4,10 @@ seo:
   image: lifthuntington_seo_1200x630.jpg
 templateKey: project
 title: Lift Huntington
-slug: Lift-Huntington
+slug: Huntington-Spa-1
+redirects:
+  - permanent: true
+    from: Lift-Huntington
 categories:
   - Commercial
 heroImage:
@@ -22,9 +25,12 @@ infoObjects:
     - description: Lift Next Level Floats
       title: CLIENT
     - description: 1600sf Isolation Therapy Spa
-      title: SCOPE
-    - description: In Construction
+      title: SIZE
+    - description: Completed 2018
       title: STATUS
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Huntington Float Spa Renovation
 primaryImage:
   caption: Rooms provide an aesthetically serene experience
   image: lift_huntington_1820_cropped.jpg
