@@ -12,15 +12,16 @@ heroImage:
 headline: merging prewar modern
 previewImage:
   image: 17-w-71st-st_index_2.jpg
-infoObject:
-  - description: Private Owner
-    title: Client
-  - description: Full renovation of 1200 sf Upper West Side Apartment
-    title: Scope
-  - description: Completed Spring 2015
-    title: Status
-  - description: Raquel Perez Puig
-    title: Photography
+infoObjects:
+  infoObject:
+    - description: Private Owner
+      title: Client
+    - description: Full renovation of 1200 sf Upper West Side Apartment
+      title: Scope
+    - description: Completed Spring 2015
+      title: Status
+    - description: Raquel Perez Puig
+      title: Photography
 primaryImage:
   caption: Custom millwork and a contemporary floor contrast traditional details
   image: 17-W-71st-St_-(1)_1820.jpg

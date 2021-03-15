@@ -67,27 +67,37 @@ const ProjectTemplate = ({ data, intersectionRef }) => {
       <div className="container marginTop-5 bp-1_marginTop-10 bp-2_marginTop-30">
         <div className="bp-1_grid-12col">
           <div className="colSpan-5">
-            <h1 className="f-headline-b marginBottom-4 bp-1_marginBottom-13 bp-2_marginBottom-9">
+            <h2 className="f-headline-b marginBottom-4 bp-1_marginBottom-13 bp-2_marginBottom-9">
               {fields.headline} &#8212;
-            </h1>
+            </h2>
 
             <div className="marginBottom-5 bp-2_marginBottom-10 richText">
               <MDXRenderer>{post.body}</MDXRenderer>
             </div>
 
-            {fields.infoObject && fields.infoObject.length && (
+            {fields.infoObjects && (
               <div className="infoObjects">
-                <dl className="bp-1_grid-2col marginBottom-8 bp-1_marginBottom-13 bp-2_marginBottom-24">
-                  {fields.infoObject.map((item, i) => (
-                    <div
-                      key={`infoObject-${i}`}
-                      className="marginBottom-4 bp-2_marginBottom-6"
-                    >
-                      <dt className="f-credit">{item.title}</dt>
-                      <dd className="f-caption">{item.description}</dd>
-                    </div>
-                  ))}
-                </dl>
+                {fields.infoObjects.infoObject?.length && (
+                  <>
+                    <dl className="bp-1_grid-2col marginBottom-8 bp-1_marginBottom-13 bp-2_marginBottom-24">
+                      {fields.infoObjects.titleInfoObject && (
+                        <TitleInfoObject
+                          title={fields.infoObjects.titleInfoObject.title}
+                          description={
+                            fields.infoObjects.titleInfoObject.description
+                          }
+                        />
+                      )}
+                      {fields.infoObjects.infoObject.map((item, i) => (
+                        <InfoObject
+                          key={`infoObject-${i}`}
+                          title={item.title}
+                          description={item.description}
+                        />
+                      ))}
+                    </dl>
+                  </>
+                )}
               </div>
             )}
           </div>
@@ -157,9 +167,15 @@ export const query = graphql`
         title
         slug
         headline
-        infoObject {
-          title
-          description
+        infoObjects {
+          titleInfoObject {
+            title
+            description
+          }
+          infoObject {
+            title
+            description
+          }
         }
         seo {
           title
@@ -241,3 +257,21 @@ export const query = graphql`
     }
   }
 `;
+
+const InfoObject = ({ title, description }) => {
+  return (
+    <div className="marginBottom-4 bp-2_marginBottom-6">
+      <dt className="f-credit">{title}</dt>
+      <dd className="f-caption">{description}</dd>
+    </div>
+  );
+};
+
+const TitleInfoObject = ({ title, description }) => {
+  return (
+    <div className="marginBottom-4 bp-2_marginBottom-6">
+      <span className="f-credit">{title}</span>
+      <h1 className="f-caption f-copy">{description}</h1>
+    </div>
+  );
+};

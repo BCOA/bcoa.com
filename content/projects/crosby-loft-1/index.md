@@ -26,20 +26,22 @@ featured:
   isFeatured: true
 previewImage:
   image: 45-crosby_5s_4.jpg
-infoObject:
-  - description: Private Owner
-    title: Client
-  - description: Full renovation of 2300 sf Soho Loft
-    title: Scope
-  - description: Completed
-    title: STATUS
-  - description: Frank Oudeman
-    title: PHOTOGRAPHY
+infoObjects:
+  infoObject:
+    - description: Private Owner
+      title: Client
+    - description: Full renovation of 2300 sf Soho Loft
+      title: Scope
+    - description: Completed
+      title: STATUS
+    - description: Frank Oudeman
+      title: PHOTOGRAPHY
 primaryImage:
   caption: Cabinetry hugs the original timber column of this form lightbulb factory
   image: 45-CROSBY_5S_-(12)_1820.jpg
 projectGallery:
-  - caption: Exposed brick and steel elements next to clean new surfaces concealing
+  - caption:
+      Exposed brick and steel elements next to clean new surfaces concealing
       the infrastructure - sprinklers, lighting and ductwork
     colWidth: "10"
     image: 45-CROSBY_5S_-(3)_1820.jpg
@@ -49,7 +51,8 @@ projectGallery:
     image: 45-CROSBY_5S_-(7)_1820.jpg
     offsetWidth: "4"
     type: image
-  - caption: Approaching the design as clean insertions nested within the industrial
+  - caption:
+      Approaching the design as clean insertions nested within the industrial
       loft elements
     colWidth: "8"
     image: 45-crosby_5s_-18.jpg

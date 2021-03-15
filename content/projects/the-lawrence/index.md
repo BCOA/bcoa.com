@@ -17,13 +17,14 @@ featured:
   isFeatured: true
 previewImage:
   image: clarkson-parkside_index.jpg
-infoObject:
-  - description: Private Developer
-    title: Client
-  - description: Design Assist for exteriors and interior common spaces
-    title: scope
-  - description: In construction
-    title: Status
+infoObjects:
+  infoObject:
+    - description: Private Developer
+      title: Client
+    - description: Design Assist for exteriors and interior common spaces
+      title: scope
+    - description: In construction
+      title: Status
 primaryImage:
   caption: >-
     Reconsidered balconies bring steel columns tied together with a continuous

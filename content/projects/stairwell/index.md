@@ -28,13 +28,14 @@ featured:
   isFeatured: true
 previewImage:
   image: STAIR-WELL_index.jpg
-infoObject:
-  - description: Competition entry
-    title: CLIENT
-  - description: Modular, ground-up affordable housing
-    title: SCOPE
-  - description: AIA Design Excellence Award BQDA 2018
-    title: Awards
+infoObjects:
+  infoObject:
+    - description: Competition entry
+      title: CLIENT
+    - description: Modular, ground-up affordable housing
+      title: SCOPE
+    - description: AIA Design Excellence Award BQDA 2018
+      title: Awards
 primaryImage:
   caption: Rotating, mirroring and stacking modular units brings both exterior
     space and facade to the streetscape

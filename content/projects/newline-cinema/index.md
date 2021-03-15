@@ -12,15 +12,16 @@ heroImage:
 headline: RETHINK THE “STANDARD” STANDARDS
 previewImage:
   image: NEW-LINE-CINEMA_index_1.jpg
-infoObject:
-  - description: New Line Cinema
-    title: CLIENT
-  - description: "10,000sf commercial office space"
-    title: SCOPE
-  - description: Completed 2009
-    title: STATUS
-  - description: SMH w. Bronwyn Breitner
-    title: ARCHITECT
+infoObjects:
+  infoObject:
+    - description: New Line Cinema
+      title: CLIENT
+    - description: "10,000sf commercial office space"
+      title: SCOPE
+    - description: Completed 2009
+      title: STATUS
+    - description: SMH w. Bronwyn Breitner
+      title: ARCHITECT
 primaryImage:
   caption: "Asymmetrical geometries relieve the monotony of a deep, narrow floor plate"
   image: NEW-LINE-CINEMA_-(1)_1820.jpg

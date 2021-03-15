@@ -13,13 +13,14 @@ headline: Expanding space without an expansion
 previewImage:
   image: BARMAN_index_2.jpg
   alt: Barman space
-infoObject:
-  - description: Private Owner
-    title: Client
-  - description: House Addition and Renovation
-    title: Scope
-  - description: Complete
-    title: Status
+infoObjects:
+  infoObject:
+    - description: Private Owner
+      title: Client
+    - description: House Addition and Renovation
+      title: Scope
+    - description: Complete
+      title: Status
 primaryImage:
   caption: A selectively vaulted ceiling over the dining space and living room
   image: kitchen-final-cropped.jpg

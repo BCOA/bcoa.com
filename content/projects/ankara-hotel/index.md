@@ -12,21 +12,22 @@ heroImage:
 headline: Stretching Stone Upwards
 previewImage:
   image: ANKARA-HOTEL_index_2.jpg
-infoObject:
-  - description: Private Developer
-    title: CLIENT
-  - description: "Ankara, Turkey"
-    title: LOCATION
-  - description: Hotel
-    title: SCOPE
-  - description: JW Marriott
-    title: OPERATOR
-  - description: "550,000 gsf | 55,000m²"
-    title: SIZE
-  - description: Completed 2011
-    title: STATUS
-  - description: RMJM - Hillier Group with Luigi Ciaccia
-    title: Architect
+infoObjects:
+  infoObject:
+    - description: Private Developer
+      title: CLIENT
+    - description: "Ankara, Turkey"
+      title: LOCATION
+    - description: Hotel
+      title: SCOPE
+    - description: JW Marriott
+      title: OPERATOR
+    - description: "550,000 gsf | 55,000m²"
+      title: SIZE
+    - description: Completed 2011
+      title: STATUS
+    - description: RMJM - Hillier Group with Luigi Ciaccia
+      title: Architect
 primaryImage:
   caption: >-
     Vertical articulation rises high adjacent to Ankara's main artery into the

@@ -11,15 +11,16 @@ heroImage:
 headline: educate and activate at valentino park
 previewImage:
   image: BOATBOX_index.jpg
-infoObject:
-  - description: PortSide New York via DesigNYC
-    title: CLIENT
-  - description: A Waterfront Kayak Storage Box and Display
-    title: SCOPE
-  - description: Schematic Design Complete
-    title: STATUS
-  - description: "2D Design: Studio L'Image desigNYC Advisor: Paul S. Alter"
-    title: CREDITS
+infoObjects:
+  infoObject:
+    - description: PortSide New York via DesigNYC
+      title: CLIENT
+    - description: A Waterfront Kayak Storage Box and Display
+      title: SCOPE
+    - description: Schematic Design Complete
+      title: STATUS
+    - description: "2D Design: Studio L'Image desigNYC Advisor: Paul S. Alter"
+      title: CREDITS
 primaryImage:
   caption: >-
     Site plan for the relocated shipping container, shade structure and framed

@@ -18,17 +18,18 @@ featured:
     alt: showroom
 previewImage:
   image: REFLECT-SHOWROOM_index_1.jpg
-infoObject:
-  - description: Private
-    title: CLIENT
-  - description: Showroom Design
-    title: SCOPE
-  - description: Completed June 2013
-    title: STATUS
-  - description:
-      Showroom Identity and Graphics by William Morrisey, Luis Bravo and
-      Mikal Cook Photography by Lou Giacalone
-    title: CREDITS
+infoObjects:
+  infoObject:
+    - description: Private
+      title: CLIENT
+    - description: Showroom Design
+      title: SCOPE
+    - description: Completed June 2013
+      title: STATUS
+    - description:
+        Showroom Identity and Graphics by William Morrisey, Luis Bravo and
+        Mikal Cook Photography by Lou Giacalone
+      title: CREDITS
 primaryImage:
   alt: ""
   caption: "Elevecture lights extend out of the flush glass panel wall and overhead "

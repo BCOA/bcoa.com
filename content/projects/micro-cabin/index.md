@@ -25,13 +25,14 @@ previewImage:
     Micro Cabin - residential living room with cast iron stove stair porn micro
     living
   image: preview.jpg
-infoObject:
-  - description: Private Owner
-    title: client
-  - description: Ground Up
-    title: scope
-  - description: Completed 2014
-    title: Status
+infoObjects:
+  infoObject:
+    - description: Private Owner
+      title: client
+    - description: Ground Up
+      title: scope
+    - description: Completed 2014
+      title: Status
 primaryImage:
   alt: Micro Cabin - residential living space
   caption: A sunken lounge faces a large picture window and cast iron pellet stove

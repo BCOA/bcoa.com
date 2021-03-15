@@ -19,15 +19,16 @@ featured:
 previewImage:
   alt: showroom modern clean
   image: 740-broadway_showroom_index_3.jpg
-infoObject:
-  - description: "Elevecture, Corning and View Glass"
-    title: CLIENT
-  - description: Showroom Design
-    title: SCOPE
-  - description: Completed 2017
-    title: STATUS
-  - description: Avec
-    title: SHOWROOM IDENTITY
+infoObjects:
+  infoObject:
+    - description: "Elevecture, Corning and View Glass"
+      title: CLIENT
+    - description: Showroom Design
+      title: SCOPE
+    - description: Completed 2017
+      title: STATUS
+    - description: Avec
+      title: SHOWROOM IDENTITY
 primaryImage:
   caption: "One of three folding glass surfaces defines the Corning® table "
   image: 6.jpg

@@ -21,17 +21,18 @@ featured:
   isFeatured: true
 previewImage:
   image: ward-road_index.jpg
-infoObject:
-  - description: Private Owner
-    title: Client
-  - description: Ground Up House
-    title: Scope
-  - description: Completed
-    title: Status
-  - description: Collaboration with Chris Manton
-    title: Status
-  - description: Tony Miller
-    title: Photos
+infoObjects:
+  infoObject:
+    - description: Private Owner
+      title: Client
+    - description: Ground Up House
+      title: Scope
+    - description: Completed
+      title: Status
+    - description: Collaboration with Chris Manton
+      title: Status
+    - description: Tony Miller
+      title: Photos
 primaryImage:
   caption: Exterior stair to high deck with water views
   image: ward-road_-16.jpg

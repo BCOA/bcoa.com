@@ -17,13 +17,14 @@ featured:
     alt: teat
 previewImage:
   image: LIFT_HUNTINGTON_index_2.jpg
-infoObject:
-  - description: Lift Next Level Floats
-    title: CLIENT
-  - description: 1600sf Isolation Therapy Spa
-    title: SCOPE
-  - description: In Construction
-    title: STATUS
+infoObjects:
+  infoObject:
+    - description: Lift Next Level Floats
+      title: CLIENT
+    - description: 1600sf Isolation Therapy Spa
+      title: SCOPE
+    - description: In Construction
+      title: STATUS
 primaryImage:
   caption: Rooms provide an aesthetically serene experience
   image: lift_huntington_1820_cropped.jpg

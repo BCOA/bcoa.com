@@ -9,13 +9,14 @@ heroImage:
   image: 83-WAVERLY_PH_1.jpg
 previewImage:
   image: 83-WAVERLY_index_1.jpg
-infoObject:
-  - description: "Private Owner, Brooklyn NY"
-    title: CLIENT
-  - description: "Full Renovation 3,200 sf Townhouse"
-    title: SCOPE
-  - description: Completed
-    title: STATUS
+infoObjects:
+  infoObject:
+    - description: "Private Owner, Brooklyn NY"
+      title: CLIENT
+    - description: "Full Renovation 3,200 sf Townhouse"
+      title: SCOPE
+    - description: Completed
+      title: STATUS
 primaryImage:
   image: 83-WAVERLY_-(8)_1820.jpg
 projectGallery:

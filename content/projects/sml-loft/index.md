@@ -8,6 +8,7 @@ seo:
     floating within an open floor plan.
   image: 20-greene-st_-seo_1200x630.jpg
 templateKey: project
+title: S-M-L Loft
 slug: S-M-L-Loft
 categories:
   - Residential
@@ -17,9 +18,27 @@ heroImage:
     Oak "
   image: objectloftheroimage_cropped_3800.jpg
   portraitImage: 20greene_ph_1500x2000.jpg
-workDescription: Work description text
-title: S-M-L Loft
 headline: Exhibit the ordinary
+infoObjects:
+  titleInfoObject:
+    title: DESCRIPTION
+    description: NYC Style Loft
+  infoObject:
+    - description: Private Client
+      title: client
+    - description: 2,500sf Soho loft gut renovation
+      title: scope
+    - description: Completed 2018
+      title: status
+    - description: Amy Barkow
+      title: Photography
+    - title: Awards
+      description: SARA NY Design Award of Excellence 2020, AIA NY Interiors Design
+        Award 2019
+    - title: Awards, cont.
+      description: Architect Magazine 2019 Residential Architect Interiors Award, 2019
+        Architizer A+ Award Finalist
+workDescription: Work description text
 featured:
   featuredDescription: Three standing objects - Small, Medium and Large - conceal
     the ordinary functions of domestic living in this Soho Loft renovation
@@ -33,20 +52,6 @@ previewImage:
   image: index_copyright_barkow_photo_6363.jpg
   alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
     Oak "
-infoObject:
-  - description: Private Client
-    title: client
-  - description: 2,500sf Soho loft gut renovation
-    title: scope
-  - description: Completed 2018
-    title: status
-  - description: Amy Barkow
-    title: Photography
-  - title: Awards
-    description: SARA NY Design Award of Excellence 2020, AIA NY Interiors Design Award 2019
-  - title: Awards, cont.
-    description: Architect Magazine 2019 Residential Architect Interiors Award, 2019
-      Architizer A+ Award Finalist
 primaryImage:
   image: OBJECT-LOFT_-(14)_1820.jpg
   alt: "Soho Loft NYC Architect Architecture Gut Renovation Renovate Cast-iron

@@ -9,13 +9,14 @@ heroImage:
   image: evlavtor_ph_1.jpg
 previewImage:
   image: elevator_index.jpg
-infoObject:
-  - description: Elevecture
-    title: CLIENT
-  - description: Speculative Cab and Lobby Design
-    title: SCOPE
-  - description: Ongoing
-    title: STATUS
+infoObjects:
+  infoObject:
+    - description: Elevecture
+      title: CLIENT
+    - description: Speculative Cab and Lobby Design
+      title: SCOPE
+    - description: Ongoing
+      title: STATUS
 primaryImage:
   image: elevators_-5-_cropped.jpg
 projectGallery:

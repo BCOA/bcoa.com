@@ -22,15 +22,16 @@ previewImage:
   alt: "office renovation modular desk industrial manufacturing architecture
     linear "
   image: necd_navyyard_index_3.jpg
-infoObject:
-  - description: National Elevator Cab and Door Corp.
-    title: Client
-  - description: 47,000sf Offices and Manufacturing Facility
-    title: Scope
-  - description: Spring 2020
-    title: Completed
-  - description: Barkow Photo
-    title: Photography
+infoObjects:
+  infoObject:
+    - description: National Elevator Cab and Door Corp.
+      title: Client
+    - description: 47,000sf Offices and Manufacturing Facility
+      title: Scope
+    - description: Spring 2020
+      title: Completed
+    - description: Barkow Photo
+      title: Photography
 primaryImage:
   image: necd_navy-yard_-8-_1820.jpg
 projectGallery:

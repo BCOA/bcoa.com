@@ -20,15 +20,16 @@ featured:
     alt: soho lobby
 previewImage:
   image: 45-CROSBY_LOBBY_index.jpg
-infoObject:
-  - description: Co-op Board
-    title: CLIENT
-  - description: Renovation
-    title: SCOPE
-  - description: Completed Fall 2014
-    title: STATUS
-  - description: Raquel Perez-Puig
-    title: PHOTOGRAPHY
+infoObjects:
+  infoObject:
+    - description: Co-op Board
+      title: CLIENT
+    - description: Renovation
+      title: SCOPE
+    - description: Completed Fall 2014
+      title: STATUS
+    - description: Raquel Perez-Puig
+      title: PHOTOGRAPHY
 primaryImage:
   caption: Painted perforated metal panel guardrails
   image: 45-CROSBY_LOBBY_-(13)_1820.jpg

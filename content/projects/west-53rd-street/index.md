@@ -11,17 +11,18 @@ heroImage:
 headline: INVITE THE CITY IN
 previewImage:
   image: W-53ST_index.jpg
-infoObject:
-  - description: Private Developer
-    title: CLIENT
-  - description: "200,000sf+ Low-rise  residential project"
-    title: SCOPE
-  - description: Completed 2010
-    title: STATUS
-  - description: Smith-Miller + Hawkinson Architects with Bronwyn Breitner
-    title: Architect
-  - description: Michael Moran
-    title: Photography
+infoObjects:
+  infoObject:
+    - description: Private Developer
+      title: CLIENT
+    - description: "200,000sf+ Low-rise  residential project"
+      title: SCOPE
+    - description: Completed 2010
+      title: STATUS
+    - description: Smith-Miller + Hawkinson Architects with Bronwyn Breitner
+      title: Architect
+    - description: Michael Moran
+      title: Photography
 primaryImage:
   image: w-53rd-st_-8-.jpg
 projectGallery:

@@ -20,15 +20,16 @@ featured:
 previewImage:
   image: ZHUHAI_index_3.jpg
   alt: zhuhai building
-infoObject:
-  - description: Private Developer
-    title: CLIENT
-  - description: 500,000 sf Convention Center
-    title: SCOPE
-  - description: Completed 2016
-    title: STATUS
-  - description: RMJM w. Luigi Ciaccia
-    title: DESIGN ARCHITECT
+infoObjects:
+  infoObject:
+    - description: Private Developer
+      title: CLIENT
+    - description: 500,000 sf Convention Center
+      title: SCOPE
+    - description: Completed 2016
+      title: STATUS
+    - description: RMJM w. Luigi Ciaccia
+      title: DESIGN ARCHITECT
 primaryImage:
   caption: The form of the big roof participates in the organic forms of the
     master plan, acting independently of the orthogonal exhibition space it

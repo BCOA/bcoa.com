@@ -10,17 +10,18 @@ heroImage:
 headline: "Place-making for NYC’s EXPANDING SCIENCES SECTOR "
 previewImage:
   image: east-riverside-science-park_index_2.jpg
-infoObject:
-  - description: Private developer
-    title: CLIENT
-  - description: "29th Street, New York City"
-    title: LOCATION
-  - description: Curtain Wall design and Event Space
-    title: SCOPE
-  - description: Completed 2011
-    title: STATUS
-  - description: RMJM Hillier with Luigi Ciaccia
-    title: ARCHITECT
+infoObjects:
+  infoObject:
+    - description: Private developer
+      title: CLIENT
+    - description: "29th Street, New York City"
+      title: LOCATION
+    - description: Curtain Wall design and Event Space
+      title: SCOPE
+    - description: Completed 2011
+      title: STATUS
+    - description: RMJM Hillier with Luigi Ciaccia
+      title: ARCHITECT
 primaryImage:
   caption: The first of three towers to be built adjoins the cafe cube
   image: wintergarden.jpg

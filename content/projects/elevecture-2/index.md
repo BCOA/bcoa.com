@@ -22,13 +22,14 @@ featured:
   isFeatured: true
 previewImage:
   image: 740broadwaylobby_editbb_index830x830.jpg
-infoObject:
-  - description: Newmark Holdings
-    title: Client
-  - description: Commercial Lobby Renovation
-    title: Scope
-  - description: Completed 2017
-    title: Status
+infoObjects:
+  infoObject:
+    - description: Newmark Holdings
+      title: Client
+    - description: Commercial Lobby Renovation
+      title: Scope
+    - description: Completed 2017
+      title: Status
 primaryImage:
   caption: White glass columns fold to become suspended LED panels overhead
   image: 740broadwaylobby_editbb_1820.jpg

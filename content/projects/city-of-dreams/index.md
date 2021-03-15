@@ -17,13 +17,14 @@ featured:
     alt: rest
 previewImage:
   image: CITY-OF-DREAMS_index_2.jpg
-infoObject:
-  - description: Governors Island
-    title: SITE
-  - description: Installation
-    title: SCOPE
-  - description: Competition Submittal
-    title: STATUS
+infoObjects:
+  infoObject:
+    - description: Governors Island
+      title: SITE
+    - description: Installation
+      title: SCOPE
+    - description: Competition Submittal
+      title: STATUS
 primaryImage:
   caption: ""
   image: cityofdreams_1820_cropped.jpg

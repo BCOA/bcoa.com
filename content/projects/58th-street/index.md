@@ -10,15 +10,16 @@ heroImage:
 headline: Collector's Apartment
 previewImage:
   image: 58TH-ST_-index.jpg
-infoObject:
-  - description: Private Owner
-    title: Client
-  - description: "Full renovation of 1,685 sf Midtown East Apartment"
-    title: Scope
-  - description: Complete
-    title: Status
-  - description: Raquel Perez Puig
-    title: Photography
+infoObjects:
+  infoObject:
+    - description: Private Owner
+      title: Client
+    - description: "Full renovation of 1,685 sf Midtown East Apartment"
+      title: Scope
+    - description: Complete
+      title: Status
+    - description: Raquel Perez Puig
+      title: Photography
 primaryImage:
   image: 58TH-ST_-(14)_1820.jpg
 projectGallery:

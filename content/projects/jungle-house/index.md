@@ -18,13 +18,14 @@ featured:
     alt: test
 previewImage:
   image: JUNGLE-HOUSE_index.jpg
-infoObject:
-  - description: Private Owners
-    title: Client
-  - description: 1 Group Up House, 1 Renovated Cabin
-    title: Scope
-  - description: Schematic Design Completed
-    title: Status
+infoObjects:
+  infoObject:
+    - description: Private Owners
+      title: Client
+    - description: 1 Group Up House, 1 Renovated Cabin
+      title: Scope
+    - description: Schematic Design Completed
+      title: Status
 primaryImage:
   caption: Site plan showing the existing cabin and proposed structures
   image: jungle-house_-12-cropped_1820.jpg

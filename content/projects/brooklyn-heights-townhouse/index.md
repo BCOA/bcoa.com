@@ -22,15 +22,16 @@ featured:
     alt: trest
 previewImage:
   image: 44-monroe_-index.jpg
-infoObject:
-  - description: Private Owner
-    title: Client
-  - description: 7200 sf Historic Townhouse Renovation
-    title: "Scope "
-  - description: Completed 2016
-    title: Status
-  - description: Christian Harder Photography
-    title: Photography
+infoObjects:
+  infoObject:
+    - description: Private Owner
+      title: Client
+    - description: 7200 sf Historic Townhouse Renovation
+      title: "Scope "
+    - description: Completed 2016
+      title: Status
+    - description: Christian Harder Photography
+      title: Photography
 primaryImage:
   image: dsc_7604-editcropped.jpg
 projectGallery:

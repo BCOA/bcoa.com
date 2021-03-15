@@ -14,20 +14,22 @@ categories:
 headline: Rebrand a building from inside out
 previewImage:
   image: 10-astor_-index.jpg
-infoObject:
-  - description: Newmark Holdings
-    title: Client
-  - description: Commercial Lobby renovation
-    title: Scope
-  - description: Completed Spring 2015
-    title: Status
-  - description: Raquel Perez-Puig
-    title: Photographs
+infoObjects:
+  infoObject:
+    - description: Newmark Holdings
+      title: Client
+    - description: Commercial Lobby renovation
+      title: Scope
+    - description: Completed Spring 2015
+      title: Status
+    - description: Raquel Perez-Puig
+      title: Photographs
 primaryImage:
   caption: Glass and display walls, linear directional lighting
   image: 10-Astor_(2)_1820.jpg
 projectGallery:
-  - caption: "The glass panel system designed by Elevecture in collaboration with
+  - caption:
+      "The glass panel system designed by Elevecture in collaboration with
       BC—OA "
     colWidth: "6"
     image: 10-Astor_(9)_1820.jpg

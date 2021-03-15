@@ -20,17 +20,18 @@ featured:
   isFeatured: true
 previewImage:
   image: lift_brooklyn_index_1.jpg
-infoObject:
-  - description: Lift Next Level Floats
-    title: Client
-  - description: Spa Interior Renovation
-    title: Scope
-  - description: Completed Spring 2015
-    title: Status
-  - description: Amy Barkow and Raquel Perez Puig
-    title: Photography
-  - description: AIA Award of Merit 2016
-    title: Awards
+infoObjects:
+  infoObject:
+    - description: Lift Next Level Floats
+      title: Client
+    - description: Spa Interior Renovation
+      title: Scope
+    - description: Completed Spring 2015
+      title: Status
+    - description: Amy Barkow and Raquel Perez Puig
+      title: Photography
+    - description: AIA Award of Merit 2016
+      title: Awards
 primaryImage:
   caption: View into a pod-style float suite
   image: LIFT_BROOKLYN_-(4)_1820.jpg

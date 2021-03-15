@@ -24,17 +24,19 @@ featured:
   isFeatured: false
 previewImage:
   image: 17-thompson_index.jpg
-infoObject:
-  - description: 1350sf Loft Renovation
-    title: Scope
-  - description: On the boards
-    title: Status
+infoObjects:
+  infoObject:
+    - description: 1350sf Loft Renovation
+      title: Scope
+    - description: On the boards
+      title: Status
 primaryImage:
   caption: The ceiling plane floats, projecting past the kitchen
   image: 17-thompson-cropped.jpg
 projectGallery:
   - alt: modern loft apartment rendering
-    caption: Exposed brick selectively painted or exposed to define zones within the
+    caption:
+      Exposed brick selectively painted or exposed to define zones within the
       large common area
     colWidth: "10"
     image: 17-thompson-2-cropped.jpg

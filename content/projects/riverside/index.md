@@ -18,13 +18,14 @@ featured:
   isFeatured: true
 previewImage:
   image: RIVERSIDE_index.jpg
-infoObject:
-  - description: Harlem Public
-    title: CLIENT
-  - description: "Timber kiosk, arcade restaurant and rotunda bar"
-    title: SCOPE
-  - description: In-Process
-    title: STATUS
+infoObjects:
+  infoObject:
+    - description: Harlem Public
+      title: CLIENT
+    - description: "Timber kiosk, arcade restaurant and rotunda bar"
+      title: SCOPE
+    - description: In-Process
+      title: STATUS
 primaryImage:
   caption: "A woven, timber structure with floating central oculus"
   image: riverside_-6-cropped_1820.jpg

@@ -409,6 +409,29 @@ collections:
           - { label: "Alt", name: "alt", widget: "string", required: false }
 
       - { label: "Body", name: "body", widget: "markdown", required: false }
+      - label: Info Objects
+        name: infoObjects
+        widget: object
+        collapsed: true
+        fields:
+          - label: Title Info Object
+            widget: object
+            name: titleInfoObject
+            collapsed: true
+            required: false,
+            fields:
+              - {
+                  label: "Title",
+                  name: "title",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Description",
+                  name: "description",
+                  widget: "string",
+                  required: false,
+                }
       - label: Info Object
         name: infoObject
         widget: list
