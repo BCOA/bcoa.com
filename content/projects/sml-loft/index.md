@@ -9,7 +9,10 @@ seo:
   image: 20-greene-st_-seo_1200x630.jpg
 templateKey: project
 title: S-M-L Loft
-slug: S-M-L-Loft
+slug: Soho-Loft-3
+redirects:
+  - permanent: true
+    from: sml-loft
 categories:
   - Residential
   - Lofts
@@ -24,10 +27,8 @@ infoObjects:
     title: DESCRIPTION
     description: Soho NYC Loft Renovation
   infoObject:
-    - description: Private Client
-      title: client
-    - description: 2,500sf Soho loft gut renovation
-      title: scope
+    - description: "2,500sf "
+      title: SIZE
     - description: Completed 2018
       title: status
     - description: Amy Barkow
