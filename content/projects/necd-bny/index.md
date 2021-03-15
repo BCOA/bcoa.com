@@ -5,7 +5,10 @@ seo:
   image: necdbny_seo_1200x630.jpg
 templateKey: project
 title: NECD @ BNY
-slug: NECD-at-BNY
+slug: Navy Yard Office
+redirects:
+  - permanent: true
+    from: NECD-at-BNY
 categories:
   - Commercial
 heroImage:
@@ -26,17 +29,19 @@ infoObjects:
   infoObject:
     - description: National Elevator Cab and Door Corp.
       title: Client
-    - description: 47,000sf Offices and Manufacturing Facility
-      title: Scope
+    - description: "47,000sf "
+      title: Size
     - description: Spring 2020
       title: Completed
     - description: Barkow Photo
       title: Photography
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Brooklyn Navy Yard Office and Manufacturing Facility Renovation
 primaryImage:
   image: necd_navy-yard_-8-_1820.jpg
 projectGallery:
-  - caption:
-      View from inside the manufacturing plant where elevator interiors for
+  - caption: View from inside the manufacturing plant where elevator interiors for
       NYC's Class A elevator cabs are built
     colWidth: "6"
     image: necd_navy-yard_-10-_1820.jpg
