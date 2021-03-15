@@ -2,7 +2,10 @@
 isPublished: true
 templateKey: project
 title: Elevecture Showroom II
-slug: Elevecture-Showroom-II
+slug: NYC-Showroom-2
+redirects:
+  - permanent: true
+    from: 740-broadway-showroom
 categories:
   - Commercial
 heroImage:
@@ -21,7 +24,7 @@ previewImage:
   image: 740-broadway_showroom_index_3.jpg
 infoObjects:
   infoObject:
-    - description: "Elevecture, Corning and View Glass"
+    - description: Elevecture, Corning and View Glass
       title: CLIENT
     - description: Showroom Design
       title: SCOPE
@@ -29,6 +32,9 @@ infoObjects:
       title: STATUS
     - description: Avec
       title: SHOWROOM IDENTITY
+  titleInfoObject:
+    title: DESCRIPTION
+    description: NYC Showroom Renovation
 primaryImage:
   caption: "One of three folding glass surfaces defines the Corning® table "
   image: 6.jpg
@@ -48,9 +54,8 @@ projectGallery:
   - colWidth: "6"
     image: 4-bs_cropped.jpg
     type: image
-  - pullQuote: >-
-      "New York City Innovation Center is a One-Stop Shop to See Tomorrow's
-      Buildings and Design Trends Today"
+  - pullQuote: "\"New York City Innovation Center is a One-Stop Shop to See
+      Tomorrow's Buildings and Design Trends Today\""
     type: quote
   - caption: ""
     colWidth: "12"
