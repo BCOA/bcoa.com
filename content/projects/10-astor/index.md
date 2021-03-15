@@ -23,6 +23,9 @@ infoObjects:
       title: Status
     - description: Raquel Perez-Puig
       title: Photographs
+  titleInfoObject:
+    title: DESCRIPTION
+    description: NYC Commercial Lobby Renovation
 workDescription: work description 10 Astor
 headline: Rebrand a building from inside out
 previewImage:
