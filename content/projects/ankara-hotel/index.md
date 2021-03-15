@@ -2,43 +2,48 @@
 isPublished: true
 templateKey: project
 title: Ankara Hotel
-slug: Ankara-Hotel
-workDescription: ""
+slug: ankara-hotel
+redirects:
+  - permanent: true
+    from: Ankara-Hotel
 categories:
   - Commercial
 heroImage:
   image: ankara_ph_3800x1900.jpg
   portraitImage: ANKARA_PH_1500x2000.jpg
-headline: Stretching Stone Upwards
-previewImage:
-  image: ANKARA-HOTEL_index_2.jpg
 infoObjects:
   infoObject:
     - description: Private Developer
       title: CLIENT
-    - description: "Ankara, Turkey"
+    - description: Ankara, Turkey
       title: LOCATION
     - description: Hotel
       title: SCOPE
     - description: JW Marriott
       title: OPERATOR
-    - description: "550,000 gsf | 55,000m²"
+    - description: 550,000 gsf | 55,000m²
       title: SIZE
     - description: Completed 2011
       title: STATUS
     - description: RMJM - Hillier Group with Luigi Ciaccia
       title: Architect
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Hotel Design
+workDescription: ""
+headline: Stretching Stone Upwards
+previewImage:
+  image: ANKARA-HOTEL_index_2.jpg
 primaryImage:
-  caption: >-
-    Vertical articulation rises high adjacent to Ankara's main artery into the
-    city center.
+  caption: Vertical articulation rises high adjacent to Ankara's main artery into
+    the city center.
   image: ANKARA-HOTEL_-(15)_1820.jpg
 projectGallery:
   - caption: Dramatic exterior lighting emphasizes the shifting stone facade geometries
     colWidth: "6"
     image: ANKARA-HOTEL_-(3)_1820.jpg
     type: image
-  - caption: "Galleria, transparent circulation core and tower"
+  - caption: Galleria, transparent circulation core and tower
     colWidth: "10"
     image: ANKARA-HOTEL_-(22)_1820.jpg
     offsetWidth: "2"
