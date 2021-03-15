@@ -2,14 +2,28 @@
 isPublished: true
 templateKey: project
 title: Riverside Kiosk for Harlem Public
-slug: Riverside-Kiosk-for-Harlem-Public
-workDescription: Adaptive reuse at an iconic NYC parks arcade
+slug: NYC-Kiosk-Bar
+redirects:
+  - permanent: true
+    from: Riverside-Kiosk-for-Harlem-Public
 categories:
   - Commercial
 heroImage:
   image: riverside_ph-3800x1900.jpg
   portraitImage: RIVERSIDE_PH-1500x2000.jpg
 headline: re-imagine a forgotten harlem icon
+infoObjects:
+  infoObject:
+    - description: Harlem Public
+      title: CLIENT
+    - description: Timber kiosk, arcade restaurant and rotunda bar
+      title: SCOPE
+    - description: In-Process
+      title: STATUS
+  titleInfoObject:
+    title: DESCRIPTION
+    description: NYC UWS Kiosk Bar
+workDescription: Adaptive reuse at an iconic NYC parks arcade
 featured:
   featuredDescription: A phased approach to adaptive reuse at a remarkable NYC iconic structure
   featuredImage:
@@ -18,25 +32,16 @@ featured:
   isFeatured: true
 previewImage:
   image: RIVERSIDE_index.jpg
-infoObjects:
-  infoObject:
-    - description: Harlem Public
-      title: CLIENT
-    - description: "Timber kiosk, arcade restaurant and rotunda bar"
-      title: SCOPE
-    - description: In-Process
-      title: STATUS
 primaryImage:
-  caption: "A woven, timber structure with floating central oculus"
+  caption: A woven, timber structure with floating central oculus
   image: riverside_-6-cropped_1820.jpg
 projectGallery:
-  - caption: >-
-      The adaptive reuse of the arcade with a restaurant, rotunda bar and street
-      level kiosk above
+  - caption: The adaptive reuse of the arcade with a restaurant, rotunda bar and
+      street level kiosk above
     colWidth: "10"
     image: RIVERSIDE_-(3)_1820.jpg
     type: image
-  - caption: "Historic pagoda, demolished in the 60's"
+  - caption: Historic pagoda, demolished in the 60's
     colWidth: "6"
     image: riverside_-1.jpg
     offsetWidth: "6"
