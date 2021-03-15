@@ -2,7 +2,7 @@
 isPublished: true
 templateKey: project
 title: Astor Lobby
-slug: nyc-lobby-renovation-01
+slug: NYC-Commercial-Lobby-1
 redirects:
   - permanent: true
     from: Astor-Lobby
