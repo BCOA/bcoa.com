@@ -2,7 +2,10 @@
 isPublished: true
 templateKey: project
 title: Barman
-slug: Barman
+slug: House-Renovation-LA
+redirects:
+  - permanent: true
+    from: Barman
 categories:
   - Residential
 heroImage:
@@ -21,13 +24,15 @@ infoObjects:
       title: Scope
     - description: Complete
       title: Status
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Los Angeles House Renovation
 primaryImage:
   caption: A selectively vaulted ceiling over the dining space and living room
   image: kitchen-final-cropped.jpg
   alt: bcoa design kitchen
 projectGallery:
-  - caption: >-
-      Enclosing an existing porch created a mudroom entry with kitchen
+  - caption: Enclosing an existing porch created a mudroom entry with kitchen
       pass-through
     colWidth: "8"
     image: BARMAN_-(2)_1820.jpg
