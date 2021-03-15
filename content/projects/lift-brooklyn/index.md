@@ -4,22 +4,15 @@ seo:
   image: liftbrooklyn_seo_1200x630.jpg
 templateKey: project
 title: Lift Next Level Floats
-slug: Lift-Next-Level-Floats
-heroImage:
-  image: liftbrooklyn_ph_3800x1900_aia.jpg
-workDescription: "Boutique Sensory Deprivation Spa "
+slug: NYC-Spa-1
+redirects:
+  - permanent: true
+    from: Lift-Next-Level-Floats
 categories:
   - Commercial
+heroImage:
+  image: liftbrooklyn_ph_3800x1900_aia.jpg
 headline: ENGAGE THE SENSES
-featured:
-  featuredDescription: New York City's first and only dedicated isolation therapy spa
-  featuredImage:
-    alt: this is the alt text
-    image: lift_brooklyn_-7-_1160x1547.jpg
-    isPortrait: true
-  isFeatured: true
-previewImage:
-  image: lift_brooklyn_index_1.jpg
 infoObjects:
   infoObject:
     - description: Lift Next Level Floats
@@ -32,6 +25,19 @@ infoObjects:
       title: Photography
     - description: AIA Award of Merit 2016
       title: Awards
+  titleInfoObject:
+    title: DESCRIPTION
+    description: NYC Spa Renovation
+workDescription: "Boutique Sensory Deprivation Spa "
+featured:
+  featuredDescription: New York City's first and only dedicated isolation therapy spa
+  featuredImage:
+    alt: this is the alt text
+    image: lift_brooklyn_-7-_1160x1547.jpg
+    isPortrait: true
+  isFeatured: true
+previewImage:
+  image: lift_brooklyn_index_1.jpg
 primaryImage:
   caption: View into a pod-style float suite
   image: LIFT_BROOKLYN_-(4)_1820.jpg
