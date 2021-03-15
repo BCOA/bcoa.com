@@ -2,8 +2,10 @@
 isPublished: true
 templateKey: project
 title: Micro Cabin
-slug: Micro-Cabin
-workDescription: A 325sf guest cabin in Montauk
+slug: Microcabin
+redirects:
+  - permanent: true
+    from: Micro-Cabin
 categories:
   - Residential
 heroImage:
@@ -11,28 +13,30 @@ heroImage:
   image: microcabin_ph_3800x1900.jpg
   portraitImage: MICROCABIN_PH_1500x2000.jpg
 headline: CRAFT A JEWEL BOX
+infoObjects:
+  infoObject:
+    - description: 323SF
+      title: Size
+    - description: Ground Up
+      title: scope
+    - description: Completed 2014
+      title: Status
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Micro Cabin
+workDescription: A 325sf guest cabin in Montauk
 featured:
-  featuredDescription: >-
-    A Micro Cabin - the size of a single car garage - with all the fixin's on an
-    existing foundation in Montauk, NY.
+  featuredDescription: A Micro Cabin - the size of a single car garage - with all
+    the fixin's on an existing foundation in Montauk, NY.
   featuredImage:
     alt: this is the alt text
     image: microcabin_-7-_1820x1024.jpg
     isPortrait: false
   isFeatured: true
 previewImage:
-  alt: >-
-    Micro Cabin - residential living room with cast iron stove stair porn micro
+  alt: Micro Cabin - residential living room with cast iron stove stair porn micro
     living
   image: preview.jpg
-infoObjects:
-  infoObject:
-    - description: Private Owner
-      title: client
-    - description: Ground Up
-      title: scope
-    - description: Completed 2014
-      title: Status
 primaryImage:
   alt: Micro Cabin - residential living space
   caption: A sunken lounge faces a large picture window and cast iron pellet stove
@@ -43,8 +47,7 @@ projectGallery:
     image: secondary.jpg
     type: image
   - alt: Micro Cabin - Outdoors retreat
-    caption: >-
-      A reclaimed hickory wood facade punctured by windows overlooking the
+    caption: A reclaimed hickory wood facade punctured by windows overlooking the
       National Forest Service land
     colWidth: "10"
     image: micro-cabin_1.jpg
@@ -58,7 +61,7 @@ projectGallery:
     colWidth: "4"
     image: micro-cabin_3.jpg
     type: image
-  - pullQuote: "323sf, packed with all the fixin's"
+  - pullQuote: 323sf, packed with all the fixin's
     type: quote
   - alt: Micro Cabin - architectural rendering
     colWidth: "6"
@@ -69,9 +72,8 @@ projectGallery:
     image: micro-cabin_5.jpg
     type: image
   - alt: Micro Cabin - residential tiny home kitchen
-    caption: >-
-      The micro kitchen, framed by the fir-plywood stair with operable cabinets
-      doubling as stair treads.
+    caption: The micro kitchen, framed by the fir-plywood stair with operable
+      cabinets doubling as stair treads.
     colWidth: "12"
     image: micro-cabin_6.jpg
     type: image
@@ -79,8 +81,7 @@ projectGallery:
     colWidth: "8"
     image: micro-cabin_7.jpg
     type: image
-  - alt: >-
-      Micro Cabin - residential reclaimed wood exterior with forest in the
+  - alt: Micro Cabin - residential reclaimed wood exterior with forest in the
       background
     colWidth: "10"
     image: micro-cabin_8.jpg
