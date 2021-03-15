@@ -4,28 +4,30 @@ seo:
   image: junglehouse-_seo_1200x630.jpg
 templateKey: project
 title: Jungle House
-slug: Jungle-House
+slug: Wisconsin-House
+redirects:
+  - permanent: true
+    from: Jungle-House
+categories:
+  - Residential
 heroImage:
   image: junglehouse-_ph_3800x1900.jpg
   portraitImage: JUNGLEHOUSE-_PH_1500x2000.jpg
-workDescription: Jungle House project
-categories:
-  - Residential
 headline: Expand the house, expand the view
+infoObjects:
+  infoObject:
+    - description: Schematic Design Completed
+      title: Status
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Ground-Up House and Cabin Renovation
+workDescription: Jungle House project
 featured:
   featuredImage:
     image: junglehouse-_seo_1200x630.jpg
     alt: test
 previewImage:
   image: JUNGLE-HOUSE_index.jpg
-infoObjects:
-  infoObject:
-    - description: Private Owners
-      title: Client
-    - description: 1 Group Up House, 1 Renovated Cabin
-      title: Scope
-    - description: Schematic Design Completed
-      title: Status
 primaryImage:
   caption: Site plan showing the existing cabin and proposed structures
   image: jungle-house_-12-cropped_1820.jpg
