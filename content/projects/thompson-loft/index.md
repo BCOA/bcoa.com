@@ -6,7 +6,11 @@ seo:
   image: 17thompson_seo_1200x630.jpg
   title: Thompson St Loft Renovation in Soho
 templateKey: project
-slug: Thompson-Loft
+title: Thompson Loft
+slug: Soho-Loft-4
+redirects:
+  - permanent: true
+    from: Thompson-Loft
 categories:
   - Residential
   - Lofts
@@ -14,9 +18,17 @@ heroImage:
   alt: Modern loft kitchen rendering
   image: 17thompson_ph_3800x1900.jpg
   portraitImage: 17THOMPSON_PH_1500x2000.jpg
-workDescription: ""
-title: Thompson Loft
 headline: "blur the boundaries "
+infoObjects:
+  infoObject:
+    - description: 1350sf
+      title: Size
+    - description: On the boards
+      title: Status
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Soho NYC Loft Renovation
+workDescription: ""
 featured:
   featuredImage:
     alt: "Modern Loft Renovation "
@@ -24,19 +36,12 @@ featured:
   isFeatured: false
 previewImage:
   image: 17-thompson_index.jpg
-infoObjects:
-  infoObject:
-    - description: 1350sf Loft Renovation
-      title: Scope
-    - description: On the boards
-      title: Status
 primaryImage:
   caption: The ceiling plane floats, projecting past the kitchen
   image: 17-thompson-cropped.jpg
 projectGallery:
   - alt: modern loft apartment rendering
-    caption:
-      Exposed brick selectively painted or exposed to define zones within the
+    caption: Exposed brick selectively painted or exposed to define zones within the
       large common area
     colWidth: "10"
     image: 17-thompson-2-cropped.jpg
