@@ -2,7 +2,10 @@
 isPublished: true
 templateKey: project
 title: West 53rd Street
-slug: West-53rd-Street
+slug: Hells-Kitchen-Condo
+redirects:
+  - permanent: true
+    from: West-53rd-Street
 categories:
   - Commercial
 heroImage:
@@ -15,14 +18,17 @@ infoObjects:
   infoObject:
     - description: Private Developer
       title: CLIENT
-    - description: "200,000sf+ Low-rise  residential project"
-      title: SCOPE
+    - description: 200,000sf
+      title: SIZE
     - description: Completed 2010
       title: STATUS
-    - description: Smith-Miller + Hawkinson Architects with Bronwyn Breitner
+    - description: "Smith-Miller + Hawkinson Architects "
       title: Architect
     - description: Michael Moran
       title: Photography
+  titleInfoObject:
+    title: DESCRIPTION
+    description: "NYC Luxury Condo "
 primaryImage:
   image: w-53rd-st_-8-.jpg
 projectGallery:
@@ -30,9 +36,8 @@ projectGallery:
     colWidth: "6"
     image: W-53RD-ST_-(13)_1820.jpg
     type: image
-  - caption: >-
-      The saw-tooth facade orients views up and down the street, emphasizing the
-      westward river views
+  - caption: The saw-tooth facade orients views up and down the street, emphasizing
+      the westward river views
     colWidth: "10"
     image: w-53rd-st_-14-_3800.jpg
     offsetWidth: "2"
@@ -46,9 +51,8 @@ projectGallery:
   - colWidth: "8"
     image: W-53RD-ST_-(4)_1820.jpg
     offsetWidth: "4"
-    pullQuote: >-
-      The parallel projected window allows the city to subtly enter the unit’s
-      space
+    pullQuote: The parallel projected window allows the city to subtly enter the
+      unit’s space
     type: quote
   - colWidth: "4"
     image: w53rdst_1_-1160_cropped.jpg
