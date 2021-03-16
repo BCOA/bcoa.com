@@ -2,7 +2,10 @@
 isPublished: true
 templateKey: project
 title: Zhuhai Exhibition Center
-slug: zhuhai-exhibition-center
+slug: chinese-exhibition-center
+redirects:
+  - permanent: true
+    from: zhuhai-exhibition-center
 categories:
   - Commercial
 heroImage:
@@ -22,14 +25,15 @@ previewImage:
   alt: zhuhai building
 infoObjects:
   infoObject:
-    - description: Private Developer
-      title: CLIENT
     - description: 500,000 sf Convention Center
       title: SCOPE
     - description: Completed 2016
       title: STATUS
     - description: RMJM w. Luigi Ciaccia
       title: DESIGN ARCHITECT
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Convention and Exhibition Center
 primaryImage:
   caption: The form of the big roof participates in the organic forms of the
     master plan, acting independently of the orthogonal exhibition space it
