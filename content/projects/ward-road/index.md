@@ -2,18 +2,31 @@
 isPublished: true
 templateKey: project
 title: Ward Road House
-slug: Ward-Road-House
-workDescription: ""
+slug: Australia-House
+redirects:
+  - permanent: true
+    from: Ward-Road-House
 categories:
   - Residential
 heroImage:
   image: ward-road_ph_3800x1900.jpg
   portraitImage: WARD-ROAD_PH_1500x2000.jpg
 headline: DESIGN IN DUALS - SHARED HOLIDAY HOUSE
+infoObjects:
+  infoObject:
+    - description: Completed
+      title: Status
+    - description: Collaboration with Chris Manton
+      title: Credit
+    - description: Tony Miller
+      title: Photos
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Ground-Up House Design
+workDescription: ""
 featured:
-  featuredDescription: >-
-    On a small lot, Australian sisters seek to build an adaptable single family
-    home to suit their two families
+  featuredDescription: On a small lot, Australian sisters seek to build an
+    adaptable single family home to suit their two families
   featuredImage:
     alt: this is the alt text
     image: ward-road_-15-_1160x1740.jpg
@@ -21,24 +34,11 @@ featured:
   isFeatured: true
 previewImage:
   image: ward-road_index.jpg
-infoObjects:
-  infoObject:
-    - description: Private Owner
-      title: Client
-    - description: Ground Up House
-      title: Scope
-    - description: Completed
-      title: Status
-    - description: Collaboration with Chris Manton
-      title: Status
-    - description: Tony Miller
-      title: Photos
 primaryImage:
   caption: Exterior stair to high deck with water views
   image: ward-road_-16.jpg
 projectGallery:
-  - caption: >-
-      Local spotted gum timber shutters act to open or close one of the two
+  - caption: Local spotted gum timber shutters act to open or close one of the two
       master suites
     colWidth: "6"
     image: ward-road_-15.jpg
@@ -68,16 +68,14 @@ projectGallery:
   - colWidth: "6"
     image: ward-road_-20.jpg
     type: image
-  - pullQuote: >-
-      Conceived as a game of stacking and overlapping programmatic building
+  - pullQuote: Conceived as a game of stacking and overlapping programmatic building
       blocks
     type: quote
   - colWidth: "12"
     image: ward-road_-8-_3800.jpg
     type: image
-  - caption: >-
-      The large common space accommodates all the families at once, flooded with
-      northern light and views to  Swan Bay
+  - caption: The large common space accommodates all the families at once, flooded
+      with northern light and views to  Swan Bay
     colWidth: "8"
     image: ward-road_-7-_2480.jpg
     type: image
