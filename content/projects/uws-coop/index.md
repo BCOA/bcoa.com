@@ -2,26 +2,30 @@
 isPublished: true
 templateKey: project
 title: UWS Co-op
-slug: UWS-Co-op
-workDescription: A pre-war apartment reno
+slug: UWS-Coop
+redirects:
+  - permanent: true
+    from: UWS-Co-op
 categories:
   - Residential
 heroImage:
   image: 17w71st_ph_3800x1900.jpg
   portraitImage: 17W71st_PH_1500x2000.jpg
-headline: merging prewar modern
-previewImage:
-  image: 17-w-71st-st_index_2.jpg
 infoObjects:
   infoObject:
-    - description: Private Owner
-      title: Client
-    - description: Full renovation of 1200 sf Upper West Side Apartment
-      title: Scope
-    - description: Completed Spring 2015
+    - description: 1200sf
+      title: Size
+    - description: Completed 2015
       title: Status
     - description: Raquel Perez Puig
       title: Photography
+  titleInfoObject:
+    title: DESCRIPTION
+    description: NYC UWS Co-op Renovation
+workDescription: A pre-war apartment reno
+headline: merging prewar modern
+previewImage:
+  image: 17-w-71st-st_index_2.jpg
 primaryImage:
   caption: Custom millwork and a contemporary floor contrast traditional details
   image: 17-W-71st-St_-(1)_1820.jpg
@@ -29,8 +33,7 @@ projectGallery:
   - colWidth: "6"
     image: 17-W-71st-St_-(2)_1820.jpg
     type: image
-  - caption: >-
-      An exposed brick shaft anchored the corner where a wall once stood,
+  - caption: An exposed brick shaft anchored the corner where a wall once stood,
       creating a small, confined kitchen. Removing the wall and wrapping the
       kitchen storage into the common space opens up the entire apartment
     colWidth: "10"
