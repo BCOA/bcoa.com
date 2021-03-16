@@ -2,7 +2,10 @@
 isPublished: true
 templateKey: project
 title: The Lawrence
-slug: The-Lawrence
+slug: Brooklyn-Lobby
+redirects:
+  - permanent: true
+    from: The-Lawrence
 categories:
   - Commercial
 heroImage:
@@ -21,30 +24,28 @@ infoObjects:
   infoObject:
     - description: Private Developer
       title: Client
-    - description: Design Assist for exteriors and interior common spaces
-      title: scope
-    - description: In construction
+    - description: Completed 2018
       title: Status
+  titleInfoObject:
+    title: DESCRIPTION
+    description: Brooklyn Development Lobby and Elevator Design
 primaryImage:
-  caption: >-
-    Reconsidered balconies bring steel columns tied together with a continuous
-    steel beam breaking up the facade
+  caption: Reconsidered balconies bring steel columns tied together with a
+    continuous steel beam breaking up the facade
   image: dscf9124.jpg
 projectGallery:
-  - caption: "Elevecture® panels at the elevator in wood, white and perforated metal"
+  - caption: Elevecture® panels at the elevator in wood, white and perforated metal
     colWidth: "6"
     image: elevator-1.jpg
     offsetWidth: "0"
     type: image
-  - caption: >-
-      Weaving the perforated metal to the interior, a steel and wood
+  - caption: Weaving the perforated metal to the interior, a steel and wood
       double-height stair activates the cellar
     colWidth: "8"
     image: lobby3.jpg
     offsetWidth: "4"
     type: image
-  - caption: >-
-      A terrazzo floor with inlay detailing leads through the lobby to the
+  - caption: A terrazzo floor with inlay detailing leads through the lobby to the
       double height recreation room below
     colWidth: "10"
     image: lobby1.2_cropped.jpg
