@@ -1,7 +1,7 @@
 ---
 title: Crosby Loft V3 Starts Construction
 templateKey: article
-slug: Crosby-Loft-V3-Starts–Construction
+slug: News-Soho-Loft-3
 image:
   alt: BC–OA Loft Architecture NYC Renovation Soho NYC
   image: 45-c-2n-construction-tint.jpg
