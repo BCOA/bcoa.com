@@ -1,7 +1,7 @@
 ---
 title: S-M-L Loft receives AIA Design Award
 templateKey: article
-slug: News-Loft-AIA-Award
+slug: news-loft-aia-award
 image:
   image: bc-oa_aianys-awards_1160x1740.jpg
   isPortrait: true
@@ -11,4 +11,5 @@ excerpt: BC—OA was pleased to have our design for the [S-M-L
   Loft](https://bc-oa.com/projects/sml-loft/) honored with a Design Award in the
   Interiors category at the AIA NYS Design Awards.
 ---
+
 BC—OA was pleased to have our design for the [S-M-L Loft](https://bc-oa.com/projects/sml-loft/) honored with a Design Award in the Interiors category at the AIA NYS Design Awards.

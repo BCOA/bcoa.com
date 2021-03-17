@@ -2,7 +2,7 @@
 isPublished: false
 templateKey: project
 title: Elevators
-slug: Elevators
+slug: elevators
 categories:
   - Commercial
 heroImage:

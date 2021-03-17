@@ -2,7 +2,7 @@
 isPublished: true
 templateKey: project
 title: Barman
-slug: House-Renovation-LA
+slug: house-renovation-la
 redirects:
   - permanent: true
     from: Barman

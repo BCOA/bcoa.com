@@ -2,7 +2,7 @@
 isPublished: true
 templateKey: project
 title: Micro Cabin
-slug: Microcabin
+slug: microcabin
 redirects:
   - permanent: true
     from: Micro-Cabin
@@ -26,7 +26,8 @@ infoObjects:
     description: Micro Cabin
 workDescription: A 325sf guest cabin in Montauk
 featured:
-  featuredDescription: A Micro Cabin - the size of a single car garage - with all
+  featuredDescription:
+    A Micro Cabin - the size of a single car garage - with all
     the fixin's on an existing foundation in Montauk, NY.
   featuredImage:
     alt: this is the alt text
@@ -34,7 +35,8 @@ featured:
     isPortrait: false
   isFeatured: true
 previewImage:
-  alt: Micro Cabin - residential living room with cast iron stove stair porn micro
+  alt:
+    Micro Cabin - residential living room with cast iron stove stair porn micro
     living
   image: preview.jpg
 primaryImage:
@@ -47,7 +49,8 @@ projectGallery:
     image: secondary.jpg
     type: image
   - alt: Micro Cabin - Outdoors retreat
-    caption: A reclaimed hickory wood facade punctured by windows overlooking the
+    caption:
+      A reclaimed hickory wood facade punctured by windows overlooking the
       National Forest Service land
     colWidth: "10"
     image: micro-cabin_1.jpg

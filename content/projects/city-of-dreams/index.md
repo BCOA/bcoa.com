@@ -4,10 +4,7 @@ seo:
   image: cityofdreams_seo_1200x630.jpg
 templateKey: project
 title: Kiosk-Stage
-slug: City-of-Dreams
-redirects:
-  - permanent: true
-    from: City-of-Dreams
+slug: city-of-dreams
 categories:
   - Commercial
 heroImage:

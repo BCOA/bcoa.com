@@ -7,7 +7,7 @@ seo:
   title: Thompson St Loft Renovation in Soho
 templateKey: project
 title: Thompson Loft
-slug: Soho-Loft-4
+slug: soho-loft-4
 redirects:
   - permanent: true
     from: Thompson-Loft
@@ -41,7 +41,8 @@ primaryImage:
   image: 17-thompson-cropped.jpg
 projectGallery:
   - alt: modern loft apartment rendering
-    caption: Exposed brick selectively painted or exposed to define zones within the
+    caption:
+      Exposed brick selectively painted or exposed to define zones within the
       large common area
     colWidth: "10"
     image: 17-thompson-2-cropped.jpg

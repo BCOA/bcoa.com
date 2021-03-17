@@ -1,7 +1,7 @@
 ---
 title: 12th Street Lobby Design Construction Ready
 templateKey: article
-slug: News-West-Village-Lobby
+slug: news-west-village-lobby
 image:
   alt: Lobby Architect Architecture NYC Renovation Greenwich Village
   image: 44-e-12th-lobby.jpg

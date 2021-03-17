@@ -2,7 +2,7 @@
 isPublished: false
 templateKey: project
 title: 37 West 12th Street
-slug: 37-West-12th-Street
+slug: 37-west-12th-street
 categories:
   - Residential
 heroImage:

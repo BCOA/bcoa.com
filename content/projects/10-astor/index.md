@@ -2,7 +2,7 @@
 isPublished: true
 templateKey: project
 title: Astor Lobby
-slug: NYC-Commercial-Lobby-1
+slug: nyc-commercial-lobby-1
 redirects:
   - permanent: true
     from: Astor-Lobby
@@ -34,7 +34,8 @@ primaryImage:
   caption: Glass and display walls, linear directional lighting
   image: 10-Astor_(2)_1820.jpg
 projectGallery:
-  - caption: "The glass panel system designed by Elevecture in collaboration with
+  - caption:
+      "The glass panel system designed by Elevecture in collaboration with
       BC—OA "
     colWidth: "6"
     image: 10-Astor_(9)_1820.jpg

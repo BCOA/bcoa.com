@@ -5,7 +5,7 @@ seo:
   image: necdbny_seo_1200x630.jpg
 templateKey: project
 title: NECD @ BNY
-slug: Navy Yard Office
+slug: navy-yard-office
 redirects:
   - permanent: true
     from: NECD-at-BNY
@@ -41,7 +41,8 @@ infoObjects:
 primaryImage:
   image: necd_navy-yard_-8-_1820.jpg
 projectGallery:
-  - caption: View from inside the manufacturing plant where elevator interiors for
+  - caption:
+      View from inside the manufacturing plant where elevator interiors for
       NYC's Class A elevator cabs are built
     colWidth: "6"
     image: necd_navy-yard_-10-_1820.jpg

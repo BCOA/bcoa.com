@@ -4,7 +4,7 @@ seo:
   image: reflect-showroom_seo_1200x630.jpg
 templateKey: project
 title: Elevecture Showroom I
-slug: NYC-Showroom-1
+slug: nyc-showroom-1
 redirects:
   - permanent: true
     from: Elevecture-Showroom-I
@@ -20,7 +20,8 @@ infoObjects:
       title: CLIENT
     - description: Completed June 2013
       title: STATUS
-    - description: Showroom Identity and Graphics by William Morrisey, Luis Bravo and
+    - description:
+        Showroom Identity and Graphics by William Morrisey, Luis Bravo and
         Mikal Cook Photography by Lou Giacalone
       title: CREDITS
   titleInfoObject:
@@ -43,7 +44,8 @@ projectGallery:
     image: reflectshowroom_3800_1.jpg
     type: image
     offsetWidth: "0"
-  - caption: The mock elevator cab clad in Elevecture panels customized with a Paul
+  - caption:
+      The mock elevator cab clad in Elevecture panels customized with a Paul
       Goldberger quote from the NY Times
     colWidth: "6"
     image: REFLECT-SHOWROOM_-(7)_1820.jpg

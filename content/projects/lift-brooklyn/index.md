@@ -4,7 +4,7 @@ seo:
   image: liftbrooklyn_seo_1200x630.jpg
 templateKey: project
 title: Lift Next Level Floats
-slug: NYC-Spa-1
+slug: nyc-spa-1
 redirects:
   - permanent: true
     from: Lift-Next-Level-Floats

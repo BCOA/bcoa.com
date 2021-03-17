@@ -1,7 +1,7 @@
 ---
 title: Bronwyn Judges AIA Orlando 2020 Design Awards
 templateKey: article
-slug: News-AIA-Orlando
+slug: news-aia-orlando
 image:
   alt: AIA Juror Architecture Design Awards
   image: aia-orlando-awards.jpg

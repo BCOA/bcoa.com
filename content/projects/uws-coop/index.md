@@ -2,7 +2,7 @@
 isPublished: true
 templateKey: project
 title: UWS Co-op
-slug: UWS-Coop
+slug: uws-coop
 redirects:
   - permanent: true
     from: UWS-Co-op

@@ -3,13 +3,14 @@ isPublished: true
 seo:
   title: NYC Architects BC—OA gut renovate a Soho Loft designing industrial
     material features
-  description: The gut renovation of this cast-iron Soho Loft by NYC and Brooklyn
+  description:
+    The gut renovation of this cast-iron Soho Loft by NYC and Brooklyn
     based contemporary architects BC—OA features industrial steel objects
     floating within an open floor plan.
   image: 20-greene-st_-seo_1200x630.jpg
 templateKey: project
 title: S-M-L Loft
-slug: Soho-Loft-3
+slug: soho-loft-3
 redirects:
   - permanent: true
     from: sml-loft
@@ -17,7 +18,8 @@ categories:
   - Residential
   - Lofts
 heroImage:
-  alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
+  alt:
+    "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
     Oak "
   image: objectloftheroimage_cropped_3800.jpg
   portraitImage: 20greene_ph_1500x2000.jpg
@@ -34,24 +36,29 @@ infoObjects:
     - description: Amy Barkow
       title: Photography
     - title: Awards
-      description: SARA NY Design Award of Excellence 2020, AIA NY Interiors Design
+      description:
+        SARA NY Design Award of Excellence 2020, AIA NY Interiors Design
         Award 2019
     - title: Awards, cont.
-      description: Architect Magazine 2019 Residential Architect Interiors Award, 2019
+      description:
+        Architect Magazine 2019 Residential Architect Interiors Award, 2019
         Architizer A+ Award Finalist
 workDescription: Work description text
 featured:
-  featuredDescription: Three standing objects - Small, Medium and Large - conceal
+  featuredDescription:
+    Three standing objects - Small, Medium and Large - conceal
     the ordinary functions of domestic living in this Soho Loft renovation
   featuredImage:
     image: 20-greene-st_-13-_1160x1740.jpg
     isPortrait: true
-    alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
+    alt:
+      "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
       Oak "
   isFeatured: true
 previewImage:
   image: index_copyright_barkow_photo_6363.jpg
-  alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
+  alt:
+    "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
     Oak "
 primaryImage:
   image: OBJECT-LOFT_-(14)_1820.jpg
@@ -64,7 +71,8 @@ projectGallery:
     image: object-loft_-2-_1820_cropped.jpg
     type: image
     offsetWidth: "0"
-    alt: Soho Loft NYC Architect Architecture Gut Renovation Renovate Steel Detail
+    alt:
+      Soho Loft NYC Architect Architecture Gut Renovation Renovate Steel Detail
       Custom Metalwork
     caption: "Corner detail of the custom metalwork "
   - colWidth: "8"
@@ -86,7 +94,8 @@ projectGallery:
     image: object-loft_-3-_1160_cropped.jpg
     type: image
     offsetWidth: "0"
-    alt: Soho Loft NYC Architect Architecture Gut Renovation Renovate Steel Detail
+    alt:
+      Soho Loft NYC Architect Architecture Gut Renovation Renovate Steel Detail
       Custom Metalwork Ladder
     caption: The custom library ladder can access the uppers at each of the objects
   - type: quote
@@ -112,7 +121,8 @@ projectGallery:
     alt: Soho Loft NYC Architect Architecture Gut Renovation Renovate Bathroom
       Custom Concrete Walnut Cove Light
     caption: Custom concrete panels create the shower enclosure with a indirect lighting
-  - alt: Soho Loft NYC Architect Architecture Gut Renovation Renovate Plan Custom
+  - alt:
+      Soho Loft NYC Architect Architecture Gut Renovation Renovate Plan Custom
       Metalwork
     colWidth: "10"
     image: copyright_barkow_photo_6517a.jpg

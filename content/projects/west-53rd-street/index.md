@@ -2,7 +2,7 @@
 isPublished: true
 templateKey: project
 title: West 53rd Street
-slug: Hells-Kitchen-Condo
+slug: hells-kitchen-condo
 redirects:
   - permanent: true
     from: West-53rd-Street
@@ -36,7 +36,8 @@ projectGallery:
     colWidth: "6"
     image: W-53RD-ST_-(13)_1820.jpg
     type: image
-  - caption: The saw-tooth facade orients views up and down the street, emphasizing
+  - caption:
+      The saw-tooth facade orients views up and down the street, emphasizing
       the westward river views
     colWidth: "10"
     image: w-53rd-st_-14-_3800.jpg

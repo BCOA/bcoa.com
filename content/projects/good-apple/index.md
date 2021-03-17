@@ -2,7 +2,7 @@
 isPublished: false
 templateKey: project
 title: Good Apple
-slug: Good-Apple
+slug: good-apple
 categories:
   - Commercial
 heroImage:

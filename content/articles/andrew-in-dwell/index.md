@@ -1,7 +1,7 @@
 ---
 title: Andrew in Dwell
 templateKey: article
-slug: News-Loft-Cats
+slug: news-loft-cats
 image:
   image: crosby-dwell-andrew.jpg
   isPortrait: true

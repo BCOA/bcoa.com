@@ -4,7 +4,7 @@ seo:
   image: junglehouse-_seo_1200x630.jpg
 templateKey: project
 title: Jungle House
-slug: Wisconsin-House
+slug: wisconsin-house
 redirects:
   - permanent: true
     from: Jungle-House

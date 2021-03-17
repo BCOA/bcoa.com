@@ -7,7 +7,7 @@ seo:
     quintessential Crosby Street, using a floating kitchen to buffer between
     public and private spaces.
 templateKey: project
-slug: Soho-Loft-1
+slug: soho-loft-1
 categories:
   - Residential
   - Lofts

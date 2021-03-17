@@ -4,7 +4,7 @@ seo:
   image: lifthuntington_seo_1200x630.jpg
 templateKey: project
 title: Lift Huntington
-slug: Huntington-Spa-1
+slug: huntington-spa-1
 redirects:
   - permanent: true
     from: Lift-Huntington

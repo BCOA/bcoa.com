@@ -4,7 +4,7 @@ seo:
   image: 740broadwaylobby_seo_1200x630.jpg
 templateKey: project
 title: 740 Broadway Lobby
-slug: NYC-Commercial-Lobby-2
+slug: nyc-commercial-lobby-2
 redirects:
   - permanent: true
     from: 740-Broadway-Lobby

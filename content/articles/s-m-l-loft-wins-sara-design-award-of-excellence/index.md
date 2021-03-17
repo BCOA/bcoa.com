@@ -1,7 +1,7 @@
 ---
 title: S-M-L LOFT WINS SARA DESIGN AWARD OF EXCELLENCE!
 templateKey: article
-slug: News-SARA-Award-Loft
+slug: news-sara-award-loft
 image:
   isPortrait: true
   image: sara-design-awards-vert.jpg

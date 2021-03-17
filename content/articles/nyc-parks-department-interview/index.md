@@ -1,7 +1,7 @@
 ---
 title: NYC Parks Department Interview
 templateKey: article
-slug: News-NYC-Parks
+slug: news-nyc-parks
 image:
   alt: NYC Parks architecture rendering
   image: riverside_-8-_1820x1024.jpg
@@ -11,4 +11,5 @@ excerpt: Today we joined the owners of Harlem Public and our team from Silman in
   Riverside Park. For more info on this three-part project go
   [HERE](https://bc-oa.com/projects/riverside/)
 ---
+
 Today we joined the owners of Harlem Public and our team from Silman in presenting our concept for a phased adaptive reuse project in Harlem's Riverside Park. For more info on this three-part project go [HERE](https://bc-oa.com/projects/riverside/)

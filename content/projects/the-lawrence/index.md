@@ -2,7 +2,7 @@
 isPublished: true
 templateKey: project
 title: The Lawrence
-slug: Brooklyn-Lobby
+slug: brooklyn-lobby
 redirects:
   - permanent: true
     from: The-Lawrence
@@ -45,7 +45,8 @@ projectGallery:
     image: lobby3.jpg
     offsetWidth: "4"
     type: image
-  - caption: A terrazzo floor with inlay detailing leads through the lobby to the
+  - caption:
+      A terrazzo floor with inlay detailing leads through the lobby to the
       double height recreation room below
     colWidth: "10"
     image: lobby1.2_cropped.jpg

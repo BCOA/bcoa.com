@@ -2,7 +2,7 @@
 isPublished: false
 templateKey: project
 title: NYC Loft Projects
-slug: NYC-Loft-Projects
+slug: nyc-loft-projects
 categories:
   - Residential
 heroImage:

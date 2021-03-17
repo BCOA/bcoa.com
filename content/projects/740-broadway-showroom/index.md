@@ -2,7 +2,7 @@
 isPublished: true
 templateKey: project
 title: Elevecture Showroom II
-slug: NYC-Showroom-2
+slug: nyc-showroom-2
 redirects:
   - permanent: true
     from: 740-broadway-showroom
@@ -54,8 +54,8 @@ projectGallery:
   - colWidth: "6"
     image: 4-bs_cropped.jpg
     type: image
-  - pullQuote: "\"New York City Innovation Center is a One-Stop Shop to See
-      Tomorrow's Buildings and Design Trends Today\""
+  - pullQuote: '"New York City Innovation Center is a One-Stop Shop to See
+      Tomorrow''s Buildings and Design Trends Today"'
     type: quote
   - caption: ""
     colWidth: "12"

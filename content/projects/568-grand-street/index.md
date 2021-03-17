@@ -2,7 +2,7 @@
 isPublished: false
 templateKey: project
 title: 568 Grand Street
-slug: 568-Grand-Street
+slug: 568-grand-street
 categories:
   - Residential
 heroImage:

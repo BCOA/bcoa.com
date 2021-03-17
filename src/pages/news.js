@@ -9,20 +9,6 @@ import Image from "../components/Image";
 import SEO from "../components/SEO";
 
 class Article extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  copyLink = () => {
-    this.articleLink.select();
-    document.execCommand("copy");
-    this.setState({ copying: true });
-    setTimeout(() => {
-      this.setState({ copying: false });
-    }, 3000);
-  };
-
   render() {
     const { article } = this.props;
 
@@ -31,27 +17,29 @@ class Article extends Component {
         id={slugify(article.frontmatter.title, { lower: true })}
         className="marginBottom-12 bp-1_marginBottom-14 bp-2_marginBottom-21"
       >
-        {article.frontmatter.image &&
-        article.frontmatter.image.image &&
-        article.frontmatter.image.isPortrait ? (
-          <div className="nestedGrid-6-2">
-            <div className="colSpan-1"></div>
-            {article.frontmatter.image.image && (
+        <Link to={`${article.frontmatter.slug}`}>
+          {article.frontmatter.image &&
+          article.frontmatter.image.image &&
+          article.frontmatter.image.isPortrait ? (
+            <div className="nestedGrid-6-2">
+              <div className="colSpan-1"></div>
+              {article.frontmatter.image.image && (
+                <Image
+                  {...article.frontmatter.image}
+                  className="colSpan-4 marginBottom-5 bp-2_marginBottom-6"
+                />
+              )}
+            </div>
+          ) : (
+            article.frontmatter.image &&
+            article.frontmatter.image.image && (
               <Image
                 {...article.frontmatter.image}
                 className="colSpan-4 marginBottom-5 bp-2_marginBottom-6"
               />
-            )}
-          </div>
-        ) : (
-          article.frontmatter.image &&
-          article.frontmatter.image.image && (
-            <Image
-              {...article.frontmatter.image}
-              className="colSpan-4 marginBottom-5 bp-2_marginBottom-6"
-            />
-          )
-        )}
+            )
+          )}
+        </Link>
 
         <h2 className="f-headline-a">{article.frontmatter.title}</h2>
         <time className="c-gray f-headline-a">{article.frontmatter.date}</time>

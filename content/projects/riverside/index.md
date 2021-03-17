@@ -2,7 +2,7 @@
 isPublished: true
 templateKey: project
 title: Riverside Kiosk for Harlem Public
-slug: NYC-Kiosk-Bar
+slug: nyc-kiosk-Bar
 redirects:
   - permanent: true
     from: Riverside-Kiosk-for-Harlem-Public

@@ -1,7 +1,7 @@
 ---
 templateKey: article
 title: JOIN US
-slug: Join-Us
+slug: join-us
 image:
   image: bc—oa-is-hiring-yello_1820x1024.jpg
   isPortrait: false
