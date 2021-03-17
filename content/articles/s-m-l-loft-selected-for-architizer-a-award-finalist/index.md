@@ -1,7 +1,7 @@
 ---
 title: S-M-L Loft selected for Architizer A+ Award finalist!
 templateKey: article
-slug: S-M-L-Loft-Architizer-A+-Award finalist
+slug: News-Architizer-Award-Loft
 image:
   image: aawardslogo.jpg
   alt: Architizer Award Nomination for Soho Loft renovation by Archtiects BC—OA
