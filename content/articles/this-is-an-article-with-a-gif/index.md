@@ -5,7 +5,7 @@ seo:
   image: gif-test.gif
 title: Crosby Loft Progress
 templateKey: article
-slug: soho-loft-progress
+slug: News-Soho-Loft-Construction
 image:
   isPortrait: false
   image: gif-test.gif
