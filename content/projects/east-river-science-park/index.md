@@ -2,7 +2,7 @@
 isPublished: true
 templateKey: project
 title: East River Kiosk
-slug: nyvc-kiosk-design
+slug: nyc-kiosk-design
 redirects:
   - permanent: true
     from: East-River-Kiosk
