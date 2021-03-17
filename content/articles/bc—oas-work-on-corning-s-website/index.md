@@ -1,7 +1,7 @@
 ---
 title: BC—OA'S WORK ON CORNING'S WEBSITE
 templateKey: article
-slug: BC—OA'S-WORK-ON-CORNING'S–WEBSITE
+slug: News-Corning
 image:
   image: luigi-s-article_1820x1024.jpg
   alt: BC–OA ceiling architecture
