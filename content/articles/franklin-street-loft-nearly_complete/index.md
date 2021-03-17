@@ -1,7 +1,7 @@
 ---
 title: FRANKLIN STREET LOFT - NEARS COMPLETION
 templateKey: article
-slug: FRANKLIN-STREET-LOFT-NEARS-COMPLETION
+slug: News-Tribeca-Loft
 image:
   image: 152_franklin_-v3-tint.jpg
   isPortrait: false
