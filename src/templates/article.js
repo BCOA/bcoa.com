@@ -27,8 +27,8 @@ const ArticleTemplate = ({ data, intersectionRef }) => {
           fields.seo?.image
             ? fields.seo.image.extension === "gif"
               ? fields.seo.image.publicURL
-              : fields.seo.image.childImageSharp.fluid.src
-            : fields.image.image.childImageSharp.fluid.src
+              : fields.seo.image?.childImageSharp?.fluid.src
+            : fields.image?.image?.childImageSharp?.fluid.src
         }
         postData={{
           slug: `/news${fields.slug}`,
