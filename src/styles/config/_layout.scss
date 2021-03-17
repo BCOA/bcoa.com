@@ -1,6 +1,7 @@
 // any resuable layout classes
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding: 0 var(--unit-6);
   max-width: calc(1540px + var(--unit-12));
@@ -8,7 +9,7 @@
   @include bp-1 {
     padding: 0 var(--unit-10);
   }
-  
+
   @include bp-2 {
     padding: 0 var(--unit-13);
   }

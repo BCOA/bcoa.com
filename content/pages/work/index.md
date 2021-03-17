@@ -6,7 +6,10 @@ seo:
 templateKey: work
 title: Index
 workDescription: ""
-projectCategories: []
+projectCategories:
+  - category: Lofts
+  - category: Commercial
+  - category: Residential
 projects:
   - project: NECD @ BNY
   - project: S-M-L Loft

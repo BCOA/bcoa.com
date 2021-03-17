@@ -8,27 +8,34 @@ seo:
     on the upper floors.
 templateKey: project
 title: Brooklyn Heights Townhouse
+slug: brooklyn-heights-townhouse
+redirects:
+  - permanent: true
+    from: Brooklyn-Heights-Townhouse
+categories:
+  - Residential
 heroImage:
   image: 44monroe_ph_3800x1900.jpg
   portraitImage: 44Monroe_PH_1500x2000.jpg
-workDescription: Monroe descritpion
-type: residential
 headline: maximize a gem
+infoObjects:
+  infoObject:
+    - description: "7200 sf "
+      title: Size
+    - description: Completed 2016
+      title: Status
+    - description: Christian Harder Photography
+      title: Photography
+  titleInfoObject:
+    description: Historic Townhouse Renovation
+    title: DESCRIPTION
+workDescription: Monroe descritpion
 featured:
   featuredImage:
     image: 44-monroe_-index.jpg
     alt: trest
 previewImage:
   image: 44-monroe_-index.jpg
-infoObject:
-  - description: Private Owner
-    title: Client
-  - description: 7200 sf Historic Townhouse Renovation
-    title: "Scope "
-  - description: Completed 2016
-    title: Status
-  - description: Christian Harder Photography
-    title: Photography
 primaryImage:
   image: dsc_7604-editcropped.jpg
 projectGallery:
@@ -69,4 +76,5 @@ projectGallery:
     type: image
     offsetWidth: "0"
 ---
+
 The renovation to this 19th Century historic townhouse included the gut renovation of an owner's triplex apartment as well as two rental units on the upper floors. This structure is wide, deep and tall with a large addition off the back. The job required a reconsideration of the layouts of two upper rental units to maximize potential incomes, together with a face-lift for the owner occupied duplex and associated garden.

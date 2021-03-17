@@ -2,7 +2,9 @@
 isPublished: false
 templateKey: project
 title: 37 West 12th Street
-type: residential
+slug: 37-west-12th-street
+categories:
+  - Residential
 heroImage:
   image: 37-W-12TH-ST_-(3)_1820.jpg
 previewImage:
@@ -10,33 +12,32 @@ previewImage:
 primaryImage:
   image: 37-W-12TH-ST_-(25)_1820.jpg
 projectGallery:
-  - colWidth: '6'
+  - colWidth: "6"
     image: 37-W-12TH-ST_-(23)_1820.jpg
     type: image
-  - colWidth: '8'
+  - colWidth: "8"
     image: 37west12thstreet-cropped_1820.jpg
-    offsetWidth: '4'
+    offsetWidth: "4"
     type: image
-  - colWidth: '4'
+  - colWidth: "4"
     image: 37w12ths-3-_1160.jpg
     type: image
-  - colWidth: '4'
+  - colWidth: "4"
     image: 37w12ths-1-_1160.jpg
     type: image
-  - colWidth: '4'
+  - colWidth: "4"
     image: 37w12ths-2-_1160.jpg
     type: image
   - pullQuote: quote
     type: quote
-  - colWidth: '12'
+  - colWidth: "12"
     image: 37-west-4th-promo-plan_rotated.jpg
     type: image
-  - colWidth: '12'
+  - colWidth: "12"
     image: 37-W-12TH-ST_-(2)_1820.jpg
     type: image
-  - colWidth: '6'
+  - colWidth: "6"
     image: 37-w-12th-st_-29.jpg
-    offsetWidth: '6'
+    offsetWidth: "6"
     type: image
 ---
-

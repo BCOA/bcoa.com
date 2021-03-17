@@ -1,29 +1,14 @@
 import React, { Component } from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import Img from "gatsby-image";
 import Masonry from "react-masonry-component";
-import moment from "moment";
 import slugify from "slugify";
 import Layout from "../components/Layout";
+import Image from "../components/Image";
 
 import SEO from "../components/SEO";
 
 class Article extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  copyLink = () => {
-    this.articleLink.select();
-    document.execCommand("copy");
-    this.setState({ copying: true });
-    setTimeout(() => {
-      this.setState({ copying: false });
-    }, 3000);
-  };
-
   render() {
     const { article } = this.props;
 
@@ -32,51 +17,32 @@ class Article extends Component {
         id={slugify(article.frontmatter.title, { lower: true })}
         className="marginBottom-12 bp-1_marginBottom-14 bp-2_marginBottom-21"
       >
-        {article.frontmatter.image &&
-        article.frontmatter.image.image &&
-        article.frontmatter.image.isPortrait ? (
-          <div className="nestedGrid-6-2">
-            <div className="colSpan-1"></div>
-            {article.frontmatter.image.image &&
-            article.frontmatter.image.image.childImageSharp ? (
-              <Img
-                fluid={article.frontmatter.image.image.childImageSharp.fluid}
-                alt={article.frontmatter.image.alt}
-                className="colSpan-4 testing marginBottom-5
-                            bp-2_marginBottom-6"
-              />
-            ) : (
-              <img
-                className="colSpan-4 marginBottom-5 bp-2_marginBottom-6"
-                url={article.frontmatter.image.image.src}
-                alt={article.frontmatter.image.alt}
-              />
-            )}
-          </div>
-        ) : (
-          article.frontmatter.image &&
+        <Link to={`${article.frontmatter.slug}`}>
+          {article.frontmatter.image &&
           article.frontmatter.image.image &&
-          (article.frontmatter.image.image &&
-          article.frontmatter.image.image.childImageSharp ? (
-            <Img
-              fluid={article.frontmatter.image.image.childImageSharp.fluid}
-              alt={article.frontmatter.image.alt}
-              className="colSpan-4 marginBottom-5
-                          bp-2_marginBottom-6"
-            />
+          article.frontmatter.image.isPortrait ? (
+            <div className="nestedGrid-6-2">
+              <div className="colSpan-1"></div>
+              {article.frontmatter.image.image && (
+                <Image
+                  {...article.frontmatter.image}
+                  className="colSpan-4 marginBottom-5 bp-2_marginBottom-6"
+                />
+              )}
+            </div>
           ) : (
-            <img
-              className="colSpan-4 marginBottom-5 bp-2_marginBottom-6"
-              url={article.frontmatter.image.image.src}
-              alt={article.frontmatter.image.alt}
-            />
-          ))
-        )}
+            article.frontmatter.image &&
+            article.frontmatter.image.image && (
+              <Image
+                {...article.frontmatter.image}
+                className="colSpan-4 marginBottom-5 bp-2_marginBottom-6"
+              />
+            )
+          )}
+        </Link>
 
         <h2 className="f-headline-a">{article.frontmatter.title}</h2>
-        <time className="c-gray f-headline-a">
-          {moment(article.frontmatter.date).format("M.D.YYYY")}
-        </time>
+        <time className="c-gray f-headline-a">{article.frontmatter.date}</time>
         <div
           className="f-copy-book
                         marginTop-3
@@ -84,21 +50,9 @@ class Article extends Component {
                         bp-2_marginTop-5
                         marginBottom-5"
         >
-          <MDXRenderer>{article.body}</MDXRenderer>
+          <MDXRenderer>{article.frontmatter.excerpt}</MDXRenderer>
         </div>
-        <button className="f-copy-book copyButton" onClick={this.copyLink}>
-          {this.state.copying ? "Link Copied!" : "Share This"}
-        </button>
-        <textarea
-          className="copyInput"
-          ref={(el) => (this.articleLink = el)}
-          name="articleLink"
-          id="articleLink"
-          defaultValue={`http://bc-oa.com/news#${slugify(
-            article.frontmatter.title,
-            { lower: true }
-          )}`}
-        ></textarea>
+        <Link to={`${article.frontmatter.slug}`}>Read more</Link>
       </article>
     );
   }
@@ -122,7 +76,10 @@ const NewsPageTemplate = ({ data, breakpoint }) => {
   return (
     <div className="container bp-2_marginBottom-8">
       <SEO
-        postImage={news.seo.image.childImageSharp.fluid.src}
+        postImage={
+          news.seo.image.childImageSharp &&
+          news.seo.image.childImageSharp.fluid.src
+        }
         postData={news}
       />
       <h1 className="f-page-title marginTop-8 marginBottom-7 bp-1_marginTop-10 bp-2_marginTop-17 bp-2_marginBottom-12">
@@ -184,10 +141,16 @@ export const query = graphql`
         body
         frontmatter {
           templateKey
+          excerpt
           title
-          date
+          slug
+          date(formatString: "M.D.YYYY")
+
           image {
+            alt
             image {
+              extension
+              publicURL
               childImageSharp {
                 fluid(maxWidth: 1200) {
                   ...GatsbyImageSharpFluid_withWebp
@@ -196,9 +159,6 @@ export const query = graphql`
             }
             isPortrait
           }
-        }
-        fields {
-          slug
         }
       }
     }

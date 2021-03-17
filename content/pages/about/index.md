@@ -23,7 +23,8 @@ studioMembers:
     name: Bronwyn Breitner, AIA
     principal: true
     principalInfo: ""
-  - description: Luigi Ciaccia, LEED AP received his BArch with Distinction from The
+  - description:
+      Luigi Ciaccia, LEED AP received his BArch with Distinction from The
       New York Institute of Technology. Prior to co-founding 590BC, Luigi had 5
       years of experience as a senior associate at RMJM leading design teams on
       large scale urban projects in Europe, Asia, Middle East and the US, and 7
@@ -54,97 +55,91 @@ studioMembers:
   - name: Yuliya Rubanska
     jobTitle: Designer
 publications:
-  - date: February 1, 2019
-    publisher: Dwell
+  - publisher: Dwell
     title: Top 5 Small Spaces of the Week With Serious Star Power
     url: https://www.dwell.com/article/small-space-design-ideas-98eb4748
-    visibleDate: February 2019
-  - date: March 10, 2017
-    publisher: The NYTimes
+    datePublished: 2019-02-01T05:00:00.000Z
+  - publisher: The NYTimes
     title: Pre-War is So Last Year
     url: https://www.nytimes.com/2017/03/10/realestate/prewar-is-so-last-year.html
-    visibleDate: March 2017
-  - date: October 9, 2016
-    publisher: Dwell Magazine
+    datePublished: 2017-03-10T05:00:00.000Z
+  - publisher: Dwell Magazine
     title: Dwell on Design NY
     url: https://www.dwell.com/collection/a-renovated-loft-in-soho-628c9992
-    visibleDate: October 2016
-  - date: January 1, 2013
-    publisher: Dwell Magazine OnLine, Diana Budds
+    datePublished: 2016-10-09T04:00:00.000Z
+  - publisher: Dwell Magazine OnLine, Diana Budds
     title: A Renovated Loft in Soho
     url: https://www.dwell.com/collection/a-renovated-loft-in-soho-628c9992
-    visibleDate: January 2013
-  - date: January 12, 2012
-    publisher: Satellite Magazine
+    datePublished: 2013-01-01T05:00:00.000Z
+  - publisher: Satellite Magazine
     title: Brooklyn / BC—OA
-    visibleDate: January 2012
     url: " "
-  - date: September 20, 2011
-    publisher: Architect’s Newspaper
+    datePublished: 2012-01-12T05:00:00.000Z
+  - publisher: Architect’s Newspaper
     title: Recharging Communities
     url: https://archpaper.com/2011/09/on-view-designyc-presents-recharging-communities/
-    visibleDate: September 2011
+    datePublished: 2011-09-20T04:00:00.000Z
 awards:
-  - date: December 23, 2020
-    title: Design Excellence Award for S-M-L Loft
+  - title: Design Excellence Award for S-M-L Loft
     orgName: SARA NY
-    visibleDate: December 2020
     url: https://www.sarany.org/2020-design-awards
-  - date: December 23, 2019
-    orgName: Residential Architect Design Awards
+    start: ""
+    dateAwarded: 2020-12-23T05:00:00.000Z
+  - orgName: Residential Architect Design Awards
     title: Citation Award for S-M-L Loft
-    visibleDate: December 2019
     url: https://www.architectmagazine.com/awards/residential-architect-design-awards/the-winners-of-the-2019-residential-architect-design-awards_o
-  - date: December 13, 2019
-    orgName: AIANY
+    start: ""
+    dateAwarded: 2019-12-23T05:00:00.000Z
+  - orgName: AIANY
     title: Award of Merit for S-M-L Loft
     url: http://www.aianys.org/programs-events/design-awards-guidelines/2019-design-award-recipients/
-    visibleDate: "2019"
-  - date: June 27, 2018
-    orgName: AIA BQDA
+    start: ""
+    dateAwarded: 2019-12-13T05:00:00.000Z
+  - orgName: AIA BQDA
     title: Design Excellence Award for Stair-Well Housing
     url: https://aia-bqda.weebly.com/2018-bqda-recipients.html
-    visibleDate: June 2018
-  - date: June 2, 2016
-    orgName: AIA BQDA
+    start: ""
+    dateAwarded: 2018-06-27T04:00:00.000Z
+  - orgName: AIA BQDA
     title: Merit Award for Lift Next Level Floats
     url: https://aia-bqda.weebly.com/2016-bqda-recipients.html
-    visibleDate: "2016"
-  - date: December 6, 2016
-    orgName: Duravit
+    start: ""
+    dateAwarded: 2016-06-02T04:00:00.000Z
+  - orgName: Duravit
     title: Duravit Dream Bath Competition for 71st Street
     url: " "
-    visibleDate: "2016"
-  - date: August 18, 2015
-    title: Best of Brooklyn Awards - Architects
-    visibleDate: "2015"
+    start: ""
+    dateAwarded: 2016-12-06T05:00:00.000Z
+  - title: Best of Brooklyn Awards - Architects
     orgName: Best of Brooklyn Awards
     url: " "
-  - date: October 9, 2016
-    title: The Selective Loft featured as part of Dwell Home Tours NYC
+    start: ""
+    dateAwarded: 2015-08-18T04:00:00.000Z
+  - title: The Selective Loft featured as part of Dwell Home Tours NYC
     url: " "
-    visibleDate: "2016"
     orgName: Dwell
-  - date: January 11, 2011
-    title: Selected firm to participate in DesigNYC, The Selective Loft
-    visibleDate: "2011"
+    start: ""
+    dateAwarded: 2016-10-09T04:00:00.000Z
+  - title: Selected firm to participate in DesigNYC, The Selective Loft
     orgName: DesigNYC
     url: " "
-  - date: May 13, 2005
-    title: The Eileen Gray Thesis Prize (BB)
-    visibleDate: "2005"
+    start: ""
+    dateAwarded: 2011-01-11T05:00:00.000Z
+  - title: The Eileen Gray Thesis Prize (BB)
     url: " "
     orgName: " "
-  - date: May 13, 2005
-    title: Alpha Rho Chi Award (BB Leadership)
-    visibleDate: "2005"
+    start: ""
+    dateAwarded: 2005-05-13T04:00:00.000Z
+  - title: Alpha Rho Chi Award (BB Leadership)
     url: " "
     orgName: " "
-  - date: May 31, 1997
-    title: Matthew W. Del Gaudio award (LC Excellence in Design)
-    visibleDate: "1997"
+    start: ""
+    dateAwarded: 2005-05-13T04:00:00.000Z
+  - title: Matthew W. Del Gaudio award (LC Excellence in Design)
     orgName: " "
     url: " "
+    start: ""
+    dateAwarded: 1997-05-31T04:00:00.000Z
 collaborators:
   - description: Elevating Architecture through Smart Surfaces
     jobTitle: Product Designers
@@ -171,7 +166,8 @@ collaborators:
     name: Astrid Chastka
     url: https://www.astridchastka.com/
 ---
-We are Breitner Ciaccia — Office of Architecture. 
+
+We are Breitner Ciaccia — Office of Architecture.
 
 We are an architectural design firm with our feet firmly on the ground, merging creativity with pragmatism. Love of craft, conceptual dedication and technical prowess inform everything we do. We use creative vision, precise execution, technology, and collaboration to get it done. From elevator interiors to loft conversions to commercial development, we are the place that tackles our work with a unique creative energy, weaving our joyful approach to design and execution into every part of the process.
 

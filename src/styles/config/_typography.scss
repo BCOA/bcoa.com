@@ -265,6 +265,7 @@ $messina-book: "MessinaSansBookWeb", "helvetica neue", "sans-serif";
   font-family: $messina-book;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 300;
 
   @include bp-1 {
     font-size: 16px;

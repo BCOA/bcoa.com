@@ -1,28 +1,30 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import Img from "gatsby-image";
+import Image from "../components/Image";
 import Layout from "../components/Layout";
 import ProjectImage from "../components/ProjectImage";
 import MediaQuery from "react-responsive";
 import SEO from "../components/SEO";
 
 const ProjectTemplate = ({ data, intersectionRef }) => {
-  // console.log(intersectionRef);
   const post = data.mdx;
   const fields = post.frontmatter;
+
   return (
     <div className="bp-2_marginBottom-15">
       <SEO
         postImage={
-          fields.seo && fields.seo.image
-            ? fields.seo.image.childImageSharp.fluid.src
-            : fields.previewImage.image
-            ? fields.previewImage.image.childImageSharp.fluid.src
-            : null
+          fields.seo?.image
+            ? fields.seo.image.extension === "gif"
+              ? fields.seo.image.publicURL
+              : fields.seo.image.childImageSharp.fluid.src
+            : fields.previewImage.image.extension === "gif"
+            ? fields.previewImage.image.publicURL
+            : fields.previewImage.image.childImageSharp.fluid.src
         }
         postData={{
-          slug: `/projects${post.fields.slug}`,
+          slug: `/projects${post.frontmatter.slug}`,
           seo: {
             title:
               fields.seo && fields.seo.title ? fields.seo.title : fields.title,
@@ -47,20 +49,14 @@ const ProjectTemplate = ({ data, intersectionRef }) => {
           {(matches) => {
             if (matches && fields.heroImage && fields.heroImage.portraitImage) {
               return (
-                <Img
+                <Image
                   className="projectHero"
-                  fluid={fields.heroImage.portraitImage.childImageSharp.fluid}
+                  image={fields.heroImage.portraitImage}
                   alt={fields.heroImage.alt}
                 />
               );
             } else if (fields.heroImage && fields.heroImage.image) {
-              return (
-                <Img
-                  className="projectHero"
-                  fluid={fields.heroImage.image.childImageSharp.fluid}
-                  alt={fields.heroImage.alt}
-                />
-              );
+              return <Image className="projectHero" {...fields.heroImage} />;
             } else {
               return null;
             }
@@ -71,27 +67,37 @@ const ProjectTemplate = ({ data, intersectionRef }) => {
       <div className="container marginTop-5 bp-1_marginTop-10 bp-2_marginTop-30">
         <div className="bp-1_grid-12col">
           <div className="colSpan-5">
-            <h1 className="f-headline-b marginBottom-4 bp-1_marginBottom-13 bp-2_marginBottom-9">
+            <h2 className="f-headline-b marginBottom-4 bp-1_marginBottom-13 bp-2_marginBottom-9">
               {fields.headline} &#8212;
-            </h1>
+            </h2>
 
             <div className="marginBottom-5 bp-2_marginBottom-10 richText">
               <MDXRenderer>{post.body}</MDXRenderer>
             </div>
 
-            {fields.infoObject && fields.infoObject.length && (
+            {fields.infoObjects && (
               <div className="infoObjects">
-                <dl className="bp-1_grid-2col marginBottom-8 bp-1_marginBottom-13 bp-2_marginBottom-24">
-                  {fields.infoObject.map((item, i) => (
-                    <div
-                      key={`infoObject-${i}`}
-                      className="marginBottom-4 bp-2_marginBottom-6"
-                    >
-                      <dt className="f-credit">{item.title}</dt>
-                      <dd className="f-caption">{item.description}</dd>
-                    </div>
-                  ))}
-                </dl>
+                {fields.infoObjects.infoObject?.length && (
+                  <>
+                    <dl className="bp-1_grid-2col marginBottom-8 bp-1_marginBottom-13 bp-2_marginBottom-24">
+                      {fields.infoObjects.titleInfoObject && (
+                        <TitleInfoObject
+                          title={fields.infoObjects.titleInfoObject.title}
+                          description={
+                            fields.infoObjects.titleInfoObject.description
+                          }
+                        />
+                      )}
+                      {fields.infoObjects.infoObject.map((item, i) => (
+                        <InfoObject
+                          key={`infoObject-${i}`}
+                          title={item.title}
+                          description={item.description}
+                        />
+                      ))}
+                    </dl>
+                  </>
+                )}
               </div>
             )}
           </div>
@@ -154,21 +160,41 @@ export default ProjectPage;
 
 export const query = graphql`
   query ProjectPageQuery($slug: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
-      fields {
-        slug
-      }
+    mdx(frontmatter: { slug: { eq: $slug } }) {
       id
       body
       frontmatter {
         title
+        slug
         headline
-        infoObject {
+        infoObjects {
+          titleInfoObject {
+            title
+            description
+          }
+          infoObject {
+            title
+            description
+          }
+        }
+        seo {
           title
           description
+          image {
+            publicURL
+            extension
+            childImageSharp {
+              fluid(maxWidth: 1200) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
         }
         previewImage {
+          alt
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1200, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -177,7 +203,10 @@ export const query = graphql`
           }
         }
         heroImage {
+          alt
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 3848, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -185,6 +214,8 @@ export const query = graphql`
             }
           }
           portraitImage {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1500, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -194,6 +225,8 @@ export const query = graphql`
         }
         primaryImage {
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1820, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -206,6 +239,8 @@ export const query = graphql`
         projectGallery {
           type
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 3800, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -222,3 +257,21 @@ export const query = graphql`
     }
   }
 `;
+
+const InfoObject = ({ title, description }) => {
+  return (
+    <div className="marginBottom-4 bp-2_marginBottom-6">
+      <dt className="f-credit">{title}</dt>
+      <dd className="f-caption">{description}</dd>
+    </div>
+  );
+};
+
+const TitleInfoObject = ({ title, description }) => {
+  return (
+    <div className="marginBottom-4 bp-2_marginBottom-6">
+      <span className="f-credit">{title}</span>
+      <h1 className="f-caption f-copy">{description}</h1>
+    </div>
+  );
+};

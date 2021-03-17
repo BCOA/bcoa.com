@@ -1,18 +1,21 @@
 ---
 isPublished: true
-templateKey: project
-heroImage:
-  image: 45crosby5s_ph_3800x1900.jpg
-  portraitImage: 45CROSBY5S_PH_1500x2000.jpg
-workDescription: ""
 seo:
   image: 45crosby5s_seo_1200x630.jpg
   title: Crosby Loft I
   description: Architects BC—OA  renovated this 2300sf loft located on Soho’s
     quintessential Crosby Street, using a floating kitchen to buffer between
     public and private spaces.
+templateKey: project
+slug: soho-loft-1
+categories:
+  - Residential
+  - Lofts
+heroImage:
+  image: 45crosby5s_ph_3800x1900.jpg
+  portraitImage: 45CROSBY5S_PH_1500x2000.jpg
+workDescription: ""
 title: Crosby Loft I
-type: residential
 headline: Reveal then refine the Soho loft
 featured:
   featuredDescription: BC—OAs first of many Soho loft projects
@@ -23,20 +26,22 @@ featured:
   isFeatured: true
 previewImage:
   image: 45-crosby_5s_4.jpg
-infoObject:
-  - description: Private Owner
-    title: Client
-  - description: Full renovation of 2300 sf Soho Loft
-    title: Scope
-  - description: Completed
-    title: STATUS
-  - description: Frank Oudeman
-    title: PHOTOGRAPHY
+infoObjects:
+  infoObject:
+    - description: Private Owner
+      title: Client
+    - description: Full renovation of 2300 sf Soho Loft
+      title: Scope
+    - description: Completed
+      title: STATUS
+    - description: Frank Oudeman
+      title: PHOTOGRAPHY
 primaryImage:
   caption: Cabinetry hugs the original timber column of this form lightbulb factory
   image: 45-CROSBY_5S_-(12)_1820.jpg
 projectGallery:
-  - caption: Exposed brick and steel elements next to clean new surfaces concealing
+  - caption:
+      Exposed brick and steel elements next to clean new surfaces concealing
       the infrastructure - sprinklers, lighting and ductwork
     colWidth: "10"
     image: 45-CROSBY_5S_-(3)_1820.jpg
@@ -46,7 +51,8 @@ projectGallery:
     image: 45-CROSBY_5S_-(7)_1820.jpg
     offsetWidth: "4"
     type: image
-  - caption: Approaching the design as clean insertions nested within the industrial
+  - caption:
+      Approaching the design as clean insertions nested within the industrial
       loft elements
     colWidth: "8"
     image: 45-crosby_5s_-18.jpg
@@ -79,6 +85,7 @@ projectGallery:
     type: image
     offsetWidth: "0"
 ---
+
 This 2300sf loft located on Soho’s quintessential Crosby Street offers ample square footage in a long and narrow floor plan. A partial wall dividing the public and private spaces of this residence breaks the floor plan in half, providing a friendlier proportion for the open kitchen, dining and living space, while still permitting views straight through the apartment to windows at the two extremes. The original loft materials - brick and heavy timber columns - are exposed throughout the living and dining area, with contemporary insertions to provide a comfortable kitchen and sitting area. Furniture selection by Tamara Eaton Design.
 
 See feature in [Dwell](https://www.dwell.com/collection/a-renovated-loft-in-soho-628c9992)

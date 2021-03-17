@@ -1,19 +1,36 @@
 ---
 isPublished: true
 seo:
-  description: Stair-Well Housing represents a concept for modular housing design
+  description:
+    Stair-Well Housing represents a concept for modular housing design
     intended to address NYCs dire need to bring low cost, efficient affordable
     housing to the five boroughs.
   title: "Stair-well Housing "
   image: stairwell_seo_1200x630.jpg
 templateKey: project
 title: Stair-Well Housing
+slug: nyc-affordable-housing
+redirects:
+  - permanent: true
+    from: Stair-Well-Housing
+categories:
+  - Commercial
 heroImage:
   image: stairwell_ph_3800x1900_aia.jpg
   portraitImage: STAIRWELL_PH_1500x2000_AIA.jpg
-workDescription: A modular stack for joyful and smart affordable housing in NYC
-type: commercial
 headline: EMBRACE THE CORE
+infoObjects:
+  infoObject:
+    - description: Competition entry
+      title: CLIENT
+    - description: Modular, ground-up affordable housing
+      title: SCOPE
+    - description: AIA Design Excellence Award BQDA 2018
+      title: Awards
+  titleInfoObject:
+    title: DESCRIPTION
+    description: "NYC Affodable Housing "
+workDescription: A modular stack for joyful and smart affordable housing in NYC
 featured:
   featuredDescription: Stair-well housing proposes modular affordable housing
     units which incorporate a stair. As the units stack, the stair core is
@@ -25,13 +42,6 @@ featured:
   isFeatured: true
 previewImage:
   image: STAIR-WELL_index.jpg
-infoObject:
-  - description: Competition entry
-    title: CLIENT
-  - description: Modular, ground-up affordable housing
-    title: SCOPE
-  - description: AIA Design Excellence Award BQDA 2018
-    title: Awards
 primaryImage:
   caption: Rotating, mirroring and stacking modular units brings both exterior
     space and facade to the streetscape
@@ -73,7 +83,8 @@ projectGallery:
     image: STAIR-WELL_-(15)_1820.jpg
     type: image
     offsetWidth: "0"
-  - caption: Section perspective shows the alternating private interior vs public
+  - caption:
+      Section perspective shows the alternating private interior vs public
       exterior
     colWidth: "10"
     image: STAIR-WELL_-(3)_1820.jpg
@@ -85,19 +96,20 @@ projectGallery:
     type: image
     offsetWidth: "0"
 ---
+
 Stair-Well Housing represents a concept for modular housing
- design intended to address NYCs dire need to bring low
- cost, efficient affordable housing to the five boroughs. The
- flexible, stacking design is designed to take advantage of
- the many vacant infill lots located in developing, low-rise
- neighborhoods in the 5 boroughs. The invention is in the
- single stair run integrated into each module which, when
- stacked, provides continuous access to the unit above and
- integrates egress pathways.
+design intended to address NYCs dire need to bring low
+cost, efficient affordable housing to the five boroughs. The
+flexible, stacking design is designed to take advantage of
+the many vacant infill lots located in developing, low-rise
+neighborhoods in the 5 boroughs. The invention is in the
+single stair run integrated into each module which, when
+stacked, provides continuous access to the unit above and
+integrates egress pathways.
 
 The inclusion of private interior and exterior spaces
- and the use of the sun-filled common stairwell as the
- heart of the shared community spaces help Stair-Well Housing
- marry efficient and adaptable modular construction techniques
- with the power of design, bringing dignity and joy to
- its residents.
+and the use of the sun-filled common stairwell as the
+heart of the shared community spaces help Stair-Well Housing
+marry efficient and adaptable modular construction techniques
+with the power of design, bringing dignity and joy to
+its residents.

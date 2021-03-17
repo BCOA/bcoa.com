@@ -23,9 +23,15 @@ export default (props) => {
     caption: props.widgetsFor("primaryImage").getIn(["data", "caption"]),
     alt: props.widgetsFor("primaryImage").getIn(["data", "alt"]),
   };
-  const infoObject = props.widgetsFor("infoObject");
+
+  const { titleInfoObject, infoObject } = props
+    .widgetsFor("infoObjects")
+    .getIn(["data"])
+    .toJS();
+
   const projectGallery = props.widgetsFor("projectGallery");
   let firstGalleryImage;
+
   projectGallery.map((item, i) => {
     if (item) {
       if (item.getIn(["data", "type"]) === "image" && i === 0) {
@@ -62,9 +68,9 @@ export default (props) => {
       <div className="container marginTop-5 bp-1_marginTop-9 bp-2_marginTop-31">
         <div className="grid-12col">
           <div className="colSpan-5">
-            <h1 className="f-headline-b marginBottom-4 bp-1_marginBottom-13 bp-2_marginBottom-11">
+            <h3 className="f-headline-b marginBottom-4 bp-1_marginBottom-13 bp-2_marginBottom-11">
               {headline}-
-            </h1>
+            </h3>
             {body && (
               <div
                 className="md marginBottom-5 bp-1_marginBottom-5 bp-2_marginBottom-10"
@@ -72,28 +78,27 @@ export default (props) => {
               />
             )}
 
-            {!!infoObject.length && (
+            {infoObject && (
               <div className="infoObjects">
-                <dl className="grid-2col marginBottom-12 bp-1_marginBottom-16 bp-2_marginBottom-24">
-                  {infoObject.map((item, i) => {
-                    if (item) {
-                      return (
-                        <div
+                {infoObject && (
+                  <>
+                    <dl className="bp-1_grid-2col marginBottom-8 bp-1_marginBottom-13 bp-2_marginBottom-24">
+                      {titleInfoObject && (
+                        <TitleInfoObject
+                          title={titleInfoObject.title}
+                          description={titleInfoObject.description}
+                        />
+                      )}
+                      {infoObject.map((item, i) => (
+                        <InfoObject
                           key={`infoObject-${i}`}
-                          className="marginBottom-4 bp-2_marginBottom-6"
-                        >
-                          <dt className="f-credit">
-                            {item.getIn(["data", "title"])}
-                          </dt>
-                          <dd className="f-caption">
-                            {item.getIn(["data", "description"])}
-                          </dd>
-                        </div>
-                      );
-                    }
-                    return null;
-                  })}
-                </dl>
+                          title={item.title}
+                          description={item.description}
+                        />
+                      ))}
+                    </dl>
+                  </>
+                )}
               </div>
             )}
           </div>
@@ -152,6 +157,24 @@ export default (props) => {
           )}
         </div>
       </div>
+    </div>
+  );
+};
+
+const InfoObject = ({ title, description }) => {
+  return (
+    <div className="marginBottom-4 bp-2_marginBottom-6">
+      <dt className="f-credit">{title}</dt>
+      <dd className="f-caption">{description}</dd>
+    </div>
+  );
+};
+
+const TitleInfoObject = ({ title, description }) => {
+  return (
+    <div className="marginBottom-4 bp-2_marginBottom-6">
+      <span className="f-credit">{title}</span>
+      <h1 className="f-caption f-copy">{description}</h1>
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import useContactMetadata from "../components/ContactMetadata";
+import Image from "../components/Image";
 
 const ContactPageTemplate = ({ data }) => {
   const pageFields = data.mdx.frontmatter;
@@ -16,9 +16,13 @@ const ContactPageTemplate = ({ data }) => {
     >
       <SEO
         postImage={
-          pageFields.seo.image
-            ? pageFields.seo.image.childImageSharp.fluid.src
-            : null
+          pageFields.seo?.image
+            ? pageFields.seo.image.extension === "gif"
+              ? pageFields.seo.image.publicURL
+              : pageFields.seo.image.childImageSharp.fluid.src
+            : pageFields.heroImage.image.extension === "gif"
+            ? pageFields.heroImage.image.publicURL
+            : pageFields.heroImage.image.childImageSharp.fluid.src
         }
         postData={pageFields}
       />
@@ -35,12 +39,7 @@ const ContactPageTemplate = ({ data }) => {
                       bp-1_marginBottom-8
                       bp-2_marginBottom-15"
       >
-        {pageFields.heroImage.image && (
-          <Img
-            fluid={pageFields.heroImage.image.childImageSharp.fluid}
-            alt={pageFields.heroImage.alt}
-          />
-        )}
+        {pageFields.heroImage.image && <Image {...pageFields.heroImage} />}
       </div>
 
       <div
@@ -121,6 +120,8 @@ export const query = graphql`
           title
           description
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1200) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -131,6 +132,8 @@ export const query = graphql`
         message
         heroImage {
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 3800, quality: 75) {
                 ...GatsbyImageSharpFluid_withWebp

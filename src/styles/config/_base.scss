@@ -7,6 +7,11 @@ html {
   box-sizing: inherit;
 }
 
+html,
+body {
+  min-height: 100vh;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -27,27 +32,24 @@ body {
   font-feature-settings: "lnum" off; /* lining-figures: on or off */
   font-feature-settings: "ss01" off; /* alternate glyphs: on or off */
 
-  
   @include f-copy;
   font-display: auto;
 }
 
-#___gatsby {
-  // flex: 1 0 0%;
-  // display: flex;
-  // flex-direction: column;
-
-  & > div {
-    // flex: 1 0 0%;
-    // display: flex;
-    // flex-direction: column;
-  }
+#___gatsby,
+#gatsby-focus-wrapper,
+#gatsby-focus-wrapper > div {
+  flex: 1 0 0%;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
   width: 100%;
   margin: 0 auto;
-  // flex: 1 0 0%;
+  flex: 1 0 0%;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -90,7 +92,14 @@ a {
   }
 }
 
-h1, h2, h3, h4, h5, h6, p, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
   margin: 0;
 }
 
@@ -127,6 +136,7 @@ button {
   font-family: inherit;
   font-size: inherit;
   outline: none;
-  &:active{ color: currentColor }
-
+  &:active {
+    color: currentColor;
+  }
 }

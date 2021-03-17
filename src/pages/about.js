@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import Img from "gatsby-image";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+import Image from "../components/Image";
 // import Content, { HTMLContent } from '../components/Content'
 
 const AboutPageTemplate = ({ data }) => {
@@ -139,11 +139,14 @@ const AboutPageTemplate = ({ data }) => {
               Awards
             </h2>
             <ul className="marginBottom-15 bp-1_marginBottom-24">
-              {fields.awards.map((award, i) => (
-                <li key={`award-${i}`}>
-                  <Award award={award} />
-                </li>
-              ))}
+              {fields.awards.map((award, i) => {
+                console.log(award);
+                return (
+                  <li key={`award-${i}`}>
+                    <Award award={award} />
+                  </li>
+                );
+              })}
             </ul>
           </div>
         )}
@@ -198,6 +201,8 @@ export const aboutPageQuery = graphql`
           title
           description
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1200) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -209,6 +214,8 @@ export const aboutPageQuery = graphql`
           name
           image {
             image {
+              extension
+              publicURL
               childImageSharp {
                 fluid(maxWidth: 768, quality: 75) {
                   ...GatsbyImageSharpFluid_withWebp
@@ -224,14 +231,14 @@ export const aboutPageQuery = graphql`
         }
         publications {
           title
-          visibleDate
+          datePublished(formatString: "MMMM YYYY")
           url
           publisher
         }
         awards {
           title
           orgName
-          visibleDate
+          dateAwarded(formatString: "MMMM YYYY")
           url
         }
         collaborators {
@@ -256,11 +263,7 @@ const Member = ({ member }) => (
   >
     {!member.principal && <hr className=" marginBottom-2" />}
     {member.principal && member.image && member.image.image && (
-      <Img
-        className="marginBottom-3 bp-1_marginBottom-2"
-        fluid={member.image.image.childImageSharp.fluid}
-        alt={member.image.alt}
-      />
+      <Image className="marginBottom-3 bp-1_marginBottom-2" {...member.image} />
     )}
     <h3 className=" f-copy-bold">{member.name}</h3>
     <p className={`${member.principal ? "f-copy-bold" : ""}`}>
@@ -284,28 +287,32 @@ const Publication = ({ publication }) => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      {publication.title} &#8212; {publication.publisher}
+      {publication.title}{" "}
+      {publication.publisher !== " " && `— ${publication.publisher}`}
     </a>
-    {publication.visibleDate && (
-      <p className="f-copy">{publication.visibleDate}</p>
+    {publication.datePublished && (
+      <p className="f-copy">{publication.datePublished}</p>
     )}
   </div>
 );
 
-const Award = ({ award }) => (
-  <div className="paddingBottom-7">
-    <hr className=" marginBottom-2" />
-    <a
-      className="f-copy-bold defaultLink"
-      href={award.url}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {award.title} &#8212; {award.orgName}
-    </a>
-    {award.visibleDate && <p>{award.visibleDate}</p>}
-  </div>
-);
+const Award = ({ award }) => {
+  console.log(award);
+  return (
+    <div className="paddingBottom-7">
+      <hr className=" marginBottom-2" />
+      <a
+        className="f-copy-bold defaultLink"
+        href={award.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {award.title} {award.orgName !== " " && `— ${award.orgName}`}
+      </a>
+      {award.dateAwarded && <p>{award.dateAwarded}</p>}
+    </div>
+  );
+};
 
 const Collaborator = ({ collaborator }) => (
   <div>
