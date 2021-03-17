@@ -1,7 +1,7 @@
 ---
 title: S-M-L Loft receives Architect Magazine Design Award
 templateKey: article
-slug: S-M-L-Loft-receives-Architect-Magazine-Design-Award
+slug: News-Architect-Magazine-Award
 image:
   image: ra-awards_1820x1024_rev.jpg
   alt: Soho Loft wins Architect Magazine Residential Interiors award
