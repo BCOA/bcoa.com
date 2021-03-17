@@ -1,7 +1,7 @@
 ---
 title: NECD - NEW FACTORY AND OFFICES COMPLETED
 templateKey: article
-slug: NECD-NEW-FACTORY-AND-OFFICES-COMPLETED
+slug: NECD-NECD
 image:
   image: necd_bny_1160x1740.jpg
   isPortrait: true
