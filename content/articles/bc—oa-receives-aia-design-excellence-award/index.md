@@ -1,7 +1,7 @@
 ---
 title: Stairwell Housing Receives AIA Design Excellence Award
 templateKey: article
-slug: Stairwell-Housing-Receives–AIA–Design–Excellence–Award
+slug: News-Affordable-Housing-NYC
 image:
   image: stair-well_1160x1740.jpg
   isPortrait: true
