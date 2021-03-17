@@ -60,9 +60,6 @@ projectGallery:
     image: 10-Astor_(10)_1820.jpg
     offsetWidth: "2"
     type: image
-type: commercial
-categories:
-  - test
 ---
 
 An institutional lobby in the heart of Astor Place required a total modernization to create a clean and inviting entry. The design approach called for interactive and inventive materials to match the institution’s forward thinking. A media wall ribbons, or wraps, its way around the perimeter of the space to help navigate visitors to their destinations while also informing the elevator location, weather, and current events. The media walls, white glass panels, hanging LED light strips and the polished concrete floors collectively tie the space into one cohesive, contemporary experience.
