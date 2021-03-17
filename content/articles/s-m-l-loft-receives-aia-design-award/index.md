@@ -1,7 +1,7 @@
 ---
 title: S-M-L Loft receives AIA Design Award
 templateKey: article
-slug: S-M-L-Loft-receives-AIA-Design-Award
+slug: News-Loft-AIA-Award
 image:
   image: bc-oa_aianys-awards_1160x1740.jpg
   isPortrait: true
