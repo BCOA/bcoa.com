@@ -1,7 +1,7 @@
 ---
 title: VISIT US AT OHNY
 templateKey: article
-slug: VISIT-US–AT-OHNY
+slug: News-OHNY
 image:
   image: ohnylogo_light-grey_1820x1024.jpg
   alt: Open House New York BC–OA
