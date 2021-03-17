@@ -1,7 +1,7 @@
 ---
 title: NYC Parks Department Interview
 templateKey: article
-slug: NYC-Parks-Department-Interview
+slug: News-NYC-Parks
 image:
   alt: NYC Parks architecture rendering
   image: riverside_-8-_1820x1024.jpg
