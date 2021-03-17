@@ -140,7 +140,6 @@ const AboutPageTemplate = ({ data }) => {
             </h2>
             <ul className="marginBottom-15 bp-1_marginBottom-24">
               {fields.awards.map((award, i) => {
-                console.log(award);
                 return (
                   <li key={`award-${i}`}>
                     <Award award={award} />
@@ -297,7 +296,6 @@ const Publication = ({ publication }) => (
 );
 
 const Award = ({ award }) => {
-  console.log(award);
   return (
     <div className="paddingBottom-7">
       <hr className=" marginBottom-2" />
