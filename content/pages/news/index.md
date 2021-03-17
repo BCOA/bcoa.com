@@ -1,8 +1,8 @@
 ---
 seo:
-  title: Loft Construction Process
-  description: Taking shape!
-  image: animation.gif
+  title: BC-OA News
+  description: The latest news from BC–OA
+  image: placeholder.jpg
 templateKey: news
 title: News
 ---
