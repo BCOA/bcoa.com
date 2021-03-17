@@ -1,7 +1,7 @@
 ---
 title: Crosby Loft II Featured on Archello
 templateKey: article
-slug: Crosby-Loft-II–Featured-on-Archello
+slug: News-Soho-Loft
 image:
   isPortrait: false
   image: archello-crosby.jpg
