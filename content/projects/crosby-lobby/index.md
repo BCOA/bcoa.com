@@ -10,6 +10,8 @@ title: Crosby Lobby
 slug: soho-lobby-1
 redirects:
   - permanent: true
+    from: crosby-lobby
+  - permanent: true
     from: Crosby-Lobby
 categories:
   - Commercial

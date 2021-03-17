@@ -8,6 +8,11 @@ seo:
     public and private spaces.
 templateKey: project
 slug: soho-loft-1
+redirects:
+  - permanent: true
+    from: crosby-loft-1
+  - permanent: true
+    from: Soho-Loft-1
 categories:
   - Residential
   - Lofts
