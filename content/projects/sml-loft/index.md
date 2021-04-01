@@ -17,7 +17,7 @@ categories:
   - Residential
   - Lofts
 heroImage:
-  alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
+  alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Columns
     Oak "
   image: objectloftheroimage_cropped_3800.jpg
   portraitImage: 20greene_ph_1500x2000.jpg
@@ -51,7 +51,7 @@ featured:
   isFeatured: true
 previewImage:
   image: index_copyright_barkow_photo_6363.jpg
-  alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
+  alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Columns
     Oak "
 primaryImage:
   image: OBJECT-LOFT_-(14)_1820.jpg
