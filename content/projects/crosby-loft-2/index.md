@@ -2,9 +2,9 @@
 isPublished: true
 seo:
   image: 45crosby5n_seo_1200x630.jpg
-  title: Crosby Loft II
-  description:
-    Architects BC—OA design a distressed bronze feature cabinet at this
+  title: NYC Architects | Soho Loft Renovations | BC-OA Architect | Luxury Loft
+    Renovation
+  description: Architects BC—OA design a distressed bronze feature cabinet at this
     NYC Soho loft renovation.
 templateKey: project
 title: Crosby Loft II
@@ -20,73 +20,84 @@ categories:
 heroImage:
   image: 45crosby5n_ph_3800x1900.jpg
   portraitImage: 45CROSBY5N_PH_1500x2000.jpg
+  alt: "Soho Loft Architect Architecture Gut Renovation Renovate "
 headline: Expose the old, Insert the new, distress, repeat
 featured:
-  featuredDescription:
-    Contemporary materials contrast the original highlights of
+  featuredDescription: Contemporary materials contrast the original highlights of
     this SoHo converted loft
   featuredImage:
-    alt: this is the alt text
+    alt: "Soho Loft Architect Architecture Gut Renovation Renovate "
     image: 45-crosby_5n_-14-_1160x1740.jpg
   isFeatured: true
 previewImage:
   image: 45-CROSBY_5N_index.jpg
+  alt: Soho Loft Architect Architecture Gut Renovation Renovate Kitchen
 infoObjects:
   infoObject:
     - description: 2300 sf
       title: Size
-    - description: Completed Spring 2017
+    - description: Completed 2017
       title: Status
     - description: "Christian Harder Photography "
       title: Photography
   titleInfoObject:
     title: DESCRIPTION
-    description: Soho Loft Renovation
+    description: NYC Soho Loft Renovation
 primaryImage:
-  caption:
-    A soft, tufted built-in bench contrasts the exposed brick and original
+  caption: A soft, tufted built-in bench contrasts the exposed brick and original
     tin ceilings
   image: 45-CROSBY_5N_-(11)_1820.jpg
+  alt: Soho Loft Architect Architecture Gut Renovation Renovate Dining Live Edge
 projectGallery:
   - caption: Floating distressed bronze cabinets separate the public and private spaces
     colWidth: "6"
     image: 45-CROSBY_5N_-(23)_1820.jpg
     type: image
     offsetWidth: "0"
+    alt: Soho Loft Architect Architecture Gut Renovation Renovate Bronze
   - caption: Cat / floor coordination = essential
     colWidth: "8"
     image: 45-CROSBY_5N_-(20)_1820.jpg
     offsetWidth: "4"
     type: image
+    alt: Soho Loft Architect Architecture Gut Renovation Renovate Living Room
+      Exposed Tin Ceiling
   - colWidth: "12"
-    image: Crosby_5N_C.jpg
+    image: 45-crosby_5n_-14-_1160x1740.jpg
     type: image
     offsetWidth: "0"
+    alt: Soho Loft Architect Architecture Gut Renovation Renovate Kitchen Bronze
   - pullQuote: Distressed Bronze - new | Distressed Tin - old
     type: quote
   - colWidth: "12"
     image: 45crosby5n_newplan_3800.jpg
     type: image
     offsetWidth: "0"
+    alt: Soho Loft Architect Architecture Gut Renovation Renovate Plan
   - colWidth: "6"
     image: 45-crosby_5n_-5-_1820_cropped.jpg
     offsetWidth: "0"
     type: image
+    alt: Soho Loft Architect Architecture Gut Renovation Renovate Reading Nook
   - colWidth: "6"
     image: 45-CROSBY_5N_-(17)_1820.jpg
     type: image
     offsetWidth: "0"
+    alt: "Soho Loft Architect Architecture Gut Renovation Renovate "
   - caption: Living room view through to original fire door and timber column
     colWidth: "10"
     image: 45-CROSBY_5N_-(8)_1820.jpg
     offsetWidth: "2"
     type: image
+    alt: "Soho Loft Architect Architecture Gut Renovation Renovate "
   - colWidth: "4"
     image: 45-CROSBY_5N_-(15)_1820.jpg
     offsetWidth: "0"
     type: image
+    alt: Soho Loft Architect Architecture Gut Renovation Renovate Subway Tile
+      Bathroom
   - colWidth: "4"
-    image: 45-crosby_5n_-16-_1820_cropped.jpg
+    image: 45-CROSBY_5N_-(16)_1820.jpg
     type: image
     offsetWidth: "0"
 ---
