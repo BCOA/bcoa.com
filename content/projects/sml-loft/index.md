@@ -19,7 +19,7 @@ categories:
 heroImage:
   alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
     Oak "
-  image: 20-greene-gif-small.gif
+  image: objectloftheroimage_cropped_3800.jpg
   portraitImage: 20greene_ph_1500x2000.jpg
 headline: Exhibit the ordinary
 infoObjects:
