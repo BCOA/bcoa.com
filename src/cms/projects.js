@@ -1,48 +1,45 @@
-import React from "react";
-import Hero from "../components/Hero";
-import ProjectImage from "../components/ProjectImage";
+import React from 'react';
+import Hero from '../components/Hero';
+import ProjectImage from '../components/ProjectImage';
 
 export default (props) => {
   const entry = props.entry;
-  const title = entry.getIn(["data", "title"]);
-  const headline = entry.getIn(["data", "headline"]);
-  const condition = entry.getIn(["data", "condition"]);
-  const body = entry.getIn(["data", "body"]);
+  const title = entry.getIn(['data', 'title']);
+  const headline = entry.getIn(['data', 'headline']);
+  const condition = entry.getIn(['data', 'condition']);
+  const body = entry.getIn(['data', 'body']);
   const heroImg =
-    props.widgetsFor("heroImage").getIn(["data", "image"]) &&
+    props.widgetsFor('heroImage').getIn(['data', 'image']) &&
     props
-      .getAsset(props.widgetsFor("heroImage").getIn(["data", "image"]))
+      .getAsset(props.widgetsFor('heroImage').getIn(['data', 'image']))
       .toString();
 
   const primaryImg = {
     image:
-      props.widgetsFor("primaryImage").getIn(["data", "image"]) &&
+      props.widgetsFor('primaryImage').getIn(['data', 'image']) &&
       props
-        .getAsset(props.widgetsFor("primaryImage").getIn(["data", "image"]))
+        .getAsset(props.widgetsFor('primaryImage').getIn(['data', 'image']))
         .toString(),
-    caption: props.widgetsFor("primaryImage").getIn(["data", "caption"]),
-    alt: props.widgetsFor("primaryImage").getIn(["data", "alt"]),
+    caption: props.widgetsFor('primaryImage').getIn(['data', 'caption']),
+    alt: props.widgetsFor('primaryImage').getIn(['data', 'alt']),
   };
 
-  const { titleInfoObject, infoObject } = props
-    .widgetsFor("infoObjects")
-    .getIn(["data"])
-    .toJS();
+  const { titleInfoObject, infoObject } = props.widgetsFor('infoObjects');
 
-  const projectGallery = props.widgetsFor("projectGallery");
+  const projectGallery = props.widgetsFor('projectGallery');
   let firstGalleryImage;
 
   projectGallery.map((item, i) => {
     if (item) {
-      if (item.getIn(["data", "type"]) === "image" && i === 0) {
+      if (item.getIn(['data', 'type']) === 'image' && i === 0) {
         return (firstGalleryImage = {
           image:
-            item.getIn(["data", "image"]) &&
-            props.getAsset(item.getIn(["data", "image"])).toString(),
-          caption: item.getIn(["data", "caption"]),
-          alt: item.getIn(["data", "alt"]),
-          offsetWidth: item.getIn(["data", "offsetWidth"]),
-          colWidth: item.getIn(["data", "colWidth"]),
+            item.getIn(['data', 'image']) &&
+            props.getAsset(item.getIn(['data', 'image'])).toString(),
+          caption: item.getIn(['data', 'caption']),
+          alt: item.getIn(['data', 'alt']),
+          offsetWidth: item.getIn(['data', 'offsetWidth']),
+          colWidth: item.getIn(['data', 'colWidth']),
         });
       } else {
         return null;
@@ -63,7 +60,7 @@ export default (props) => {
         </div>
       </div>
 
-      {heroImg && <Hero image={heroImg} alt={"hero image"} />}
+      {heroImg && <Hero image={heroImg} alt={'hero image'} />}
 
       <div className="container marginTop-5 bp-1_marginTop-9 bp-2_marginTop-31">
         <div className="grid-12col">
@@ -84,17 +81,10 @@ export default (props) => {
                   <>
                     <dl className="bp-1_grid-2col marginBottom-8 bp-1_marginBottom-13 bp-2_marginBottom-24">
                       {titleInfoObject && (
-                        <TitleInfoObject
-                          title={titleInfoObject.title}
-                          description={titleInfoObject.description}
-                        />
+                        <TitleInfoObject data={titleInfoObject} />
                       )}
                       {infoObject.map((item, i) => (
-                        <InfoObject
-                          key={`infoObject-${i}`}
-                          title={item.title}
-                          description={item.description}
-                        />
+                        <InfoObject key={`infoObject-${i}`} data={infoObject} />
                       ))}
                     </dl>
                   </>
@@ -111,8 +101,8 @@ export default (props) => {
               <ProjectImage
                 className={
                   firstGalleryImage && firstGalleryImage.colWidth > 6
-                    ? ""
-                    : "absolute"
+                    ? ''
+                    : 'absolute'
                 }
                 key="primary-image"
                 imageData={primaryImg}
@@ -125,17 +115,17 @@ export default (props) => {
             <div className="project-images grid-12col">
               {projectGallery.map((item, i) => {
                 if (item) {
-                  if (item.getIn(["data", "type"]) === "image") {
+                  if (item.getIn(['data', 'type']) === 'image') {
                     const image = {
                       image:
-                        item.getIn(["data", "image"]) &&
+                        item.getIn(['data', 'image']) &&
                         props
-                          .getAsset(item.getIn(["data", "image"]))
+                          .getAsset(item.getIn(['data', 'image']))
                           .toString(),
-                      caption: item.getIn(["data", "caption"]),
-                      alt: item.getIn(["data", "alt"]),
-                      offsetWidth: item.getIn(["data", "offsetWidth"]),
-                      colWidth: item.getIn(["data", "colWidth"]),
+                      caption: item.getIn(['data', 'caption']),
+                      alt: item.getIn(['data', 'alt']),
+                      offsetWidth: item.getIn(['data', 'offsetWidth']),
+                      colWidth: item.getIn(['data', 'colWidth']),
                     };
                     return <ProjectImage key={i} index={i} imageData={image} />;
                   } else {
@@ -146,7 +136,7 @@ export default (props) => {
                                             marginBottom-11 bp-1_marginBottom-13 bp-2_marginBottom-28
                                             marginTop-5 bp-1_marginTop-8 bp-2_marginTop-14"
                       >
-                        {item.getIn(["data", "pullQuote"])}
+                        {item.getIn(['data', 'pullQuote'])}
                       </blockquote>
                     );
                   }
@@ -161,20 +151,24 @@ export default (props) => {
   );
 };
 
-const InfoObject = ({ title, description }) => {
+const InfoObject = ({ data }) => {
+  if (!data) return null;
+  const infoObject = data.getIn(['data']).toJS();
   return (
     <div className="marginBottom-4 bp-2_marginBottom-6">
-      <dt className="f-credit">{title}</dt>
-      <dd className="f-caption">{description}</dd>
+      <dt className="f-credit">{infoObject.title}</dt>
+      <dd className="f-caption">{infoObject.description}</dd>
     </div>
   );
 };
 
-const TitleInfoObject = ({ title, description }) => {
+const TitleInfoObject = ({ data }) => {
+  if (!data) return null;
+  const infoObject = data.getIn(['data']).toJS();
   return (
     <div className="marginBottom-4 bp-2_marginBottom-6">
-      <span className="f-credit">{title}</span>
-      <h1 className="f-caption f-copy">{description}</h1>
+      <span className="f-credit">{infoObject.title}</span>
+      <h1 className="f-caption f-copy">{infoObject.description}</h1>
     </div>
   );
 };
