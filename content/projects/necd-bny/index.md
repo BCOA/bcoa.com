@@ -8,6 +8,8 @@ title: NECD @ BNY
 slug: navy-yard-office
 redirects:
   - permanent: true
+    from: necd-bny
+  - permanent: true
     from: NECD-at-BNY
 categories:
   - Commercial

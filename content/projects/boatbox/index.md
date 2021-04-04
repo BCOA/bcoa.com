@@ -3,9 +3,6 @@ isPublished: true
 templateKey: project
 title: Boatbox
 slug: boatbox
-redirects:
-  - permanent: true
-    from: Boatbox
 categories:
   - Commercial
 heroImage:

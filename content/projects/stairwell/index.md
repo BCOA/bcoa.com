@@ -13,6 +13,8 @@ slug: nyc-affordable-housing
 redirects:
   - permanent: true
     from: Stair-Well-Housing
+  - permanent: true
+    from: stairwell
 categories:
   - Commercial
 heroImage:

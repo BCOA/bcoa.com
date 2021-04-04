@@ -6,6 +6,8 @@ slug: house-renovation-la
 redirects:
   - permanent: true
     from: Barman
+  - permanent: true
+    from: barman
 categories:
   - Residential
 heroImage:

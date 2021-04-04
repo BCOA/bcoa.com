@@ -6,6 +6,8 @@ slug: nyc-kiosk-Bar
 redirects:
   - permanent: true
     from: Riverside-Kiosk-for-Harlem-Public
+  - permanent: true
+    from: riverside
 categories:
   - Commercial
 heroImage:
