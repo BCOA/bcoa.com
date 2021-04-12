@@ -23,8 +23,7 @@ studioMembers:
     name: Bronwyn Breitner, AIA
     principal: true
     principalInfo: ""
-  - description:
-      Luigi Ciaccia, LEED AP received his BArch with Distinction from The
+  - description: Luigi Ciaccia, LEED AP received his BArch with Distinction from The
       New York Institute of Technology. Prior to co-founding 590BC, Luigi had 5
       years of experience as a senior associate at RMJM leading design teams on
       large scale urban projects in Europe, Asia, Middle East and the US, and 7
@@ -55,30 +54,41 @@ studioMembers:
   - name: Yuliya Rubanska
     jobTitle: Designer
 publications:
+  - datePublished: 2021-04-07T04:00:00.000Z
+    date: April 7, 2021
+    title: BC—OA hides storage behind metal panels in renovated Soho loft
+    publisher: Dezeen
+    url: https://www.dezeen.com/2021/04/07/bc-oa-s-m-l-loft-apartment-new-york/
   - publisher: Dwell
     title: Top 5 Small Spaces of the Week With Serious Star Power
     url: https://www.dwell.com/article/small-space-design-ideas-98eb4748
     datePublished: 2019-02-01T05:00:00.000Z
+    date: April 12, 2021
   - publisher: The NYTimes
     title: Pre-War is So Last Year
     url: https://www.nytimes.com/2017/03/10/realestate/prewar-is-so-last-year.html
     datePublished: 2017-03-10T05:00:00.000Z
+    date: April 12, 2021
   - publisher: Dwell Magazine
     title: Dwell on Design NY
     url: https://www.dwell.com/collection/a-renovated-loft-in-soho-628c9992
     datePublished: 2016-10-09T04:00:00.000Z
+    date: April 12, 2021
   - publisher: Dwell Magazine OnLine, Diana Budds
     title: A Renovated Loft in Soho
     url: https://www.dwell.com/collection/a-renovated-loft-in-soho-628c9992
     datePublished: 2013-01-01T05:00:00.000Z
+    date: April 12, 2021
   - publisher: Satellite Magazine
     title: Brooklyn / BC—OA
     url: " "
     datePublished: 2012-01-12T05:00:00.000Z
+    date: April 12, 2021
   - publisher: Architect’s Newspaper
     title: Recharging Communities
     url: https://archpaper.com/2011/09/on-view-designyc-presents-recharging-communities/
     datePublished: 2011-09-20T04:00:00.000Z
+    date: April 12, 2021
 awards:
   - title: Design Excellence Award for S-M-L Loft
     orgName: SARA NY
@@ -87,7 +97,7 @@ awards:
     dateAwarded: 2020-12-23T05:00:00.000Z
   - orgName: Residential Architect Design Awards
     title: Citation Award for S-M-L Loft
-    url: https://www.architectmagazine.com/awards/residential-architect-design-awards/the-winners-of-the-2019-residential-architect-design-awards_o
+    url: https://www.architectmagazine.com/project-gallery/s-m-l-loft_o
     start: ""
     dateAwarded: 2019-12-23T05:00:00.000Z
   - orgName: AIANY
