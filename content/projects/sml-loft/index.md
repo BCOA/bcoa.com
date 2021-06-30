@@ -46,7 +46,7 @@ featured:
   featuredImage:
     image: 20-greene-st_-13-_1160x1740.jpg
     isPortrait: true
-    alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Colums
+    alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Columns
       Oak "
   isFeatured: true
 previewImage:
