@@ -2,7 +2,7 @@
 isPublished: true
 seo:
   image: 45crosby_seo_1200x630.jpg
-  title: NYC Architects | SoHo Lobby Renovations | BC-OA Architect | Industrial
+  title: NYC Architects | Soho Lobby Renovations | BC-OA Architect | Industrial
     Residential Lobby
   description: Architects BC—OA renovate the lobby of an old light bulb factory
     converted to a residential loft units in Soho NYC.
