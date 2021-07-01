@@ -17,7 +17,7 @@ categories:
   - Lofts
 heroImage:
   alt: Soho NYC Loft Architect Architecture Gut Renovation Renovate Exposed Brick
-    Kitchen
+    Kitchen Tin Ceiling
   image: 17thompson_ph_3800x1900.jpg
   portraitImage: 17THOMPSON_PH_1500x2000.jpg
 headline: "blur the boundaries "
@@ -34,19 +34,20 @@ workDescription: ""
 featured:
   featuredImage:
     alt: Soho NYC Loft Architect Architecture Gut Renovation Renovate Walnut
-      Concrete
+      Concrete Tin Ceiling
     image: 17-thompson_index.jpg
   isFeatured: false
 previewImage:
   image: 17-thompson_index.jpg
-  alt: Soho NYC Loft Architect Architecture Gut Renovation Renovate Walnut Concrete
+  alt: Soho NYC Loft Architect Architecture Gut Renovation Renovate Walnut
+    Concrete Tin Ceiling
 primaryImage:
   caption: The ceiling plane floats, projecting past the kitchen
   image: 17-thompson-cropped.jpg
   alt: Soho NYC Loft Architect Architecture Gut Renovation Entry
 projectGallery:
   - alt: Soho NYC Loft Architect Architecture Gut Renovation Renovate Exposed Brick
-      Living Room
+      Living Room Tin Ceiling
     caption: Exposed brick selectively painted or exposed to define zones within the
       large common area
     colWidth: "10"
