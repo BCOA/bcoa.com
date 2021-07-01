@@ -1,7 +1,7 @@
 ---
 isPublished: true
 seo:
-  title: NYC Architects | Soho Loft Renovations | BC-OA Architect | Luxury Loft
+  title: NYC Architects | Soho Loft Renovation | BC-OA Architect | Luxury Loft
     Renovation
   description: The gut renovation of this cast-iron Soho Loft by NYC and Brooklyn
     based contemporary architects BC—OA features industrial steel objects
@@ -17,8 +17,8 @@ categories:
   - Residential
   - Lofts
 heroImage:
-  alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Columns
-    Oak "
+  alt: "Soho NYC Loft Architect Architecture Gut Renovation Renovate Cast Iron
+    Columns Oak "
   image: objectloftheroimage_cropped_3800.jpg
   portraitImage: 20greene_ph_1500x2000.jpg
 headline: Exhibit the ordinary
@@ -46,16 +46,16 @@ featured:
   featuredImage:
     image: 20-greene-st_-13-_1160x1740.jpg
     isPortrait: true
-    alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Columns
+    alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast Iron Columns
       Oak "
   isFeatured: true
 previewImage:
   image: index_copyright_barkow_photo_6363.jpg
-  alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast-iron Columns
+  alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast Iron Columns
     Oak "
 primaryImage:
   image: OBJECT-LOFT_-(14)_1820.jpg
-  alt: "Soho Loft NYC Architect Architecture Gut Renovation Renovate Cast-iron
+  alt: "Soho Loft NYC Architect Architecture Gut Renovation Renovate Cast Iron
     Columns Oak "
   caption: View East showing the M object and original timber beam piercing an
     industrial glass and steel wall
