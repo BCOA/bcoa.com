@@ -1,5 +1,7 @@
 ---
 isPublished: true
+seo:
+  image: riverside_seo_1200x630.jpg
 templateKey: project
 title: Riverside Kiosk for Harlem Public
 slug: nyc-kiosk-Bar
