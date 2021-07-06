@@ -1,5 +1,7 @@
 ---
 isPublished: true
+seo:
+  image: 17w71st_seo_1200x630.jpg
 templateKey: project
 title: UWS Co-op
 slug: uws-coop
