@@ -2,6 +2,11 @@
 isPublished: true
 seo:
   image: reflect-showroom_seo_1200x630.jpg
+  title: NYC Architects | Soho Commercial Showroom Renovations | BC-OA Architect |
+    Elevecture Modern Glass Digital Display
+  description: >
+    Architects BC—OA design a commercial showroom in Soho NYC with custom glass
+    digital display panels for Elevecture and Corning.
 templateKey: project
 title: Elevecture Showroom I
 slug: nyc-showroom-1
@@ -13,6 +18,8 @@ categories:
 heroImage:
   image: reflect-showroom_ph_3800x1900.jpg
   portraitImage: REFLECT-SHOWROOM_PH_1500x2000.jpg
+  alt: Soho Commercial Showroom NYC Architect Architecture Renovation Renovate
+    Elevecture Glass Custom Digital Display Modular Light Panels Gorilla Glass
 headline: REFLECT INNOVATION IN GLASS
 infoObjects:
   infoObject:
@@ -20,8 +27,7 @@ infoObjects:
       title: CLIENT
     - description: Completed June 2013
       title: STATUS
-    - description:
-        Showroom Identity and Graphics by William Morrisey, Luis Bravo and
+    - description: Showroom Identity and Graphics by William Morrisey, Luis Bravo and
         Mikal Cook Photography by Lou Giacalone
       title: CREDITS
   titleInfoObject:
@@ -31,11 +37,16 @@ workDescription: Exploring the world of smart surfaces
 featured:
   featuredImage:
     image: reflect-showroom_seo_1200x630.jpg
-    alt: showroom
+    alt: Soho Commercial Showroom NYC Architect Architecture Renovation Renovate
+      Elevecture Glass Custom Digital Display Modular Light Panels Gorilla Glass
 previewImage:
   image: REFLECT-SHOWROOM_index_1.jpg
+  alt: Soho Commercial Showroom NYC Architect Architecture Renovation Renovate
+    Elevecture Glass Custom Digital Display Modular Light Panels Gorilla Glass
 primaryImage:
-  alt: ""
+  alt: Soho Commercial Showroom NYC Architect Architecture Renovation Renovate
+    Elevecture Glass Custom Digital Display Modular Light Panels Gorilla Glass
+    Integrated Lighting Branding
   caption: "Elevecture lights extend out of the flush glass panel wall and overhead "
   image: reflectshowroom_3800_4.jpg
 projectGallery:
@@ -44,21 +55,30 @@ projectGallery:
     image: reflectshowroom_3800_1.jpg
     type: image
     offsetWidth: "0"
-  - caption:
-      The mock elevator cab clad in Elevecture panels customized with a Paul
+    alt: Soho Commercial Showroom NYC Architect Architecture Renovation Renovate
+      Elevecture Glass Custom Digital Display Modular Light Panels Gorilla Glass
+  - caption: The mock elevator cab clad in Elevecture panels customized with a Paul
       Goldberger quote from the NY Times
     colWidth: "6"
     image: REFLECT-SHOWROOM_-(7)_1820.jpg
     offsetWidth: "6"
     type: image
+    alt: Soho Commercial Showroom NYC Architect Architecture Renovation Renovate
+      Elevecture Glass Custom Digital Display Modular Light Panels Gorilla Glass
+      Elevator Interior
   - colWidth: "12"
     image: reflectshowroom_3800_3.jpg
     offsetWidth: "0"
     type: image
+    alt: Soho Commercial Showroom NYC Architect Architecture Renovation Renovate
+      Elevecture Glass Custom Digital Display Modular Light Panels Gorilla Glass
   - colWidth: "10"
     image: reflect-showroom_promoplan-cropped_1820.jpg
     offsetWidth: "1"
     type: image
+    alt: Soho Commercial Showroom NYC Architect Architecture Renovation Renovate
+      Elevecture Glass Custom Digital Display Modular Light Panels Gorilla Glass
+      Plan
   - pullQuote: '"In truth, the elevator is a room...the smallest piece of
       architecture we enter on a regular basis"'
     type: quote
@@ -66,10 +86,16 @@ projectGallery:
     image: reflectshowroom_3800_2.jpg
     offsetWidth: "0"
     type: image
+    alt: Soho Commercial Showroom NYC Architect Architecture Renovation Renovate
+      Elevecture Glass Custom Digital Display Modular Light Panels Gorilla Glass
+      Branding Display
   - colWidth: "9"
     image: reflectshowroom_3800_5.jpg
     offsetWidth: "0"
     type: image
+    alt: Soho Commercial Showroom NYC Architect Architecture Renovation Renovate
+      Elevecture Glass Custom Digital Display Modular Light Panels Gorilla Glass
+      Display
 ---
 
 Corning® is one of the world's leading innovators in material science. Elevecture has worked in collaboration with Corning® to develop a revolutionary architectural surfaces product introducing the remarkable physical characteristics of Corning's Gorilla® Glass to the architectural world through a modular panel system.
