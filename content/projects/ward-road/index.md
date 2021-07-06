@@ -1,5 +1,7 @@
 ---
 isPublished: true
+seo:
+  image: ward-road_seo_1200x630.jpg
 templateKey: project
 title: Ward Road House
 slug: australia-house
@@ -38,8 +40,7 @@ primaryImage:
   caption: Exterior stair to high deck with water views
   image: ward-road_-16.jpg
 projectGallery:
-  - caption:
-      Local spotted gum timber shutters act to open or close one of the two
+  - caption: Local spotted gum timber shutters act to open or close one of the two
       master suites
     colWidth: "6"
     image: ward-road_-15.jpg
@@ -69,15 +70,13 @@ projectGallery:
   - colWidth: "6"
     image: ward-road_-20.jpg
     type: image
-  - pullQuote:
-      Conceived as a game of stacking and overlapping programmatic building
+  - pullQuote: Conceived as a game of stacking and overlapping programmatic building
       blocks
     type: quote
   - colWidth: "12"
     image: ward-road_-8-_3800.jpg
     type: image
-  - caption:
-      The large common space accommodates all the families at once, flooded
+  - caption: The large common space accommodates all the families at once, flooded
       with northern light and views to  Swan Bay
     colWidth: "8"
     image: ward-road_-7-_2480.jpg
