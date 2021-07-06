@@ -1,5 +1,7 @@
 ---
 isPublished: true
+seo:
+  image: barman_seo_1200x630.jpg
 templateKey: project
 title: Barman
 slug: house-renovation-la
