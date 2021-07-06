@@ -1,5 +1,7 @@
 ---
 isPublished: true
+seo:
+  image: clarksonparkside_seo_1200x630.jpg
 templateKey: project
 title: The Lawrence
 slug: brooklyn-lobby
@@ -45,8 +47,7 @@ projectGallery:
     image: lobby3.jpg
     offsetWidth: "4"
     type: image
-  - caption:
-      A terrazzo floor with inlay detailing leads through the lobby to the
+  - caption: A terrazzo floor with inlay detailing leads through the lobby to the
       double height recreation room below
     colWidth: "10"
     image: lobby1.2_cropped.jpg
