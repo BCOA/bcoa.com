@@ -1,5 +1,7 @@
 ---
 isPublished: true
+seo:
+  image: eastriversidesciencepark_seo_1200x630.jpg
 templateKey: project
 title: East River Kiosk
 slug: nyc-kiosk-design
