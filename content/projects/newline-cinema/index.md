@@ -1,5 +1,7 @@
 ---
 isPublished: true
+seo:
+  image: newline-cinema_seo_1200x630.jpg
 templateKey: project
 title: Newline Cinema
 slug: la-offfice-renovation
@@ -47,8 +49,7 @@ projectGallery:
   - colWidth: "4"
     image: new-line-cinema_-2-cropped_1820.jpg
     type: image
-  - pullQuote:
-      Materials formerly rendered normative are re-presented in a seemingly
+  - pullQuote: Materials formerly rendered normative are re-presented in a seemingly
       chaotic manner
     type: quote
   - colWidth: "6"
@@ -57,8 +58,7 @@ projectGallery:
   - colWidth: "6"
     image: new-line-cinema_-9-cropped_1820.jpg
     type: image
-  - caption:
-      '"Skylight" voids in the acoustical ceiling tile expose the original
+  - caption: '"Skylight" voids in the acoustical ceiling tile expose the original
       concrete structure'
     colWidth: "12"
     image: new-line-cinema_-1-cropped_1820.jpg
