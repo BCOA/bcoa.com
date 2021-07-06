@@ -1,5 +1,7 @@
 ---
 isPublished: true
+seo:
+  image: boatbox_seo_1200x630.jpg
 templateKey: project
 title: Boatbox
 slug: boatbox
