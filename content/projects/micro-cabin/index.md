@@ -1,5 +1,12 @@
 ---
 isPublished: true
+seo:
+  title: NYC Architects | Long Island Cabin | BC-OA Architect | Guest House |
+    Upstate Vacation Home
+  description: >
+    NYC architects BC—OA design a tiny house guest cabin on an existing
+    foundation to be used as a mini vacation home in a nature retreat.
+  image: microcabin_seo_1200x630.jpg
 templateKey: project
 title: Micro Cabin
 slug: microcabin
@@ -9,7 +16,8 @@ redirects:
 categories:
   - Residential
 heroImage:
-  alt: Micro Cabin - residential reclaimed materials small houses tiny houses
+  alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+    Home Reclaimed Materials Small Houses Natural Nature Retreat
   image: microcabin_ph_3800x1900.jpg
   portraitImage: MICROCABIN_PH_1500x2000.jpg
 headline: CRAFT A JEWEL BOX
@@ -26,66 +34,82 @@ infoObjects:
     description: Micro Cabin
 workDescription: A 325sf guest cabin in Montauk
 featured:
-  featuredDescription:
-    A Micro Cabin - the size of a single car garage - with all
+  featuredDescription: A Micro Cabin - the size of a single car garage - with all
     the fixin's on an existing foundation in Montauk, NY.
   featuredImage:
-    alt: this is the alt text
+    alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+      Home Reclaimed Materials Small Houses Natural Nature Retreat
     image: microcabin_-7-_1820x1024.jpg
     isPortrait: false
   isFeatured: true
 previewImage:
-  alt:
-    Micro Cabin - residential living room with cast iron stove stair porn micro
-    living
+  alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+    Home Reclaimed Materials Small Houses Natural Nature Retreat Cast Iron Stove
+    Storage Stairs Functional
   image: preview.jpg
 primaryImage:
-  alt: Micro Cabin - residential living space
+  alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+    Home Reclaimed Materials Small Houses Natural Nature Retreat Cast Iron Stove
+    Storage Stairs Functional
   caption: A sunken lounge faces a large picture window and cast iron pellet stove
   image: primary.jpg
 projectGallery:
-  - alt: Micro Cabin - Outdoors retreat
+  - alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+      Home Reclaimed Materials Small Houses Natural Nature Retreat Hidden
+      Storage Functional
     colWidth: "6"
     image: secondary.jpg
     type: image
-  - alt: Micro Cabin - Outdoors retreat
-    caption:
-      A reclaimed hickory wood facade punctured by windows overlooking the
+  - alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+      Home Reclaimed Materials Small Houses Natural Nature Retreat
+    caption: A reclaimed hickory wood facade punctured by windows overlooking the
       National Forest Service land
     colWidth: "10"
     image: micro-cabin_1.jpg
     offsetWidth: "2"
     type: image
-  - alt: Micro Cabin - residential bedroom with built in shelves
+  - alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+      Home Reclaimed Materials Small Houses Natural Nature Retreat Hidden
+      Storage Functional Built-In
     colWidth: "8"
     image: micro-cabin_2.jpg
     type: image
-  - alt: Micro Cabin - residential tile bathroom with glass shower
+  - alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+      Home Reclaimed Materials Small Houses Natural Nature Retreat Bathroom
+      Window Subway Tile Open Shower
     colWidth: "4"
     image: micro-cabin_3.jpg
     type: image
   - pullQuote: 323sf, packed with all the fixin's
     type: quote
-  - alt: Micro Cabin - architectural rendering
+  - alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+      Home Reclaimed Materials Small Houses Natural Nature Retreat Rendering
+      Double-Height
     colWidth: "6"
     image: micro-cabin_4.jpg
     type: image
-  - alt: Micro Cabin - architectural rendering
+  - alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+      Home Reclaimed Materials Small Houses Natural Nature Retreat Rendering
+      Double-Height
     colWidth: "6"
     image: micro-cabin_5.jpg
     type: image
-  - alt: Micro Cabin - residential tiny home kitchen
+  - alt: "New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+      Home Reclaimed Materials Small Houses Natural Nature Retreat Storage
+      Stairs Functional Hidden Storage Built-In "
     caption: The micro kitchen, framed by the fir-plywood stair with operable
       cabinets doubling as stair treads.
     colWidth: "12"
     image: micro-cabin_6.jpg
     type: image
-  - alt: Micro Cabin - Residential living room cast iron fire hardwood
+  - alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+      Home Reclaimed Materials Small Houses Natural Nature Retreat Cast Iron
+      Stove Wood Hidden Storage
     colWidth: "8"
     image: micro-cabin_7.jpg
     type: image
-  - alt: Micro Cabin - residential reclaimed wood exterior with forest in the
-      background
+  - alt: New York Architect Architecture Build Mini Cabin Tiny House Guest Vacation
+      Home Reclaimed Materials Small Houses Natural Nature Retreat Wood
     colWidth: "10"
     image: micro-cabin_8.jpg
     offsetWidth: "2"
