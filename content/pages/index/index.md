@@ -20,7 +20,7 @@ carouselImages:
   - alt: Carousel Image 4
     image: 45_CROSBY_5N_(14)_1820.jpg
     portraitImage: Crosby5N_C_1500x2000.jpg
-    project: 45 Crosby 5N
+    project: Crosby Loft II
     subtitle: Kitchen
     title: Crosby 5N
   - alt: Carousel Image 8
@@ -38,19 +38,14 @@ carouselImages:
     portraitImage: affordablehousing_C_1500x2000_AIA.jpg
     subtitle: Exterior
     title: Affordable Housing Project
+    project: Stair-Well Housing
   - alt: Carousel Image 5
     image: Lift_C1.jpg
     portraitImage: Lift_C_1500x2000_AIA.jpg
-    project: Lift Brooklyn
+    project: East River Kiosk
     subtitle: Brooklyn
     title: Lift
-  - alt: Carousel Image
-    image: 20greene_c.jpg
-    portraitImage: 20greene_c_1500x2000.jpg
-    subtitle: S-M-L Loft
-    title: S-M-L Loft
 featuredProjects:
-  - project: S-M-L Loft
   - project: Riverside Kiosk for Harlem Public
   - project: Micro Cabin
   - project: Elevecture Showroom II
@@ -60,4 +55,3 @@ featuredProjects:
   - project: The Lawrence
   - project: Ward Road House
 ---
-
