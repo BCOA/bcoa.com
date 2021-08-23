@@ -1,5 +1,5 @@
 ---
-isPublished: true
+isPublished: false
 seo:
   title: NYC Architects | Soho Loft Renovations | BC-OA Architect | Luxury Loft
     Renovation
