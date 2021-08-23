@@ -48,7 +48,7 @@ featured:
     isPortrait: true
     alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast Iron Columns
       Oak "
-  isFeatured: true
+  isFeatured: false
 previewImage:
   image: index_copyright_barkow_photo_6363.jpg
   alt: "Soho Loft Architect Architecture Gut Renovation Renovate Cast Iron Columns
