@@ -42,7 +42,7 @@ carouselImages:
   - alt: Carousel Image 5
     image: Lift_C1.jpg
     portraitImage: Lift_C_1500x2000_AIA.jpg
-    project: East River Kiosk
+    project: Lift Next Level Floats
     subtitle: Brooklyn
     title: Lift
 featuredProjects:
