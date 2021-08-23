@@ -6,6 +6,11 @@ seo:
 templateKey: index
 title: Featured Projects
 carouselImages:
+  - alt: Carousel Image 8
+    image: Wardroad_C1.jpg
+    portraitImage: Wardroad_C_1500x2000.jpg
+    project: Ward Road House
+    title: Ward Road
   - alt: Carousel Image 2
     image: 740broadwayshowroom_c1.jpg
     portraitImage: 740BroadwayShowroom_C_1500x2000.jpg
@@ -23,11 +28,6 @@ carouselImages:
     project: Crosby Loft II
     subtitle: Kitchen
     title: Crosby 5N
-  - alt: Carousel Image 8
-    image: Wardroad_C1.jpg
-    portraitImage: Wardroad_C_1500x2000.jpg
-    project: Ward Road House
-    title: Ward Road
   - alt: Carousel image 6
     image: microcabin_c1.jpg
     portraitImage: MICROCABIN_C_1500x2000.jpg
