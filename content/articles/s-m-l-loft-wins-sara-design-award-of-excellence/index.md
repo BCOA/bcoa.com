@@ -3,8 +3,8 @@ title: S-M-L LOFT WINS SARA DESIGN AWARD OF EXCELLENCE!
 templateKey: article
 slug: news-sara-award-loft
 image:
-  isPortrait: true
-  image: sara-design-awards-vert.jpg
+  isPortrait: false
+  image: sara-design-awards-alt.jpg
   alt: SARA NY Design award winner BCOA Architecture loft renovation award
 date: 2021-01-19
 excerpt: BC—OA is thrilled to learn that the [S-M-L
