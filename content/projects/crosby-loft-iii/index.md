@@ -31,7 +31,8 @@ projectGallery:
     colWidth: "10"
     image: crosby_kitchen-dining_028.jpg
     offsetWidth: "0"
-    alt: View of kitchen through to other end of apartment
+    alt: ""
+    caption: View of kitchen through to other end of apartment
   - type: image
     colWidth: "6"
     image: crosby_kitchen-dining_019.jpg
