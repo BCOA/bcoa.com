@@ -29,6 +29,12 @@ primaryImage:
 projectGallery:
   - type: image
     colWidth: "10"
-    image: crosby_kitchen-dining_006.jpg
+    image: crosby_kitchen-dining_028.jpg
+    offsetWidth: "0"
+    alt: View of kitchen through to other end of apartment
+  - type: image
+    colWidth: "6"
+    image: crosby_kitchen-dining_019.jpg
+    offsetWidth: "6"
 ---
 The owners of this 2300sf converted loft in Soho knew what was hidden beneath would hold the aesthetic they desired. Having seen hints of what the building had to offer, they were able to hone in on a selection of choices that highlighted the buildings bones in this contextual soho location
