@@ -11,6 +11,7 @@ projectCategories:
   - category: Commercial
   - category: Residential
 projects:
+  - project: Crosby Loft III
   - project: NECD @ BNY
   - project: S-M-L Loft
   - project: 740 Broadway Lobby
