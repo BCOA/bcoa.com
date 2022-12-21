@@ -37,9 +37,11 @@ projectGallery:
     colWidth: "6"
     image: crosby_kitchen-dining_019.jpg
     offsetWidth: "6"
+    caption: View through to Study — through to Master Bath
   - type: image
     colWidth: "10"
     image: crosby_primary-bathroom_015.jpg
     offsetWidth: "2"
+    caption: View of Master Bathroom
 ---
-The owners of this 2300sf converted loft in Soho knew what was hidden beneath would hold the aesthetic they desired. Having seen hints of what the building had to offer, they were able to hone in on a selection of choices that highlighted the buildings bones in this contextual soho location
+The owners of this 2300sf converted loft in Soho knew what was hidden beneath would hold the aesthetic they desired. Having seen hints of what the building had to offer, they were able to hone in on a selection of choices that highlighted the buildings bones in this contextual Soho location
