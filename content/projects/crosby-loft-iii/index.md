@@ -2,7 +2,7 @@
 isPublished: true
 templateKey: project
 title: Crosby Loft III
-slug: soho-loft-3
+slug: soho-loft-4
 redirects:
   - permanent: true
     from: Crosby-Loft-3
