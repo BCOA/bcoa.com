@@ -1,12 +1,12 @@
 {
   "address": {
-    "street": "84 Withers Street",
-    "street2": "Suite 5A",
-    "city": "Brooklyn",
-    "state": "NY",
+    "street": "406 Graham Ave ",
+    "street2": "Storefront",
+    "city": "BROOKLYN",
+    "state": "New York",
     "zip": "11211"
   },
-  "phone": "+1 347 689 3055",
+  "phone": "3476893055",
   "email": "info@bc-oa.com",
   "instagram": "bc_oa"
 }
