@@ -108,8 +108,7 @@ const ProjectTemplate = ({ data, intersectionRef }) => {
             >
               <ProjectImage
                 className={
-                  fields.projectGallery[0] &&
-                  fields.projectGallery[0].colWidth > 6
+                  fields.projectGallery?.[0]?.colWidth > 6
                     ? ""
                     : "absolute"
                 }
