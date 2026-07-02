@@ -1,5 +1,5 @@
 ---
-isPublished: false
+isPublished: true
 templateKey: project
 title: Crosby Loft III
 slug: soho-loft-4
