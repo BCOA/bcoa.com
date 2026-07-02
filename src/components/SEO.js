@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 // import * as contact from '../../content/_data/contact/contact.json';
 // favicons
 import useSiteMetadata from "./SiteMetadata";
+import getImageSrc from "../utils/getImageSrc";
 import faviconApple from "../favicon/apple-touch-icon.png";
 import favicon32 from "../favicon/favicon-32x32.png";
 import favicon16 from "../favicon/favicon-16x16.png";
@@ -33,7 +34,7 @@ const SEO = ({ postData, postImage }) => {
     (postMeta.seo && postMeta.seo.description) || settings.siteDescription;
   const image =
     (postImage && `${settings.url}${postImage}`) ||
-    settings.siteImage.childImageSharp.fixed.src;
+    getImageSrc(settings.siteImage, { size: "fixed" });
 
   const url = postMeta.slug ? `${settings.url}${postMeta.slug}` : settings.url;
 

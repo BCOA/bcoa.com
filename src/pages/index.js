@@ -5,6 +5,7 @@ import Masonry from "react-masonry-component";
 import smoothscroll from "smoothscroll-polyfill";
 import Slider from "../components/Slider";
 import SEO from "../components/SEO";
+import getImageSrc from "../utils/getImageSrc";
 
 import Layout from "../components/Layout";
 import FeaturedProjects from "../components/FeaturedProjects";
@@ -49,7 +50,7 @@ class IndexPageTemplate extends Component {
     return (
       <div>
         <SEO
-          postImage={seo.image && seo.image.childImageSharp.fluid.src}
+          postImage={getImageSrc(seo.image)}
           postData={this.props.data.page.frontmatter}
         />
         <div ref={this.props.intersectionRef}>
@@ -119,6 +120,8 @@ export const pageQuery = graphql`
           title
           description
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1200) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -133,6 +136,8 @@ export const pageQuery = graphql`
           subtitle
           project
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 3400, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -140,6 +145,8 @@ export const pageQuery = graphql`
             }
           }
           portraitImage {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1500, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp

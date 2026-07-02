@@ -4,6 +4,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "../components/Layout";
 import Image from "../components/Image";
 import SEO from "../components/SEO";
+import getImageSrc from "../utils/getImageSrc";
 
 const ArticleTemplate = ({ data, intersectionRef }) => {
   const articleLink = useRef();
@@ -25,12 +26,8 @@ const ArticleTemplate = ({ data, intersectionRef }) => {
       <SEO
         postImage={
           fields.seo?.image
-            ? fields.seo.image.extension === "gif"
-              ? fields.seo.image.publicURL
-              : fields.seo.image?.childImageSharp?.fluid.src
-            : fields.image?.image?.extension === "gif"
-            ? fields.image?.image?.publicURL
-            : fields.image?.image?.childImageSharp?.fluid.src
+            ? getImageSrc(fields.seo.image)
+            : getImageSrc(fields.image?.image)
         }
         postData={{
           slug: `/news${fields.slug}`,

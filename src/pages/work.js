@@ -5,6 +5,7 @@ import ProjectFilter from "../components/ProjectFilter";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import Image from "../components/Image";
+import getImageSrc from "../utils/getImageSrc";
 
 class Work extends Component {
   constructor(props) {
@@ -68,7 +69,7 @@ class Work extends Component {
                         bp-2_marginBottom-9"
       >
         <SEO
-          postImage={page.seo.image && page.seo.image.childImageSharp.fluid.src}
+          postImage={getImageSrc(page.seo.image)}
           postData={page}
         />
         <div
@@ -157,6 +158,8 @@ export const query = graphql`
           title
           description
           image {
+            extension
+            publicURL
             childImageSharp {
               fluid(maxWidth: 1200) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -183,6 +186,8 @@ export const PROJECT_FIELDS = graphql`
         title
         description
         image {
+          extension
+          publicURL
           childImageSharp {
             fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid_withWebp

@@ -4,6 +4,7 @@ import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import useContactMetadata from "../components/ContactMetadata";
 import Image from "../components/Image";
+import getImageSrc from "../utils/getImageSrc";
 
 const ContactPageTemplate = ({ data }) => {
   const pageFields = data.mdx.frontmatter;
@@ -17,12 +18,8 @@ const ContactPageTemplate = ({ data }) => {
       <SEO
         postImage={
           pageFields.seo?.image
-            ? pageFields.seo.image.extension === "gif"
-              ? pageFields.seo.image.publicURL
-              : pageFields.seo.image.childImageSharp.fluid.src
-            : pageFields.heroImage.image.extension === "gif"
-            ? pageFields.heroImage.image.publicURL
-            : pageFields.heroImage.image.childImageSharp.fluid.src
+            ? getImageSrc(pageFields.seo.image)
+            : getImageSrc(pageFields.heroImage?.image)
         }
         postData={pageFields}
       />

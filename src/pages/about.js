@@ -4,6 +4,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import Image from "../components/Image";
+import getImageSrc from "../utils/getImageSrc";
 // import Content, { HTMLContent } from '../components/Content'
 
 const AboutPageTemplate = ({ data }) => {
@@ -23,9 +24,7 @@ const AboutPageTemplate = ({ data }) => {
                     bp-2_marginBottom-20"
     >
       <SEO
-        postImage={
-          fields.seo.image ? fields.seo.image.childImageSharp.fluid.src : null
-        }
+        postImage={getImageSrc(fields.seo.image)}
         postData={fields}
       />
       <h1

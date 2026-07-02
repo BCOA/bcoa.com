@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import ProjectImage from "../components/ProjectImage";
 import MediaQuery from "react-responsive";
 import SEO from "../components/SEO";
+import getImageSrc from "../utils/getImageSrc";
 
 const ProjectTemplate = ({ data, intersectionRef }) => {
   const post = data.mdx;
@@ -16,12 +17,8 @@ const ProjectTemplate = ({ data, intersectionRef }) => {
       <SEO
         postImage={
           fields.seo?.image
-            ? fields.seo.image.extension === "gif"
-              ? fields.seo.image.publicURL
-              : fields.seo.image.childImageSharp.fluid.src
-            : fields.previewImage.image.extension === "gif"
-            ? fields.previewImage.image.publicURL
-            : fields.previewImage.image.childImageSharp.fluid.src
+            ? getImageSrc(fields.seo.image)
+            : getImageSrc(fields.previewImage?.image)
         }
         postData={{
           slug: `/projects${post.frontmatter.slug}`,

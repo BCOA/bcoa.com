@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Img from "gatsby-image";
 import MediaQuery from "react-responsive";
 import { icons } from "./Icons";
+import Image from "./Image";
 
 const PrevArrow = ({ onClick }) => (
   <div className="container slick-container">
@@ -64,18 +64,10 @@ export default class HeroSlider extends Component {
                 {(matches) => {
                   if (matches && slide.portraitImage) {
                     return (
-                      <Img
-                        fluid={slide.portraitImage.childImageSharp.fluid}
-                        alt={slide.image.alt}
-                      />
+                      <Image image={slide.portraitImage} alt={slide.alt} />
                     );
                   } else if (slide.image) {
-                    return (
-                      <Img
-                        fluid={slide.image.childImageSharp.fluid}
-                        alt={slide.image.alt}
-                      />
-                    );
+                    return <Image image={slide.image} alt={slide.alt} />;
                   } else {
                     return null;
                   }
@@ -85,10 +77,7 @@ export default class HeroSlider extends Component {
           ) : (
             <div className="slide c-white" key={`slide-${i}`}>
               {slide.image && (
-                <Img
-                  fluid={slide.image.childImageSharp.fluid}
-                  alt={slide.image.alt}
-                />
+                <Image image={slide.image} alt={slide.alt} />
               )}
             </div>
           );

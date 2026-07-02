@@ -9,6 +9,8 @@ const useSiteMetadata = () => {
           siteDescription
           url
           siteImage {
+            extension
+            publicURL
             childImageSharp {
               fixed(width: 1200) {
                 src
@@ -16,6 +18,8 @@ const useSiteMetadata = () => {
             }
           }
           menuBackground {
+            extension
+            publicURL
             childImageSharp {
               fixed(width: 1820) {
                 src

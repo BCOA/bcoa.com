@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import { icons } from "./Icons";
 import useSiteMetadata from "./SiteMetadata";
 import { useHasMounted } from "../hooks/useHasMounted";
+import getImageSrc from "../utils/getImageSrc";
 
 const Menu = ({ visible, toggleMenu, navHeight }) => {
   const { menuBackground } = useSiteMetadata();
@@ -11,7 +12,7 @@ const Menu = ({ visible, toggleMenu, navHeight }) => {
     <nav
       className={`menu f-navigation ${visible ? "visible" : ""}`}
       style={{
-        backgroundImage: `url("${menuBackground.childImageSharp.fixed.src}")`,
+        backgroundImage: `url("${getImageSrc(menuBackground, { size: "fixed" })}")`,
         height: `${navHeight}px`,
       }}
     >
