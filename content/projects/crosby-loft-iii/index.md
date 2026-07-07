@@ -17,7 +17,9 @@ heroImage:
   alt: "Soho Loft NYC Architect Architecture Gut Renovation Renovate Old Columns "
 headline: Expose the old, embellish with the new
 featured:
-  isFeatured: false
+  isFeatured: true
+  featuredImage:
+    image: featured-crosby_kitchen-dining_034-1-.jpg
 previewImage:
   image: crosby_living-room_019_index-1-.jpg
   alt: Soho NYC Loft Architect Architecture Gut Renovation Renovate Living Room
