@@ -8,7 +8,7 @@ seo:
     Renovation
 templateKey: project
 title: Thompson Loft
-slug: soho-loft-4
+slug: soho-loft-5
 redirects:
   - permanent: true
     from: Thompson-Loft
