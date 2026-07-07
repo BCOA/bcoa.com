@@ -30,7 +30,7 @@ featured:
     alt: "Soho Loft NYC Architect Architecture Gut Renovation Renovate Distressed
       Brass Bronze "
     image: 45-crosby_5n_-14-_1160x1740.jpg
-  isFeatured: true
+  isFeatured: false
 previewImage:
   image: 45-CROSBY_5N_index.jpg
   alt: Soho NYC Loft Architect Architecture Gut Renovation Renovate Kitchen Timber
