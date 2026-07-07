@@ -12,6 +12,7 @@ projectCategories:
   - category: Commercial
   - category: Residential
 projects:
+  - project: Brooklyn Children’s Museum HVAC Upgrade
   - project: Crosby Loft III
   - project: NECD @ BNY
   - project: S-M-L Loft
