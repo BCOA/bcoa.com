@@ -43,4 +43,7 @@ projectGallery:
   - type: image
     colWidth: "6"
     image: 152_franklin_186.jpg
+  - type: image
+    colWidth: "12"
+    image: 152_franklin_347.jpg
 ---
