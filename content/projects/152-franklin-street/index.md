@@ -31,4 +31,8 @@ projectGallery:
   - type: image
     colWidth: "10"
     image: 152_franklin_250.jpg
+  - type: image
+    colWidth: "10"
+    image: 152_franklin_307.jpg
+    offsetWidth: "2"
 ---
