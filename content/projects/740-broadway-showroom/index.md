@@ -27,7 +27,7 @@ featured:
       Elevecture Glass Custom Digital Display Modular Light Panels
     image: 740-broadway_showroom_-4-_1160x1547.jpg
     isPortrait: true
-  isFeatured: true
+  isFeatured: false
 previewImage:
   alt: Commercial Showroom NYC Architect Architecture Renovation Renovate
     Elevecture Glass Custom Digital Display Modular Light Panels
