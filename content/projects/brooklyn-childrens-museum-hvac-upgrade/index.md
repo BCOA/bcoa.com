@@ -1,10 +1,12 @@
 ---
-isPublished: true
+isPublished: false
 templateKey: project
 title: Brooklyn Children’s Museum HVAC Upgrade
 slug: bcm
 redirects:
   - permanent: true
+categories:
+  - Public
 heroImage:
   portraitImage: ""
   image: discowall_hero_3800x1900.jpg
