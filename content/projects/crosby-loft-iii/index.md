@@ -22,6 +22,17 @@ previewImage:
   image: crosby_living-room_019_index-1-.jpg
   alt: Soho NYC Loft Architect Architecture Gut Renovation Renovate Living Room
     Timber Reclaimed
+infoObjects:
+  titleInfoObject:
+    title: DESCRIPTION
+    description: NYC Soho Loft Renovation
+  infoObject:
+    - title: "SIZE "
+      description: 2300 square feet
+    - title: STATUS
+      description: Completed 2021
+    - title: PHOTOGRAPHY
+      description: Nicole Franzen
 primaryImage:
   alt: project image alt
   caption: A warm living space takes over industrial elements
