@@ -16,6 +16,13 @@ infoObjects:
   titleInfoObject:
     title: DESCRIPTION
     description: NYC Tribeca Loft Renovation
+  infoObject:
+    - title: "SIZE "
+      description: 3500 square feet
+    - title: STATUS
+      description: Completed 2021
+    - title: PHOTOGRAPHY
+      description: Gieves Andersen
 primaryImage:
   alt: project image alt
   caption: project image caption
