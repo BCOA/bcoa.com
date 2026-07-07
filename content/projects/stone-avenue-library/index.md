@@ -8,6 +8,14 @@ redirects:
 heroImage:
   image: elevation_hero_web-1-.png
 headline: Headline
+infoObjects:
+  titleInfoObject:
+    title: INFO
+  infoObject:
+    - title: Description
+      description: ADA Improvements
+    - title: Status
+      description: In Construction Documents
 primaryImage:
   alt: project image alt
   caption: project image caption
