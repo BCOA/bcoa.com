@@ -5,6 +5,8 @@ title: Wakefield Library
 slug: wakefield-library
 redirects:
   - permanent: true
+categories:
+  - Public
 heroImage:
   portraitImage: wakefield_hero_mobile.png
   image: wakefield_hero_web-1-.png
