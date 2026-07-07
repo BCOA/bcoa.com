@@ -35,4 +35,12 @@ projectGallery:
     colWidth: "10"
     image: 152_franklin_307.jpg
     offsetWidth: "2"
+  - type: quote
+    pullQuote: Quote!!
+  - type: image
+    colWidth: "4"
+    image: 152_franklin_373.jpg
+  - type: image
+    colWidth: "6"
+    image: 152_franklin_186.jpg
 ---
