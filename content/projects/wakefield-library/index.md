@@ -11,6 +11,11 @@ heroImage:
   portraitImage: wakefield_hero_mobile.png
   image: wakefield_hero_web-1-.png
 headline: Headline
+featured:
+  isFeatured: true
+  featuredImage:
+    image: featured_wakefield.png
+    isPortrait: true
 previewImage:
   image: wakefield_index_web.png
 infoObjects:
