@@ -13,7 +13,9 @@ image:
   image: dezeen.jpg
   alt: loft dezeen nyc soho
 date: 2021-04-07T16:46:32.762Z
-excerpt: S-M-L Loft featured in Dezeen with a beautiful project description
-  written by Jenna McKnight.
+excerpt: "[S-M-L
+  Loft](https://www.dezeen.com/2021/04/07/bc-oa-s-m-l-loft-apartment-new-york/)
+  featured in Dezeen with a beautiful project description written by Jenna
+  McKnight."
 ---
 S-M-L Loft featured in Dezeen with a beautiful project description written by Jenna McKnight.
