@@ -19,7 +19,7 @@ headline: Expose the old, embellish with the new
 featured:
   isFeatured: false
 previewImage:
-  image: crosby_living-room_019.jpg
+  image: crosby_living-room_019_index-1-.jpg
   alt: Soho NYC Loft Architect Architecture Gut Renovation Renovate Living Room
     Timber Reclaimed
 primaryImage:
