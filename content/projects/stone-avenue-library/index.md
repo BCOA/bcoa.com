@@ -5,6 +5,8 @@ title: Stone Avenue Library
 slug: stone-avenue-library
 redirects:
   - permanent: true
+categories:
+  - Public
 heroImage:
   image: elevation_hero_web-1-.png
 headline: Headline
