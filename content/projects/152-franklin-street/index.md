@@ -11,6 +11,7 @@ categories:
 heroImage:
   portraitImage: 152_franklin_hero_mobile.jpg
   image: 152_franklin_hero_web.jpg
+headline: Headline
 primaryImage:
   alt: project image alt
   caption: project image caption
