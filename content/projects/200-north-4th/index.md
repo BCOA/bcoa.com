@@ -10,6 +10,11 @@ categories:
 heroImage:
   image: 200-n-4_hero.jpg
 headline: Headline
+featured:
+  isFeatured: true
+  featuredImage:
+    isPortrait: true
+    image: 200n4th_featured-1-.jpg
 previewImage:
   image: index_section-perspectives-02.jpg
 primaryImage:
