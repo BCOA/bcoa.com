@@ -5,6 +5,8 @@ title: "McGuinness Boulevard "
 slug: mcguinness-blvd
 redirects:
   - permanent: true
+categories:
+  - Public
 heroImage:
   portraitImage: mcguinness_hero_mobile.jpg
   image: mcguinness_hero_web.jpeg
