@@ -12,6 +12,10 @@ heroImage:
   portraitImage: 152_franklin_hero_mobile.jpg
   image: 152_franklin_hero_web.jpg
 headline: Headline
+infoObjects:
+  titleInfoObject:
+    title: DESCRIPTION
+    description: NYC Tribeca Loft Renovation
 primaryImage:
   alt: project image alt
   caption: project image caption
