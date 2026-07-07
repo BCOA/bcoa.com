@@ -42,11 +42,11 @@ class IndexPageTemplate extends Component {
     const seo = data.page.frontmatter.seo;
     const projects = data.projects.nodes;
     const featuredProjects = data.page.frontmatter.featuredProjects;
-    const featuredProjectsData = featuredProjects.map((title) => {
-      return projects.find((project) => {
-        return project.frontmatter.title === title.project;
-      });
-    });
+    const featuredProjectsData = featuredProjects
+      .map(({ project }) =>
+        projects.find((p) => p.frontmatter.title === project)
+      )
+      .filter((project) => project?.frontmatter?.isPublished !== false);
     return (
       <div>
         <SEO
@@ -168,6 +168,7 @@ export const pageQuery = graphql`
           slug
           templateKey
           title
+          isPublished
           featured {
             isFeatured
             featuredImage {
