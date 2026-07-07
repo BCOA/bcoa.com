@@ -40,6 +40,10 @@ carouselImages:
     subtitle: Brooklyn
     title: Lift
 featuredProjects:
+  - project: "McGuinness Boulevard "
+  - project: Wakefield Library
+  - project: 200 North 4th
+  - project: Crosby Loft III
   - project: Riverside Kiosk for Harlem Public
   - project: Micro Cabin
   - project: Stair-Well Housing
