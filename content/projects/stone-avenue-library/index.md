@@ -10,11 +10,10 @@ heroImage:
 headline: Headline
 infoObjects:
   titleInfoObject:
-    title: INFO
+    title: DESCRIPTION
+    description: "ADA Improvements "
   infoObject:
-    - title: Description
-      description: ADA Improvements
-    - title: Status
+    - title: STATUS
       description: In Construction Documents
 primaryImage:
   alt: project image alt
