@@ -11,6 +11,11 @@ heroImage:
   portraitImage: mcguinness_hero_mobile.jpg
   image: mcguinness_hero_web.jpeg
 headline: Headline
+featured:
+  isFeatured: true
+  featuredImage:
+    isPortrait: true
+    image: featured_mcguinness.jpg
 previewImage:
   image: mcguinness_index_web.jpg
 primaryImage:
