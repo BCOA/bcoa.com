@@ -18,6 +18,13 @@ featured:
     architectural presence at the Brooklyn Children’s Museum.
 previewImage:
   image: discowall_index_830x830.jpg
+infoObjects:
+  titleInfoObject:
+    title: DESCRIPTION
+    description: HVAC Replacement and Architectural Screen
+  infoObject:
+    - title: STATUS
+      description: Construction starting 2027
 primaryImage:
   alt: project image alt
   caption: project image caption
