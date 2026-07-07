@@ -27,4 +27,8 @@ primaryImage:
   alt: project image alt
   caption: project image caption
   image: 152_franklin_06.jpg
+projectGallery:
+  - type: image
+    colWidth: "10"
+    image: 152_franklin_250.jpg
 ---
