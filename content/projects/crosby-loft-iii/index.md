@@ -20,7 +20,7 @@ featured:
   isFeatured: true
   featuredImage:
     image: featured-crosby_kitchen-dining_034-1-.jpg
-    isPortrait: true
+    isPortrait: false
 previewImage:
   image: crosby_living-room_019_index-1-.jpg
   alt: Soho NYC Loft Architect Architecture Gut Renovation Renovate Living Room
