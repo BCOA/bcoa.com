@@ -26,11 +26,11 @@ projectGallery:
   - type: image
     colWidth: "8"
     image: cl_road-diet-01_before.png
-    offsetWidth: "1"
+    offsetWidth: "0"
   - type: image
     colWidth: "8"
     image: cl_road-diet-02_after.png
-    offsetWidth: "3"
+    offsetWidth: "4"
   - type: quote
     pullQuote: Quote!!
   - type: image
