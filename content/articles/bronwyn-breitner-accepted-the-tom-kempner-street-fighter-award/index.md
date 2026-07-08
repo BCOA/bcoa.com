@@ -8,7 +8,7 @@ image:
   isPortrait: false
   image: news_108-260602_transalt_streets-for-.jpg
   alt: "award mamdani mcguinness street fighter "
-date: 2026-07-08T17:33:04.124Z
+date: 2026-06-01T17:33:04.124Z
 excerpt: Bronwyn Breitner accepted the 2026 TOM KEMPNER STREET FIGHTER AWARD on
   behalf of Make McGuinness Safe, presented by Mayor Zohran Mamdani.
 ---
