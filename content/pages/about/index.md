@@ -43,6 +43,12 @@ studioMembers:
   - name: Zuza Harris
     jobTitle: Intern
 publications:
+  - datePublished: 2023-02-27T05:00:00.000Z
+    date: February 27, 2023
+    publisher: House Beautiful
+    url: https://www.housebeautiful.com/design-inspiration/house-tours/a42781151/nina-garbiras-nyc-loft/
+    title: Nina Garbiras and Architects BC—OA Preserved Stunning Historic Details in
+      a NYC Loft
   - datePublished: 2021-04-07T04:00:00.000Z
     date: April 7, 2021
     title: BC—OA hides storage behind metal panels in renovated Soho loft
