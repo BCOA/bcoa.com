@@ -45,7 +45,7 @@ studioMembers:
 publications:
   - datePublished: 2023-03-20T04:00:00.000Z
     date: March 20, 2023
-    publisher: Elle Decoration
+    publisher: Elle Decor
     url: https://www.elledecor.com/es/casas/a43268598/loft-estilo-industrial-moderno-calido/?fbclid=PAZnRzaAS7d5FwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp1urr3nioC1QjOGlN2J1cLmMt9t3s7l01BY0jK3LbjedebTundnGL2C5rBSm_aem_GMQRHg2a2dFRMemSjIzb5w
     title: A beautifully renovated loft that retains all the charm of its industrial
       past
