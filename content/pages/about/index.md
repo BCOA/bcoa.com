@@ -37,22 +37,11 @@ studioMembers:
     name: Luigi Ciaccia, AIA, LEED BD+C
     principal: true
     principalInfo: ""
-  - jobTitle: Designer
-    name: Elizabeth Austin
-    principal: false
-    principalInfo: " "
-    description: " "
-    image:
-      image: ""
-      alt: " "
-  - name: Chad Richardson
-    jobTitle: Designer
   - name: Davide Curiotto
     jobTitle: Designer
-  - name: Scott Mikawa
-    jobTitle: Designer
-  - name: Yuliya Rubanska
-    jobTitle: Designer
+    principal: false
+  - name: Zuza Harris
+    jobTitle: Intern
 publications:
   - datePublished: 2021-04-07T04:00:00.000Z
     date: April 7, 2021
