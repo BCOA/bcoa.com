@@ -9,7 +9,7 @@ studioMembers:
   - description: >
       Bronwyn Breitner received her MArch with Distinction at Parsons the New
       School for Design, and her BA at Duke University in Anthropology and
-      Photography. Prior to co-founding 590BC, Bronwyn worked at Smith-Miller +
+      Photography. Prior to co-founding BC—OA, Bronwyn worked at Smith-Miller +
       Hawkinson Architects on a wide range of projects including dense urban
       residential developments and medium scale commercial offices. Bronwyn has
       taught both undergraduate and graduate level design studios at Parsons the
@@ -24,7 +24,7 @@ studioMembers:
     principal: true
     principalInfo: ""
   - description: Luigi Ciaccia, LEED AP received his BArch with Distinction from The
-      New York Institute of Technology. Prior to co-founding 590BC, Luigi had 5
+      New York Institute of Technology. Prior to co-founding BC—OA, Luigi had 5
       years of experience as a senior associate at RMJM leading design teams on
       large scale urban projects in Europe, Asia, Middle East and the US, and 7
       years of experience as a designer at KPF US and UK. While specializing in
