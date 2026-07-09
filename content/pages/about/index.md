@@ -40,6 +40,8 @@ studioMembers:
   - name: Davide Curiotto
     jobTitle: Designer
     principal: false
+  - name: Bibi Leslie
+    jobTitle: "Finance and Administrative Manager "
   - name: Zuza Harris
     jobTitle: Intern
 publications:
