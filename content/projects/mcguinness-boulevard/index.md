@@ -34,10 +34,15 @@ projectGallery:
   - type: quote
     pullQuote: Quote!!
   - type: image
-    colWidth: "6"
-    image: 3.-copy-of-460a0699.jpg
+    colWidth: "8"
+    image: copy-of-mcg-sections-final2-02.jpg
+  - type: image
+    colWidth: "12"
+    image: copy-of-katz_makemcguinnesssafe-1.jpg
+    offsetWidth: "0"
   - type: image
     colWidth: "6"
-    image: copy-of-katz_makemcguinnesssafe-1.jpg
+    image: 3.-copy-of-460a0699.jpg
+    offsetWidth: "6"
 ---
 D﻿escription...
