@@ -41,7 +41,7 @@ studioMembers:
     jobTitle: Designer
     principal: false
   - name: Bibi Leslie
-    jobTitle: "Finance and Administrative Manager "
+    jobTitle: Contracts & Billing Administrator
   - name: Zuza Harris
     jobTitle: Intern
 publications:
