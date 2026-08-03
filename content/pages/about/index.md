@@ -47,7 +47,7 @@ studioMembers:
 publications:
   - datePublished: 2026-07-30T04:00:00.000Z
     date: August 3, 2026
-    title: ARCHITECTURE New York State Magazine
+    title: Architects Belong in the Street, ARCHITECTURE New York State Magazine
     publisher: AIA New York
     url: https://issuu.com/aianys/docs/architecture_new_york_state_july_2026
   - datePublished: 2023-03-20T04:00:00.000Z
