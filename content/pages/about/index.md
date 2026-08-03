@@ -46,7 +46,7 @@ studioMembers:
     jobTitle: Intern
 publications:
   - datePublished: 2026-07-30T04:00:00.000Z
-    date: August 3, 2026
+    date: July 30, 2026
     title: Architects Belong in the Street, ARCHITECTURE New York State Magazine
     publisher: AIA New York
     url: https://issuu.com/aianys/docs/architecture_new_york_state_july_2026
